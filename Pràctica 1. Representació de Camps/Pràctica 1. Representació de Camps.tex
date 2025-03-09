@@ -1,4 +1,5 @@
-\documentclass[a4paper, 10pt]{article}
+\documentclass[a4paper,11pt]{report}
+
 \usepackage[catalan]{babel}
 \usepackage{tcolorbox}
 \usepackage{parskip}
@@ -22,18 +23,53 @@
 \usepackage{titling}
 \pagestyle{fancy}
 \fancyhf{}
-\lhead[\leftmark]{{\textbf{Tema 2. Simetria Molecular}}}
-\rhead{\textbf{Espectroscòpia}}
-\cfoot[]{\thepage}
-\renewcommand{\labelenumi}{\textbf{\theenumi.}} 
+\usepackage{titlesec}
 
 
-\setlength{\droptitle}{-2cm}
+% Cambiar "Capítulo" por "Práctica"
+\titleformat{\chapter}[display]{\normalfont\Huge\bfseries}{Práctica \thechapter}{0pt}{\vspace{0.2cm}\huge\bfseries\raggedright}
 
-\title{\textbf{Tema 2. Simetria Molecular}}
-\author{Eric González Barea}
+% Datos del documento
+\title{\textbf{\huge{Informe de Pràctiques. \\ \vspace{0.2cm} Laboratori d'Electromagnetisme}}}
+\author{Grup A1}
+\date{\today}
 
-\begin{document}	
+\begin{document}
+	
+	% Portada
 	\maketitle
+	
+	% Índice
+	\tableofcontents
+	\newpage
+	
+	\chapter{Representació de Camps}
+	\section{Objetivos}
+	Describir los objetivos específicos de la práctica.
+	
+	\section{Materiales y métodos}
+	Explicar los procedimientos y herramientas utilizados.
+	
+	\section{Resultados}
+	Presentar los hallazgos obtenidos, incluir imágenes si es necesario.
+	
+	\section{Conclusiones}
+	Resumen de lo aprendido en esta práctica.
+	
+	% Se pueden agregar más capítulos para otras prácticas
+	\chapter{Título de la práctica 2}
+	\section{Objetivos}
+	\section{Materiales y métodos}
+	\section{Resultados}
+	\section{Conclusiones}
+	
+	% Conclusión general
+	\chapter{Conclusión General}
+	Resumen de los resultados obtenidos en todas las prácticas.
+	
+	% Bibliografía (opcional)
+	\begin{thebibliography}{9}
+		\bibitem{ref1} Autor, "Título del libro", Editorial, Año.
+	\end{thebibliography}
 	
 \end{document}

@@ -12,7 +12,8 @@
 \usepackage[arrowdel]{physics}
 \newtcolorbox{definició}[1]{title=#1}
 \usepackage[utf8]{inputenc}
-\usepackage[left=1.95cm, right=1.95cm, top=30mm, bottom=20mm]{geometry} 
+\usepackage[left=1.95cm, right=1.95cm, top=20mm, bottom=20mm]{geometry} % Márgenes generales
+
 \usepackage{fancyhdr}
 \usepackage{braket}
 \usepackage{amssymb}
@@ -23,16 +24,23 @@
 \usepackage{titling}
 \pagestyle{fancy}
 \fancyhf{}
+
 \usepackage{titlesec}
 \usepackage{tikz}
 \usepackage{parskip}
 
+% Cambiar el formato de numeración de secciones a números (1, 1.1, 1.2...)
+\renewcommand{\thesection}{\thechapter.\arabic{section}} % Para secciones: 1.1, 1.2...
 
+% Cambiar la numeración de subsecciones a letras (A, B, C...) en el apéndice
+\newcounter{appendixsection}
+\renewcommand{\thesubsection}{\Alph{chapter}.\arabic{subsection}} % Para subsecciones: A.1, A.2...
 
+% Cambiar el espaciado de los títulos para evitar páginas vacías
+\titlespacing*{\chapter}{0pt}{0.5cm}{1cm} % Espacio antes del capítulo (0.5cm) y después del capítulo (1cm)
 
-
-% Cambiar "Capítulo" por "Práctica"
-\titleformat{\chapter}[display]{\normalfont\Huge\bfseries}{Pràctica \thechapter}{0pt}{\vspace{0.2cm}\huge\bfseries\raggedright}[\addcontentsline{toc}{chapter}{Pràctica \thechapter}]
+% Cambiar el título de "Capítulo" a "Pràctica" y mostrar solo el número sin alterar el índice
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{Pràctica \thechapter}{0pt}{\vspace{0.2cm}\huge\bfseries\raggedright}
 
 % Datos del documento
 \title{\textbf{\huge{Informes de Pràctiques. \\ \vspace{0.2cm} Laboratori d'Electromagnetisme}}}
@@ -41,40 +49,49 @@
 
 \begin{document}
 	
-	% Portada
+	% Portada SIN capítulo para evitar el Capítulo 0
 	\maketitle
 	
 	% Índice
 	\tableofcontents
 	\newpage
 	
-\chapter{Representació de Camps}
+	% Comienzo del capítulo normal
+	\chapter{Representació de Camps} % Esto es el Capítulo 1, numerado correctamente
 	
-\tikz \draw[dashed] (1,0) -- (\textwidth,0); \vspace{0.1cm} 
-
-\begin{center}
-	\textbf{Abstract} \par
-	\vspace{0.2cm}
-\end{center}
-
-Hola bon dia que tal todo no se que dir na a na na representacio de camps practica i objectius metodes experimentals resultats idiscucssio :D
-\vspace{0.1cm} 
-
-\tikz \draw[dashed] (1,0) -- (\textwidth,0);
-
-\section{Introducció i Objectius}
-
-
-\section{Mètode Experimental}
+	\tikz \draw[dashed] (1,0) -- (\textwidth,0); \vspace{0.1cm} 
 	
-\section{Resultats i Discussió}
+	\begin{center}
+		\textbf{Abstract} \par
+		\vspace{0.2cm}
+	\end{center}
 	
-\section{Conclusions}
-
+	\vspace{0.1cm} 
 	
-
-
+	\tikz \draw[dashed] (1,0) -- (\textwidth,0);
 	
-
+	\section{Introducció i Objectius}
+	
+	\section{Mètode Experimental}
+	
+	\section{Resultats i Discussió}
+	
+	\section{Conclusions}
+	
+	\newpage
+	
+	\appendix % Esto cambia a numeración de apéndices automáticamente
+	
+	% Aquí se mantiene el título, pero cambiamos a \chapter* para evitar la numeración del capítulo
+	\chapter*{Apèndix A\\[0.5cm] Dades Experimentals i Incerteses}
+	\addcontentsline{toc}{chapter}{A. Dades experimentals i incerteses} % Añadir al índice sin numeración
+	
+	% Cambiar el contador de subsecciones para los apéndices
+	\setcounter{section}{0} % Reinicia la numeración de secciones en los apéndices
+	\renewcommand{\thesection}{A.\arabic{section}} % Poner A antes de las secciones en los apéndices
+	
+	\section{Text del Apèndix A} % Apéndice A.1
+	
+	\section{Altres dades} % Apéndice A.2
 	
 \end{document}

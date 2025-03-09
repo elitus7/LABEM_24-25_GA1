@@ -24,13 +24,18 @@
 \pagestyle{fancy}
 \fancyhf{}
 \usepackage{titlesec}
+\usepackage{tikz}
+\usepackage{parskip}
+
+
+
 
 
 % Cambiar "Capítulo" por "Práctica"
-\titleformat{\chapter}[display]{\normalfont\Huge\bfseries}{Práctica \thechapter}{0pt}{\vspace{0.2cm}\huge\bfseries\raggedright}
+\titleformat{\chapter}[display]{\normalfont\Huge\bfseries}{Pràctica \thechapter}{0pt}{\vspace{0.2cm}\huge\bfseries\raggedright}[\addcontentsline{toc}{chapter}{Pràctica \thechapter}]
 
 % Datos del documento
-\title{\textbf{\huge{Informe de Pràctiques. \\ \vspace{0.2cm} Laboratori d'Electromagnetisme}}}
+\title{\textbf{\huge{Informes de Pràctiques. \\ \vspace{0.2cm} Laboratori d'Electromagnetisme}}}
 \author{Grup A1}
 \date{\today}
 
@@ -43,33 +48,32 @@
 	\tableofcontents
 	\newpage
 	
-	\chapter{Representació de Camps}
-	\section{Objetivos}
-	Describir los objetivos específicos de la práctica.
+\chapter{Representació de Camps}
+	aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+\tikz \draw[dashed] (1,0) -- (\textwidth,0); \vspace{0.1cm} 
+
+\begin{center}
+	\textbf{Abstract} \par
+	\vspace{0.2cm}
+\end{center}
+
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+\vspace{0.1cm} 
+
+\tikz \draw[dashed] (1,0) -- (\textwidth,0);
+
+\section{Introducció i Objectius}
+assssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+\section{Mètode Experimental}
 	
-	\section{Materiales y métodos}
-	Explicar los procedimientos y herramientas utilizados.
+\section{Resultats i Discussió}
 	
-	\section{Resultados}
-	Presentar los hallazgos obtenidos, incluir imágenes si es necesario.
+\section{Conclusions}
+
 	
-	\section{Conclusiones}
-	Resumen de lo aprendido en esta práctica.
+
+
 	
-	% Se pueden agregar más capítulos para otras prácticas
-	\chapter{Título de la práctica 2}
-	\section{Objetivos}
-	\section{Materiales y métodos}
-	\section{Resultados}
-	\section{Conclusiones}
-	
-	% Conclusión general
-	\chapter{Conclusión General}
-	Resumen de los resultados obtenidos en todas las prácticas.
-	
-	% Bibliografía (opcional)
-	\begin{thebibliography}{9}
-		\bibitem{ref1} Autor, "Título del libro", Editorial, Año.
-	\end{thebibliography}
+
 	
 \end{document}

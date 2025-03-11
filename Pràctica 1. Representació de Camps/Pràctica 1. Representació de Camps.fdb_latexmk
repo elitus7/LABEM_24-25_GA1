@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1741708994.66379 "c:/Users/ericg/OneDrive/Documentos/GitHub/LABEM_24-25_GA1/Pràctica 1. Representació de Camps/Pràctica 1. Representació de Camps.tex" "Pràctica 1. Representació de Camps.pdf" "Pràctica 1. Representació de Camps" 1741708996.24498 0
+["pdflatex"] 1741709676.25603 "c:/Users/ericg/OneDrive/Documentos/GitHub/LABEM_24-25_GA1/Pràctica 1. Representació de Camps/Pràctica 1. Representació de Camps.tex" "Pràctica 1. Representació de Camps.pdf" "Pràctica 1. Representació de Camps" 1741709678.03031 0
   "C:/Users/ericg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1741704708 81043 787296dcccf959cefd61d1a07b638763 ""
   "C:/Users/ericg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1200.pk" 1715002697 15080 d4e3a00efcfee65e2eece920258cf286 ""
   "C:/Users/ericg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1708105905 11548 d5180cf167b07222b0a0224c0f720ad2 ""
@@ -43,6 +43,7 @@
   "C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
@@ -190,15 +191,14 @@
   "C:/Users/ericg/AppData/Local/Programs/MiKTeX/tex/latex/trimspaces/trimspaces.sty" 1253169183 1380 971a51b00a14503ddf754cab24c3f209 ""
   "C:/Users/ericg/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ericg/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "Pràctica 1. Representació de Camps.aux" 1741708995 2281 69f75043154ba479f80684fe6604c80c "pdflatex"
-  "Pràctica 1. Representació de Camps.out" 1741708995 2065 bf58f04cdc44a39397c7d1042bb0bbe9 "pdflatex"
-  "Pràctica 1. Representació de Camps.tex" 1741708992 8773 5929d8d745217af60974caf39704ab08 ""
-  "Pràctica 1. Representació de Camps.toc" 1741708995 1022 7ac321dba8b9eb77dc0d843fc35a203f "pdflatex"
-  "c:/Users/ericg/OneDrive/Documentos/GitHub/LABEM_24-25_GA1/Pràctica 1. Representació de Camps/Pràctica 1. Representació de Camps.tex" 1741708992 8773 5929d8d745217af60974caf39704ab08 ""
+  "Pràctica 1. Representació de Camps.aux" 1741709677 2455 492be7792e71fb1480f2abee3f0681a5 "pdflatex"
+  "Pràctica 1. Representació de Camps.out" 1741709677 2065 bf58f04cdc44a39397c7d1042bb0bbe9 "pdflatex"
+  "Pràctica 1. Representació de Camps.tex" 1741709675 9323 4b58355bb6eb87154afd5061d9a19660 ""
+  "c:/Users/ericg/OneDrive/Documentos/GitHub/LABEM_24-25_GA1/Pràctica 1. Representació de Camps/Pràctica 1. Representació de Camps.tex" 1741709675 9323 4b58355bb6eb87154afd5061d9a19660 ""
+  "screenshot001.png" 1741709604 59931 7921e2970bebe1edaf811a06ce303676 ""
   (generated)
   "Pràctica 1. Representació de Camps.aux"
   "Pràctica 1. Representació de Camps.log"
   "Pràctica 1. Representació de Camps.out"
   "Pràctica 1. Representació de Camps.pdf"
-  "Pràctica 1. Representació de Camps.toc"
   (rewritten before read)

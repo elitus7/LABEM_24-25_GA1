@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{report}
+\documentclass[a4paper,10.5pt]{report}
 
 \usepackage[catalan]{babel}
 \usepackage{tcolorbox}
@@ -10,88 +10,68 @@
 \captionsetup{labelfont=bf}
 \usepackage{hyperref}
 \usepackage[arrowdel]{physics}
-\usepackage[utf8]{inputenc}
 \usepackage[left=1.95cm, right=1.95cm, top=20mm, bottom=20mm]{geometry} 
-
 \usepackage{fancyhdr}
 \usepackage{braket}
 \usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage{subfigure}
+\usepackage{subcaption}
 \usepackage{cancel}
 \usepackage{float}
 \usepackage{titling}
-\pagestyle{fancy}
-\fancyhf{}
+\usepackage{etoolbox}
+
+%Definim el següent entorn per tal de poder posar abstracts a cada capítol.
+\newenvironment{chapterabstract}{
+	\begin{center}
+		\bfseries Abstract
+	\end{center}
+	\quotation
+}{\endquotation}
 
 \usepackage{titlesec}
 \usepackage{tikz}
-\usepackage{parskip}
-
-% Cambiar el formato de numeración de secciones a números (1, 1.1, 1.2...)
-\renewcommand{\thesection}{\thechapter.\arabic{section}} % Para secciones: 1.1, 1.2...
-
-% Cambiar la numeración de subsecciones a letras (A, B, C...) en el apéndice
 
 
-% Cambiar el espaciado de los títulos para evitar páginas vacías
-\titlespacing*{\chapter}{0pt}{0.5cm}{1cm} % Espacio antes del capítulo (0.5cm) y después del capítulo (1cm)
-
-% Cambiar el título de "Capítulo" a "Pràctica" y mostrar solo el número sin alterar el índice
 \titleformat{\chapter}[display]{\normalfont\huge\bfseries}{Pràctica \thechapter}{0pt}{\vspace{0.2cm}\huge\bfseries\raggedright}
 
-% Datos del documento
 \title{\textbf{\huge{Informes de Pràctiques. \\ \vspace{0.2cm} Laboratori d'Electromagnetisme}}}
 \author{Grup A1}
 \date{\today}
 
 \begin{document}
 	
-	
 	\maketitle
-	
 	
 	\tableofcontents
 	\newpage
 	
 	
-	\chapter{Representació de Camps} 
+	\chapter{Representació de camps} 
+
+	\begin{chapterabstract}
+		En aquesta pràctica estudiem diferents problemes electrostàtics en medis conductors aprofitant la dualitat existent entre la densitat de corrent $\vec{J}$ i el vector desplaçament $\vec{D}$. El nostre objectiu és trobar experimentalment les superfícies equipotencials per a determinades geometries, amb una simetria tal que podem reduir el problema a dues dimensions espacials. Una de les distribucions de càrrega amb què treballem és un condensador de plaques planoparal·leles ideal; per aquest cas, a més a més, fem el càlcul de la seva capacitat per unitat de longitud, partint del teorema de Gauss.
+	\end{chapterabstract}
 	
-	\tikz \draw[dashed] (1,0) -- (\textwidth,0); \vspace{0.1cm} 
-	
-	\begin{center}
-		\textbf{Abstract} \par
-		\vspace{0.2cm}
-	\end{center}
-	
-	
-	En aquesta pràctica estudiem diferents problemes electrostàtics en medis conductors aprofitant la dualitat existent entre la densitat de corrent $\vec{J}$ i el vector desplaçament $\vec{D}$. El nostre objectiu és trobar experimentalment les superfícies equipotencials per a determinades geometries, amb una simetria tal que podem reduir el problema a dues dimensions espacials. Una de les distribucions de càrrega amb què treballem és un condensador de plaques planoparal·leles ideal; per aquest cas, a més a més, fem el càlcul de la seva capacitat per unitat de longitud, partint del teorema de Gauss. 
-	\vspace{0.1cm} 
-	
-	\tikz \draw[dashed] (1,0) -- (\textwidth,0);
-	
-	\section{Introducció i Fonament Teòric}
-	Per a materials lineals, isòtrops i homogenis, sota la presència d'un camp electrostàtic $\vec{E}$ s'apliquen les següents equacions:
-	\begin{itemize}
-		\item Si el medi és conductor tenim
-		\begin{align}
-			 \vec{\nabla} \cross \vec{E} = 0 \\
-			 \vec{J} = \sigma \vec{E} \label{eq1.2}  \\ 
-			 \vec{\nabla}\cdot \vec{J} = 0 \label{eq1.3}
-		\end{align}
-		\item Si el medi és dielèctric tenim
-		\begin{align}
-			\vec{\nabla} \cross \vec{E} = 0 \\
-			\vec{D} = \varepsilon \vec{E} \label{eq1.5} \\ 
-			\vec{\nabla}\cdot \vec{D} = 0 \label{eq1.6}
-		\end{align}
-	\end{itemize}
-	Per aquest tipus de medis $\varepsilon$ i $\sigma$ són constants, combinant les darreres equacions trobem:
+	\section{Introducció i fonament teòric}
+	Per a materials lineals, isòtrops i homogenis, sota la presència d'un camp electrostàtic $\vec{E}$ s'apliquen les següents equacions si el medi és conductor:
+	\begin{align}
+		\vec{\nabla} \cross \vec{E} = 0 \\
+		\vec{J} = \sigma \vec{E} \label{eq1.2}  \\ 
+		\vec{\nabla}\cdot \vec{J} = 0 \label{eq1.3}
+	\end{align}
+	O, si el medi és dielèctric:
+	\begin{align}
+		\vec{\nabla} \cross \vec{E} = 0 \\
+		\vec{D} = \varepsilon \vec{E} \label{eq1.5} \\ 
+		\vec{\nabla}\cdot \vec{D} = 0 \label{eq1.6}
+	\end{align}
+
+	Per aquest tipus de medis $\varepsilon$ i $\sigma$ són constants, així, combinant les darreres equacions trobem:
 	\begin{align}
 		\vec{\nabla} \cross \vec{J} = 0 \\
 		\vec{\nabla} \cross \vec{D} = 0
 	\end{align}
-	Això últim implica que tant $\vec{J}$ com $\vec{D}$ són conservatius i, per tant, es poden definir com el gradient canviat de signe d'un potencial, és a dir:
+	Això últim implica que tant $\vec{J}$ com $\vec{D}$ són camps conservatius i, per tant, es poden definir com el gradient (canviat de signe) d'una funció escalar, és a dir:
 	\begin{align}
 		\vec{J} = -\vec{\nabla}{U} \\
 		\vec{D} = -\vec{\nabla}{U'}
@@ -102,23 +82,37 @@
 	\end{equation}
 	que són les corresponents equacions de Laplace. Així, donat uns potencials escalars $U$ i $U'$ que satisfacin les condicions de contorn i \eqref{eq1.11}, podem trobar $\vec{J}$ i $\vec{D}$, respectivament.
 	
-	Si comparem les equacions \eqref{eq1.2} i \eqref{eq1.5} per una banda i les equacions \eqref{eq1.3} i \eqref{eq1.6}, podem veure que qualsevol solució per $\vec{J}$ és també una solució vàlida per $\vec{D}$, sempre que estiguem sota condicions de contorn equivalents i que ni $\sigma$ ni $\vec{E}$ presentin discontinuïtats. Per tant, si coneixem una solució per un medi conductor, podrem trobar-ne una pel medi dielèctric intercanviant $\varepsilon$ per $\sigma$.
+	Si comparem les equacions \eqref{eq1.2} i \eqref{eq1.5} per una banda i les equacions \eqref{eq1.3} i \eqref{eq1.6}, podem veure que qualsevol solució per $\vec{J}$ és també una solució vàlida per $\vec{D}$, sempre que estiguem sota condicions de contorn equivalents i que ni $\sigma$ ni $\vec{E}$ presentin discontinuïtats. Per tant, si coneixem una solució per un medi conductor, podrem trobar-ne una equivalent pel medi dielèctric intercanviant $\varepsilon$ per $\sigma$.
 	
-	Per poder calcular la capacitat per unitat de longitud del nostre condensador considerarem una superfície equipotencial que tanqui una de les plaques del condensador. En virtut del teorema de Gauss tindrem que:
+	Recordem que per poder calcular la capacitat per unitat de longitud d'un condensador de plaques planoparal·leles, considerem una superfície equipotencial que tanca una de les plaques del condensador. En virtut del teorema de Gauss tenim que:
 	
 	\begin{equation}
 		q = \varepsilon \int_S \vec{E}\cdot \vec{n}dS
 	\end{equation}
 	
-	Com que considerem que el condensador és infinitament llarg en la direcció $z$, podem assumir que el camp és constant en aquesta direcció i, per tant, $dS = Zdl$, on $dl$ és el diferencial de longitud a la intersecció de la superfície equipotencial amb un pla perpendicular al condensador POSAR FOTO. Amb això tenim que
+	Assumint que el condensador és infinitament llarg en la direcció $z$, podem assegurar que el camp és constant en aquesta direcció i, per tant, $dS = Zdl$, on $dl$ és el diferencial de longitud a la intersecció de la superfície equipotencial amb un pla perpendicular al condensador \textbf{POSAR FOTO}. Amb això tenim que
 	\begin{equation}
-		\frac{q}{Z} = \varepsilon \oint_C E dl
+		\frac{q}{Z} = \varepsilon \oint_C E dl \label{eq1.13}
 	\end{equation}
-	Si aproximem la integral per un sumatori tenim i calculem el camp $E_i$ segons
+	
+	\section{Metodologia experimental}
+	\subsection{Representació de corbes equipotencials}
+	Per tal de poder representar les línies equipotencials usem fulls de paper impregnats amb carbó de resistències compreses en un rang de 5 k$\Omega$ $-$ 20 k$\Omega$ per quadrat, que actuaran com a medis conductors (de conductivitat $\sigma$ homogènia) entre els elèctrodes. Les distribucions de càrrega (elèctrodes) les dibuixem usant un retolador que desprèn una tinta conductora, produïda per partícules de plata en suspensió en un líquid; per assegurar-nos que la conductivitat d'aquesta tinta esdevé màxima deixem reposar durant 20 minuts, aproximadament. Per evitar possibles problemes de falta de càrregues als elèctrodes, ens hem assegurat de dibuixar línies suficientment gruixudes.
+	
+	Hem treballat amb les següents 3 distribucions: dues línies verticals (que són la projecció d'un condensador de plaques planoparal·leles), dos punts (projecció de dos fils infinits) i dues línies secants amb un punt entre elles (projecció de dos plans infinits formant angle d'aproximadament 60 º amb un fil infinit entre els dos).
+	
+	Amb el pretext de generar el camp sobre les distribucions dibuixades, s'ha fixat el paper conductor (en el qual hem fet els dibuixos) sobre un suro usant xinxetes i hem connectat els elèctrodes (per a cada distribució per separat) a una font de corrent continu (DC) usant un parell de cables i més xinxetes. Per mesurar la diferència de potencial hem usat un multímetre, deixant un cable fixat a un dels dos elèctrodes (establint així una referència de potencial) i l'altre lliure per tal de fer mesures de $\Delta V$ a qualsevol altre punt del paper. Prèviament, però, ens hem assegurat què la diferència de potencial entre dos punts en els conductors (els elèctrodes dibuixats) no fos major de l'1\%\footnote{Recordem que, per ser aquests materials conductors, hem de tenir un potencial constant en tot el seu volum i, en particular, sobre la seva superfície.}.
+
+	Per dibuixar les corbes equipotencials usem el cable lliure del multímetre per buscar aquestes corbes sobre el paper. Marquem tots els punts que estan a un mateix potencial amb un llapis i, tot seguit, unim aquests punts amb una línia. Repetint això un seguit de cops podem construir vàries corbes equipotencials. Per tal d'assegurar-nos que es tanquen, és millor que comencem a buscar les corbes des de l'exterior dels nostres elèctrodes. Si comencem per l'interior, com que tindrem una densitat de corbes molt major, serà més fàcil que la línia escollida no s'acabi tancant. Veurem que ens interessa trobar corbes que tanquin els nostre elèctrodes per tal de poder aplicar el teorema de Gauss (en especial pel cas del condensador de plaques planoparal·leles).
+	
+	Finalment, per representar el camp elèctric $\vec{E}$, hem dibuixat línies que sortien dels elèctrodes i tallaven les corbes equipotencials perpendicularment (en ambdós casos). 
+	
+	\subsection{Càlcul de la capacitat del condensador}
+	Si aproximem la integral donada per l'equació \eqref{eq1.13} per un sumatori i calculem el camp $E_i$ segons
 	\begin{equation}
 		E_i \approx \frac{\Delta V_i}{\Delta r_i}
 	\end{equation}
-	on $\Delta r_i$ és la distància radial i $\Delta V_i$ és la diferència de potencial de l'element $\Delta l_i$ FIGURA!. Amb totes aquestes aproximacions tenim:
+	on $\Delta r_i$ és la distància radial i $\Delta V_i$ és la diferència de potencial de l'element $\Delta l_i$ tenim:
 	\begin{equation}
 		\frac{q}{Z} \approx \varepsilon \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i}
 	\end{equation}
@@ -126,46 +120,22 @@
 	\begin{equation}
 		c = \frac{q}{\Delta V}
 	\end{equation}
-	tenim que la capacitat per unitat de longitud, tenint en compte les aproximacions usades és:
+	tenim que la capacitat per unitat de longitud, sota les aproximacions usades és:
 	\begin{equation}
 		\frac{c}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i}  
 	\end{equation}
 	on $\Delta V$ és la diferència de potencial a la que hem sotmès les dues plaques del condensador.
 	
-	\section{Mètode Experimental}
-	Per tal de poder representar les línies equipotencials usem fulls de paper impregnats amb carbó de resistències compreses en un rang de 5 k$\Omega$ $-$ 20 k$\Omega$ per quadrat, que actuaran com a medis conductors (de conductivitat $\sigma$ homogènia) entre els elèctrodes. 
+	\subsection{Simulacions}
+	\section{Resultats i discussió}
 	
-	Les distribucions de càrrega (elèctrodes), per la seva banda les dibuixem usant un retolador que desprèn una tinta conductora, produïda per partícules de plata en suspensió en un líquid.  
+	\subsection{Condensador de plaques planoparal·leles}
 	
-	El procediment experimental és el següent:
-	\begin{enumerate}
-		\item Tenint el full sobre la taula i havent agitat prèviament el retolador durant 10-20 segons, dibuixem la distribució desitjada. Per fer-ho bé cal pressionar el retolador de plata i, simultàniament, moure'l sobre el paper conductor dibuixant una línia/punt sòlida/sòlid. La velocitat i la pressió exercida pel retolador determinen l'amplada de la línia.
-		\item Posem el paper sobre el suro i el fixem amb les xinxetes.
-		\item Connectem els elèctrodes dibuixats al paper a una font de corrent continu, usant una xinxeta i els cables subministrats.
-		\item
-	\end{enumerate}
-	\section{Resultats i Discussió}
-	\subsection{Condensador de Plaques Planoparal·leles}
-	\subsection{Fils Infinits}
-	
-	\subsection{Fil Infinit i Dos Plans}
+	\subsection{Fils infinits}
+
+	\subsection{Fil infinit i dos plans}
 	
 	\section{Conclusions}
 	
-	\newpage
-	
-	\appendix % Esto cambia a numeración de apéndices automáticamente
-	
-	% Aquí se mantiene el título, pero cambiamos a \chapter* para evitar la numeración del capítulo
-	\chapter*{Apèndix A\\[0.5cm] Dades Experimentals i Incerteses}
-	\addcontentsline{toc}{chapter}{A. Dades experimentals i incerteses} % Añadir al índice sin numeración
-	
-	% Cambiar el contador de subsecciones para los apéndices
-	\setcounter{section}{0} % Reinicia la numeración de secciones en los apéndices
-	\renewcommand{\thesection}{A.\arabic{section}} % Poner A antes de las secciones en los apéndices
-	
-	\section{Text del Apèndix A} % Apéndice A.1
-	
-	\section{Altres dades} % Apéndice A.2
-	
+
 \end{document}

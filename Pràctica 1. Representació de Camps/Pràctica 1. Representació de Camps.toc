@@ -1,12 +1,12 @@
 \babel@toc {catalan}{}\relax 
-\contentsline {chapter}{\numberline {1}Representació de Camps}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introducció i Fonament Teòric}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Mètode Experimental}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Resultats i Discussió}{4}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Condensador de Plaques Planoparal·leles}{4}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Fils Infinits}{4}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Fil Infinit i Dos Plans}{4}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {1}Representació de camps}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introducció i fonament teòric}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Metodologia experimental}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Representació de corbes equipotencials}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Càlcul de la capacitat del condensador}{3}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Simulacions}{4}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Resultats i discussió}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Condensador de plaques planoparal·leles}{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Fils infinits}{4}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Fil infinit i dos plans}{4}{subsection.1.3.3}%
 \contentsline {section}{\numberline {1.4}Conclusions}{4}{section.1.4}%
-\contentsline {chapter}{A. Dades experimentals i incerteses}{5}{appendix*.2}%
-\contentsline {section}{\numberline {A.1}Text del Apèndix A}{5}{section.Alph0.1}%
-\contentsline {section}{\numberline {A.2}Altres dades}{5}{section.Alph0.2}%

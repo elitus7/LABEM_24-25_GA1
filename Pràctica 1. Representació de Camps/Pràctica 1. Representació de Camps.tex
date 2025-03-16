@@ -1,6 +1,9 @@
 \documentclass[a4paper,10.5pt]{report}
 
 \usepackage[toc]{appendix}
+\renewcommand{\appendixname}{Annexos}
+\renewcommand{\appendixtocname}{Annexos}
+\renewcommand{\appendixpagename}{Annexos}
 \usepackage[catalan]{babel}
 \usepackage{tcolorbox}
 \usepackage{parskip}
@@ -103,16 +106,13 @@ que són les corresponents equacions de Laplace. Així, donat uns potencials esc
 Si comparem les equacions \eqref{eq1.2} i \eqref{eq1.5} per una banda i les equacions \eqref{eq1.3} i \eqref{eq1.6}, podem veure que qualsevol solució per $\vec{J}$ és també una solució vàlida per $\vec{D}$, sempre que estiguem sota condicions de contorn equivalents i que ni $\sigma$ ni $\vec{E}$ presentin discontinuïtats. Per tant, si coneixem una solució per un medi conductor, podrem trobar-ne una equivalent pel medi dielèctric intercanviant $\varepsilon$ per $\sigma$.
 
 Recordem que per poder calcular la capacitat per unitat de longitud d'un condensador de plaques planoparal·leles, considerem una superfície equipotencial que tanca una de les plaques del condensador. En virtut del teorema de Gauss tenim que:
-
 \begin{equation}
 	q = \varepsilon \int_S \vec{E}\cdot \vec{n}dS
 \end{equation}
-
 Assumint que el condensador és infinitament llarg en la direcció $z$, podem assegurar que el camp és constant en aquesta direcció i, per tant, $dS = Zdl$, on $dl$ és el diferencial de longitud a la intersecció de la superfície equipotencial amb un pla perpendicular al condensador \textbf{POSAR FOTO}. Amb això tenim que
 \begin{equation}
 	\frac{q}{Z} = \varepsilon \oint_C E dl \label{eq1.13}
 \end{equation}
-
 \section{Metodologia experimental}
 \subsection{Representació de corbes equipotencials}
 Per tal de poder representar les línies equipotencials usem fulls de paper impregnats amb carbó de resistències compreses en un rang de 5 k$\Omega$ $-$ 20 k$\Omega$ per quadrat, que actuaran com a medis conductors (de conductivitat $\sigma$ homogènia) entre els elèctrodes. Les distribucions de càrrega (elèctrodes) les dibuixem usant un retolador que desprèn una tinta conductora, produïda per partícules de plata en suspensió en un líquid (veure figura \ref{fig1.1a}); per assegurar-nos que la conductivitat d'aquesta tinta esdevé màxima deixem reposar durant 20 minuts, aproximadament. Per evitar possibles problemes de falta de càrregues als elèctrodes, ens hem assegurat de dibuixar línies suficientment gruixudes.
@@ -135,8 +135,6 @@ Per tal de poder representar les línies equipotencials usem fulls de paper impr
 	\caption{Paper conductor i muntatge experimental per a la representació de les corbes equipotencials.}
 	\label{fig1.1}
 \end{figure}
-
-
 
 Hem treballat amb les següents 3 distribucions: dues línies verticals (que són la projecció d'un condensador de plaques planoparal·leles), dos punts (projecció de dos fils infinits) i dues línies secants amb un punt entre elles (projecció de dos plans infinits formant angle d'aproximadament 60 º amb un fil infinit entre els dos).
 
@@ -195,10 +193,13 @@ Que és l'equació d'una esfera, de manera que, teòricament, les corbes equipot
 
 \newpage
 \begin{appendices}
+%SI TOQUEU AIXÒ ELS ANNEXOS PETEN.
+
 \textbf{\Huge{Annexos}}
 \renewcommand{\thesection}{\Alph{section}} % Cambia la numeración de capítulos a letras
 \renewcommand{\theequation}{\thesection.\arabic{equation}} % Cambia numeración de ecuaciones
 \setcounter{equation}{0} % Reinicia contador de ecuaciones en cada sección
+
 \section{Deducció de l'equació \eqref{eqsuppon}}
 \label{an:a}
 Per deduir l'expressió donada per l'equació \eqref{eqsuppon} ens basarem ens els resultats del problema 2.18 de la llista de problemes de l'assignatura. Suposem dos fils infinits rectilinis i carregats amb densitat de càrrega uniforme $\lambda$ i -$\lambda$ separats per una distància $d=2a$. Siguin $\rho_1$ i $\rho_2$ les distàncies radials de cada fil al punt en el qual volem calcular el camp i el potencial. Per la simetria del sistema podem assegurar que $\vec{E}(\vec{r}) = E(\rho) \vec{e}_{\rho}$, de forma que podem aplicar el teorema de Gauss com se segueix:
@@ -206,12 +207,12 @@ Per deduir l'expressió donada per l'equació \eqref{eqsuppon} ens basarem ens e
 \[
 \left.
 \begin{array}{c}
-	\oint \vec{E} \cdot d\vec{S} = E 2\pi \rho L \\[10pt]
-	\frac{Q_{int}}{\epsilon_0} = \frac{1}{\epsilon_0} \int \lambda \, dl = \frac{\lambda}{\epsilon_0} L
+	\oint \vec{E} \cdot \mathrm{d}\vec{S} = E 2\pi \rho L \\[10pt]
+	\frac{Q_{int}}{\varepsilon_0} = \frac{1}{\varepsilon_0} \int \lambda \, \mathrm{d}l = \frac{\lambda}{\varepsilon_0} L
 \end{array}
 \right\}
 \quad \Rightarrow \quad 
-\vec{E} = \frac{\lambda}{2\pi \epsilon_0} \frac{1}{\rho} \vec{e}_{\rho}
+\vec{E} = \frac{\lambda}{2\pi \varepsilon_0} \frac{1}{\rho} \vec{e}_{\rho}
 \]
 
 Així, essent $\vec{E_1}$ el camp associat al fil amb densitat $\lambda$ i $\vec{E_2}$ el camp associat al fil amb densitat -$\lambda$, tenim:

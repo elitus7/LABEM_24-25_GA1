@@ -274,10 +274,10 @@ INPUT .\Pràctica 1. Representació de Camps.out
 INPUT .\Pràctica 1. Representació de Camps.out
 INPUT Pràctica 1. Representació de Camps.out
 INPUT Pràctica 1. Representació de Camps.out
+OUTPUT Pràctica 1. Representació de Camps.pdf
 INPUT .\Pràctica 1. Representació de Camps.out
 INPUT .\Pràctica 1. Representació de Camps.out
 OUTPUT Pràctica 1. Representació de Camps.out
-OUTPUT Pràctica 1. Representació de Camps.pdf
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
@@ -310,12 +310,12 @@ INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tf
 INPUT .\Pràctica 1. Representació de Camps.toc
 INPUT .\Pràctica 1. Representació de Camps.toc
 INPUT Pràctica 1. Representació de Camps.toc
-OUTPUT Pràctica 1. Representació de Camps.toc
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
+OUTPUT Pràctica 1. Representació de Camps.toc
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
@@ -360,7 +360,6 @@ INPUT .\screenshot004.png
 INPUT .\screenshot004.png
 INPUT .\screenshot004.png
 INPUT .\screenshot004.png
-INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
 INPUT Pràctica 1. Representació de Camps.aux
 INPUT .\Pràctica 1. Representació de Camps.out
 INPUT .\Pràctica 1. Representació de Camps.out
@@ -374,8 +373,6 @@ INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
-INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
 INPUT C:\Users\ericg\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb

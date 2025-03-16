@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  16 MAR 2025 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  16 MAR 2025 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -963,23 +963,23 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [5 <./screenshot004.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 200.
+(hyperref)                removing `\hbox' on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 200.
+(hyperref)                removing `\mathsurround' on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 200.
+(hyperref)                removing `\z@' on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\unskip' on input line 200.
+(hyperref)                removing `\unskip' on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@italiccorr' on input line 200.
+(hyperref)                removing `\@@italiccorr' on input line 202.
 
 
 
@@ -995,10 +995,10 @@ has not changed.
 (rerunfilecheck)             Checksum: 3B2836B84900831554D1F24A708A805F;2378.
  ) 
 Here is how much of TeX's memory you used:
- 26839 strings out of 473682
- 511168 string characters out of 5719215
- 899333 words of memory out of 5000000
- 49452 multiletter control sequences out of 15000+600000
+ 26854 strings out of 473682
+ 511421 string characters out of 5719215
+ 899421 words of memory out of 5000000
+ 49457 multiletter control sequences out of 15000+600000
  570876 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,12n,121p,1229b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1011,22 +1011,24 @@ fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ericg/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/ericg/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ericg/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/e
-ricg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:
-/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10
+ricg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:
+/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7
 .pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr12.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr17.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr5.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ericg/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ericg/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ericg/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/eric
-g/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "Pràctica 1. Representació de Camps.pdf" (7 pages, 9370735 
+cm/cmr10.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr12.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr17.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ericg/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ericg/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ericg/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ericg/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ericg
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
+ers/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b>
+Output written on "Pràctica 1. Representació de Camps.pdf" (7 pages, 9390769 
 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

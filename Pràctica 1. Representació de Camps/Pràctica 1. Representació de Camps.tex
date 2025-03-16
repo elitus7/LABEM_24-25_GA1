@@ -14,7 +14,7 @@
 \usepackage[left=1.95cm, right=1.95cm, top=20mm, bottom=20mm]{geometry} 
 \usepackage{fancyhdr}
 \usepackage{braket}
-\usepackage{amssymb}
+\usepackage{amsmath, amssymb, amsfonts}
 \usepackage{subcaption}
 \usepackage{cancel}
 \usepackage{float}
@@ -178,7 +178,7 @@ Les corbes equipotencials són les que es poden observar a la figura \ref{figfil
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{screenshot004}
-	\caption{Corbes equipotencials (en blanc) i línies de camp $\vec{E}$ (en lila) pel}
+	\caption{Corbes equipotencials (en blanc) i línies de camp $\vec{E}$ (en lila) pel cas dels dos fils infinits.}
 	\label{figfils}
 \end{figure}
 
@@ -186,7 +186,7 @@ Els resultats teòrics indiquen que, en un sistema de dos fils infinits, les cor
 \begin{equation}
 	y^2+\left( x+a\frac{1+k^2}{1-k^2}\right)^2 = a^2\left( \frac{2k}{1-k^2}\right)^2  \label{eqsuppon}
 \end{equation}
-Que és l'equació d'una esfera, de manera que, teòricament, les corbes equipotencials haurien de ser circumferències de radi $R = a\frac{2k}{1-k^2}$ que tenen el seu centre lleugerament desplaçat en l'eix de les $x$ per un factor $a\frac{1+k^2}{1-k^2}$. Notem que tant $a$ com $k$ són dues constants\footnote{Aquest resultat es demostrar a l'annex ANNEX!.}. El fet que els nostres resultats es desviïn del predit per la teoria és degut als diferents errors experimentals comesos durant l'evolució de la pràctica: S'assumeix que el paper conductor té una conductivitat $\sigma$ homogènia, però això no necessàriament ha de ser així, de forma que pot alterar els resultats de l'experiment; els punts que representen la projecció dels dos fils infinits no són perfectament rodons, ja que han sigut dibuixats a ma; les corbes equipotencials i les línies de camp es poden veure afectats per l'efecte punta en les vores dels materials carregats, on s'acumula més densitat de càrrega.
+Que és l'equació d'una esfera, de manera que, teòricament, les corbes equipotencials haurien de ser circumferències de radi $R = a\frac{2k}{1-k^2}$ que tenen el seu centre lleugerament desplaçat en l'eix de les $x$ per un factor $a\frac{1+k^2}{1-k^2}$. Notem que tant $a$ com $k$ són dues constants\footnote{Els valors de les constants i la demostració d'aquest resultat es pot trobar a l'annex \ref{an:a}.}. El fet que els nostres resultats es desviïn del predit per la teoria és degut als diferents errors experimentals comesos durant l'evolució de la pràctica: S'assumeix que el paper conductor té una conductivitat $\sigma$ homogènia, però això no necessàriament ha de ser així, de forma que pot alterar els resultats de l'experiment; els punts que representen la projecció dels dos fils infinits no són perfectament rodons, ja que han sigut dibuixats a ma; les corbes equipotencials i les línies de camp es poden veure afectats per l'efecte punta en les vores dels materials carregats, on s'acumula més densitat de càrrega.
 
 
 \subsection{Fil infinit i dos plans}
@@ -195,10 +195,61 @@ Que és l'equació d'una esfera, de manera que, teòricament, les corbes equipot
 
 \newpage
 \begin{appendices}
-	\textbf{\Huge{Annexos}}
-	\renewcommand{\thesection}{\Alph{section}} % Cambia la numeración de capítulos a letras
-	\section{Deducció de l'equació \eqref{eqsuppon}}
-		
+\textbf{\Huge{Annexos}}
+\renewcommand{\thesection}{\Alph{section}} % Cambia la numeración de capítulos a letras
+\renewcommand{\theequation}{\thesection.\arabic{equation}} % Cambia numeración de ecuaciones
+\setcounter{equation}{0} % Reinicia contador de ecuaciones en cada sección
+\section{Deducció de l'equació \eqref{eqsuppon}}
+\label{an:a}
+Per deduir l'expressió donada per l'equació \eqref{eqsuppon} ens basarem ens els resultats del problema 2.18 de la llista de problemes de l'assignatura. Suposem dos fils infinits rectilinis i carregats amb densitat de càrrega uniforme $\lambda$ i -$\lambda$ separats per una distància $d=2a$. Siguin $\rho_1$ i $\rho_2$ les distàncies radials de cada fil al punt en el qual volem calcular el camp i el potencial. Per la simetria del sistema podem assegurar que $\vec{E}(\vec{r}) = E(\rho) \vec{e}_{\rho}$, de forma que podem aplicar el teorema de Gauss com se segueix:
+
+\[
+\left.
+\begin{array}{c}
+	\oint \vec{E} \cdot d\vec{S} = E 2\pi \rho L \\[10pt]
+	\frac{Q_{int}}{\epsilon_0} = \frac{1}{\epsilon_0} \int \lambda \, dl = \frac{\lambda}{\epsilon_0} L
+\end{array}
+\right\}
+\quad \Rightarrow \quad 
+\vec{E} = \frac{\lambda}{2\pi \epsilon_0} \frac{1}{\rho} \vec{e}_{\rho}
+\]
+
+Així, essent $\vec{E_1}$ el camp associat al fil amb densitat $\lambda$ i $\vec{E_2}$ el camp associat al fil amb densitat -$\lambda$, tenim:
+\begin{align}
+	\vec{E_1} & = \frac{\lambda}{2\pi \varepsilon_0} \frac{1}{\rho_1} \vec{e}_{\rho_1} \\
+	\vec{E_2} & = -\frac{\lambda}{2\pi \varepsilon_0} \frac{1}{\rho_2} \hat{e}_{\rho_2}
+\end{align}
+on:
+\begin{align}
+	\rho_1 & = \sqrt{(x-a)^2+y^2} \\
+	\rho_2 & = \sqrt{(x+a)^2+y^2} 
+\end{align}
+
+Si calculem el camp usant que
+\begin{equation}
+	\phi(r) = -\int_{\vec{r}_{ref}}^{\vec{r}}\vec{E}(\vec{r})\cdot \mathrm{d}\vec{r} 
+\end{equation}
+i aplicant el principi de superposició, és a dir
+\begin{equation}
+	\phi = \phi_1+\phi_2
+\end{equation}
+trobem que, el potencial generat per aquesta distribució de càrrega obeeix la següent equació:
+\begin{equation}
+	\phi = \frac{\lambda}{2\pi \varepsilon_0}\ln\sqrt{\frac{(x+a)^2+y^2}{(x-a)^2+y^2}}
+\end{equation}
+Escollint
+\begin{equation}
+	k \equiv e^{\frac{\phi2\pi\varepsilon_0}{\lambda}} = \sqrt{\frac{(x+a)^2+y^2}{(x-a)^2+y^2}}
+\end{equation}
+i reescrivint segons
+\begin{equation}
+	k^2[(x-a)^2+y^2]=(x+a)^2+y^2
+\end{equation}  
+podem desenvolupar fins a arribar a
+\begin{equation}
+	\boxed{y^2+\left( x+a\frac{1+k^2}{1-k^2}\right)^2 = a^2\left( \frac{2k}{1-k^2}\right)^2}
+\end{equation}
+que és el que estàvem buscant.
 \end{appendices}
 
 

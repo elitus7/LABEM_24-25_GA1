@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  17 MAR 2025 12:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  17 MAR 2025 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -892,7 +892,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
 (C:\Users\W10\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<screenshot001.png, id=82, 1505.625pt x 565.36218pt>
+<screenshot001.png, id=106, 1505.625pt x 565.36218pt>
 File: screenshot001.png Graphic file (type png)
 <use screenshot001.png>
 Package pdftex.def Info: screenshot001.png  used on input line 62.
@@ -918,18 +918,18 @@ Cap\'{\i }tol 1.
 [2
 
 ]
-<screenshot002.png, id=150, 389.95688pt x 420.82219pt>
+<screenshot002.png, id=180, 389.95688pt x 420.82219pt>
 File: screenshot002.png Graphic file (type png)
 <use screenshot002.png>
 Package pdftex.def Info: screenshot002.png  used on input line 124.
 (pdftex.def)             Requested size: 218.94255pt x 236.26883pt.
-<screenshot003.png, id=151, 1541.76pt x 1156.32pt>
+<screenshot003.png, id=181, 1541.76pt x 1156.32pt>
 File: screenshot003.png Graphic file (type png)
 <use screenshot003.png>
 Package pdftex.def Info: screenshot003.png  used on input line 131.
 (pdftex.def)             Requested size: 218.94255pt x 164.19505pt.
  [3 <./screenshot002.png> <./screenshot003.png>]
-<screenshot004.png, id=169, 1319.68031pt x 959.83594pt>
+<screenshot004.png, id=199, 1319.68031pt x 959.83594pt>
 File: screenshot004.png Graphic file (type png)
 <use screenshot004.png>
 Package pdftex.def Info: screenshot004.png  used on input line 178.
@@ -942,43 +942,43 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Cap\'{\i }tol 2.
 [6
 
-]
+] [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 217.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 217.
+(hyperref)                removing `\hbox' on input line 258.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 217.
+(hyperref)                removing `\mathsurround' on input line 258.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\unskip' on input line 217.
+(hyperref)                removing `\z@' on input line 258.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@italiccorr' on input line 217.
+(hyperref)                removing `\unskip' on input line 258.
 
-[7
 
-] [8] (Pràctica 1. Representació de Camps.aux)
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@italiccorr' on input line 258.
+
+[8
+
+] [9] (Pràctica 1. Representació de Camps.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
 Package rerunfilecheck Info: File `"Pràctica 1. Representació de Camps".out' 
 has not changed.
-(rerunfilecheck)             Checksum: 7EA98C7296DB1816FAD1FB5542AEC15D;3443.
+(rerunfilecheck)             Checksum: 32DA2ACB8FCDF92310388E66FB7090D1;4715.
  ) 
 Here is how much of TeX's memory you used:
- 26774 strings out of 475248
- 506193 string characters out of 5758756
+ 26796 strings out of 475248
+ 506523 string characters out of 5758756
  1935785 words of memory out of 5000000
- 47805 multiletter control sequences out of 15000+600000
+ 47812 multiletter control sequences out of 15000+600000
  570876 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,12n,107p,1229b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1004,10 +1004,10 @@ c/amsfonts/cm/cmr8.pfb><C:/Users/W10/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmr9.pfb><C:/Users/W10/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/W10/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "Pràctica 1. Representació de Camps.pdf" (9 pages, 9397580 
-bytes).
+Output written on "Pràctica 1. Representació de Camps.pdf" (10 pages, 9409565
+ bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 185 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
 

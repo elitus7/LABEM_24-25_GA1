@@ -184,9 +184,15 @@ tenim que la capacitat per unitat de longitud, sota les aproximacions usades és
 on $\Delta V$ és la diferència de potencial a la que hem sotmès les dues plaques del condensador.
 
 \subsection{Simulacions}
-Els codis de les simulacions es poden trobar a l'annex \ref{an:a4}
+Els codis de les simulacions es poden trobar a l'annex \ref{an:a4}.
 
-\textbf{S'HA DE FER}
+Per la simulació del condensador planoparal·lel, hem considerat la projecció com la contribució de 200 carregues puntuals (totes del mateix valor, pel fil esquerra de valor -q, pel dret q) distribuïdes uniformement a través de cada fil. Un fil es troba a $x = d/2$, i el segon a $x = - d/2$. Les carregues van des de $y = -H/2$ fins $y = H/2$. Per a cada una de les càrregues, hem calculat la seva contribució al camp elèctric i al potencial elèctric en tots els punts de la malla $(X, Y)$, que ho hem fet utilitzant el principi de superposició.
+
+Per a la simulació dels dos fils infinits paral·lels, hem considerat la seva projecció com dues càrregues puntuals separades una distància $(d+2r)$, on aquest valor correspon a la separació entre els centres dels discos dibuixats experimentalment.
+
+Hem definit les funcions que descriuen el potencial i el camp elèctric, que corresponen a les expressions analítiques d'aquests magnituds per a una càrrega puntual. Es calcula la contribució de cada càrrega en tots els punts de la malla i  apliquem el principi de superposició per obtenir el camp elèctric i el potencial total en cada punt de l’espai.
+
+Per la simulació de........
 
 \section{Resultats i discussió}
 Els resultats experimentals es poden trobar a l'annex \ref{an:a2}.

@@ -167,7 +167,7 @@ Finalment, per representar el camp elèctric $\vec{E}$, hem dibuixat línies que
 \subsection{Càlcul de la capacitat del condensador}
 Si aproximem la integral donada per l'equació \eqref{eq1.13} per un sumatori i calculem el camp $E_i$ segons
 \begin{equation}
-	E_i \approx \frac{\Delta V_i}{\Delta r_i}
+	E_i \approx \frac{\Delta V_i}{\Delta r_i} \label{eq1.14}
 \end{equation}
 on $\Delta r_i$ és la distància radial i $\Delta V_i$ és la diferència de potencial de l'element $\Delta l_i$ tenim:
 \begin{equation}
@@ -179,7 +179,7 @@ Usant que la capacitat d'un condensador de plaques planoparal·leles es correspo
 \end{equation}
 tenim que la capacitat per unitat de longitud, sota les aproximacions usades és:
 \begin{equation}
-	\frac{c}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} \label{eq1.17}
+	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} \label{eq1.17}
 \end{equation}
 on $\Delta V$ és la diferència de potencial a la que hem sotmès les dues plaques del condensador.
 
@@ -196,6 +196,7 @@ Per la simulació de........
 
 \section{Resultats i discussió}
 Els resultats experimentals es poden trobar a l'annex \ref{an:a2}.
+
 \subsection{Condensador de plaques planoparal·leles}
 La primera configuració estudiada correspon a un condensador planoparal·lel, format per dos plans infinits (en l'eix $Z$) carregats i separats per una distància $d$. En projectar aquests plans sobre el pla $XY$, es representen com dos fils finits paral·lels separats també per una distància $d$. 
 
@@ -205,7 +206,17 @@ A les vores de les plaques, es manifesta l’efecte de vora, on el camp deixa de
 
 [NO ESTÀ ACABAT]
 
+Com ja hem comentat abans podem utilitzar la llei de gauss per calcular la càrrega per unitat de longitud que tindria el condensador infinitament llarg en la direccó $Z$. Per fer-ho utilitzarem l'expressió \eqref{eq1.17} abans deduida, i les dades experiemntals que presentem en l'annex \ref{an:a2}, amb tot aixó resuta:
 
+\begin{equation}
+	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} = (2,06 \pm 0,21)\varepsilon 
+\end{equation}
+
+Aixó no es exactament el que esperavem (\textcolor{red}{poner que era lo que esperavmamos teoricamente y el error relativo}). Hi ha principalment dos motius pels cuals no hem obtingut la càrrega per unitat de longitud real, i es que experiementalment hauriem de haver fet més punts per tenir unes linies de camp més precises i així poder fer una molt millor aproximació a la integral donada per \eqref{eq1.17}. L'altre font d'error, i la mes notable, es que per que aquesta aproximació sigui lo mes bona posible requereix que l'aporixiomació donada per \eqref{eq1.14} sigui lo mes acurada posbile, i aixó suposa que les linies equipotencials sobre les que mesurem la diferencia de potencial per sbaer el camp allà han de ser lo mes proximes posibles, ja que en veritat:
+\begin{equation}
+	E = \frac{\partial V}{\partial r}
+\end{equation}
+On E es el modul del camp, i $\partial r$ es el diferencial de longitud en la direccó del camp (i.e. perpendicular a les linies equipotencials), per lo que si mesurem un  $\Delta r$ haurà de ser petit, cosa que veient les nostres linies experiemntals de potencial no es cert.
 \begin{figure}[h]
 	\centering
 	\begin{subfigure}{0.45\linewidth}

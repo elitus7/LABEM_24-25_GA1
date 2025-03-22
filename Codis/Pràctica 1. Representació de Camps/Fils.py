@@ -39,8 +39,4 @@ for q, pos in charges:
 ax.set_aspect('equal')
 ax.set_xticks([])
 ax.set_yticks([])
-ax.spines['top'].set_visible(True)
-ax.spines['right'].set_visible(True)
-ax.spines['left'].set_visible(True)
-ax.spines['bottom'].set_visible(True)
 plt.show()

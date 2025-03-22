@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.8)  21 MAR 2025 23:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.8)  22 MAR 2025 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -976,17 +976,35 @@ File: screenshot003.png Graphic file (type png)
 Package pdftex.def Info: screenshot003.png  used on input line 151.
 (pdftex.def)             Requested size: 218.94255pt x 164.19505pt.
  [3 <./screenshot002.png> <./screenshot003.png>] [4]
-<screenshot004.png, id=227, 1319.68031pt x 959.83594pt>
+<dibplaques.png, id=227, 1606.0pt x 1168.365pt>
+File: dibplaques.png Graphic file (type png)
+<use dibplaques.png>
+Package pdftex.def Info: dibplaques.png  used on input line 213.
+(pdftex.def)             Requested size: 215.08525pt x 156.49014pt.
+<figplaques1.png, id=228, 602.25pt x 518.93875pt>
+File: figplaques1.png Graphic file (type png)
+<use figplaques1.png>
+Package pdftex.def Info: figplaques1.png  used on input line 220.
+(pdftex.def)             Requested size: 214.6319pt x 184.9429pt.
+<screenshot004.png, id=230, 1319.68031pt x 959.83594pt>
 File: screenshot004.png Graphic file (type png)
 <use screenshot004.png>
-Package pdftex.def Info: screenshot004.png  used on input line 209.
+Package pdftex.def Info: screenshot004.png  used on input line 237.
 (pdftex.def)             Requested size: 218.94255pt x 159.2302pt.
-<figfils.png, id=228, 462.528pt x 346.896pt>
+<figfils.png, id=231, 462.528pt x 346.896pt>
 File: figfils.png Graphic file (type png)
 <use figfils.png>
-Package pdftex.def Info: figfils.png  used on input line 216.
+Package pdftex.def Info: figfils.png  used on input line 244.
 (pdftex.def)             Requested size: 243.27116pt x 182.45659pt.
- [5 <./screenshot004.png> <./figfils.png>] [6]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./dibplaques.png> <./figplaques1.png>]
+
+LaTeX Warning: Reference `fig:1.4a' on page 6 undefined on input line 265.
+
+[6 <./screenshot004.png> <./figfils.png>]
 Cap\'{\i }tol 2.
 [7
 
@@ -995,23 +1013,23 @@ Cap\'{\i }tol 2.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 314.
+(hyperref)                removing `\hbox' on input line 349.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 314.
+(hyperref)                removing `\mathsurround' on input line 349.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 314.
+(hyperref)                removing `\z@' on input line 349.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\unskip' on input line 314.
+(hyperref)                removing `\unskip' on input line 349.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@italiccorr' on input line 314.
+(hyperref)                removing `\@@italiccorr' on input line 349.
 
 [10
 
@@ -1020,48 +1038,53 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `"Informe de Pràctiques".out' has not change
 d.
-(rerunfilecheck)             Checksum: B5B1365799709867FB1B59B58A3532A6;5532.
+(rerunfilecheck)             Checksum: 8349EDBDA9DD798B0A06952B72B56C8D;5532.
  ) 
 Here is how much of TeX's memory you used:
- 28961 strings out of 474486
- 538800 string characters out of 5743756
+ 28993 strings out of 474486
+ 539359 string characters out of 5743756
  2422542 words of memory out of 5000000
- 50615 multiletter control sequences out of 15000+600000
- 573181 words of font info for 92 fonts, out of 8000000 for 9000
+ 50645 multiletter control sequences out of 15000+600000
+ 573518 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,12n,107p,1215b,2119s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\natvi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti
 1000.pk> <C:\Users\natvi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\tcbx1200.pk> <C:\Users\natvi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\tcrm1000.pk><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmbsy10.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/natvi/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/natvi/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/natvi/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/natv
-i/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/U
-sers/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.p
-fb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi7.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi9.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr12.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/natvi/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/natvi/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/natvi/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/natvi
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/User
-s/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><
-C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy7.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "Informe de Pràctiques.pdf" (15 pages, 9586408 bytes).
+0\tcrm0900.pk> <C:\Users\natvi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\tcbx1200.pk> <C:\Users\natvi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\tcrm1000.pk><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/natvi/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/natvi/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/natvi/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/natvi/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/User
+s/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mmi5.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi7.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi9.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/natvi/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/natvi/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/natvi/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/natvi/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users
+/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
+:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9
+.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy7.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmti10.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on "Informe de Pràctiques.pdf" (15 pages, 12635524 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 182 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 554 PDF objects out of 1000 (max. 8388607)
+ 183 named destinations out of 1000 (max. 500000)
+ 272 words of extra memory for PDF output out of 10000 (max. 10000000)
 

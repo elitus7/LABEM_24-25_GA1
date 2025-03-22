@@ -34,8 +34,10 @@ for q, pos in charges:
 fig, ax = plt.subplots(figsize=(6, 6))
 ax.streamplot(x, y, Ex, Ey, color=np.log(np.hypot(Ex, Ey)), cmap='plasma', density=2, linewidth=0.5)
 ax.contour(X, Y, Vt, levels=np.linspace(Vt.min(), Vt.max(), 20), colors='black', linewidths=0.5, linestyles='solid')
+
 for q, pos in charges:
     ax.plot(*pos, 'ro' if q > 0 else 'bo', markersize=2)
+    
 ax.set_aspect('equal')
 plt.xticks([])
 plt.yticks([])

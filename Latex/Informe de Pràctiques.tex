@@ -186,39 +186,67 @@ on $\Delta V$ és la diferència de potencial a la que hem sotmès les dues plaq
 \subsection{Simulacions}
 Els codis de les simulacions es poden trobar a l'annex \ref{an:a4}.
 
-Per la simulació del condensador planoparal·lel, hem considerat la projecció com la contribució de 200 carregues puntuals (totes del mateix valor, pel fil esquerra de valor -q, pel dret q) distribuïdes uniformement a través de cada fil. Un fil es troba a $x = d/2$, i el segon a $x = - d/2$. Les carregues van des de $y = -H/2$ fins $y = H/2$. Per a cada una de les càrregues, hem calculat la seva contribució al camp elèctric i al potencial elèctric en tots els punts de la malla $(X, Y)$, que ho hem fet utilitzant el principi de superposició.
+Per la simulació del condensador planoparal·lel, considerem la projecció com la contribució de 200 carregues puntuals (totes del mateix valor, pel fil esquerra de valor $-q$, pel dret $q$) distribuïdes uniformement a través de cada fil. Un fil es troba a $x = d/2$, i el segon a $x = - d/2$. Les carregues van des de $y = -H/2$ fins $y = H/2$. Per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$, que ho fem usant el principi de superposició.
 
-Per a la simulació dels dos fils infinits paral·lels, hem considerat la seva projecció com dues càrregues puntuals separades una distància $(d+2r)$, on aquest valor correspon a la separació entre els centres dels discos dibuixats experimentalment.
+Per a la simulació dels dos fils infinits paral·lels, considerem la seva projecció com dues càrregues puntuals separades una distància $(d+2r)$, on aquest valor correspon a la separació entre els centres dels discos dibuixats experimentalment.
 
-Hem definit les funcions que descriuen el potencial i el camp elèctric, que corresponen a les expressions analítiques d'aquests magnituds per a una càrrega puntual. Es calcula la contribució de cada càrrega en tots els punts de la malla i  apliquem el principi de superposició per obtenir el camp elèctric i el potencial total en cada punt de l’espai.
+Definim les funcions que descriuen el potencial i el camp elèctric, que corresponen a les expressions analítiques d'aquests magnituds per a una càrrega puntual. Es calcula la contribució de cada càrrega en tots els punts de la malla i  apliquem el principi de superposició per obtenir el camp elèctric i el potencial total en cada punt de l’espai.
 
 Per la simulació de........
 
 \section{Resultats i discussió}
 Els resultats experimentals es poden trobar a l'annex \ref{an:a2}.
 \subsection{Condensador de plaques planoparal·leles}
-\textbf{S'HA DE FER}
+La primera configuració estudiada correspon a un condensador planoparal·lel, format per dos plans infinits (en l'eix $Z$) carregats i separats per una distància $d$. En projectar aquests plans sobre el pla $XY$, es representen com dos fils finits paral·lels separats també per una distància $d$. 
+
+Les corbes equipotencials trobades experimentalment són les que es poden observar a la figura \ref{fig:1.2a}. Observem que dins la regió entre plaques, les línies equipotencials es mantenen gairebé paral·leles, indicant un camp elèctric uniforme i dirigit perpendicularment a les plaques. 
+
+A les vores de les plaques, es manifesta l’efecte de vora, on el camp deixa de ser uniforme i es distribueix de manera més complexa, amb línies equipotencials corbades cap a l’exterior. Aquest efecte és més acusat en condensadors de mida finita, ja que en el cas ideal de plaques infinites, el camp fora de la regió entre elles seria nul. 
+
+[NO ESTÀ ACABAT]
+
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{0.45\linewidth}
+		\centering
+		\includegraphics[height=5.5cm]{dibplaques} % Augmenta la mida
+		\caption{Corbes equipotencials (en blanc) i línies de camp $\vec{E}$ (en lila) pel cas del condensador planoparal·lel trobades experimentalment.}
+		\label{fig:1.2a}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.53\linewidth}
+		\centering
+		\includegraphics[height=6.5cm]{figplaques1} % Mateixa alçada
+		\caption{Simulació del camp elèctric i del potencial pel condensador planoparal·lel.}
+		\label{fig:1.2b}
+	\end{subfigure}
+	\caption{Representació i simulació de les corbes equipotencials i línies de camp per la distribució del condensador planoparal·lel.}
+	\label{fig:1.2}
+\end{figure}
+
+
 \subsection{Fils infinits}
 La segona configuració estudiada és la projecció en el pla $XY$ (pla de la imatge) de dos fils infinits separats per una distància constant. 
 
-Les corbes equipotencials trobades experimentalment són les que es poden observar a la figura \ref{fig:1.2a}. Observem com aquestes formen el·lipses on els fils estan cada cop més descentrats conforme agafem corbes més externes. 
+Les corbes equipotencials trobades experimentalment són les que es poden observar a la figura \ref{fig:1.3a}. Observem com aquestes formen el·lipses on els fils estan cada cop més descentrats conforme agafem corbes més externes. 
 \begin{figure}[h]
 	\centering
 	\begin{subfigure}{0.45\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{screenshot004}
 		\caption{Corbes equipotencials (en blanc) i línies de camp $\vec{E}$ (en lila) pel cas dels dos fils infinits trobades experimentalment.}
-		\label{fig:1.2a}
+		\label{fig:1.3a}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.5\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{figfils}
 		\caption{Simulació del camp elèctric i del potencial pels dos fils infinits.}
-		\label{fig:1.2b}
+		\label{fig:1.3b}
 	\end{subfigure}
 	\caption{Representació i simulació de les corbes equipotencials i línies de camp per la distribució de dos fils infinits.}
-	\label{fig:1.2}
+	\label{fig:1.3}
 \end{figure}
 
 Els resultats teòrics indiquen que, en un sistema de dos fils infinits, les corbes equipotencials vénen donades per la següent equació:
@@ -232,6 +260,13 @@ El fet que els nostres resultats es desviïn del predit per la teoria és degut 
 
 \subsection{Fil infinit i dos plans}
 
+La tercera configuració estudiada i proposada per nosaltres és la projecció en el pla $XY$ de dos plans infinits (en l'eix $Z$) formant un angle de $60 graus (no se posar el simbol)$, més un fil infinit (en l'eix $Z$) dins la regió entre els plans.
+
+Les corbes equipotencials trobades experimentalment són les que es poden observar a la figura \ref{fig:1.4a}. BLABLA
+
+FIGURA
+
+ 
 \textbf{S'HA DE FER}(no oblidar la motivació de la distribució)
 
 \section{Conclusions}

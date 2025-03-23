@@ -192,10 +192,10 @@ Per a la simulació dels dos fils infinits paral·lels, considerem la seva proje
 
 Definim les funcions que descriuen el potencial i el camp elèctric, que corresponen a les expressions analítiques d'aquests magnituds per a una càrrega puntual. Es calcula la contribució de cada càrrega en tots els punts de la malla i  apliquem el principi de superposició per obtenir el camp elèctric i el potencial total en cada punt de l’espai.
 
-Per últim ens caldrà simular la distribució extra, que hem proposat amb l'objectiu de comprovar el mètode de les imatges, que son els dos plans secants infinits en la direcció $Z$ amb un cert angle entre ells (uns 60º), on entre ells passa un fil infinit. Si posem l'origen de coordenades en el punt on s'intersequen els plans, i definim $d$ com la distancia en l'eix $x$ des de l'origen al fil infinit \textcolor{red}{poner dibujo esquematico de  lo que acabo de decir}, pel mètode de les imatges concloem que, per complir les nostres condicions de contorn, que es que sobre els plans el potencial sigui el mateix, hem de col·locar un total de $2\pi/\Delta\theta-1$ càrregues imatge (on $\Delta\theta$ es l'angle entre els plans), totes a una distància $d$ de l'origen i amb un angle entre elles de $\Delta\theta$ formant així una distribució simètrica de càrregues en forma de cercle \textcolor{red}{poner dibujo esquematico de lo que acabo de decir}. 
+Per últim ens caldrà simular la distribució extra, que hem proposat amb l'objectiu de comprovar el mètode de les imatges, que son els dos plans secants infinits en la direcció $Z$ amb un cert angle entre ells (uns 60º), on entre ells passa un fil infinit. Si posem l'origen de coordenades en el punt on s'intersequen els plans, i definim $d$ com la distancia en l'eix $x$ des de l'origen al fil infinit, pel mètode de les imatges concloem que, per complir les nostres condicions de contorn, que es que sobre els plans el potencial sigui el mateix, hem de col·locar un total de $2\pi/\Delta\theta-1$ càrregues imatge (on $\Delta\theta$ es l'angle entre els plans), totes a una distància $d$ de l'origen i amb un angle entre elles de $\Delta\theta$ formant així una distribució simètrica de càrregues en forma de cercle \ref{fig:1.5}. 
 Per fer la simulació d'aquesta distribució nomes hem de d'aplicar el principi de superposició dels camps i potencials que generarien cadascuna de les càrregues puntuals a la posició que hem descrit.
 
-També ens serà interessant mes endavant tenir un càlcul explicit de la nostra distribució en concret, ja que el mètode de les imatges suposa plaques infinites per establir les condicions de contorn. Així que també obtindrem les expressions analítiques, els detalls dels quals es donen als annexos \textcolor{red}{poner ref del anexo}. 
+També ens serà interessant mes endavant tenir un càlcul explicit de la nostra distribució en concret, ja que el mètode de les imatges suposa plaques infinites per establir les condicions de contorn. Així que també obtindrem les expressions analítiques, els detalls dels quals es donen als annexos \ref{an:a6}. 
 \section{Resultats i discussió}
 Els resultats experimentals es poden trobar a l'annex \ref{an:a2}.
 
@@ -451,6 +451,7 @@ que és el que estàvem buscant.
 \newpage
 
 \subsection{Expressió analítica de la distribució de dos plans secants i un fil}
+\label{an:a6}
 Per obtenir les expressions analítiques no queda d'altra que aplicar la definició de potencial i integrar. De la definició de potencial:
 
 \begin{equation}

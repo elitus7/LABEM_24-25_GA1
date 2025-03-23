@@ -186,9 +186,9 @@ on $\Delta V$ és la diferència de potencial a la que hem sotmès les dues plaq
 \subsection{Simulacions}
 Els codis de les simulacions es poden trobar a l'annex \ref{an:a4}.
 
-Per la simulació del condensador planoparal·lel, considerem la projecció com la contribució de 200 carregues puntuals (totes del mateix valor, pel fil esquerra de valor $-q$, pel dret $q$) distribuïdes uniformement a través de cada fil. Un fil es troba a $x = d/2$, i el segon a $x = - d/2$. Les carregues van des de $y = -H/2$ fins $y = H/2$. Per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$, que ho fem usant el principi de superposició.
+Per la simulació del condensador planoparal·lel, considerem la distribució representada com la suma de 200 càrregues puntuals (pel fil de l'esquerra de valor $-q$ i pel fil de la dreta $q$) distribuïdes uniformement en les plaques: una es troba a $x = d/2$, i l'altre a $x = - d/2$. En l'eix de les y, les càrregues van des de $y = -H/2$ fins $y = H/2$. Per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$ usant el principi de superposició.
 
-Per a la simulació dels dos fils infinits paral·lels, considerem la seva projecció com dues càrregues puntuals separades una distància $(d+2r)$, on aquest valor correspon a la separació entre els centres dels discos dibuixats experimentalment.
+Per la simulació dels dos fils infinits, considerem la seva projecció en el pla x$-$y com dues càrregues puntuals separades una distància $d+2r$, essent aquest valor la separació entre els centres dels discos dibuixats experimentalment (de radi $r$).
 
 Definim les funcions que descriuen el potencial i el camp elèctric, que corresponen a les expressions analítiques d'aquests magnituds per a una càrrega puntual. Es calcula la contribució de cada càrrega en tots els punts de la malla i  apliquem el principi de superposició per obtenir el camp elèctric i el potencial total en cada punt de l’espai.
 
@@ -200,29 +200,31 @@ També ens serà interessant mes endavant tenir un càlcul explicit de la nostra
 Els resultats experimentals es poden trobar a l'annex \ref{an:a2}.
 
 \subsection{Condensador de plaques planoparal·leles}
-La primera configuració estudiada correspon a un condensador planoparal·lel, format per dos plans infinits (en l'eix $Z$) carregats i separats per una distància $d$. En projectar aquests plans sobre el pla $XY$, es representen com dos fils finits paral·lels separats també per una distància $d$. 
+La primera configuració estudiada es correspon amb un condensador planoparal·lel, format per dos plans infinits (en l'eix Z, perpendicular al pla de la imatge) carregats i separats per una distància $d$. La seva projecció en el pla X$-$Y  resulta en dos fils infinits separats també per una distància $d$.
 
-Les corbes equipotencials trobades experimentalment són les que es poden observar a la figura \ref{fig:1.2a}. Observem que dins la regió entre plaques, les línies equipotencials es mantenen gairebé paral·leles, indicant un camp elèctric uniforme i dirigit perpendicularment a les plaques. 
+Les corbes equipotencials trobades experimentalment són les que es poden observar a la figura \ref{fig:1.2a}. Observem que dins la regió entre plaques, les línies equipotencials es mantenen gairebé paral·leles, indicant un camp elèctric gairebé uniforme i dirigit perpendicularment cap a les plaques. 
 
-A les vores de les plaques, es manifesta l’efecte de vora, on el camp deixa de ser uniforme i es distribueix de manera més complexa, amb línies equipotencials corbades cap a l’exterior. Aquest efecte és més acusat en condensadors de mida finita, ja que en el cas ideal de plaques infinites, el camp fora de la regió entre elles seria nul. 
+A les vores de les plaques, es manifesta l’efecte punta (degut a l'acumulació de càrregues a la superfície), on el camp deixa de ser uniforme i es distribueix de manera més complexa, amb línies equipotencials corbades cap a l’exterior. Aquest efecte és més acusat en condensadors de mida finita, ja que en el cas ideal de plaques infinites, el camp fora de la regió entre elles seria nul. Els resultats són, aproximadament els mateixos predits per la simulació de la figura \ref{fig:1.2b}.
 
-Com ja hem comentat abans podem utilitzar la llei de gauss per calcular la càrrega per unitat de longitud que tindria el condensador infinitament llarg en la direcció $Z$. Per fer-ho utilitzarem l'expressió \eqref{eq1.17} abans deduïda, i les dades experimentals que presentem en l'annex \ref{an:a2}, amb tot això resulta:
-
-\begin{equation}
-	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} = (2,06 \pm 0,21)\varepsilon \hspace{0,2cm} (F/m)
-\end{equation}
-
-Per comparar amb lo que seria un condensador ideal fem el càlcul suposant que el nostre cas ho és. Per un condensador ideal tenim que:
+Com ja hem comentat abans, podem utilitzar la llei de Gauss per tal de calcular la càrrega per unitat de longitud que tindria el condensador infinitament llarg en la direcció $Z$. Per fer-ho emprem l'expressió \eqref{eq1.17}, prèviament deduïda, i els resultats experimentals obtinguts en el transcurs de la pràctica\footnote{Aquests es poden trobar a la taula de l'annex \ref{an:a2}.}. 
 
 \begin{equation}
-	\frac{C}{Z} = \frac{A\varepsilon/d}{Z} = \frac{H}{d}\varepsilon = \frac{7,961cm}{5,598cm}\varepsilon = (1,422 \pm 0,001)\varepsilon \hspace{0,2cm} (F/m)
+	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} = (2,06 \pm 0,21)\varepsilon \hspace{0,2cm} \text{F/m}
 \end{equation}
-On $A$ es l'area de la placa, i $H$ l'altura d'aquesta.
-Podem notar ràpidament que el nostre condensador es desvia notablement de lo que es un condensador ideal, no només això, sinó que te una capacitat per unitat de longitud superior, cosa que no pot ser. Hi ha principalment dos motius pels quals no hem obtingut la càrrega per unitat de longitud real, i es que experimentalment hauríem de haver fet més punts per tenir unes línies de camp més precises i així poder fer una molt millor aproximació a la integral donada per \eqref{eq1.17}. L'altre font d'error, i la mes notable, es que per que aquesta aproximació sigui lo mes bona possible requereix que l'aproximació donada per \eqref{eq1.14} sigui lo mes acurada possible, i això suposa que les línies equipotencials sobre les que mesurem la diferencia de potencial per saber el camp allà han de ser lo mes pròximes possibles, ja que en veritat:
+
+Podem comparar aquest resultat amb el que s'obtindria si tinguéssim un condensador ideal de plaques planoparal·leles si usem que:
+
 \begin{equation}
-	E = \frac{\partial V}{\partial r}
+	\frac{C}{Z} = \frac{A\varepsilon/d}{Z} = \frac{H}{d}\varepsilon = (1,422 \pm 0,001)\varepsilon \hspace{0,2cm} \text{F/m}
 \end{equation}
-On $E$ es el modul del camp, i $\partial r$ es el diferencial de longitud en la direcció del camp (i.e. perpendicular a les línies equipotencials), per lo que si mesurem un  $\Delta r$ haurà de ser petit, cosa que veient les nostres línies experimentals de potencial no es cert. El fet de no fer línies properes no solament fa que no sigui una bona aproximació a la derivada del potencial, ja que el camp varia molt en el nostre $\Delta r$, sinó que, com hem dit $E = \frac{\partial V}{\partial r}$ es cert sempre que $\partial r$ sigui en la direcció del camp, ja hem tractat de ser conscients d'això en mesurar $\Delta r$ perpendicular a la línia equipotencial, però en haver tanta distància entre les dues línies entre elles el camp es corba bastant per lo que es perd el fet de mesurar $\Delta r$ paral·lel a $\vec{E}$, especialment fora del condensador. 
+On $A$ es l'àrea de la placa i $H$ l'altura d'aquesta.
+Veiem que el nostre condensador es desvia notablement del cas ideal. És més, segons els nostres càlculs, el condensador real té una capacitat per unitat de longitud superior, cosa que, a priori, no pot ser. 
+
+Hi ha principalment dos motius pels quals no hem obtingut la càrrega per unitat de longitud real: Primer, experimentalment hauríem d'haver fet més punts per tal tenir unes línies de camp més precises i així poder fer una millor aproximació a la integral donada per \eqref{eq1.17}; segon, i més important, perquè aquesta aproximació sigui lo més bona possible, cal que la suposició donada per l'equació \eqref{eq1.14} sigui també molt bona, i per tal que això sigui així, cal que les línies equipotencials mesurades experimentalment siguin molt properes, ja que, per poder assegurar que
+\begin{equation}
+	E = \frac{\partial V_i}{\partial r_i} \approx \frac{\Delta V_i}{\Delta r_i}
+\end{equation}
+és necessari que el $\Delta r_i$ entre les corbes equipotencials sigui suficientment petit com per que $\Delta r_i \rightarrow \partial r_i$ i que, a més a més, estigui en al direcció perpendicular a les corbes equipotencials, per tal de poder dir que la suposició donada a \eqref{eq1.14} és vàlida. En el nostre cas, òbviament això no és estrictament correcte, ja que la separació entre les línies equipotencials no és negligible i el $\Delta r_i$ no necessàriament és perpendicular a aquestes. 
 
 \begin{figure}
 	\centering
@@ -239,7 +241,7 @@ On $E$ es el modul del camp, i $\partial r$ es el diferencial de longitud en la 
 		\caption{Simulació del camp elèctric i del potencial pel condensador planoparal·lel.}
 		\label{fig:1.2b}
 	\end{subfigure}
-	\caption{Representació i simulació de les corbes equipotencials i línies de camp per la distribució del condensador planoparal·lel.}
+	\caption{Representació i simulació de les corbes equipotencials i línies de camp per la distribució associada al condensador planoparal·lel.}
 	\label{fig:1.2}
 \end{figure}
 
@@ -632,7 +634,7 @@ ax.spines['bottom'].set_visible(True)
 plt.show()
 \end{lstlisting}
 
-El codi per la simulació dels dos plans secants i el fil infinit és pel mètode de les càrregues imatge és:
+El codi per la simulació dels dos plans secants i el fil infinit pel mètode de les càrregues imatge és:
 \begin{lstlisting}
 import numpy as np
 import matplotlib.pyplot as plt

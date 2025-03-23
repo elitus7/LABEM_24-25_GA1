@@ -416,6 +416,35 @@ Així doncs, la força, en mòdul que patirà un altre fil (infinit) paral·lel,
 \renewcommand{\thesection}{\Alph{section}} % Cambia la numeración de capítulos a letras
 \renewcommand{\theequation}{\thesection.\arabic{equation}} % Cambia numeración de ecuaciones
 \setcounter{equation}{0} % Reinicia contador de ecuaciones en cada sección
+
+\section{Càlcul d'incerteses de la pràctica 1}
+\label{an:a3}
+Pel càlcul de les incerteses associades a cada pràctica s'ha utilitzat la llei de propagació d'incerteses:
+\begin{equation}
+	u_F = \sqrt{ \left( \frac{\partial F}{\partial x_1} \right)^2 u_{x_1}^2 + \left( \frac{\partial F}{\partial x_2} \right)^2 u_{x_2}^2 + \dots + \left( \frac{\partial F}{\partial x_n} \right)^2 u_{x_n}^2 }
+\end{equation}
+on $F(x_1,x_2,\ldots,x_n)$ és la funció considerada i $u_i$ la incertesa associada a cada $x_i$.
+
+\subsection{Pràctica 1}
+Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$
+\begin{equation}
+	u_{Y_i} = \sqrt{ \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i} u_{\Delta V_i} \right)^2 + \left( \frac{\Delta V_i \Delta l_i}{\Delta r_i} u_{\Delta l_i} \right)^2 + \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i^2} u_{\Delta r_i} \right)^2 }
+\end{equation}
+
+\begin{equation}
+	\frac{Q}{Z} = \varepsilon \sum_i Y_i \implies u_{Q/Z} = \varepsilon \sqrt{\sum_i u_{Y_i}^2}
+\end{equation}
+
+\begin{equation}
+	u_{\frac{C}{Z}} = \sqrt{ \left( \frac{1}{Z \, \Delta V} u_Q \right)^2 + \left( \frac{Q}{Z \, \Delta V^2} u_{\Delta V} \right)^2 }
+\end{equation}
+
+\begin{equation}
+	u_{C_\text{teòric}} = \frac{u_H}{d} \sqrt{1+C^2}
+\end{equation}
+
+
+\newpage
 \section{Pràctica 1. Representació de camps}
 \subsection{Deducció de l'equació \eqref{eqsuppon}}
 \label{an:a1}
@@ -540,10 +569,6 @@ A continuació mostrem els valors experimentals obtinguts en el transcurs de la 
 \end{table}
 
 Amb aquests valors i usant l'equació \eqref{eq1.17} podem determinar la capacitat del condensador de plaques planoparal·leles dibuixat.
-
-\newpage
-\subsection{Càlcul d'incerteses de la pràctica 1}
-\label{an:a3}
 
 \newpage
 \subsection{Codis de les simulacions de la pràctica 1}

@@ -196,7 +196,7 @@ On $N_q$ és el nombre de càrregues imatge i $\theta$ l'angle format pels dos p
 \subsection{Simulacions}
 Els codis de les simulacions es poden trobar a l'annex \ref{an:a4}.
 
-Per tal de simular el condensador planoparal·lel, considerem la distribució representada com la suma de doscents càrregues puntuals (de valor $-q$ pel fil de l'esquerra i $q$ pel de la dreta) distribuïdes uniformement en les plaques, de manera que una es troba a $x = d/2$, i l'altra a $x = - d/2$. Pel que fa a l'eix de les ordenades, les càrregues estan situades des de $y = -H/2$ fins a $y = H/2$, on $H$ és l'alçada de la placa. Així, per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$ usant el principi de superposició.
+Per tal de simular el condensador planoparal·lel, considerem la distribució representada com la suma de doscentes càrregues puntuals (de valor $-q$ pel fil de l'esquerra i $q$ pel de la dreta) distribuïdes uniformement en les plaques, de manera que una es troba a $x = d/2$, i l'altra a $x = - d/2$. Pel que fa a l'eix de les ordenades, les càrregues estan situades des de $y = -H/2$ fins a $y = H/2$, on $H$ és l'alçada de la placa. Així, per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$ usant el principi de superposició.
 
 Per la simulació dels dos fils infinits, considerem la seva projecció en el pla X$-$Y com dues càrregues puntuals separades una distància $d+2r$, essent aquest valor la separació entre els centres dels discos dibuixats experimentalment (de radi $r$).
 
@@ -218,7 +218,7 @@ Les corbes equipotencials trobades experimentalment són les que es poden observ
 
 A les vores de les plaques, es manifesta l’efecte punta (degut a l'acumulació de càrregues a la superfície), on el camp deixa de ser uniforme i es distribueix de manera més complexa, amb línies equipotencials corbades cap a l’exterior. Aquest efecte és més acusat en condensadors de mida finita, ja que en el cas ideal de plaques infinites, el camp fora de la regió entre elles seria nul. Els resultats són, aproximadament els mateixos predits per la simulació de la figura \ref{fig:1.2b}.
 
-Com ja hem comentat abans, podem utilitzar la llei de Gauss per tal de calcular la càrrega per unitat de longitud que tindria el condensador infinitament llarg en la direcció $Z$. Per fer-ho emprem l'expressió \eqref{eq1.17}, prèviament deduïda, i els resultats experimentals obtinguts en el transcurs de la pràctica\footnote{Aquests es poden trobar a la taula de l'annex \ref{an:a2}.}. 
+Com ja hem comentat abans, podem utilitzar la llei de Gauss per tal de calcular la capacitat per unitat de longitud que tindria el condensador infinitament llarg en la direcció $Z$. Per fer-ho emprem l'expressió \eqref{eq1.17}, prèviament deduïda, i els resultats experimentals obtinguts en el transcurs de la pràctica\footnote{Aquests es poden trobar a la taula de l'annex \ref{an:a2}.}. 
 
 \begin{equation}
 	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} = (2,06 \pm 0,21)\varepsilon \hspace{0,2cm} \text{F/m}
@@ -395,6 +395,7 @@ Així doncs, la força, en mòdul que patirà un altre fil (infinit) paral·lel,
 
 \section{Conclusions}
 
+
 \begin{thebibliography}{99}
 	\bibitem{ref1}
 	\textit{Col·lecció de problemes de l'assignatura d'Electromagnetisme.}
@@ -472,14 +473,14 @@ Per obtenir les expressions analítiques apliquem la definició del potencial i 
 \begin{equation}
 	\phi (x,y) = \frac{1}{4\pi\varepsilon}\int_S\frac{\sigma(x',y')}{\sqrt{(x-x')^2+(y-y')^2}}\mathrm{d}s'
 \end{equation}
-Les coordenades prima son les referents a la distribució de carrega i $s'$ tota la regió on hi hagi càrrega. Separarem la distribució en tres parts: la càrrega puntual, la part de la placa inferior i la superior, finalment apliquem el principi de superposició per conèixer el potencial que crea la nostra distribució. El potencial que crea la càrrega puntual a la posició $\vec{r_q}$ és:
+Les coordenades prima son les referents a la distribució de carrega i $S$ tota la regió on hi hagi càrrega. Separarem la distribució en tres parts: la càrrega puntual, la part de la placa inferior i la superior, finalment apliquem el principi de superposició per conèixer el potencial que crea la nostra distribució. El potencial que crea la càrrega puntual a la posició $\vec{r_q}$ és:
 \begin{equation}
-	\phi_q (x,y) = -\frac{1}{4\pi\varepsilon}\frac{q}{\sqrt{(x-x')^2+(y-y')^2}}
+	\phi_q (x,y) = -\frac{1}{4\pi\varepsilon}\frac{q}{\sqrt{(x-d)^2+y^2}}
 \end{equation}
 Per resoldre la integral per les plaques hem de tenir en compte que és una distribució unidimensional de càrrega, de manera que $\sigma(x',y') \rightarrow \lambda(x',y')$ i $\mathrm{d}s' \rightarrow \mathrm{d}L$. Per la geometria del problema podem veure que $y' = \tan(\pi/6)x'$ per la placa superior i $y' = -\tan(\pi/6)x'$ per la inferior, de forma que $\phi_{sup}(x,y) = \phi_{inf}(x,-y)$. Per tant:
 \begin{align}
 	\phi_{sup}(x,y)&=\frac{1}{4\pi\varepsilon}\int_{0}^{\frac{\sqrt{3}}{2}L} \frac{q/L}{\sqrt{(x-x')^2+(y-\frac{\sqrt{3}}{2}x')^2}}\mathrm{d}x' \\
-	\phi_{sup}(x,y)&=\frac{1}{4\pi\varepsilon}\frac{\sqrt{3}}{2}\ln \left[\frac{\frac{4}{\sqrt{3}}\sqrt{(x^2+y^2)-L(\sqrt{3}x+y-L)}-\frac{2}{3}(3x+\sqrt{3}y-2\sqrt{3}L)}{\frac{4}{\sqrt{3}}\sqrt{x^2+y^2}-\frac{2}{3}(3x-\sqrt{3}y)}\right]
+	\phi_{sup}(x,y)&=\frac{1}{4\pi\varepsilon}\frac{\sqrt{3}}{2}\ln \left[\frac{\frac{4}{\sqrt{3}}\sqrt{(x^2+y^2)+L(-\sqrt{3}x+y+L)}+\frac{2}{3}(-3x+\sqrt{3}y+2\sqrt{3}L)}{\frac{4}{\sqrt{3}}\sqrt{x^2+y^2}-\frac{2}{3}(3x-\sqrt{3}y)}\right]
 \end{align}
 Finalment, podem trobar el potencial total segons:
 \begin{equation}
@@ -680,7 +681,7 @@ return -(q*((y)/(np.sqrt((x-d)**2+(y)**2))**(3/2) - (y-d*np.sqrt(3)/2)/(np.sqrt(
 E_xx = E_x(X,Y)
 E_yy = E_y(X,Y)
 
-#a por el plot
+#el plot
 fig =plt.figure(figsize=(10.714, 9.286), label= 'Linies de camp') 
 ax = fig.add_subplot(111)
 
@@ -734,14 +735,6 @@ X, Y = np.meshgrid(x, y)
 Z = f(X, Y)
 
 
-#ojo esto esta de extra para probar, el streamplot creo que va bien con linspace, pero el quiver hay que darle aranges que sino....
-#x = np.arange(-1.5,4.2,.5)
-#y = np.arange(-2.5,2.5,.5) 
-
-# Meshgrid 
-X,Y = np.meshgrid(x,y)
-#se acabo lo extra
-
 def F(x,y):
 return 4/np.sqrt(3)*np.sqrt(x**2+y**2+L*(y-np.sqrt(3)*x+L))+2/3*(np.sqrt(3)*y-3*x+2*np.sqrt(3)*L)
 
@@ -788,7 +781,7 @@ ax.plot([pa],[-np.sqrt(3)/3*pa],'ro', markersize=3)
 plt.show()
 \end{lstlisting}
 
-\textcolor{red}{modificar el codigo para que se vea bonito que está lleno de comentarios o cosas random}
+
 
 \end{appendices}
 

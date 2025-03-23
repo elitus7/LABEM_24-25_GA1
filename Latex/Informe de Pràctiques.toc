@@ -22,6 +22,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Valor experimental de la permeabilitat magnètica}{10}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Camp magnètic terrestre}{10}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Conclusions}{10}{section.2.4}%
+\contentsline {chapter}{Bibliografia}{11}{chapter*.8}%
 \contentsline {chapter}{Annexos}{12}{section*.9}%
 \contentsline {section}{\numberline {A}Pràctica 1. Representació de camps}{12}{section.1..1}%
 \contentsline {subsection}{\numberline {A.1}Deducció de l'equació \eqref {eqsuppon}}{12}{subsection.1..1.1}%

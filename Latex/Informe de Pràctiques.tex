@@ -6,6 +6,7 @@
 \renewcommand{\appendixpagename}{Annexos}
 \usepackage[catalan]{babel}
 \usepackage{booktabs}
+\usepackage[nottoc]{tocbibind}
 \usepackage{listings}
 \lstdefinestyle{mystyle}{
 	language=Python,                 % Lenguaje del código
@@ -127,11 +128,11 @@ Si comparem les equacions \eqref{eq1.2} i \eqref{eq1.5} per una banda i les equa
 
 Recordem que, per poder calcular la capacitat per unitat de longitud d'un condensador de plaques planoparal·leles, considerem una superfície equipotencial que tanca una de les plaques del condensador. En virtut del teorema de Gauss tenim que:
 \begin{equation}
-	q = \varepsilon \int_S \vec{E}\cdot \vec{n}dS
+	q = \varepsilon \int_S \vec{E}\cdot \vec{n}\mathrm{d}S
 \end{equation}
 Assumint que el condensador és infinitament llarg en la direcció $z$, podem assegurar que el camp és constant en aquesta direcció i, per tant, $dS = Zdl$, on $dl$ és el diferencial de longitud a la intersecció de la superfície equipotencial amb un pla perpendicular al condensador. Amb això tenim que:
 \begin{equation}
-	\frac{q}{Z} = \varepsilon \oint_C E dl \label{eq1.13}
+	\frac{q}{Z} = \varepsilon \oint_C E \mathrm{d}l \label{eq1.13}
 \end{equation}
 \section{Metodologia experimental}
 \subsection{Representació de corbes equipotencials}
@@ -221,15 +222,18 @@ A les vores de les plaques, es manifesta l’efecte punta (degut a l'acumulació
 Com ja hem comentat abans, podem utilitzar la llei de Gauss per tal de calcular la capacitat per unitat de longitud que tindria el condensador infinitament llarg en la direcció $Z$. Per fer-ho emprem l'expressió \eqref{eq1.17}, prèviament deduïda, i els resultats experimentals obtinguts en el transcurs de la pràctica\footnote{Aquests es poden trobar a la taula de l'annex \ref{an:a2}.}. 
 
 \begin{equation}
-	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} = (2,06 \pm 0,21)\varepsilon \hspace{0,2cm} \text{F/m}
+	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} = (2,06 \pm 0,21)\varepsilon \text{ F/m}
 \end{equation}
 
-Podem comparar aquest resultat amb el que s'obtindria si tinguéssim un condensador ideal de plaques planoparal·leles si usem que:
-
+Podem comparar aquest resultat amb el que s'obtindria si tinguéssim un condensador ideal de plaques planoparal·leles si usem que\footnote{Les mesures per $H$ i $d$ s'han efectuat digitalment amb \textit{ImageJ}.}:
+\begin{equation*}
+	H = (7,961\pm0,001) \text{ cm}, \hspace{0.25cm} d = (5,598\pm0,001) \text{ cm}
+\end{equation*}
+De manera que:
 \begin{equation}
-	\frac{C}{Z} = \frac{A\varepsilon/d}{Z} = \frac{H}{d}\varepsilon = (1,422 \pm 0,001)\varepsilon \hspace{0,2cm} \text{F/m}
+	\frac{C}{Z} = \frac{A\varepsilon/d}{Z} = \frac{H}{d}\varepsilon = (1,4221 \pm 0,0003)\varepsilon \text{ F/m}
 \end{equation}
-On $A$ es l'àrea de la placa i $H$ l'altura d'aquesta.
+On $A$ es l'àrea de la placa i $H$ l'altura d'aquesta. 
 Veiem que el nostre condensador es desvia notablement del cas ideal. És més, segons els nostres càlculs, el condensador real té una capacitat per unitat de longitud superior, cosa que, a priori, no pot ser. 
 
 Hi ha principalment dos motius pels quals no hem obtingut la càrrega per unitat de longitud real: Primer, experimentalment hauríem d'haver fet més punts per tal tenir unes línies de camp més precises i així poder fer una millor aproximació a la integral donada per \eqref{eq1.17}; segon, i més important, perquè aquesta aproximació sigui lo més bona possible, cal que la suposició donada per l'equació \eqref{eq1.14} sigui també molt bona, i per tal que això sigui així, cal que les línies equipotencials mesurades experimentalment siguin molt properes, ja que, per poder assegurar que
@@ -319,7 +323,7 @@ Notem que aquesta configuració de càrrega és molt més complexa que les anter
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.49\linewidth]{figV2imagenes}
+	\includegraphics[width=0.45\linewidth]{figV2imagenes}
 	\caption{Simulació de les corbes equipotencials i de les línies de camp elèctric associades a la distribució de càrregues imatge solució.}
 	\label{fig:1.5}
 \end{figure}

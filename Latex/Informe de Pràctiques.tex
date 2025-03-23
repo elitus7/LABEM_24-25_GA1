@@ -121,7 +121,7 @@ A partir de les equacions \eqref{eq1.3} i \eqref{eq1.6} podem deduir
 \begin{equation}
 	\nabla^2 U  = 0, \hspace{0.25cm} \nabla^2 U' = 0 \label{eq1.11}
 \end{equation}
-que són les corresponents equacions de Laplace. Així, donats uns potencials escalars $U$ i $U'$ que satisfacin les condicions de contorn i \eqref{eq1.11}, podem trobar $\vec{J}$ i $\vec{D}$, respectivament.
+que són les corresponents equacions de Laplace. Així, donats uns potencials escalars $U$ i $U'$ que satisfacin les condicions de contorn i l'equació \eqref{eq1.11}, podem trobar $\vec{J}$ i $\vec{D}$, respectivament.
 
 Si comparem les equacions \eqref{eq1.2} i \eqref{eq1.5} per una banda i les equacions \eqref{eq1.3} i \eqref{eq1.6}, podem veure que qualsevol solució per $\vec{J}$ és també una solució vàlida per $\vec{D}$, sempre que estiguem sota condicions de contorn equivalents i sempre que ni $\sigma$ ni $\vec{E}$ presentin discontinuïtats. Per tant, si coneixem una solució per un medi conductor, podrem trobar-ne una equivalent pel medi dielèctric intercanviant $\varepsilon$ per $\sigma$.
 
@@ -156,7 +156,7 @@ Per tal de poder representar les línies equipotencials usem fulls de paper impr
 	\label{fig1.1}
 \end{figure}
 
-Hem treballat amb les següents 3 distribucions: dues línies verticals (que són la projecció d'un condensador de plaques planoparal·leles), dos punts (projecció de dos fils infinits) i dues línies secants amb un punt entre elles (projecció de dos plans infinits formant angle d'aproximadament 60 º amb un fil infinit entre els dos).
+Hem treballat amb les següents tres distribucions: dues línies verticals (que són la projecció d'un condensador de plaques planoparal·leles), dos punts (projecció de dos fils infinits) i dues línies secants amb un punt entre elles (projecció de dos plans infinits formant angle d'aproximadament 60 º amb un fil infinit entre els dos).
 
 Amb el pretext de generar el camp sobre les distribucions dibuixades, s'ha fixat el paper conductor (en el qual hem fet els dibuixos) sobre un suro usant xinxetes i hem connectat els elèctrodes (per a cada distribució per separat) a una font de corrent continu (DC) usant un parell de cables i més xinxetes. Per mesurar la diferència de potencial hem usat un multímetre, deixant un cable fixat a un dels dos elèctrodes (establint així una referència de potencial) i l'altre lliure per tal de fer mesures de $\Delta V$ a qualsevol altre punt del paper (veure figura \ref{fig1.1b}). Prèviament, però, ens hem assegurat què la diferència de potencial entre dos punts en els conductors (els elèctrodes dibuixats) no fos major de l'1\%\footnote{Recordem que, per ser aquests materials conductors, hem de tenir un potencial constant en tot el seu volum i, en particular, sobre la seva superfície.}.
 
@@ -169,7 +169,7 @@ Si aproximem la integral donada per l'equació \eqref{eq1.13} per un sumatori i 
 \begin{equation}
 	E_i \approx \frac{\Delta V_i}{\Delta r_i} \label{eq1.14}
 \end{equation}
-on $\Delta r_i$ és la distància radial i $\Delta V_i$ és la diferència de potencial de l'element $\Delta l_i$ tenim:
+on $\Delta r_i$ és la distància radial i $\Delta V_i$ és la diferència de potencial de l'element $\Delta l_i$, tenim:
 \begin{equation}
 	\frac{Q}{Z} \approx \varepsilon \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i}
 \end{equation}
@@ -177,22 +177,23 @@ Usant que la capacitat d'un condensador de plaques planoparal·leles es correspo
 \begin{equation}
 	C = \frac{Q}{\Delta V}
 \end{equation}
-tenim que la capacitat per unitat de longitud, sota les aproximacions usades és:
+la capacitat per unitat de longitud sota les aproximacions usades és:
 \begin{equation}
 	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} \label{eq1.17}
 \end{equation}
-on $\Delta V$ és la diferència de potencial a la que hem sotmès les dues plaques del condensador.
+on $\Delta V$ és la diferència de potencial a la qual hem sotmès les dues plaques del condensador.
 
 \subsection{Simulacions}
 Els codis de les simulacions es poden trobar a l'annex \ref{an:a4}.
 
-Per la simulació del condensador planoparal·lel, considerem la distribució representada com la suma de 200 càrregues puntuals (pel fil de l'esquerra de valor $-q$ i pel fil de la dreta $q$) distribuïdes uniformement en les plaques: una es troba a $x = d/2$, i l'altre a $x = - d/2$. En l'eix de les y, les càrregues van des de $y = -H/2$ fins $y = H/2$. Per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$ usant el principi de superposició.
+Per tal de simular el condensador planoparal·lel, considerem la distribució representada com la suma de doscents càrregues puntuals (de valor $-q$ pel fil de l'esquerra i $q$ pel de la dreta) distribuïdes uniformement en les plaques, de manera que una es troba a $x = d/2$, i l'altra a $x = - d/2$. Pel que fa a l'eix de les ordenades, les càrregues estan situades des de $y = -H/2$ fins a $y = H/2$ (DEFINIR LA HHHHHHHHHHHHHH). Així, per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$ usant el principi de superposició.
 
-Per la simulació dels dos fils infinits, considerem la seva projecció en el pla x$-$y com dues càrregues puntuals separades una distància $d+2r$, essent aquest valor la separació entre els centres dels discos dibuixats experimentalment (de radi $r$).
+Per la simulació dels dos fils infinits, considerem la seva projecció en el pla X$-$Y com dues càrregues puntuals separades una distància $d+2r$, essent aquest valor la separació entre els centres dels discos dibuixats experimentalment (de radi $r$).
 
-Definim les funcions que descriuen el potencial i el camp elèctric, que corresponen a les expressions analítiques d'aquests magnituds per a una càrrega puntual. Es calcula la contribució de cada càrrega en tots els punts de la malla i  apliquem el principi de superposició per obtenir el camp elèctric i el potencial total en cada punt de l’espai.
+Definim les funcions que descriuen el potencial i el camp elèctric corresponents a les expressions analítiques d'aquests magnituds per a una càrrega puntual. Així podem calcular la contribució de cada una en tots els punts de la malla aplicant el principi de superposició. D'aquesta manera obtenim el camp elèctric i el potencial total en cada punt de l’espai.
 
-Per últim ens caldrà simular la distribució extra, que hem proposat amb l'objectiu de comprovar el mètode de les imatges, que son els dos plans secants infinits en la direcció $Z$ amb un cert angle entre ells (uns 60º), on entre ells passa un fil infinit. Si posem l'origen de coordenades en el punt on s'intersequen els plans, i definim $d$ com la distancia en l'eix $x$ des de l'origen al fil infinit, pel mètode de les imatges concloem que, per complir les nostres condicions de contorn, que es que sobre els plans el potencial sigui el mateix, hem de col·locar un total de $2\pi/\Delta\theta-1$ càrregues imatge (on $\Delta\theta$ es l'angle entre els plans), totes a una distància $d$ de l'origen i amb un angle entre elles de $\Delta\theta$ formant així una distribució simètrica de càrregues en forma de cercle \ref{fig:1.5}. 
+AQUESTA PART CREC QUE L'HEM DE REESTRUCURAR, HO SEPARARIA LA VERDAD
+Per últim, per simular la distribució extra, que hem proposat amb l'objectiu de comprovar el mètode de les imatges, que son els dos plans secants infinits en la direcció $Z$ amb un cert angle entre ells (uns 60º), on entre ells passa un fil infinit. Si posem l'origen de coordenades en el punt on s'intersequen els plans, i definim $d$ com la distancia en l'eix $x$ des de l'origen al fil infinit, pel mètode de les imatges concloem que, per complir les nostres condicions de contorn, que es que sobre els plans el potencial sigui el mateix, hem de col·locar un total de $2\pi/\Delta\theta-1$ càrregues imatge (on $\Delta\theta$ es l'angle entre els plans), totes a una distància $d$ de l'origen i amb un angle entre elles de $\Delta\theta$ formant així una distribució simètrica de càrregues en forma de cercle \ref{fig:1.5}. 
 Per fer la simulació d'aquesta distribució nomes hem de d'aplicar el principi de superposició dels camps i potencials que generarien cadascuna de les càrregues puntuals a la posició que hem descrit.
 
 També ens serà interessant mes endavant tenir un càlcul explicit de la nostra distribució en concret, ja que el mètode de les imatges suposa plaques infinites per establir les condicions de contorn. Així que també obtindrem les expressions analítiques, els detalls dels quals es donen als annexos \ref{an:a6}. 
@@ -247,7 +248,7 @@ Hi ha principalment dos motius pels quals no hem obtingut la càrrega per unitat
 
 
 \subsection{Fils infinits}
-La segona configuració estudiada és la projecció en el pla $XY$ (pla de la imatge) de dos fils infinits separats per una distància constant. 
+La segona configuració estudiada és la projecció en el pla X$-$Y (pla de la imatge) de dos fils infinits separats per una distància constant. 
 
 Les corbes equipotencials trobades experimentalment són les que es poden observar a la figura \ref{fig:1.3a}. Observem com aquestes formen el·lipses on els fils estan cada cop més descentrats conforme agafem corbes més externes. 
 \begin{figure}[h]
@@ -269,18 +270,18 @@ Les corbes equipotencials trobades experimentalment són les que es poden observ
 	\label{fig:1.3}
 \end{figure}
 
-Els resultats teòrics indiquen que, en un sistema de dos fils infinits, les corbes equipotencials vénen donades per la següent equació:
+Els resultats teòrics indiquen que, en un sistema de dos fils infinits, les corbes equipotencials venen donades per la següent equació:
 \begin{equation}
 	y^2+\left( x+a\frac{1+k^2}{1-k^2}\right)^2 = a^2\left( \frac{2k}{1-k^2}\right)^2  \label{eqsuppon}
 \end{equation}
-Que és l'equació d'una circumferència, de manera que, teòricament, les corbes equipotencials haurien de ser circumferències de radi $R = a\frac{2k}{1-k^2}$ que tenen el seu centre lleugerament desplaçat en l'eix de les $x$ per un factor $a\frac{1+k^2}{1-k^2}$. Notem que tant $a$ com $k$ són dues constants\footnote{Els valors de les constants i la demostració d'aquest resultat es pot trobar a l'annex \ref{an:a1}.}. Es pot veure que això és exactament així si ens atenim als resultats obtinguts a la simulació de la figura \ref{fig:1.2b}.
+que és l'equació d'una circumferència. Per tant, les corbes equipotencials teòriques haurien de ser circumferències de radi $R = a\frac{2k}{1-k^2}$ amb el centre lleugerament desplaçat en l'eix de les $x$ per un factor $a\frac{1+k^2}{1-k^2}$. Notem que tant $a$ com $k$ són dues constants\footnote{Els valors de les constants i la demostració d'aquest resultat es pot trobar a l'annex \ref{an:a1}.}. Es pot veure que es compleix exactament el que s'ha descrit atenint-nos als resultats obtinguts a la simulació de la figura \ref{fig:1.2b}.
 
-El fet que els nostres resultats es desviïn del predit per la teoria és degut als diferents errors experimentals comesos durant l'evolució de la pràctica: S'assumeix que el paper conductor té una conductivitat $\sigma$ homogènia, però això no necessàriament ha de ser així (pot ser que presenti inhomogeneïtats), de forma que els resultats de l'experiment es poden veure alterats; els punts que representen la projecció dels dos fils infinits en el pla no són perfectament rodons, ja que han sigut dibuixats a ma (amb les imprecisions que això comporta); les corbes equipotencials i les línies de camp es poden veure afectades per l'efecte punta en les vores dels materials carregats, on s'acumula més densitat de càrrega. 
+El fet que els nostres resultats es desviïn del predit per la teoria es deu als diferents errors experimentals comesos durant l'evolució de la pràctica. Els principals factors que poden alterar els resultats de l'experiment són: s'assumeix que el paper conductor té una conductivitat $\sigma$ homogènia, però això no necessàriament ha de ser així (pot ser que presenti inhomogeneïtats), els punts que representen la projecció dels dos fils infinits en el pla no són perfectament rodons, ja que han sigut dibuixats a mà (amb les imprecisions que això comporta). Pel que fa a les corbes equipotencials i les línies de camp, aquestes es poden veure afectades per l'efecte punta a les vores dels materials carregats, on s'acumula més densitat de càrrega. 
 
 
 \subsection{Fil infinit i dos plans}
 
-La tercera configuració estudiada i proposada per nosaltres és la projecció en el pla $XY$ de dos plans infinits (en l'eix $Z$) formant un angle de $60^o$, més un fil infinit (en l'eix $Z$) dins la regió entre els plans.
+La tercera configuració estudiada i proposada per nosaltres és la projecció en el pla X$-$Y de dos plans infinits (en l'eix $Z$) formant un angle de $60^o$ amb més un fil infinit (en l'eix $Z$) situat dins de la regió entre els plans.
 
 Les corbes equipotencials trobades experimentalment són les que es poden observar a la figura \ref{fig:1.4a}.
 
@@ -303,28 +304,29 @@ Les corbes equipotencials trobades experimentalment són les que es poden observ
 	\label{fig:1.4}
 \end{figure}
 
-Ja notem com aquesta configuració de càrrega es molt més complexa que les anteriors. Tenim que una de les distribucions te forma de triangle, i es molt notable el efecte punta que presenta en cada un dels extrems d'aquest, es pot veure clarament com d'aquí el camp divergeix mes que en altres punts.
+Notem que aquesta configuració de càrrega és molt més complexa que les anteriors, ja que una de les distribucions, pel fet de ser triangular, l'efecte punta es fa molt notable als extrems. De fet, veiem que en aquests punts el camp divergeix molt més que en altres regions.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.49\linewidth]{figV2imagenes}
-	\caption{Representació i simulació de les corbes equipotencials i línies de camp per la distribució de dos plans infinits amb un fil infinit enmig.}
+	\caption{Representació i simulació de les corbes equipotencials i línies de camp per la distribució de dos plans infinits amb un fil infinit.}
 	\label{fig:1.5}
 \end{figure}
 \textcolor{red}{no entiendo pq esta figura (la 1.5) se pone abajo de la sección}
 
-Hem fet la simulació pel mètode de les imatges que presentem a la figura \ref{fig:1.5}. Aquesta presenta un comportament molt similar a l'obtingut experimentalment, a la regió entre la càrrega i les plaques es pràcticament idèntic, però després, conforme ens allunyem de la càrrega el comportament es lleugerament diferent, per exemple, sobre les proximitats de l'eix $x$ llunyans al fil el camp apunta cap a fora de la distribució (tant experimentalment com en la simulació analítica), metre que en la simulació pel mètode de les imatges es al reves. Es d'aquestes diferencies que es nota present el fet que el mètode de les imatges suposa unes plaques infinites, per lo que en en $x$ grans predomina encara el comportament de les plaques que es repulsiu, metre que a la realitat no es així. Per això es important tenir present on el mètode de les imatges reprodueix be les condicions de contorn, ja que només allà el comportament serà comparable amb la realitat física. 
+Hem fet la simulació pel mètode de les imatges que presentem a la figura \ref{fig:1.5}. Aquesta presenta un comportament molt similar a l'obtingut experimentalment. Pel que fa a la regió entre la càrrega i les plaques, els resultats són pràcticament idèntics, però conforme ens allunyem de la càrrega, el comportament comença a diferir. Podem trobar un clar exemple fixant-nos en punts situats sobre l'eix de les abscisses amb un valor de $x$ gran. En aquesta regió, tant en la representació experimental com en l'analítica, el camp apunta cap a fora de la distribució, metre que en la simulació pel mètode de les imatges és al revés.
 
-Una cosa que no vam arribar a notar experimentalment per falta de línies en aquesta zona però que es molt interessant, es que sobre l'eix $x$ mes enllà del fil infinit existeix un punt pel qual el camp es nul, i es per tant un punt d'equilibri. Era esperable que existeixi un punt tal que la distribució de càrrega de les plaques anul·lés la del fil, però es interessant veure-ho a sa simulació, i es que aquest punt es també una clara diferencia entre el mètode de les imatges i el comportament analític i real, es un punt en que canvia el comportament atractiu-repulsiu del sistema, i un límit per on el mètode de les imatges deixa de ser vàlid per no reproduir correctament les condicions de contorn donat per la llargada de les plaques. \\
+Les diferències esmentades posen de manifest que la solució trobada a partir del mètode de les imatges no pot ser comparada a determinades regions de l'espai, principalment perquè aquesta solució considera les plaques infinites (i clarament les nostres no ho són). Per tant, la comparació amb els  resultats experimentals només té sentit si ens trobem dins del món real però mantenint-nos a les proximitats del fil.
+
 
 \section{Conclusions}
-Aquesta pràctica s'ha basat en l'ús d'un multímetre per tal de mesurar el potencial elèctric a diferents distàncies de les distribucions de càrrega dibuixades. Això ens ha permès, per una banda, traçar línies equipotencials i, per altra, obtenir un valor de la capacitat d'un condensador.
+Aquesta pràctica s'ha basat en l'ús d'un multímetre per tal de mesurar el potencial elèctric a diferents distàncies de les distribucions de càrrega dibuixades. Això ens ha permès, per una banda, traçar línies equipotencials i, per altra, obtenir un valor de la capacitat per unitat de longitud d'un condensador.
 
 Pel que fa a les línies equipotencials, aquestes ens han servit de guia per dibuixar, posteriorment, les respectives línies de camp elèctric, ja que, com sabem de teoria, aquestes són perpendiculars a les equipotencials. A més a més, per a les tres geometries considerades, hem generat les corresponents simulacions. Així podem comparar els resultats experimentals amb els teòrics amb més facilitat.
 
-Tal i com s'ha anat mencionant, tant les línies equipotencials com les de camp basades en les mesures del multímetre (resultats experimentals) segueixen la mateixa tendència que les simulacions. Tot i no coincidir-hi exactament a causa de l'efecte punta i els possibles errors aleatoris, la geometria i el sentit de les línies de camp són coherents.
+Tal i com s'ha anat mencionant, tant les línies equipotencials com les de camp basades en les mesures del multímetre (resultats experimentals) segueixen la mateixa tendència que les simulacions. Tot i no coincidir-hi exactament a causa de l'efecte punta i els possibles errors aleatoris associats (inhomogeneïtats del paper, haver dibuixat formes irregulars, imprecisions causades pel gruix de la punta del llapis,...), la geometria i el sentit de les línies de camp són coherents.
 
-CÀLCUL CAPACITAAAAAAAAAAAAAT
+Per altra banda, hem calculat la capacitat per unitat de longitud d'un condensador de plaques planoparal·leles a partir del teorema de Gauss. Com s'ha explicat, el càlcul experimental s'ha realitzat amb un sumatori com a aproximació de la integral de l'equació \ref{eq1.13}. Atès que el resultat obtingut és coherent amb el valor teòric esperat, podem considerar vàlida l'aproximació emprada.
 
 Així, a partir de tres distribucions de conductors diferents amb suficient simetria com per reduir el problema a dues dimensions, hem comprovat l'existència de la dualitat entre la densitat de corrent $\vec{J}$ i el vector desplaçament $\vec{D}$.
 

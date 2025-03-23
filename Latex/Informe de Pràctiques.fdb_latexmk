@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1742671707.52012 "c:/Users/juuns/Documents/GitHub/LABEM_24-25_GA1/Latex/Informe de Pràctiques.tex" "Informe de Pràctiques.pdf" "Informe de Pràctiques" 1742671712.28253 0
+["pdflatex"] 1742748013.63273 "c:/Users/juuns/Documents/GitHub/LABEM_24-25_GA1/Latex/Informe de Pràctiques.tex" "Informe de Pràctiques.pdf" "Informe de Pràctiques" 1742748018.89425 0
   "C:/Users/juuns/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1742577042 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/juuns/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1200.pk" 1742577048 15080 c39c84441a0a6821fd74e55bf8597dab ""
   "C:/Users/juuns/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk" 1742670796 10472 75d88b6269571eb15382e49c718305ea ""
@@ -65,6 +65,7 @@
   "C:/Users/juuns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/juuns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1247596666 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "C:/Users/juuns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/juuns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247596666 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "C:/Users/juuns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/juuns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247596667 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "C:/Users/juuns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb" 1247596666 24287 6b803fa9eb1ddff9112e00519b09dd9e ""
@@ -216,11 +217,11 @@
   "C:/Users/juuns/AppData/Local/Programs/MiKTeX/tex/latex/trimspaces/trimspaces.sty" 1253169183 1380 971a51b00a14503ddf754cab24c3f209 ""
   "C:/Users/juuns/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/juuns/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "Informe de Pràctiques.aux" 1742671711 11140 2959a037e82261ad646a21faf646275f "pdflatex"
-  "Informe de Pràctiques.out" 1742671711 5532 b493c3f627e083788590d962176afe05 "pdflatex"
-  "Informe de Pràctiques.tex" 1742671706 32241 da24be1cfeef2ec46b7ed2ae229b3460 ""
-  "Informe de Pràctiques.toc" 1742671711 2603 2634c4f87a513ef72d5877b5e3483123 "pdflatex"
-  "c:/Users/juuns/Documents/GitHub/LABEM_24-25_GA1/Latex/Informe de Pràctiques.tex" 1742671706 32241 da24be1cfeef2ec46b7ed2ae229b3460 ""
+  "Informe de Pràctiques.aux" 1742748018 11544 81d3ad61b44ce066c2c716ef5ad70e59 "pdflatex"
+  "Informe de Pràctiques.out" 1742748018 5973 da55cbecce0e67b30dc23c29623ae9e2 "pdflatex"
+  "Informe de Pràctiques.tex" 1742748006 45481 e8227dc587b2ab448634fb8b6950e71d ""
+  "Informe de Pràctiques.toc" 1742748018 2752 25e2511e086149f07873752d74c74907 "pdflatex"
+  "c:/Users/juuns/Documents/GitHub/LABEM_24-25_GA1/Latex/Informe de Pràctiques.tex" 1742748006 45481 e8227dc587b2ab448634fb8b6950e71d ""
   "confinventJS.jpeg" 1742669848 381485 a4e300b5f5d4e3e27c4506bfd5417656 ""
   "dibplaques.png" 1742669848 2429563 2d252daf0e2996185c5aa79ef618fa8e ""
   "figV2imagenes.png" 1742669848 481264 cca7589a522bdea8ed91d8a8a20038d9 ""

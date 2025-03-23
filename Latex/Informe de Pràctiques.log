@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.22)  23 MAR 2025 01:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.22)  23 MAR 2025 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -777,10 +777,6 @@ LaTeX Warning: Unused global option(s):
 (./Informe de Pràctiques.aux
 Package babel Info: 'catalan' activates 'catalan' shorthands.
 (babel)             Reported  on input line 8.
-
-
-LaTeX Warning: Label `fig:1.4' multiply defined.
-
 )
 \openout1 = `"Informe de Pràctiques.aux"'.
 
@@ -805,7 +801,8 @@ LaTeX Font Info:    ... okay on input line 65.
 LaTeX Info: Redefining \l on input line 65.
 LaTeX Info: Redefining \L on input line 65.
 \c@lstlisting=\count346
- (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count347
 \scratchdimen=\dimen307
@@ -883,7 +880,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<screenshot001.png, id=119, 1505.625pt x 565.36218pt>
+<screenshot001.png, id=123, 1505.625pt x 565.36218pt>
 File: screenshot001.png Graphic file (type png)
 <use screenshot001.png>
 Package pdftex.def Info: screenshot001.png  used on input line 82.
@@ -914,12 +911,12 @@ Cap\'{\i }tol 1.
 [2
 
 ]
-<screenshot002.png, id=197, 389.95688pt x 420.82219pt>
+<screenshot002.png, id=202, 389.95688pt x 420.82219pt>
 File: screenshot002.png Graphic file (type png)
 <use screenshot002.png>
 Package pdftex.def Info: screenshot002.png  used on input line 144.
 (pdftex.def)             Requested size: 218.94255pt x 236.26883pt.
-<screenshot003.png, id=198, 1541.76pt x 1156.32pt>
+<screenshot003.png, id=203, 1541.76pt x 1156.32pt>
 File: screenshot003.png Graphic file (type png)
 <use screenshot003.png>
 Package pdftex.def Info: screenshot003.png  used on input line 151.
@@ -929,64 +926,59 @@ Package pdftex.def Info: screenshot003.png  used on input line 151.
 [3 <./screenshot002.png> <./screenshot003.png>]
 
 [4]
-Overfull \hbox (71.23647pt too wide) detected at line 212
-[][][]\OML/cmm/m/it/10 ^^^[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/
-10 ) = [] [][] []\OML/cmm/m/it/10 dx[] \OT1/cmr/m/n/10 = [][] [] []
+<dibplaques.png, id=238, 1606.0pt x 1168.365pt>
+File: dibplaques.png Graphic file (type png)
+<use dibplaques.png>
+Package pdftex.def Info: dibplaques.png  used on input line 231.
+(pdftex.def)             Requested size: 215.08525pt x 156.49014pt.
+<figplaques1.png, id=239, 602.25pt x 518.93875pt>
+File: figplaques1.png Graphic file (type png)
+<use figplaques1.png>
+Package pdftex.def Info: figplaques1.png  used on input line 238.
+(pdftex.def)             Requested size: 214.6319pt x 184.9429pt.
+<screenshot004.png, id=241, 1319.68031pt x 959.83594pt>
+File: screenshot004.png Graphic file (type png)
+<use screenshot004.png>
+Package pdftex.def Info: screenshot004.png  used on input line 255.
+(pdftex.def)             Requested size: 218.94255pt x 159.2302pt.
+<figfils.png, id=242, 462.528pt x 346.896pt>
+File: figfils.png Graphic file (type png)
+<use figfils.png>
+Package pdftex.def Info: figfils.png  used on input line 262.
+(pdftex.def)             Requested size: 243.27116pt x 182.45659pt.
+
+
+[5]
+
+[6 <./dibplaques.png> <./figplaques1.PNG> <./screenshot004.png> <./figfils.png>
+]
+<confinventJS.jpeg, id=269, 1606.0pt x 1168.365pt>
+File: confinventJS.jpeg Graphic file (type jpg)
+<use confinventJS.jpeg>
+Package pdftex.def Info: confinventJS.jpeg  used on input line 289.
+(pdftex.def)             Requested size: 238.4084pt x 173.42876pt.
+<figplacarara.png, id=270, 774.0117pt x 669.9429pt>
+File: figplacarara.png Graphic file (type png)
+<use figplacarara.png>
+Package pdftex.def Info: figplacarara.png  used on input line 296.
+(pdftex.def)             Requested size: 238.4084pt x 206.35123pt.
+<figV2imagenes.png, id=271, 774.0117pt x 669.9429pt>
+File: figV2imagenes.png Graphic file (type png)
+<use figV2imagenes.png>
+Package pdftex.def Info: figV2imagenes.png  used on input line 308.
+(pdftex.def)             Requested size: 238.4084pt x 206.35123pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+
  []
 
 
 
-[5]
-<dibplaques.png, id=246, 1606.0pt x 1168.365pt>
-File: dibplaques.png Graphic file (type png)
-<use dibplaques.png>
-Package pdftex.def Info: dibplaques.png  used on input line 248.
-(pdftex.def)             Requested size: 215.08525pt x 156.49014pt.
-<figplaques1.png, id=247, 602.25pt x 518.93875pt>
-File: figplaques1.png Graphic file (type png)
-<use figplaques1.png>
-Package pdftex.def Info: figplaques1.png  used on input line 255.
-(pdftex.def)             Requested size: 214.6319pt x 184.9429pt.
-<screenshot004.png, id=249, 1319.68031pt x 959.83594pt>
-File: screenshot004.png Graphic file (type png)
-<use screenshot004.png>
-Package pdftex.def Info: screenshot004.png  used on input line 272.
-(pdftex.def)             Requested size: 218.94255pt x 159.2302pt.
-<figfils.png, id=250, 462.528pt x 346.896pt>
-File: figfils.png Graphic file (type png)
-<use figfils.png>
-Package pdftex.def Info: figfils.png  used on input line 279.
-(pdftex.def)             Requested size: 243.27116pt x 182.45659pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[6 <./dibplaques.png> <./figplaques1.PNG>]
-<confinventJS.jpeg, id=267, 1606.0pt x 1168.365pt>
-File: confinventJS.jpeg Graphic file (type jpg)
-<use confinventJS.jpeg>
-Package pdftex.def Info: confinventJS.jpeg  used on input line 306.
-(pdftex.def)             Requested size: 238.4084pt x 173.42876pt.
-<figplacarara.png, id=268, 774.0117pt x 669.9429pt>
-File: figplacarara.png Graphic file (type png)
-<use figplacarara.png>
-Package pdftex.def Info: figplacarara.png  used on input line 313.
-(pdftex.def)             Requested size: 238.4084pt x 206.35123pt.
-<figV2imagenes.png, id=269, 774.0117pt x 669.9429pt>
-File: figV2imagenes.png Graphic file (type png)
-<use figV2imagenes.png>
-Package pdftex.def Info: figV2imagenes.png  used on input line 327.
-(pdftex.def)             Requested size: 238.4084pt x 206.35123pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[7 <./screenshot004.png> <./figfils.png> <./confinventJS.jpeg> <./figplacarara.
-png>]
+[7 <./confinventJS.jpeg> <./figplacarara.png>]
 
 [8 <./figV2imagenes.png>]
 Cap\'{\i }tol 2.
@@ -1003,29 +995,35 @@ Cap\'{\i }tol 2.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 413.
+(hyperref)                removing `\hbox' on input line 399.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 413.
+(hyperref)                removing `\mathsurround' on input line 399.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 413.
+(hyperref)                removing `\z@' on input line 399.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\unskip' on input line 413.
+(hyperref)                removing `\unskip' on input line 399.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@italiccorr' on input line 413.
+(hyperref)                removing `\@@italiccorr' on input line 399.
 
 
 
 [12
 
 ]
+Overfull \hbox (71.23647pt too wide) detected at line 468
+[][][]\OML/cmm/m/it/10 ^^^[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/
+10 ) = [] [][] []\OML/cmm/m/it/10 dx[] \OT1/cmr/m/n/10 = [][] [] []
+ []
+
+
 
 [13]
 
@@ -1033,93 +1031,29 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [15]
 
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.657 ...figsize=(10.714, 9.286), label= 'Línies 
-                                                  de camp')
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "AD.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.657 ...figsize=(10.714, 9.286), label= 'Línies 
-                                                  de camp')
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-
 [16]
 
 [17]
 
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
+[18]
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.745 ...figsize=(10.714, 9.286), label= 'Línies 
-                                                  de camp')
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "AD.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.745 ...figsize=(10.714, 9.286), label= 'Línies 
-                                                  de camp')
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-
-[18] (./Informe de Pràctiques.aux)
+[19] (./Informe de Pràctiques.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `"Informe de Pràctiques".out' has not change
 d.
-(rerunfilecheck)             Checksum: E398BA23A83DB3AE0606D9A50F0FF0AC;5532.
+(rerunfilecheck)             Checksum: DA55CBECCE0E67B30DC23C29623AE9E2;5973.
  ) 
 Here is how much of TeX's memory you used:
- 29266 strings out of 473189
- 537754 string characters out of 5719958
- 1584081 words of memory out of 5000000
- 51742 multiletter control sequences out of 15000+600000
+ 29270 strings out of 473189
+ 537808 string characters out of 5719958
+ 1584216 words of memory out of 5000000
+ 51743 multiletter control sequences out of 15000+600000
  574286 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,12n,121p,1213b,2098s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,12n,121p,1213b,2102s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/te
 xlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/202
 5/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-d
@@ -1143,10 +1077,10 @@ amsfonts/cm/cmtt8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/s
 fbx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pf
 b><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texl
 ive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on "Informe de Pràctiques.pdf" (19 pages, 13733469 bytes).
+Output written on "Informe de Pràctiques.pdf" (20 pages, 13736787 bytes).
 PDF statistics:
- 771 PDF objects out of 1000 (max. 8388607)
- 673 compressed objects within 7 object streams
- 333 named destinations out of 1000 (max. 500000)
- 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 782 PDF objects out of 1000 (max. 8388607)
+ 683 compressed objects within 7 object streams
+ 336 named destinations out of 1000 (max. 500000)
+ 295 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -183,20 +183,31 @@ la capacitat per unitat de longitud sota les aproximacions usades és:
 \end{equation}
 on $\Delta V$ és la diferència de potencial a la qual hem sotmès les dues plaques del condensador.
 
+\subsection{Distribució extra. Motivació}
+Més enllà de les distribucions del condensador de plaques planoparal·leles i els dos fils infinits, treballem amb una tercera distribució: dos plans infinits secants (formant un angle de 60º) entre els quals tenim un fil infinit.
+
+La raó per la qual hem decidit estudiar aquesta configuració és que ens servirà per comprovar si el mètode de les imatges és vàlid en aquest tipus de sistemes per tal de trobar la funció $\phi(\vec{r})$. El potencial generat per aquesta distribució es pot entendre com la superposició dels potencials creats per un conjunt de càrregues individuals distribuïdes adequadament (satisfent les mateixes condicions de contorn). En virtut del teorema d'unicitat, la solució de l'equació de Laplace de les dues distribucions és igual (llevat d'una constant), de forma que podem usar la darrera (més simple) per trobar el potencial de la primera (més complexa). 
+
+A més a més, es pot demostrar fàcilment que en funció de l'angle d'intersecció entre els plans, la quantitat de càrregues imatge necessàries per reproduir el potencial del sistema variarà, satisfent que:
+\begin{equation}
+	N_q = \frac{360\text{º}}{\theta}-1 \label{eqimatges}
+\end{equation}
+On $N_q$ és el nombre de càrregues imatge i $\theta$ l'angle format pels dos plans. Fixem-nos en què $\theta = 180\text{º} \Rightarrow N_q = 1$, $\theta=90\text{º}\Rightarrow N_q =3$,$\dots$\footnote{Aquests són els resultats que vam veure en el problema 2.31 de la col·lecció de problemes de l'assignatura d'\textit{Electromagnetisme} (veure \cite{ref1}).} 
 \subsection{Simulacions}
 Els codis de les simulacions es poden trobar a l'annex \ref{an:a4}.
 
-Per tal de simular el condensador planoparal·lel, considerem la distribució representada com la suma de doscents càrregues puntuals (de valor $-q$ pel fil de l'esquerra i $q$ pel de la dreta) distribuïdes uniformement en les plaques, de manera que una es troba a $x = d/2$, i l'altra a $x = - d/2$. Pel que fa a l'eix de les ordenades, les càrregues estan situades des de $y = -H/2$ fins a $y = H/2$ (DEFINIR LA HHHHHHHHHHHHHH). Així, per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$ usant el principi de superposició.
+Per tal de simular el condensador planoparal·lel, considerem la distribució representada com la suma de doscents càrregues puntuals (de valor $-q$ pel fil de l'esquerra i $q$ pel de la dreta) distribuïdes uniformement en les plaques, de manera que una es troba a $x = d/2$, i l'altra a $x = - d/2$. Pel que fa a l'eix de les ordenades, les càrregues estan situades des de $y = -H/2$ fins a $y = H/2$, on $H$ és l'alçada de la placa. Així, per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$ usant el principi de superposició.
 
 Per la simulació dels dos fils infinits, considerem la seva projecció en el pla X$-$Y com dues càrregues puntuals separades una distància $d+2r$, essent aquest valor la separació entre els centres dels discos dibuixats experimentalment (de radi $r$).
 
 Definim les funcions que descriuen el potencial i el camp elèctric corresponents a les expressions analítiques d'aquests magnituds per a una càrrega puntual. Així podem calcular la contribució de cada una en tots els punts de la malla aplicant el principi de superposició. D'aquesta manera obtenim el camp elèctric i el potencial total en cada punt de l’espai.
 
-AQUESTA PART CREC QUE L'HEM DE REESTRUCURAR, HO SEPARARIA LA VERDAD
-Per últim, per simular la distribució extra, que hem proposat amb l'objectiu de comprovar el mètode de les imatges, que son els dos plans secants infinits en la direcció $Z$ amb un cert angle entre ells (uns 60º), on entre ells passa un fil infinit. Si posem l'origen de coordenades en el punt on s'intersequen els plans, i definim $d$ com la distancia en l'eix $x$ des de l'origen al fil infinit, pel mètode de les imatges concloem que, per complir les nostres condicions de contorn, que es que sobre els plans el potencial sigui el mateix, hem de col·locar un total de $2\pi/\Delta\theta-1$ càrregues imatge (on $\Delta\theta$ es l'angle entre els plans), totes a una distància $d$ de l'origen i amb un angle entre elles de $\Delta\theta$ formant així una distribució simètrica de càrregues en forma de cercle \ref{fig:1.5}. 
-Per fer la simulació d'aquesta distribució nomes hem de d'aplicar el principi de superposició dels camps i potencials que generarien cadascuna de les càrregues puntuals a la posició que hem descrit.
+Per simular la tercera distribució de càrrega posem l'origen de coordenades en el punt on s'intersequen els plans i definim $d$ com la distancia en l'eix $x$ des de l'origen al fil infinit. A partir d'aquí, efectuem dues simulacions diferents:
+\begin{itemize}
+	\item En virtut del mètode de les imatges, podem substituir la nostra distribució per un conjunt de càrregues que satisfacin les condicions de contorn (potencial constant i igual a zero sobre els plans conductors); així doncs, simulem les corbes equipotencials i les línies de camp generades per cinc (veure equació \eqref{eqimatges}) càrregues imatge (i la real) a una distància $d$ de l'origen i separades entre elles 60º. Això és, però, assumint que els nostres plans són infinits.
+	\item Per altra banda, simulem la nostra distribució per integració directa del potencial. Els detalls es poden trobar a l'annex \ref{an:a6}.
+\end{itemize}
 
-També ens serà interessant mes endavant tenir un càlcul explicit de la nostra distribució en concret, ja que el mètode de les imatges suposa plaques infinites per establir les condicions de contorn. Així que també obtindrem les expressions analítiques, els detalls dels quals es donen als annexos \ref{an:a6}. 
 \section{Resultats i discussió}
 Els resultats experimentals es poden trobar a l'annex \ref{an:a2}.
 
@@ -274,7 +285,7 @@ Els resultats teòrics indiquen que, en un sistema de dos fils infinits, les cor
 \begin{equation}
 	y^2+\left( x+a\frac{1+k^2}{1-k^2}\right)^2 = a^2\left( \frac{2k}{1-k^2}\right)^2  \label{eqsuppon}
 \end{equation}
-que és l'equació d'una circumferència. Per tant, les corbes equipotencials teòriques haurien de ser circumferències de radi $R = a\frac{2k}{1-k^2}$ amb el centre lleugerament desplaçat en l'eix de les $x$ per un factor $a\frac{1+k^2}{1-k^2}$. Notem que tant $a$ com $k$ són dues constants\footnote{Els valors de les constants i la demostració d'aquest resultat es pot trobar a l'annex \ref{an:a1}.}. Es pot veure que es compleix exactament el que s'ha descrit atenint-nos als resultats obtinguts a la simulació de la figura \ref{fig:1.2b}.
+que és l'equació d'una circumferència. Per tant, les corbes equipotencials teòriques haurien de ser circumferències de radi $R = a\frac{2k}{1-k^2}$ amb el centre lleugerament desplaçat en l'eix de les $x$ per un factor $a\frac{1+k^2}{1-k^2}$. Notem que tant $a$ com $k$ són dues constants\footnote{Els valors de les constants i la demostració d'aquest resultat es pot trobar a l'annex \ref{an:a1}.}. Es pot veure que es compleix exactament el que s'ha descrit atenint-nos als resultats obtinguts a la simulació de la figura \ref{fig:1.3b}.
 
 El fet que els nostres resultats es desviïn del predit per la teoria es deu als diferents errors experimentals comesos durant l'evolució de la pràctica. Els principals factors que poden alterar els resultats de l'experiment són: s'assumeix que el paper conductor té una conductivitat $\sigma$ homogènia, però això no necessàriament ha de ser així (pot ser que presenti inhomogeneïtats), els punts que representen la projecció dels dos fils infinits en el pla no són perfectament rodons, ja que han sigut dibuixats a mà (amb les imprecisions que això comporta). Pel que fa a les corbes equipotencials i les línies de camp, aquestes es poden veure afectades per l'efecte punta a les vores dels materials carregats, on s'acumula més densitat de càrrega. 
 
@@ -297,7 +308,7 @@ Les corbes equipotencials trobades experimentalment són les que es poden observ
 	\begin{subfigure}{0.49\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{figplacarara}
-		\caption{\textcolor{red}{cambiar estilo del grafico para hacerlos todos igual} Simulació del camp elèctric i del potencial pels dos plans i el fil infinit.}
+		\caption{Simulació del camp elèctric i del potencial pels dos plans i el fil infinit.}
 		\label{fig:1.4b}
 	\end{subfigure}
 	\caption{Representació i simulació de les corbes equipotencials i línies de camp per la distribució de dos plans infinits amb un fil infinit enmig.}
@@ -309,10 +320,9 @@ Notem que aquesta configuració de càrrega és molt més complexa que les anter
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.49\linewidth]{figV2imagenes}
-	\caption{Representació i simulació de les corbes equipotencials i línies de camp per la distribució de dos plans infinits amb un fil infinit.}
+	\caption{Simulació de les corbes equipotencials i de les línies de camp elèctric associades a la distribució de càrregues imatge solució.}
 	\label{fig:1.5}
 \end{figure}
-\textcolor{red}{no entiendo pq esta figura (la 1.5) se pone abajo de la sección}
 
 Hem fet la simulació pel mètode de les imatges que presentem a la figura \ref{fig:1.5}. Aquesta presenta un comportament molt similar a l'obtingut experimentalment. Pel que fa a la regió entre la càrrega i les plaques, els resultats són pràcticament idèntics, però conforme ens allunyem de la càrrega, el comportament comença a diferir. Podem trobar un clar exemple fixant-nos en punts situats sobre l'eix de les abscisses amb un valor de $x$ gran. En aquesta regió, tant en la representació experimental com en l'analítica, el camp apunta cap a fora de la distribució, metre que en la simulació pel mètode de les imatges és al revés.
 
@@ -322,7 +332,9 @@ Les diferències esmentades posen de manifest que la solució trobada a partir d
 \section{Conclusions}
 Aquesta pràctica s'ha basat en l'ús d'un multímetre per tal de mesurar el potencial elèctric a diferents distàncies de les distribucions de càrrega dibuixades. Això ens ha permès, per una banda, traçar línies equipotencials i, per altra, obtenir un valor de la capacitat per unitat de longitud d'un condensador.
 
-Pel que fa a les línies equipotencials, aquestes ens han servit de guia per dibuixar, posteriorment, les respectives línies de camp elèctric, ja que, com sabem de teoria, aquestes són perpendiculars a les equipotencials. A més a més, per a les tres geometries considerades, hem generat les corresponents simulacions. Així podem comparar els resultats experimentals amb els teòrics amb més facilitat.
+Pel que fa a les línies equipotencials, aquestes ens han servit de guia per dibuixar, posteriorment, les respectives línies de camp elèctric, ja que, com sabem de teoria, aquestes són perpendiculars a les equipotencials. A més a més, per a les tres geometries considerades, hem generat les corresponents simulacions basades en mètodes numèrics amb més facilitat. Així podem comparar els resultats experimentals amb els teòrics amb més facilitat.
+
+Addicionalment, per a la tercera distribució (dos plans secants i un fil infinit), com que coneixíem la solució que ens dona el mètode de les imatges (motiu pel qual l'hem escollit), hem pogut contrastar les línies equipotencials i de camp trobades experimentalment amb les del mètode mencionat, verificant així la validesa d'aquesta solució.
 
 Tal i com s'ha anat mencionant, tant les línies equipotencials com les de camp basades en les mesures del multímetre (resultats experimentals) segueixen la mateixa tendència que les simulacions. Tot i no coincidir-hi exactament a causa de l'efecte punta i els possibles errors aleatoris associats (inhomogeneïtats del paper, haver dibuixat formes irregulars, imprecisions causades pel gruix de la punta del llapis,...), la geometria i el sentit de les línies de camp són coherents.
 
@@ -438,7 +450,7 @@ trobem que, el potencial generat per aquesta distribució de càrrega obeeix la 
 \begin{equation}
 	\phi = \frac{\lambda}{2\pi \varepsilon_0}\ln\sqrt{\frac{(x+a)^2+y^2}{(x-a)^2+y^2}}
 \end{equation}
-Escollint
+Les superfícies equipotencials seran aquelles regions de l'espai en què el potencial sigui constant. Escollint
 \begin{equation}
 	k \equiv e^{\frac{\phi2\pi\varepsilon_0}{\lambda}} = \sqrt{\frac{(x+a)^2+y^2}{(x-a)^2+y^2}}
 \end{equation}
@@ -450,36 +462,33 @@ podem desenvolupar fins a arribar a
 \begin{equation}
 	\boxed{y^2+\left( x+a\frac{1+k^2}{1-k^2}\right)^2 = a^2\left( \frac{2k}{1-k^2}\right)^2}
 \end{equation}
-que és el que estàvem buscant.
+que és l'equació per les superfícies (línies) equipotencials.
 
 \newpage
 
 \subsection{Expressió analítica de la distribució de dos plans secants i un fil}
 \label{an:a6}
-Per obtenir les expressions analítiques no queda d'altra que aplicar la definició de potencial i integrar. De la definició de potencial:
-
+Per obtenir les expressions analítiques apliquem la definició del potencial i integrem
 \begin{equation}
-	\phi (x,y) = \frac{1}{4\pi\varepsilon}\int_S\frac{\sigma(x',y')}{\sqrt{(x-x')^2+(y-y')^2}}dA
+	\phi (x,y) = \frac{1}{4\pi\varepsilon}\int_S\frac{\sigma(x',y')}{\sqrt{(x-x')^2+(y-y')^2}}\mathrm{d}s'
 \end{equation}
-on les coordenades prima son les referents a la distribució de carrega i A' tota la regió on hi hagi càrrega. Separarem la distribució en tres parts, la càrrega puntual, la part de la placa inferior i la superior, finalment aplicarem el principi de superposició per conèixer el potencial que crearia la nostra distribució. El potencial que crea la càrrega puntual a la posició $\vec{r_q}$ és:
-
+Les coordenades prima son les referents a la distribució de carrega i $s'$ tota la regió on hi hagi càrrega. Separarem la distribució en tres parts: la càrrega puntual, la part de la placa inferior i la superior, finalment apliquem el principi de superposició per conèixer el potencial que crea la nostra distribució. El potencial que crea la càrrega puntual a la posició $\vec{r_q}$ és:
 \begin{equation}
 	\phi_q (x,y) = -\frac{1}{4\pi\varepsilon}\frac{q}{\sqrt{(x-x')^2+(y-y')^2}}
 \end{equation}
-Per resoldre la integral per les plaques hem de tenir en comte que es una distribució unidimensional de càrrega, per lo que $\sigma(x',y') \longmapsto \lambda(x',y')$ i $dA' \longmapsto dL$, ara hem de restringir els graus de llibertat en $(x',y')$, ja que per la seva geometria es compleix $y' = \tan(\pi/6)x'$ per la placa superior i $y' = -\tan(\pi/6)x'$ per la inferior, també ja sigui d'això o per la simetria de la situació física veiem que $\phi_{sup}(x,y) = \phi_{inf}(x,-y)$. Per tant:
-
-\begin{equation}
-	\phi_{sup} (x,y) =\frac{1}{4\pi\varepsilon}\int_{0}^{\frac{\sqrt{3}}{2}L} \frac{q/L}{\sqrt{(x-x')^2+(y-\frac{\sqrt{3}}{2}x')^2}}dx' = \frac{1}{4\pi\varepsilon}\frac{\sqrt{3}}{2}\ln \left[\frac{\frac{4}{\sqrt{3}}\sqrt{(x^2+y^2)-L(\sqrt{3}x+y-L)}-\frac{2}{3}(3x+\sqrt{3}y-2\sqrt{3}L)}{\frac{4}{\sqrt{3}}\sqrt{x^2+y^2}-\frac{2}{3}(3x-\sqrt{3}y)}\right]
-\end{equation}
-\textcolor{red}{revisar otra vez que eso estè bien}
-Finalment:
-
+Per resoldre la integral per les plaques hem de tenir en compte que és una distribució unidimensional de càrrega, de manera que $\sigma(x',y') \rightarrow \lambda(x',y')$ i $\mathrm{d}s' \rightarrow \mathrm{d}L$. Per la geometria del problema podem veure que $y' = \tan(\pi/6)x'$ per la placa superior i $y' = -\tan(\pi/6)x'$ per la inferior, de forma que $\phi_{sup}(x,y) = \phi_{inf}(x,-y)$. Per tant:
 \begin{align}
-	\phi(x,y) = \phi_q(x,y) + \phi_{sup}(x,y) + \phi_{sup}(x,-y) \\
-	\vec{E}(x,y) = -\nabla\phi(x,y)
+	\phi_{sup}(x,y)&=\frac{1}{4\pi\varepsilon}\int_{0}^{\frac{\sqrt{3}}{2}L} \frac{q/L}{\sqrt{(x-x')^2+(y-\frac{\sqrt{3}}{2}x')^2}}\mathrm{d}x' \\
+	\phi_{sup}(x,y)&=\frac{1}{4\pi\varepsilon}\frac{\sqrt{3}}{2}\ln \left[\frac{\frac{4}{\sqrt{3}}\sqrt{(x^2+y^2)-L(\sqrt{3}x+y-L)}-\frac{2}{3}(3x+\sqrt{3}y-2\sqrt{3}L)}{\frac{4}{\sqrt{3}}\sqrt{x^2+y^2}-\frac{2}{3}(3x-\sqrt{3}y)}\right]
 \end{align}
-\textcolor{red}{alinear las expresiones para que se vea bonito}
-
+Finalment, podem trobar el potencial total segons:
+\begin{equation}
+	\phi(x,y) = \phi_q(x,y) + \phi_{sup}(x,y) + \phi_{sup}(x,-y) \\
+\end{equation}
+El camp elèctric, per la seva banda, serà:
+\begin{equation}
+	\vec{E}(x,y) = -\vec{\nabla}\phi(x,y)
+\end{equation}
 \newpage
 \subsection{Dades experimentals de la pràctica 1}
 \label{an:a2}

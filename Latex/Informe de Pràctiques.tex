@@ -351,39 +351,39 @@ Així, a partir de tres distribucions de conductors diferents amb suficient sime
 	En aquesta pràctica mesurem la força entre dos fils pels quals hi circula un corrent elèctric, comprovant que la llei de Biot i Savart se satisfà, via diferents metodologies. Amb aquests resultats fem una estimació de la permeabilitat magnètica $\mu_0$, tot comparant-la amb el valor teòric. A més a més, utilitzant el mateix sistema, mesurem la component horitzontal del camp magnètic terrestre al laboratori.
 \end{chapterabstract}
 \section{Introducció i fonament teòric}
-Per quantificar la interacció magnètica entre dos circuits arbitraris tancats pels quals hi circula un corrent constant, és a dir, per mesurar la força que fa un circuit sobre l'altre podem usar que:
+Per quantificar la interacció magnètica entre dos circuits arbitraris tancats pels quals hi circula un corrent constant, és a dir, per mesurar la força que fa un circuit sobre l'altre podem usar que
 \begin{equation}
-	\vec{F}_1 = \frac{\mu_0}{4\pi}I_1I_2\oint \oint \frac{\mathrm{d}\vec{l}_1\cross[\mathrm{d}\vec{l}_2 \cross (\vec{r}_1-\vec{r}_2)]}{\abs{\vec{r}_1 - \vec{r}_2}^3}\label{eq:2.1}
+	\vec{F}_1 = \frac{\mu_0}{4\pi}I_1I_2\oint \oint \frac{\mathrm{d}\vec{l}_1\cross[\mathrm{d}\vec{l}_2 \cross (\vec{r}_1-\vec{r}_2)]}{\abs{\vec{r}_1 - \vec{r}_2}^3}\label{eq:2.1},
 \end{equation}
 on $\mu_0$, $I_1$ i $I_2$ són les intensitats dels circuits 1 i 2, respectivament, d$\vec{l}_1$ i d$\vec{l}_2$ són els elements infinitesimals de línia i $\vec{r}_1$ i $\vec{r}_2$ són les respectives posicions d'aquests elements.
 
-Per tal de simplificar la integral anterior definim el camp d'inducció magnètica (o densitat de flux magnètic) $\vec{B}(\vec{r})$ en un punt arbitrari $\vec{r}$ com:
+Per tal de simplificar la integral anterior definim el camp d'inducció magnètica (o densitat de flux magnètic) $\vec{B}(\vec{r})$ en un punt arbitrari $\vec{r}$ com
 \begin{equation}
-	\vec{B}(\vec{r}) = \frac{\mu_0}{4\pi} \int_V \vec{J}(\vec{r}_1)\cross\frac{\vec{r}-\vec{r}'}{\abs{\vec{r}-\vec{r}'}^3}\mathrm{d}^3r'
+	\vec{B}(\vec{r}) = \frac{\mu_0}{4\pi} \int_V \vec{J}(\vec{r}_1)\cross\frac{\vec{r}-\vec{r}'}{\abs{\vec{r}-\vec{r}'}^3}\mathrm{d}^3r'.
 \end{equation} 
-Si usem això sobre l'equació \eqref{eq:2.1} podem escriure la força que rep el circuit amb intensitat I degut a la presència del camp d'inducció $\vec{B}$ creat per l'altre circuit segons:
+Si usem això sobre l'equació \eqref{eq:2.1} podem escriure la força que rep el circuit amb intensitat I degut a la presència del camp d'inducció $\vec{B}$ creat per l'altre circuit segons
 \begin{equation}
-	\vec{F} = I \oint \mathrm{d}\vec{l}\cross\vec{B}(\vec{r})
+	\vec{F} = I \oint \mathrm{d}\vec{l}\cross\vec{B}(\vec{r}).
 \end{equation}
 Emprant una de les equacions pel camp $\vec{B}$
 \begin{equation}
-	\vec{\nabla}\cross \vec{B} = \mu_0 \vec{J}
+	\vec{\nabla}\cross \vec{B} = \mu_0 \vec{J},
 \end{equation}
 i aplicant el teorema de Stokes
 \begin{equation}
-	\oint_C \vec{A} \cdot \mathrm{d}\vec{r} = \int_S (\vec{\nabla}\cross \vec{A})\cdot \mathrm{d}\vec{S}
+	\oint_C \vec{A} \cdot \mathrm{d}\vec{r} = \int_S (\vec{\nabla}\cross \vec{A})\cdot \mathrm{d}\vec{S},
 \end{equation}
 podem deduir fàcilment el teorema d'Ampère, que ens diu que:
 \begin{equation}
-	\oint_C\vec{B}\cdot\mathrm{d}\vec{l} = \mu_0\int_S\vec{J}(\vec{r})\cdot\vec{n}\mathrm{d}S
+	\oint_C\vec{B}\cdot\mathrm{d}\vec{l} = \mu_0\int_S\vec{J}(\vec{r})\cdot\vec{n}\mathrm{d}S,
 \end{equation}
-d'on, mitjançant un càlcul ràpid podem trobar el camp d'inducció magnètica generat per un fil infinit amb intensitat $I$ a una distància $r$ del seu centre:
+d'on, mitjançant un càlcul ràpid podem trobar el camp d'inducció magnètica generat per un fil infinit amb intensitat $I$ a una distància $r$ del seu centre
 \begin{equation}
-	B = \frac{\mu_0 I}{2\pi r}
+	B = \frac{\mu_0 I}{2\pi r}.
 \end{equation}
-Així doncs, la força, en mòdul que patirà un altre fil (infinit) paral·lel, de longitud $L$ i que és perpendicular al camp $\vec{B}$ serà:
+Així doncs, la força, en mòdul que patirà un altre fil (infinit) paral·lel, de longitud $L$ i que és perpendicular al camp $\vec{B}$ serà
 \begin{equation}
-	F = \frac{\mu_0 I^2L}{2\pi r}
+	F = \frac{\mu_0 I^2L}{2\pi r}.
 \end{equation} 
 \section{Metodologia experimental}
 
@@ -418,16 +418,79 @@ Així doncs, la força, en mòdul que patirà un altre fil (infinit) paral·lel,
 \chapter{Inductància mútua i transformadors}
 
 \begin{chapterabstract}
-Vejam
+	\textit{Vejam, digué el cec.}
 \end{chapterabstract}
 
 \section{Introducció i fonament teòric}
 El 1831, Faraday va realitzar un experiment que va permetre comprovar que, en variar el flux que travessa la superfície d'un circuit tancat, en aquest s'hi genera un corrent que l'anomenarem induït.
 
-Aquest fenòmen pot ser descrit de la següent manera:
+Aquest fenomen pot ser descrit de la següent manera:
 \begin{equation}
-	\oint_c \label{eq:3.1}
+	\oint_c \Vec{E}\cdot \mathrm{d}\Vec{l}_c = -\dv{}{t} \int \Vec{B}\cdot \mathrm{d} \Vec{S}_c = - \dv{\Phi}{t} \label{eq:4:1}
 \end{equation}
+Veiem que la integral és tancada sobre una línia $C$ que delimita la superfície $S_c$, la qual experimenta una variació de flux magnètic $\Phi$ en el temps.
+
+L'expressió anterior té unitats de volts però, tot i així, aquesta integral es designa com la \textit{força electromotriu induïda}.
+
+Aquesta força dividida entre la resistència del circuit considerat és igual al corrent que s'induiria en el cas de tenir una bateria d'aquest mateix voltatge i polaritat.
+
+El camp d'inducció magnètica $\Vec{B}$ i la intensitat $I$ que l'indueix són, per a qualsevol punt que considerem, proporcionals entre si. Per tant, es conclou que també ho serà $\Phi$, de manera que:
+\begin{equation}
+	\Phi=LI \label{eq:4:2}
+\end{equation}
+Aquí hem introduït l'\textit{autoinductància} o \textit{autoinducció del circuit}, una constant que depèn de la geometria del circuit i de la permeabilitat del medi d'immersió. És clar que, per l'equació \eqref{eq:4:2}, la $L$ tindrà unitats de weber per amper, és a dir, henrys (H).
+
+Considerem ara un parell de circuits o bobines situades prop una de l'altra. Si per la primera hi circula un corrent $I_1$, conseqüentment travessarà per la segona un flux $\Phi_2$. Com que aquestes dues magnituds han de ser proporcionals,
+\begin{equation}
+	\Phi_2=M_{12}I_2 \label{eq:4:3}
+\end{equation}
+on $M_{21}$ és la \textit{inductància mútua} entre circuits i també es mesura en henrys.
+
+De manera anàloga al que passava amb la primera bobina que induïa un corrent a la segona, el cas invers també es donarà. Per tant, pel circuit 1 travessarà un flux $\Phi_1$ causat pel corrent de la bobina 2, de manera que
+\begin{equation}
+	\Phi_1=M_{12}I_2 \label{eq:4:4}
+\end{equation}
+Per definició, sabem que
+\begin{equation}
+	\Phi_2=\int_{S_2}\vec{B}_1 \cdot \mathrm{d}\Vec{S}_2 \label{eq:4:5}
+\end{equation}
+Amb totes aquestes equacions mencionades fins ara, es demostra fàcilment l'equació de Neumann:
+\begin{equation}
+	M_{ab}=\frac{\mu_0}{4\pi}\oint_a\oint_b\frac{\mathrm{d}\Vec{l}_a\cdot\mathrm{d}\Vec{l}_b}{r} \label{eq:4:6}
+\end{equation}
+Aquesta equació és simètrica respecte $a$ i $b$, és a dir
+\begin{equation}
+	M_{12}=M_{21}. \label{eq:4:7}
+\end{equation}
+Un transformador consisteix en un parell de bobines amb un nucli d'un material de molt alta permeabilitat (aleacions de ferro amb un petit percentatge de silici o altres aliatges més barats) que concentra les línies de camp magnètic, evitant així la disminució de flux. A més, per tal de minimitzar les pèrdues de potència causades pels corrents de Foucault que s'indueixen aplicant un corrent altern, el nucli es constitueix d'un seguit de làmines aïllades unes de les altres. 
+
+Així, depenent dels paràmetres escollits pel transformador, en aplicar un corrent altern a una d'elles, el voltatge mesurat a la sortida de la segona tindrà un valor diferent.
+
+El funcionament d'una bobina, però, es pot simplificar molt considerant que les dues bobines es troben enrotllades de tal manera que el flux que genera una d'elles passarà per la segona (i anàlogament amb el cas invers). Amb aquesta configuració, es compleix que
+\begin{equation}
+	\frac{\Phi_1}{\Phi_2}=\frac{L_1I_1}{MI_1}=\frac{L_1}{M}=\frac{n_1}{n_2}, \label{eq:4:8}
+\end{equation}
+on denotem amb una $M$ la inductància mútua entre bobines, ja que $M_{12}=M_{21}$. Per altra banda, $n_1$ i $n_2$ són el nombre de voltes de les bobines 1 i 2, respectivament.
+
+Naturalment, pel cas invers tindrem
+\begin{equation}
+	\frac{\Phi_2}{\Phi_1}=\frac{L_2I_2}{MI_2}=\frac{L_2}{M}=\frac{n_2}{n_1}, \label{eq:4:9}
+\end{equation}
+de manera que
+\begin{equation}
+	M^2=L_1L_2. \label{eq:4:10}
+\end{equation}
+Treballant en fluxos que travessen les bobines, si aquests varien amb el temps, la relació entre els voltatges que s'induiran serà la divisió entre el nombre de voltes de la primera bobina entre les voltes de la segona. Per tant:
+\begin{equation}
+	\frac{V_1}{V_2}=\frac{\dv{\Phi_1}{t}}{\dv{\Phi_2}{t}}=\frac{n_1}{n_2}. \label{eq4:11}
+\end{equation}
+En termes de nomenclatura, anomenarem \textit{primari} al voltatge d'entrada $V_1$ i \textit{secundari} al de sortida $V_2$.
+
+Tot el descrit fins ara fa referència a un cas ideal però el que s'observa experimentalment és que $M$ és menor a l'esperat, ja que no tot el flux del primer circuit entra a l'altre. Per això, hem d'introduir un paràmetre $k$ denominat coeficient d'acoblament, tal que
+\begin{equation}
+	M=k(L_1L_2)^{1/2}.
+\end{equation}
+És notori, doncs, que el coeficient $k$ prendrà valors entre 0 i 1, sent aquest últim el cas ideal.
 
 \section{Metodologia experimental}
 
@@ -460,7 +523,7 @@ Pel càlcul de les incerteses associades a cada pràctica s'ha utilitzat la llei
 \end{equation}
 on $F(x_1,x_2,\ldots,x_n)$ és la funció considerada i $u_i$ la incertesa associada a cada $x_i$.
 
-\subsection{Pràctica 1}
+\subsection{Incerteses pràctica 1}
 Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$
 \begin{equation}
 	u_{Y_i} = \sqrt{ \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i} u_{\Delta V_i} \right)^2 + \left( \frac{\Delta V_i \Delta l_i}{\Delta r_i} u_{\Delta l_i} \right)^2 + \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i^2} u_{\Delta r_i} \right)^2 }
@@ -480,8 +543,8 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$
 
 
 \newpage
-\section{Pràctica 1. Representació de camps}
-\subsection{Deducció de l'equació \eqref{eqsuppon}}
+\section{Annex pràctica 1. Representació de camps}
+\subsection{Deducció de l'equació $(1.22)$}
 \label{an:a1}
 Per deduir l'expressió donada per l'equació \eqref{eqsuppon} ens basarem ens els resultats del problema 2.18 de la llista de problemes de l'assignatura \cite{ref1}. Suposem dos fils infinits rectilinis i carregats amb densitat de càrrega uniforme $\lambda$ i -$\lambda$ separats per una distància $d=2a$. Siguin $\rho_1$ i $\rho_2$ les distàncies radials de cada fil al punt en el qual volem calcular el camp i el potencial. Per la simetria del sistema podem assegurar que $\vec{E}(\vec{r}) = E(\rho) \vec{e}_{\rho}$, de forma que podem aplicar el teorema de Gauss com se segueix:
 

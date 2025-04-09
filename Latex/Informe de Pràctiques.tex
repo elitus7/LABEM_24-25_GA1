@@ -97,30 +97,30 @@
 \section{Introducció i fonament teòric}
 Per a materials lineals, isòtrops i homogenis, sota la presència d'un camp electrostàtic $\vec{E}$, s'apliquen les següents equacions si el medi és conductor:
 \begin{align}
-	\vec{\nabla} \cross \vec{E} = 0 \\
-	\vec{J} = \sigma \vec{E} \label{eq1.2}  \\ 
-	\vec{\nabla}\cdot \vec{J} = 0 \label{eq1.3}
+	\vec{\nabla} \cross \vec{E} = 0, \\
+	\vec{J} = \sigma \vec{E} \label{eq1.2},  \\ 
+	\vec{\nabla}\cdot \vec{J} = 0 \label{eq1.3},
 \end{align}
-O, si el medi és dielèctric:
+o, si el medi és dielèctric:
 \begin{align}
-	\vec{\nabla} \cross \vec{E} = 0 \\
-	\vec{D} = \varepsilon \vec{E} \label{eq1.5} \\ 
-	\vec{\nabla}\cdot \vec{D} = 0 \label{eq1.6}
+	\vec{\nabla} \cross \vec{E} = 0, \\
+	\vec{D} = \varepsilon \vec{E} \label{eq1.5}, \\ 
+	\vec{\nabla}\cdot \vec{D} = 0 \label{eq1.6}.
 \end{align}
 
 Per aquest tipus de medis $\varepsilon$ i $\sigma$ són constants, així, combinant les darreres equacions trobem:
 \begin{align}
-	\vec{\nabla} \cross \vec{J} = 0 \\
-	\vec{\nabla} \cross \vec{D} = 0
+	\vec{\nabla} \cross \vec{J} = 0, \\
+	\vec{\nabla} \cross \vec{D} = 0.
 \end{align}
 Això últim implica que tant $\vec{J}$ com $\vec{D}$ són camps conservatius i, per tant, es poden definir com el gradient (canviat de signe) d'una funció escalar, és a dir:
 \begin{align}
-	\vec{J} = -\vec{\nabla}{U} \\
-	\vec{D} = -\vec{\nabla}{U'}
+	\vec{J} = -\vec{\nabla}{U}, \\
+	\vec{D} = -\vec{\nabla}{U'}.
 \end{align}
 A partir de les equacions \eqref{eq1.3} i \eqref{eq1.6} podem deduir
 \begin{equation}
-	\nabla^2 U  = 0, \hspace{0.25cm} \nabla^2 U' = 0 \label{eq1.11}
+	\nabla^2 U  = 0, \hspace{0.25cm} \nabla^2 U' = 0 \label{eq1.11}.
 \end{equation}
 que són les corresponents equacions de Laplace. Així, donats uns potencials escalars $U$ i $U'$ que satisfacin les condicions de contorn i l'equació \eqref{eq1.11}, podem trobar $\vec{J}$ i $\vec{D}$, respectivament.
 
@@ -128,7 +128,7 @@ Si comparem les equacions \eqref{eq1.2} i \eqref{eq1.5} per una banda i les equa
 
 Recordem que, per poder calcular la capacitat per unitat de longitud d'un condensador de plaques planoparal·leles, considerem una superfície equipotencial que tanca una de les plaques del condensador. En virtut del teorema de Gauss tenim que:
 \begin{equation}
-	q = \varepsilon \int_S \vec{E}\cdot \vec{n}\mathrm{d}S
+	q = \varepsilon \int_S \vec{E}\cdot \vec{n}\mathrm{d}S.
 \end{equation}
 Assumint que el condensador és infinitament llarg en la direcció $z$, podem assegurar que el camp és constant en aquesta direcció i, per tant, $dS = Zdl$, on $dl$ és el diferencial de longitud a la intersecció de la superfície equipotencial amb un pla perpendicular al condensador. Amb això tenim que:
 \begin{equation}
@@ -168,19 +168,19 @@ Finalment, per representar el camp elèctric $\vec{E}$, hem dibuixat línies que
 \subsection{Càlcul de la capacitat del condensador}
 Si aproximem la integral donada per l'equació \eqref{eq1.13} per un sumatori i calculem el camp $E_i$ segons
 \begin{equation}
-	E_i \approx \frac{\Delta V_i}{\Delta r_i} \label{eq1.14}
+	E_i \approx \frac{\Delta V_i}{\Delta r_i} \label{eq1.14},
 \end{equation}
-on $\Delta r_i$ és la distància radial i $\Delta V_i$ és la diferència de potencial de l'element $\Delta l_i$, tenim:
+on $\Delta r_i$ és la distància radial, $\Delta V_i$ és la diferència de potencial de l'element $\Delta l_i$, i el subíndex $i$ fa referència a la \textit{i-èssima} mesura. De tot això tenim:
 \begin{equation}
-	\frac{Q}{Z} \approx \varepsilon \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i}
+	\frac{Q}{Z} \approx \varepsilon \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i}.
 \end{equation}
 Usant que la capacitat d'un condensador de plaques planoparal·leles es correspon amb 
 \begin{equation}
-	C = \frac{Q}{\Delta V}
+	C = \frac{Q}{\Delta V},
 \end{equation}
 la capacitat per unitat de longitud sota les aproximacions usades és:
 \begin{equation}
-	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} \label{eq1.17}
+	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} \label{eq1.17},
 \end{equation}
 on $\Delta V$ és la diferència de potencial a la qual hem sotmès les dues plaques del condensador.
 
@@ -191,9 +191,9 @@ La raó per la qual hem decidit estudiar aquesta configuració és que ens servi
 
 A més a més, es pot demostrar fàcilment que en funció de l'angle d'intersecció entre els plans, la quantitat de càrregues imatge necessàries per reproduir el potencial del sistema variarà, satisfent que:
 \begin{equation}
-	N_q = \frac{360\text{º}}{\theta}-1 \label{eqimatges}
+	N_q = \frac{360\text{º}}{\theta}-1 \label{eqimatges},
 \end{equation}
-On $N_q$ és el nombre de càrregues imatge i $\theta$ l'angle format pels dos plans. Fixem-nos en què $\theta = 180\text{º} \Rightarrow N_q = 1$, $\theta=90\text{º}\Rightarrow N_q =3$,$\dots$\footnote{Aquests són els resultats que vam veure en el problema 2.31 de la col·lecció de problemes de l'assignatura d'\textit{Electromagnetisme} (veure \cite{ref1}).} 
+on $N_q$ és el nombre de càrregues imatge i $\theta$ l'angle format pels dos plans. Fixem-nos en què $\theta = 180\text{º} \Rightarrow N_q = 1$, $\theta=90\text{º}\Rightarrow N_q =3$,$\dots$\footnote{Aquests són els resultats que vam veure en el problema 2.31 de la col·lecció de problemes de l'assignatura d'\textit{Electromagnetisme} (veure \cite{ref1}).} 
 \subsection{Simulacions}
 Els codis de les simulacions es poden trobar a l'annex \ref{an:a4}.
 
@@ -219,26 +219,24 @@ Les corbes equipotencials trobades experimentalment són les que es poden observ
 
 A les vores de les plaques, es manifesta l’efecte punta (degut a l'acumulació de càrregues a la superfície), on el camp deixa de ser uniforme i es distribueix de manera més complexa, amb línies equipotencials corbades cap a l’exterior. Aquest efecte és més acusat en condensadors de mida finita, ja que en el cas ideal de plaques infinites, el camp fora de la regió entre elles seria nul. Els resultats són, aproximadament els mateixos predits per la simulació de la figura \ref{fig:1.2b}.
 
-Com ja hem comentat abans, podem utilitzar la llei de Gauss per tal de calcular la capacitat per unitat de longitud que tindria el condensador infinitament llarg en la direcció $Z$. Per fer-ho emprem l'expressió \eqref{eq1.17}, prèviament deduïda, i els resultats experimentals obtinguts en el transcurs de la pràctica\footnote{Aquests es poden trobar a la taula de l'annex \ref{an:a2}.}. 
-
+Com ja hem comentat abans, podem utilitzar la llei de Gauss per tal de calcular la capacitat per unitat de longitud que tindria el condensador infinitament llarg en la direcció $Z$. Per fer-ho emprem l'expressió \eqref{eq1.17}, prèviament deduïda, i els resultats experimentals obtinguts en el transcurs de la pràctica\footnote{Aquests es poden trobar a la taula de l'annex \ref{an:a2}.}:
 \begin{equation}
-	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} = (2,06 \pm 0,21)\varepsilon \text{ F/m}
+	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} = (2,06 \pm 0,21)\varepsilon \text{ F/m}.
 \end{equation}
-
 Podem comparar aquest resultat amb el que s'obtindria si tinguéssim un condensador ideal de plaques planoparal·leles si usem que\footnote{Les mesures per $H$ i $d$ s'han efectuat digitalment amb \textit{ImageJ}.}:
 \begin{equation*}
-	H = (7,961\pm0,001) \text{ cm}, \hspace{0.25cm} d = (5,598\pm0,001) \text{ cm}
+	H = (7,961\pm0,001) \text{ cm}, \hspace{0.25cm} d = (5,598\pm0,001) \text{ cm}.
 \end{equation*}
 De manera que:
 \begin{equation}
-	\frac{C}{Z} = \frac{A\varepsilon/d}{Z} = \frac{H}{d}\varepsilon = (1,4221 \pm 0,0003)\varepsilon \text{ F/m}
+	\frac{C}{Z} = \frac{A\varepsilon/d}{Z} = \frac{H}{d}\varepsilon = (1,4221 \pm 0,0003)\varepsilon \text{ F/m},
 \end{equation}
-On $A$ es l'àrea de la placa i $H$ l'altura d'aquesta. 
+on $A$ es l'àrea de la placa i $H$ l'altura d'aquesta. 
 Veiem que el nostre condensador es desvia notablement del cas ideal. És més, segons els nostres càlculs, el condensador real té una capacitat per unitat de longitud superior, cosa que, a priori, no pot ser. 
 
 Hi ha principalment dos motius pels quals no hem obtingut la càrrega per unitat de longitud real: Primer, experimentalment hauríem d'haver fet més punts per tal tenir unes línies de camp més precises i així poder fer una millor aproximació a la integral donada per \eqref{eq1.17}; segon, i més important, perquè aquesta aproximació sigui lo més bona possible, cal que la suposició donada per l'equació \eqref{eq1.14} sigui també molt bona, i per tal que això sigui així, cal que les línies equipotencials mesurades experimentalment siguin molt properes, ja que, per poder assegurar que
 \begin{equation}
-	E = \frac{\partial V_i}{\partial r_i} \approx \frac{\Delta V_i}{\Delta r_i}
+	E = \frac{\partial V_i}{\partial r_i} \approx \frac{\Delta V_i}{\Delta r_i},
 \end{equation}
 és necessari que el $\Delta r_i$ entre les corbes equipotencials sigui suficientment petit com per que $\Delta r_i \rightarrow \partial r_i$ i que, a més a més, estigui en al direcció perpendicular a les corbes equipotencials, per tal de poder dir que la suposició donada a \eqref{eq1.14} és vàlida. En el nostre cas, òbviament això no és estrictament correcte, ja que la separació entre les línies equipotencials no és negligible i el $\Delta r_i$ no necessàriament és perpendicular a aquestes. 
 
@@ -287,7 +285,7 @@ Les corbes equipotencials trobades experimentalment són les que es poden observ
 
 Els resultats teòrics indiquen que, en un sistema de dos fils infinits, les corbes equipotencials venen donades per la següent equació:
 \begin{equation}
-	y^2+\left( x+a\frac{1+k^2}{1-k^2}\right)^2 = a^2\left( \frac{2k}{1-k^2}\right)^2  \label{eqsuppon}
+	y^2+\left( x+a\frac{1+k^2}{1-k^2}\right)^2 = a^2\left( \frac{2k}{1-k^2}\right)^2  \label{eqsuppon},
 \end{equation}
 que és l'equació d'una circumferència. Per tant, les corbes equipotencials teòriques haurien de ser circumferències de radi $R = a\frac{2k}{1-k^2}$ amb el centre lleugerament desplaçat en l'eix de les $x$ per un factor $a\frac{1+k^2}{1-k^2}$. Notem que tant $a$ com $k$ són dues constants\footnote{Els valors de les constants i la demostració d'aquest resultat es pot trobar a l'annex \ref{an:a1}.}. Es pot veure que es compleix exactament el que s'ha descrit atenint-nos als resultats obtinguts a la simulació de la figura \ref{fig:1.3b}.
 
@@ -519,26 +517,23 @@ Tot el descrit fins ara fa referència a un cas ideal però el que s'observa exp
 \label{an:a3}
 Pel càlcul de les incerteses associades a cada pràctica s'ha utilitzat la llei de propagació d'incerteses:
 \begin{equation}
-	u_F = \sqrt{ \left( \frac{\partial F}{\partial x_1} \right)^2 u_{x_1}^2 + \left( \frac{\partial F}{\partial x_2} \right)^2 u_{x_2}^2 + \dots + \left( \frac{\partial F}{\partial x_n} \right)^2 u_{x_n}^2 }
+	u_F = \sqrt{ \left( \frac{\partial F}{\partial x_1} \right)^2 u_{x_1}^2 + \left( \frac{\partial F}{\partial x_2} \right)^2 u_{x_2}^2 + \dots + \left( \frac{\partial F}{\partial x_n} \right)^2 u_{x_n}^2 },
 \end{equation}
 on $F(x_1,x_2,\ldots,x_n)$ és la funció considerada i $u_i$ la incertesa associada a cada $x_i$.
 
 \subsection{Incerteses pràctica 1}
-Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$
+Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de forma que:
 \begin{equation}
-	u_{Y_i} = \sqrt{ \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i} u_{\Delta V_i} \right)^2 + \left( \frac{\Delta V_i \Delta l_i}{\Delta r_i} u_{\Delta l_i} \right)^2 + \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i^2} u_{\Delta r_i} \right)^2 }
+	u_{Y_i} = \sqrt{ \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i} u_{\Delta V_i} \right)^2 + \left( \frac{\Delta V_i \Delta l_i}{\Delta r_i} u_{\Delta l_i} \right)^2 + \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i^2} u_{\Delta r_i} \right)^2 },
 \end{equation}
-
 \begin{equation}
-	\frac{Q}{Z} = \varepsilon \sum_i Y_i \implies u_{Q/Z} = \varepsilon \sqrt{\sum_i u_{Y_i}^2}
+	\frac{Q}{Z} = \varepsilon \sum_i Y_i \implies u_{Q/Z} = \varepsilon \sqrt{\sum_i u_{Y_i}^2},
 \end{equation}
-
 \begin{equation}
-	u_{\frac{C}{Z}} = \sqrt{ \left( \frac{1}{Z \, \Delta V} u_Q \right)^2 + \left( \frac{Q}{Z \, \Delta V^2} u_{\Delta V} \right)^2 }
+	u_{\frac{C}{Z}} = \sqrt{ \left( \frac{1}{Z \, \Delta V} u_Q \right)^2 + \left( \frac{Q}{Z \, \Delta V^2} u_{\Delta V} \right)^2 },
 \end{equation}
-
 \begin{equation}
-	u_{C_\text{teòric}} = \frac{u_H}{d} \sqrt{1+C^2}
+	u_{C_\text{teòric}} = \frac{u_H}{d} \sqrt{1+C^2}.
 \end{equation}
 
 
@@ -556,70 +551,68 @@ Per deduir l'expressió donada per l'equació \eqref{eqsuppon} ens basarem ens e
 \end{array}
 \right\}
 \quad \Rightarrow \quad 
-\vec{E} = \frac{\lambda}{2\pi \varepsilon_0} \frac{1}{\rho} \vec{e}_{\rho}
+\vec{E} = \frac{\lambda}{2\pi \varepsilon_0} \frac{1}{\rho} \vec{e}_{\rho}.
 \]
 
 Així, essent $\vec{E_1}$ el camp associat al fil amb densitat $\lambda$ i $\vec{E_2}$ el camp associat al fil amb densitat -$\lambda$, tenim:
 \begin{align}
-	\vec{E_1} & = \frac{\lambda}{2\pi \varepsilon_0} \frac{1}{\rho_1} \vec{e}_{\rho_1} \\
-	\vec{E_2} & = -\frac{\lambda}{2\pi \varepsilon_0} \frac{1}{\rho_2} \hat{e}_{\rho_2}
+	\vec{E_1} & = \frac{\lambda}{2\pi \varepsilon_0} \frac{1}{\rho_1} \vec{e}_{\rho_1}, \\
+	\vec{E_2} & = -\frac{\lambda}{2\pi \varepsilon_0} \frac{1}{\rho_2} \hat{e}_{\rho_2},
 \end{align}
 on:
 \begin{align}
-	\rho_1 & = \sqrt{(x-a)^2+y^2} \\
-	\rho_2 & = \sqrt{(x+a)^2+y^2} 
+	\rho_1 & = \sqrt{(x-a)^2+y^2}, \\
+	\rho_2 & = \sqrt{(x+a)^2+y^2}. 
 \end{align}
-
 Si calculem el camp usant que
 \begin{equation}
-	\phi(r) = -\int_{\vec{r}_{ref}}^{\vec{r}}\vec{E}(\vec{r})\cdot \mathrm{d}\vec{r} 
+	\phi(r) = -\int_{\vec{r}_{ref}}^{\vec{r}}\vec{E}(\vec{r})\cdot \mathrm{d}\vec{r} ,
 \end{equation}
 i aplicant el principi de superposició, és a dir
 \begin{equation}
-	\phi = \phi_1+\phi_2
+	\phi = \phi_1+\phi_2,
 \end{equation}
 trobem que, el potencial generat per aquesta distribució de càrrega obeeix la següent equació:
 \begin{equation}
-	\phi = \frac{\lambda}{2\pi \varepsilon_0}\ln\sqrt{\frac{(x+a)^2+y^2}{(x-a)^2+y^2}}
+	\phi = \frac{\lambda}{2\pi \varepsilon_0}\ln\sqrt{\frac{(x+a)^2+y^2}{(x-a)^2+y^2}}.
 \end{equation}
 Les superfícies equipotencials seran aquelles regions de l'espai en què el potencial sigui constant. Escollint
 \begin{equation}
-	k \equiv e^{\frac{\phi2\pi\varepsilon_0}{\lambda}} = \sqrt{\frac{(x+a)^2+y^2}{(x-a)^2+y^2}}
+	k \equiv e^{\frac{\phi2\pi\varepsilon_0}{\lambda}} = \sqrt{\frac{(x+a)^2+y^2}{(x-a)^2+y^2}},
 \end{equation}
 i reescrivint segons
 \begin{equation}
-	k^2[(x-a)^2+y^2]=(x+a)^2+y^2
+	k^2[(x-a)^2+y^2]=(x+a)^2+y^2,
 \end{equation}  
 podem desenvolupar fins a arribar a
 \begin{equation}
-	\boxed{y^2+\left( x+a\frac{1+k^2}{1-k^2}\right)^2 = a^2\left( \frac{2k}{1-k^2}\right)^2}
+	\boxed{y^2+\left( x+a\frac{1+k^2}{1-k^2}\right)^2 = a^2\left( \frac{2k}{1-k^2}\right)^2},
 \end{equation}
 que és l'equació per les superfícies (línies) equipotencials.
 
 \newpage
-
 \subsection{Expressió analítica de la distribució de dos plans secants i un fil}
 \label{an:a6}
 Per obtenir les expressions analítiques apliquem la definició del potencial i integrem
 \begin{equation}
-	\phi (x,y) = \frac{1}{4\pi\varepsilon}\int_S\frac{\sigma(x',y')}{\sqrt{(x-x')^2+(y-y')^2}}\mathrm{d}s'
+	\phi (x,y) = \frac{1}{4\pi\varepsilon}\int_S\frac{\sigma(x',y')}{\sqrt{(x-x')^2+(y-y')^2}}\mathrm{d}s'.
 \end{equation}
 Les coordenades prima son les referents a la distribució de carrega i $S$ tota la regió on hi hagi càrrega. Separarem la distribució en tres parts: la càrrega puntual, la part de la placa inferior i la superior, finalment apliquem el principi de superposició per conèixer el potencial que crea la nostra distribució. El potencial que crea la càrrega puntual a la posició $\vec{r_q}$ és:
 \begin{equation}
-	\phi_q (x,y) = -\frac{1}{4\pi\varepsilon}\frac{q}{\sqrt{(x-d)^2+y^2}}
+	\phi_q (x,y) = -\frac{1}{4\pi\varepsilon}\frac{q}{\sqrt{(x-d)^2+y^2}}.
 \end{equation}
 Per resoldre la integral per les plaques hem de tenir en compte que és una distribució unidimensional de càrrega, de manera que $\sigma(x',y') \rightarrow \lambda(x',y')$ i $\mathrm{d}s' \rightarrow \mathrm{d}L$. Per la geometria del problema podem veure que $y' = \tan(\pi/6)x'$ per la placa superior i $y' = -\tan(\pi/6)x'$ per la inferior, de forma que $\phi_{sup}(x,y) = \phi_{inf}(x,-y)$. Per tant:
 \begin{align}
-	\phi_{sup}(x,y)&=\frac{1}{4\pi\varepsilon}\int_{0}^{\frac{\sqrt{3}}{2}L} \frac{q/L}{\sqrt{(x-x')^2+(y-\frac{\sqrt{3}}{2}x')^2}}\mathrm{d}x' \\
-	\phi_{sup}(x,y)&=\frac{1}{4\pi\varepsilon}\frac{\sqrt{3}}{2}\ln \left[\frac{\frac{4}{\sqrt{3}}\sqrt{(x^2+y^2)+L(-\sqrt{3}x+y+L)}+\frac{2}{3}(-3x+\sqrt{3}y+2\sqrt{3}L)}{\frac{4}{\sqrt{3}}\sqrt{x^2+y^2}-\frac{2}{3}(3x-\sqrt{3}y)}\right]
+	\phi_{sup}(x,y)&=\frac{1}{4\pi\varepsilon}\int_{0}^{\frac{\sqrt{3}}{2}L} \frac{q/L}{\sqrt{(x-x')^2+(y-\frac{\sqrt{3}}{2}x')^2}}\mathrm{d}x', \\
+	\phi_{sup}(x,y)&=\frac{1}{4\pi\varepsilon}\frac{\sqrt{3}}{2}\ln \left[\frac{\frac{4}{\sqrt{3}}\sqrt{(x^2+y^2)+L(-\sqrt{3}x+y+L)}+\frac{2}{3}(-3x+\sqrt{3}y+2\sqrt{3}L)}{\frac{4}{\sqrt{3}}\sqrt{x^2+y^2}-\frac{2}{3}(3x-\sqrt{3}y)}\right].
 \end{align}
 Finalment, podem trobar el potencial total segons:
 \begin{equation}
-	\phi(x,y) = \phi_q(x,y) + \phi_{sup}(x,y) + \phi_{sup}(x,-y) \\
+	\phi(x,y) = \phi_q(x,y) + \phi_{sup}(x,y) + \phi_{sup}(x,-y). \\
 \end{equation}
 El camp elèctric, per la seva banda, serà:
 \begin{equation}
-	\vec{E}(x,y) = -\vec{\nabla}\phi(x,y)
+	\vec{E}(x,y) = -\vec{\nabla}\phi(x,y).
 \end{equation}
 \newpage
 \subsection{Dades experimentals de la pràctica 1}

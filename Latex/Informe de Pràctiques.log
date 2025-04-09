@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  8 APR 2025 22:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  9 APR 2025 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -988,25 +988,25 @@ Package pdftex.def Info: screenshot003.png  used on input line 152.
 [4]
 
 [5]
-<dibplaques.png, id=322, 1606.0pt x 1168.365pt>
+<dibplaques.png, id=323, 1606.0pt x 1168.365pt>
 File: dibplaques.png Graphic file (type png)
 <use dibplaques.png>
-Package pdftex.def Info: dibplaques.png  used on input line 249.
+Package pdftex.def Info: dibplaques.png  used on input line 247.
 (pdftex.def)             Requested size: 215.08525pt x 156.49014pt.
-<figplaques1.png, id=323, 602.25pt x 518.93875pt>
+<figplaques1.png, id=324, 602.25pt x 518.93875pt>
 File: figplaques1.png Graphic file (type png)
 <use figplaques1.png>
-Package pdftex.def Info: figplaques1.png  used on input line 256.
+Package pdftex.def Info: figplaques1.png  used on input line 254.
 (pdftex.def)             Requested size: 214.6319pt x 184.9429pt.
-<screenshot004.png, id=325, 1319.68031pt x 959.83594pt>
+<screenshot004.png, id=326, 1319.68031pt x 959.83594pt>
 File: screenshot004.png Graphic file (type png)
 <use screenshot004.png>
-Package pdftex.def Info: screenshot004.png  used on input line 273.
+Package pdftex.def Info: screenshot004.png  used on input line 271.
 (pdftex.def)             Requested size: 218.94255pt x 159.2302pt.
-<figfils.png, id=326, 462.528pt x 346.896pt>
+<figfils.png, id=327, 462.528pt x 346.896pt>
 File: figfils.png Graphic file (type png)
 <use figfils.png>
-Package pdftex.def Info: figfils.png  used on input line 280.
+Package pdftex.def Info: figfils.png  used on input line 278.
 (pdftex.def)             Requested size: 243.27116pt x 182.45659pt.
 
 
@@ -1015,24 +1015,24 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [6 <./dibplaques.png> <./figplaques1.png>]
-<confinventJS.jpeg, id=345, 1606.0pt x 1168.365pt>
+<confinventJS.jpeg, id=346, 1606.0pt x 1168.365pt>
 File: confinventJS.jpeg Graphic file (type jpg)
 <use confinventJS.jpeg>
-Package pdftex.def Info: confinventJS.jpeg  used on input line 307.
+Package pdftex.def Info: confinventJS.jpeg  used on input line 305.
 (pdftex.def)             Requested size: 238.4084pt x 173.42876pt.
-<figplacarara.png, id=346, 774.0117pt x 669.9429pt>
+<figplacarara.png, id=347, 774.0117pt x 669.9429pt>
 File: figplacarara.png Graphic file (type png)
 <use figplacarara.png>
-Package pdftex.def Info: figplacarara.png  used on input line 314.
+Package pdftex.def Info: figplacarara.png  used on input line 312.
 (pdftex.def)             Requested size: 238.4084pt x 206.35123pt.
 
 
 [7 <./screenshot004.png> <./figfils.png> <./confinventJS.jpeg> <./figplacarara.
 png>]
-<figV2imagenes.png, id=355, 774.0117pt x 669.9429pt>
+<figV2imagenes.png, id=356, 774.0117pt x 669.9429pt>
 File: figV2imagenes.png Graphic file (type png)
 <use figV2imagenes.png>
-Package pdftex.def Info: figV2imagenes.png  used on input line 326.
+Package pdftex.def Info: figV2imagenes.png  used on input line 324.
 (pdftex.def)             Requested size: 218.94255pt x 189.50455pt.
 
 
@@ -1069,11 +1069,11 @@ Cap\'{\i }tol 4.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 547.
+(hyperref)                removing `math shift' on input line 542.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 547.
+(hyperref)                removing `math shift' on input line 542.
 
 
 
@@ -1139,7 +1139,7 @@ rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ericg/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ericg/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users
 /ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "Informe de Pràctiques.pdf" (23 pages, 13852722 bytes).
+Output written on "Informe de Pràctiques.pdf" (23 pages, 13853352 bytes).
 PDF statistics:
  899 PDF objects out of 1000 (max. 8388607)
  365 named destinations out of 1000 (max. 500000)

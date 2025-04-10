@@ -1,43 +1,50 @@
 \babel@toc {catalan}{}\relax 
-\contentsline {chapter}{\numberline {1}Representació de camps}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introducció i fonament teòric}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Metodologia experimental}{3}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Representació de corbes equipotencials}{3}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Càlcul de la capacitat del condensador}{4}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Distribució extra. Motivació}{4}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Simulacions}{5}{subsection.1.2.4}%
-\contentsline {section}{\numberline {1.3}Resultats i discussió}{5}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Condensador de plaques planoparal·leles}{5}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Fils infinits}{6}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Fil infinit i dos plans}{7}{subsection.1.3.3}%
-\contentsline {section}{\numberline {1.4}Conclusions}{8}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Força entre corrents}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introducció i fonament teòric}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Metodologia experimental}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Equilibrat de la balança}{10}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Força vs. corrent}{10}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Força vs. separació}{10}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Mesura del camp magnètic terrestre}{10}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Resultats i discussió}{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Valor experimental de la permeabilitat magnètica}{10}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Camp magnètic terrestre}{10}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Conclusions}{10}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Circuit RLC en sèrie}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introducció i fonament teòric}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Metodologia experimental}{11}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Resultats i discussió}{11}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Conclusions}{11}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Inductància mútua i transformadors}{12}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introducció i fonament teòric}{12}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Metodologia experimental}{13}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Resultats i discussió}{13}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Conclusions}{13}{section.4.4}%
-\contentsline {chapter}{Bibliografia}{14}{chapter*.8}%
-\contentsline {chapter}{Annexos}{15}{section*.9}%
-\contentsline {section}{\numberline {A}Càlcul d'incerteses}{15}{section.1..1}%
-\contentsline {subsection}{\numberline {A.1}Incerteses pràctica 1}{15}{subsection.1..1.1}%
-\contentsline {section}{\numberline {B}Annex pràctica 1. Representació de camps}{16}{section.1..2}%
-\contentsline {subsection}{\numberline {B.1}Deducció de l'equació $(1.22)$}{16}{subsection.1..2.1}%
-\contentsline {subsection}{\numberline {B.2}Expressió analítica de la distribució de dos plans secants i un fil}{17}{subsection.1..2.2}%
-\contentsline {subsection}{\numberline {B.3}Dades experimentals de la pràctica 1}{18}{subsection.1..2.3}%
-\contentsline {subsection}{\numberline {B.4}Codis de les simulacions de la pràctica 1}{19}{subsection.1..2.4}%
+\contentsline {chapter}{\numberline {1}Representació de camps}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introducció i fonament teòric}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Metodologia experimental}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Representació de corbes equipotencials}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Càlcul de la capacitat del condensador}{5}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Distribució extra. Motivació}{5}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Simulacions}{6}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Resultats i discussió}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Condensador de plaques planoparal·leles}{6}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Fils infinits}{7}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Fil infinit i dos plans}{8}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Conclusions}{9}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Força entre corrents}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introducció i fonament teòric}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Metodologia experimental}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Equilibrat de la balança}{11}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Força vs. corrent}{11}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Força vs. separació}{11}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Mesura del camp magnètic terrestre}{11}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Resultats i discussió}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Valor experimental de la permeabilitat magnètica}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Camp magnètic terrestre}{11}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Conclusions}{11}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Circuit RLC en sèrie}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducció i fonament teòric}{12}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Explicació qualitativa}{12}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Equació general del circuit RLC}{13}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Metodologia experimental}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Resultats i discussió}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Conclusions}{13}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Inductància mútua i transformadors}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introducció i fonament teòric}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Metodologia experimental}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Resultats i discussió}{15}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Conclusions}{15}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Mesura de la resistència d'un metall}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introducció i fonament teòric}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Metodologia experimental}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Resultats i discussió}{16}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Conclusions}{16}{section.5.4}%
+\contentsline {chapter}{Bibliografia}{17}{chapter*.8}%
+\contentsline {chapter}{Annexos}{18}{section*.9}%
+\contentsline {section}{\numberline {A}Càlcul d'incerteses}{18}{section.1..1}%
+\contentsline {subsection}{\numberline {A.1}Incerteses pràctica 1}{18}{subsection.1..1.1}%
+\contentsline {section}{\numberline {B}Annex pràctica 1. Representació de camps}{19}{section.1..2}%
+\contentsline {subsection}{\numberline {B.1}Deducció de l'equació $(1.22)$}{19}{subsection.1..2.1}%
+\contentsline {subsection}{\numberline {B.2}Expressió analítica de la distribució de dos plans secants i un fil}{20}{subsection.1..2.2}%
+\contentsline {subsection}{\numberline {B.3}Dades experimentals de la pràctica 1}{21}{subsection.1..2.3}%
+\contentsline {subsection}{\numberline {B.4}Codis de les simulacions de la pràctica 1}{22}{subsection.1..2.4}%

@@ -401,10 +401,42 @@ Així doncs, la força, en mòdul que patirà un altre fil (infinit) paral·lel,
 \chapter{Circuit RLC en sèrie}
 
 \begin{chapterabstract}
-	contenidos...
+	En aquesta pràctica estudiem el comportament del circuit més elemental que presenta oscil·lacions: el circuit RLC (resistència + condensador + bobina) en serie. El nostre objectiu principal és visualitzar, mitjançant un oscil·loscopi, les diferents solucions de l'equació diferencial de segon ordre associada a aquest sistema de gran interès físic.
 \end{chapterabstract}
 
 \section{Introducció i fonament teòric}
+
+\subsection{Explicació qualitativa}
+ESQUEMA DEL CIRCUIT + LINK A ANIMACIÓ DE LA WIKIPEDIA
+
+Per entendre per què aquest tipus de circuits presenten oscil·lacions considerem, inicialment, que no tenim cap resistència i que el condensador es troba totalment carregat. En connectar les plaques del condensador a la bobina, comença a circular una intensitat $I$ per aquesta. La variació de $I$ provoca, en virtut de la llei de Lenz
+\begin{equation}
+	\varepsilon = - \dv{}{t}\int_S \vec{B} \cdot \mathrm{d}\vec{s} \label{eq:3.1},
+\end{equation}
+una força electromotriu induïda als extrems de la bobina que s'oposa a l'augment de corrent. Com que la resistència $R$ és nul·la el potencial a la bobina serà igual i de signe contrari al potencial entre les plaques del condensador (si no fos així tindríem una intensitat infinita circulant per la bobina). 
+
+Tanmateix, mentre el condensador es descarrega, la intensitat va augmentant, de forma que, quan el condensador està totalment descarregat (i, per tant, el potencial és zero entre les dues plaques), la intensitat és màxima. Com que és impossible que el corrent s'anul·li de sobte (ja que implicaria una $\varepsilon$ infinita), continua circulant intensitat en el mateix sentit i el condensador es carrega amb polaritat contrària a la de l'inici. 
+
+Ara, el procés de càrrega del condensador fa que la intensitat disminueixi progressivament (el voltatge total del circuit ha de ser nul en tot moment); quan la intensitat arriba a zero la càrrega del condensador ha de ser necessàriament la mateixa que a l'inici, ja que, com que la resistència òhmica del circuit és nul·la, no hem tingut pèrdues energètiques associades a l'efecte Joule, però el potencial és de signe oposat. En tot aquest procés ha passat un \textit{semiperíode}. Seguidament torna a començar el procés de càrrega del condensador fins a tornar a arribar a la situació inicial; tot plegat explica per què el voltatge entre les plaques del condensador oscil·la indefinidament.
+
+La capacitat $C$ del condensador és
+\begin{equation}
+	C = \frac{q}{V_C}, \label{eq:3.2}
+\end{equation}
+i l'autoinductància de la bobina és
+\begin{equation}
+	L = V_L \frac{\Delta t}{\Delta I}, \label{eq:3.3}
+\end{equation}
+on $q$ és la càrrega emmagatzemada al condensador, el quocient $\frac{\Delta t}{\Delta I}$ és la variació de temps per una certa variació de la intensitat i  $V_L$ i $V_C$ són els voltatges associats a la bobina i al condensador, respectivament. Aquestes dues magnituds, que depenen únicament de la geometria del sistema considerat, són de vital importància per descriure com seran aquestes oscil·lacions. Notem que: 
+\begin{itemize}
+	\item Com més petita sigui la capacitat $C$ del condensador, més ràpidament es descarregarà (té menys càrrega).
+	\item Com més petita sigui l'autoinductància $L$ de la bobina, més variació en la intensitat és necessària per donar una mateixa força electromotriu $\varepsilon$, de manera que també més ràpidament es descarregarà el condensador.
+\end{itemize}
+Si tenim presents aquests dos efectes, fàcilment podem arribar a la conclusió que com menors siguin l'autoinductància i la capacitat del circuit, més alta serà la freqüència d'oscil·lació.
+
+Totes aquestes consideracions són assumint que la resistència del circuit és negligible. En cas que no ho sigui (com en el cas que estudiem) el voltatge a la bobina i al condensador seran lleugerament diferents i, per cada oscil·lació, perdrem part de l'energia del sistema en forma de calor (per l'efecte Joule). En cas que la resistència es faci molt gran, deixaran d'haver-hi oscil·lacions.
+
+\subsection{Equació general del circuit RLC}
 
 \section{Metodologia experimental}
 
@@ -496,7 +528,19 @@ Tot el descrit fins ara fa referència a un cas ideal però el que s'observa exp
 
 \section{Conclusions}
 
+\chapter{Mesura de la resistència d'un metall}
 
+\begin{chapterabstract}
+	\textit{Here goes blahblahblah$\ldots$}
+\end{chapterabstract}
+
+\section{Introducció i fonament teòric}
+
+\section{Metodologia experimental}
+
+\section{Resultats i discussió}
+
+\section{Conclusions}
 
 
 \begin{thebibliography}{99}

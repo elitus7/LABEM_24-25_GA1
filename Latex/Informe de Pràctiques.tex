@@ -437,6 +437,29 @@ Si tenim presents aquests dos efectes, fàcilment podem arribar a la conclusió 
 Totes aquestes consideracions són assumint que la resistència del circuit és negligible. En cas que no ho sigui (com en el cas que estudiem) el voltatge a la bobina i al condensador seran lleugerament diferents i, per cada oscil·lació, perdrem part de l'energia del sistema en forma de calor (per l'efecte Joule). En cas que la resistència es faci molt gran, deixaran d'haver-hi oscil·lacions.
 
 \subsection{Equació general del circuit RLC}
+Per circuits en sèrie els voltatges se sumen i les intensitats són iguals per a tots els elements del circuit, de forma que el voltatge total es correspondrà amb
+\begin{equation}
+	V = V_R + V_L + V_C = RI + L \dv{I}{t} + \frac{1}{C} \int I\mathrm{d}t, \label{eq:3.4}
+\end{equation}
+on hem emprat les expressions diferencials 
+\begin{align}
+	V_L & = L \dv{I}{t}, \\
+	V_C & = \frac{1}{C} \int I \mathrm{d}t.
+\end{align}
+Si derivem respecte del temps l'expressió \eqref{eq:3.4} obtenim:
+\begin{equation}
+	\dv[2]{I}{t} + \frac{R}{L} \dv{I}{t}+\frac{1}{LC} = \frac{1}{L}\dv{V}{t}.
+\end{equation}
+Podem trobar dues expressions alternatives a aquesta darrera equació. Si ens interessa tenir una equació en funció del potencial als extrems de la resistència només cal que multipliquem per $R$; si ens interessa expressar-ho tot en funció del potencial del condensador hem de tenir en compte que
+\begin{equation}
+	I = C \dv{V_C}{t},
+\end{equation}
+de manera que obtenim les següents dues expressions alternatives:
+\begin{align}
+	\dv[2]{V_R}{t} + \frac{R}{L}\dv{V_R}{t} + \frac{1}{LC}V_R = \frac{R}{L} \dv{V}{t}, \\
+	\dv[2]{V_C}{t} + \frac{R}{L}\dv{V_C}{t} + \frac{1}{LC}V_C=\frac{1}{LC}V.
+\end{align}
+
 
 \section{Metodologia experimental}
 

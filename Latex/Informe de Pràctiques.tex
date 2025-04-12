@@ -44,6 +44,7 @@
 \usepackage{float}
 \usepackage{titling}
 \usepackage{etoolbox}
+\renewcommand{\labelenumi}{\textbf{\theenumi.}} 
 
 %Definim el següent entorn per tal de poder posar abstracts a cada capítol.
 \newenvironment{chapterabstract}{
@@ -132,7 +133,7 @@ Recordem que, per poder calcular la capacitat per unitat de longitud d'un conden
 \end{equation}
 Assumint que el condensador és infinitament llarg en la direcció $z$, podem assegurar que el camp és constant en aquesta direcció i, per tant, $dS = Zdl$, on $dl$ és el diferencial de longitud a la intersecció de la superfície equipotencial amb un pla perpendicular al condensador. Amb això tenim que:
 \begin{equation}
-	\frac{q}{Z} = \varepsilon \oint_C E \mathrm{d}l \label{eq1.13}
+	\frac{q}{Z} = \varepsilon \oint_C E \mathrm{d}l \label{eq1.13}.
 \end{equation}
 \section{Metodologia experimental}
 \subsection{Representació de corbes equipotencials}
@@ -434,31 +435,136 @@ on $q$ és la càrrega emmagatzemada al condensador, el quocient $\frac{\Delta t
 \end{itemize}
 Si tenim presents aquests dos efectes, fàcilment podem arribar a la conclusió que com menors siguin l'autoinductància i la capacitat del circuit, més alta serà la freqüència d'oscil·lació.
 
-Totes aquestes consideracions són assumint que la resistència del circuit és negligible. En cas que no ho sigui (com en el cas que estudiem) el voltatge a la bobina i al condensador seran lleugerament diferents i, per cada oscil·lació, perdrem part de l'energia del sistema en forma de calor (per l'efecte Joule). En cas que la resistència es faci molt gran, deixaran d'haver-hi oscil·lacions.
+Totes aquestes consideracions són assumint que la resistència del circuit és negligible. En cas que no ho sigui (com en el cas que estudiem) el voltatge a la bobina i al condensador seran lleugerament diferents i, per cada oscil·lació, perdrem part de l'energia del sistema en forma de calor (per l'efecte Joule). Si la resistència es fa molt gran, deixaran d'haver-hi oscil·lacions.
 
 \subsection{Equació general del circuit RLC}
 Per circuits en sèrie els voltatges se sumen i les intensitats són iguals per a tots els elements del circuit, de forma que el voltatge total es correspondrà amb
 \begin{equation}
 	V = V_R + V_L + V_C = RI + L \dv{I}{t} + \frac{1}{C} \int I\mathrm{d}t, \label{eq:3.4}
 \end{equation}
-on hem emprat les expressions diferencials 
+on hem emprat les expressions 
 \begin{align}
+	V_R & = RI, \\
 	V_L & = L \dv{I}{t}, \\
 	V_C & = \frac{1}{C} \int I \mathrm{d}t.
 \end{align}
-Si derivem respecte del temps l'expressió \eqref{eq:3.4} obtenim:
+Si derivem respecte del temps l'expressió \eqref{eq:3.4} i reorganitzem obtenim:
 \begin{equation}
-	\dv[2]{I}{t} + \frac{R}{L} \dv{I}{t}+\frac{1}{LC} = \frac{1}{L}\dv{V}{t}.
+	\dv[2]{I}{t} + \frac{R}{L} \dv{I}{t}+\frac{1}{LC} = \frac{1}{L}\dv{V}{t}.\label{eq:3.8}
 \end{equation}
-Podem trobar dues expressions alternatives a aquesta darrera equació. Si ens interessa tenir una equació en funció del potencial als extrems de la resistència només cal que multipliquem per $R$; si ens interessa expressar-ho tot en funció del potencial del condensador hem de tenir en compte que
+Podem trobar dues expressions alternatives a aquesta darrera equació. Si ens interessa tenir una equació en funció del potencial als extrems de la resistència només cal que multipliquem per $R$; si ens interessa expressar-ho tot en funció del potencial al condensador hem de tenir en compte que
 \begin{equation}
 	I = C \dv{V_C}{t},
 \end{equation}
 de manera que obtenim les següents dues expressions alternatives:
 \begin{align}
 	\dv[2]{V_R}{t} + \frac{R}{L}\dv{V_R}{t} + \frac{1}{LC}V_R = \frac{R}{L} \dv{V}{t}, \\
-	\dv[2]{V_C}{t} + \frac{R}{L}\dv{V_C}{t} + \frac{1}{LC}V_C=\frac{1}{LC}V.
+	\dv[2]{V_C}{t} + \frac{R}{L}\dv{V_C}{t} + \frac{1}{LC}V_C=\frac{1}{LC}V. \label{eq:3.11}
 \end{align}
+
+\subsection{Règim permanent}
+En aquest règim assumim que subministrem un senyal sinusoidal al circuit, de manera que:
+\begin{equation}
+	V(t) = V_{max} \sin (\omega t)
+\end{equation} 
+La solució de l'equació \eqref{eq:3.8} és també una ona sinusoidal:
+\begin{equation}
+	I(t) = I_{max}\sin(\omega t + \phi)
+\end{equation}
+Si expressem això en notació complexa\footnote{Denotem la unitat imaginària amb $j$ per evitar confusions amb la intensitat.}
+\begin{align}
+	I(t) & = I_{max} \exp^{j(\omega t + \phi)}, \\
+	V(t) & = V_{max} \exp^{j\omega t},
+\end{align}
+i ho substituïm a l'equació \eqref{eq:3.4} tenim
+\begin{equation}
+	V(t) = \left[R+j \left(L\omega - \frac{1}{C\omega}\right)\right]I(t),
+\end{equation}
+que ens permet, per tal de tenir una expressió anàloga a la llei d'Ohm de la forma $V=ZI$, definir la impedància $Z$ (mesurada en $\Omega$):
+\begin{equation}
+	Z \equiv R+j\left(L\omega - \frac{1}{C\omega}\right).
+\end{equation}
+Notem que, com que, si prenem mòduls
+\begin{equation}
+	\abs{I} = \frac{\abs{V}}{\abs{Z}} = \frac{\abs{V}}{\sqrt{R^2+\left( L\omega - \frac{1}{C\omega}\right)^2 }},
+\end{equation}
+veiem que la intensitat serà màxima quan se satisfaci que $L\omega - \frac{1}{C\omega} = 0$. La freqüència \textit{pròpia} o \textit{de ressonància} del circuit RLC és aquella tal que aquesta darrera condició se satisfà i es defineix segons\footnote{Fem notar que $\abs{Z(\omega_0)} = R$.}:
+\begin{equation}
+	\omega_0^2 =\equiv \frac{1}{LC}.
+\end{equation}
+
+\subsection{Règim transitori}
+En aquest règim assumim que se subministra al circuit RLC un senyal de tipus rectangular de període $T'$:
+\begin{equation}
+	V(t) = 
+	\begin{cases}
+		E & \text{si } 0 < t < T'/2 \\
+		0 & \text{si } T'/2 < t < T'
+	\end{cases}
+\end{equation}
+Ens interessa solucionar, amb aquesta funció $V(t)$, l'equació \eqref{eq:3.11}. És una EDO de primer ordre i no homogènia; la solució serà la suma de la solució general per l'EDO homogènia més una solució particular:
+\begin{itemize}
+	\item És immediat veure que una solució particular és $V_C = V(t)$.
+	\item Per trobar la solució de l'equació homogènia cal solucionar
+	\begin{equation}
+		x^2 + \frac{R}{L}x + \frac{1}{LC} = 0, \label{eq:3.21}
+	\end{equation}
+	que tindrà diferents solucions en funció de com sigui el discriminant
+	\begin{equation}
+		\Delta = \left(\frac{R}{L}\right)^2-\frac{4}{LC}.
+	\end{equation}
+\end{itemize}
+Tenim els següents tres casos:
+\begin{enumerate}
+	\item Si $\Delta < 0$ ($R$'s petites), l'equació \eqref{eq:3.21} té com a solució
+	\begin{equation}
+		x = - \lambda \pm j\omega,
+	\end{equation}
+	essent $\lambda$ la \textit{constant d'esmorteïment}, definida segons
+	\begin{equation}
+		\lambda \equiv \frac{R}{2L}.
+	\end{equation}
+	De forma similar, definim la \textit{freqüència de pseudo-pulsació} com\footnote{Fixem-nos que si el circuit està poc amortit ($R\rightarrow 0$), aleshores $\omega \approx \omega_0$.}
+	\begin{equation}
+		\omega \equiv \sqrt{\omega_0 - \frac{1}{4}\left(\frac{R}{L}\right)^2}.
+	\end{equation}
+	Així mateix, tenint en compte la solució particular podem escriure la solució general de l'EDO com
+	\begin{equation}
+		V_C(t) = A \exp^{-\lambda t}\cos(\omega t - \psi) + V(t),
+	\end{equation}
+	si imposem les condicions inicials adequades (a $t=0$ la diferència de potencial en el condensador i la intensitat del circuit són 0), acabem trobant
+	\begin{equation}
+		\boxed{V_C(t) = E \left[1-\sqrt{1+\left(\frac{\lambda}{\omega}\right)^2}\exp^{-\lambda t}\cos(\omega t - \psi)\right]}. 
+	\end{equation}
+	Si només ens fixem en els punts extremals, on $\cos(\omega t - \psi) = \pm 1$, aleshores
+	\begin{equation}
+		\ln\abs{V_C(t_i)-E} = \ln\abs{A}-\lambda t.
+	\end{equation}
+	Aquesta darrera equació és l'equació d'una recta de pendent $-\lambda$. Ens permetrà, a partir d'un conjunt de mesures de $\ln\abs{V_C(t_i)-E}$ i $t$ determinar la constant d'esmorteïment.
+	\item Si $\Delta > 0$ ($R$'s grans), la solució de \eqref{eq:3.21} és
+	\begin{equation}
+		x_{1,2} = -\frac{R}{2L}\pm \frac{1}{2}\sqrt{\Delta},
+	\end{equation}
+	de manera que la solució general a l'EDO és
+	\begin{equation}
+		\boxed{V_C(t) = A_1 \exp^{x_1t}+A_2\exp^{x_2t}+V(t)},
+	\end{equation}
+	amb $A_1$ i $A_2$ dues constants a determinar (de nou, usant les condicions inicials).
+	\item Si $\Delta = 0$ tenim que la resistència es correspon amb la \textit{resistència crítica}
+	\begin{equation}
+		R_{crit} = 2\omega_0L = 2\sqrt{\frac{L}{C}}.
+	\end{equation}
+	La solució general de l'EDO (un cop s'han imposat les condicions inicials) és
+	\begin{equation}
+		\boxed{V_C(t) = E[1-\exp^{-\lambda t}(t+1)]}.
+	\end{equation}
+\end{enumerate}
+
+
+
+\subsection{Desfasament entre voltatges}
+
+\subsection{Freqüències de tall i amplada de banda}
 
 
 \section{Metodologia experimental}

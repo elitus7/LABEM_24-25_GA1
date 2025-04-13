@@ -30,25 +30,27 @@
 \contentsline {subsection}{\numberline {3.1.4}Règim transitori}{14}{subsection.3.1.4}%
 \contentsline {subsection}{\numberline {3.1.5}Desfasament entre voltatges}{15}{subsection.3.1.5}%
 \contentsline {subsection}{\numberline {3.1.6}Freqüències de tall i amplada de banda}{15}{subsection.3.1.6}%
-\contentsline {section}{\numberline {3.2}Metodologia experimental}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Resultats i discussió}{15}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Conclusions}{15}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Inductància mútua i transformadors}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introducció i fonament teòric}{16}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Metodologia experimental}{17}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Resultats i discussió}{17}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Conclusions}{17}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Mesura de la resistència d'un metall}{18}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introducció i fonament teòric}{18}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Metodologia experimental}{18}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Resultats i discussió}{18}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Conclusions}{18}{section.5.4}%
-\contentsline {chapter}{Bibliografia}{19}{chapter*.8}%
-\contentsline {chapter}{Annexos}{20}{section*.9}%
-\contentsline {section}{\numberline {A}Càlcul d'incerteses}{20}{section.1..1}%
-\contentsline {subsection}{\numberline {A.1}Incerteses pràctica 1}{20}{subsection.1..1.1}%
-\contentsline {section}{\numberline {B}Annex pràctica 1. Representació de camps}{21}{section.1..2}%
-\contentsline {subsection}{\numberline {B.1}Deducció de l'equació $(1.22)$}{21}{subsection.1..2.1}%
-\contentsline {subsection}{\numberline {B.2}Expressió analítica de la distribució de dos plans secants i un fil}{22}{subsection.1..2.2}%
-\contentsline {subsection}{\numberline {B.3}Dades experimentals de la pràctica 1}{23}{subsection.1..2.3}%
-\contentsline {subsection}{\numberline {B.4}Codis de les simulacions de la pràctica 1}{24}{subsection.1..2.4}%
+\contentsline {section}{\numberline {3.2}Metodologia experimental}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Estudi del règim permanent}{16}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Estudi del règim transitori}{16}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Resultats i discussió}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Conclusions}{16}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Inductància mútua i transformadors}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introducció i fonament teòric}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Metodologia experimental}{18}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Resultats i discussió}{18}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Conclusions}{18}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Mesura de la resistència d'un metall}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introducció i fonament teòric}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Metodologia experimental}{19}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Resultats i discussió}{19}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Conclusions}{19}{section.5.4}%
+\contentsline {chapter}{Bibliografia}{20}{chapter*.8}%
+\contentsline {chapter}{Annexos}{21}{section*.9}%
+\contentsline {section}{\numberline {A}Càlcul d'incerteses}{21}{section.1..1}%
+\contentsline {subsection}{\numberline {A.1}Incerteses pràctica 1}{21}{subsection.1..1.1}%
+\contentsline {section}{\numberline {B}Annex pràctica 1. Representació de camps}{22}{section.1..2}%
+\contentsline {subsection}{\numberline {B.1}Deducció de l'equació $(1.22)$}{22}{subsection.1..2.1}%
+\contentsline {subsection}{\numberline {B.2}Expressió analítica de la distribució de dos plans secants i un fil}{23}{subsection.1..2.2}%
+\contentsline {subsection}{\numberline {B.3}Dades experimentals de la pràctica 1}{24}{subsection.1..2.3}%
+\contentsline {subsection}{\numberline {B.4}Codis de les simulacions de la pràctica 1}{25}{subsection.1..2.4}%

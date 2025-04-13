@@ -473,8 +473,8 @@ La solució de l'equació \eqref{eq:3.8} és també una ona sinusoidal:
 \end{equation}
 Si expressem això en notació complexa\footnote{Denotem la unitat imaginària amb $j$ per evitar confusions amb la intensitat.}
 \begin{align}
-	I(t) & = I_{max} \exp^{j(\omega t + \phi)}, \\
-	V(t) & = V_{max} \exp^{j\omega t},
+	I(t) & = I_{max} \mathrm{e}^{j(\omega t + \phi)}, \\
+	V(t) & = V_{max} \mathrm{e}^{j\omega t},
 \end{align}
 i ho substituïm a l'equació \eqref{eq:3.4} tenim
 \begin{equation}
@@ -490,7 +490,7 @@ Notem que, com que, si prenem mòduls
 \end{equation}
 veiem que la intensitat serà màxima quan se satisfaci que $L\omega - \frac{1}{C\omega} = 0$. La freqüència \textit{pròpia} o \textit{de ressonància} del circuit RLC és aquella tal que aquesta darrera condició se satisfà i es defineix segons\footnote{Fem notar que $\abs{Z(\omega_0)} = R$.}:
 \begin{equation}
-	\omega_0^2 =\equiv \frac{1}{LC}.
+	\omega_0^2 \equiv \frac{1}{LC} \label{eq:3.19}.
 \end{equation}
 
 \subsection{Règim transitori}
@@ -530,11 +530,11 @@ Tenim els següents tres casos:
 	\end{equation}
 	Així mateix, tenint en compte la solució particular podem escriure la solució general de l'EDO com
 	\begin{equation}
-		V_C(t) = A \exp^{-\lambda t}\cos(\omega t - \psi) + V(t),
+		V_C(t) = A \mathrm{e}^{-\lambda t}\cos(\omega t - \psi) + V(t),
 	\end{equation}
 	si imposem les condicions inicials adequades (a $t=0$ la diferència de potencial en el condensador i la intensitat del circuit són 0), acabem trobant
 	\begin{equation}
-		\boxed{V_C(t) = E \left[1-\sqrt{1+\left(\frac{\lambda}{\omega}\right)^2}\exp^{-\lambda t}\cos(\omega t - \psi)\right]}. 
+		\boxed{V_C(t) = E \left[1-\sqrt{1+\left(\frac{\lambda}{\omega}\right)^2}\mathrm{e}^{-\lambda t}\cos(\omega t - \psi)\right]}. 
 	\end{equation}
 	Si només ens fixem en els punts extremals, on $\cos(\omega t - \psi) = \pm 1$, aleshores
 	\begin{equation}
@@ -547,7 +547,7 @@ Tenim els següents tres casos:
 	\end{equation}
 	de manera que la solució general a l'EDO és
 	\begin{equation}
-		\boxed{V_C(t) = A_1 \exp^{x_1t}+A_2\exp^{x_2t}+V(t)},
+		\boxed{V_C(t) = A_1 \mathrm{e}^{x_1t}+A_2\mathrm{e}^{x_2t}+V(t)},
 	\end{equation}
 	amb $A_1$ i $A_2$ dues constants a determinar (de nou, usant les condicions inicials).
 	\item Si $\Delta = 0$ tenim que la resistència es correspon amb la \textit{resistència crítica}
@@ -556,18 +556,54 @@ Tenim els següents tres casos:
 	\end{equation}
 	La solució general de l'EDO (un cop s'han imposat les condicions inicials) és
 	\begin{equation}
-		\boxed{V_C(t) = E[1-\exp^{-\lambda t}(t+1)]}.
+		\boxed{V_C(t) = E[1-\mathrm{e}^{-\lambda t}(t+1)]}.
 	\end{equation}
 \end{enumerate}
 
-
-
 \subsection{Desfasament entre voltatges}
+El guany en voltatge a la resistència, és a dir, la relació entre el voltatge a la resistència i el voltatge d'entrada es defineix segons
+\begin{equation}
+	T_R = \frac{V_R}{V} = \frac{R}{R+j(L\omega - \frac{1}{C\omega})} \label{eq:3.33}.
+\end{equation}
+Si $\phi$ és el \textit{desfasament} entre el voltatge d'entrada i el corresponent a la resistència, aleshores tenim
+\begin{equation}
+	T_R = \abs{T_R}\mathrm{e}^{j \phi},
+\end{equation}
+on
+\begin{equation}
+	\tan \phi = -\frac{L\omega - \frac{1}{C\omega}}{R}.
+\end{equation}
+D'aquí es pot deduir que:
+\begin{itemize}
+	\item Si $\omega > \omega_0$ $\Rightarrow$ $-\frac{\pi}{2}<\phi<0$. $V_R$ està enrederit respecte del voltatge d'entrada.
+ 	\item Si $\omega < \omega_0$ $\Rightarrow$ $0<\phi<\frac{\pi}{2}$. $V_R$ està avançat respecte del voltatge d'entrada.
+\end{itemize}
+En particular, si $\omega = \omega_0$ les dues ones estan en fase (estem en situació de ressonància) i tenim que $\abs{T_R} = 1$ (el guany és màxim).
 
 \subsection{Freqüències de tall i amplada de banda}
-
+Les freqüències de tall es defineixen com aquelles freqüències $\omega_c$ tals que se satisfà que
+\begin{equation}
+	\abs{T_R(\omega_c)} = \frac{1}{\sqrt{2}}.
+\end{equation}
+Aquestes freqüències ens permeten estudiar l'amplada de la ressonància. Si usem la definició del guany a la resistència donada a \eqref{eq:3.33} tenint present la definició de la freqüència de ressonància (equació \eqref{eq:3.19}) trobem
+\begin{equation}
+	\left(\frac{\omega_c}{\omega_0}\right)^2 \pm \frac{R}{L\omega_0}\left(\frac{\omega_c}{\omega_0}\right) -1=0,
+\end{equation}
+de manera que tenim dues freqüències de tall, $\omega_1$ i $\omega_2$, que satisfan 
+\begin{align}
+	\omega_2-\omega_1 & = \frac{R}{L}, \\
+	\omega_2 \cdot \omega_1 & = \omega_0^2.
+\end{align}
+Fixem-nos que l'amplada de banda es correspon amb la diferència entre les dues freqüències de tall, de forma que
+\begin{equation}
+	\Delta \omega = \frac{R}{L}.
+\end{equation}
 
 \section{Metodologia experimental}
+
+\subsection{Estudi del règim permanent}
+
+\subsection{Estudi del règim transitori}
 
 \section{Resultats i discussió}
 

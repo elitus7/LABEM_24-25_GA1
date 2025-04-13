@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  12 APR 2025 20:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  13 APR 2025 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -957,7 +957,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 ...ne {chapter}{Bibliografia}{19}{chapter*.8}
+l.46 ...ne {chapter}{Bibliografia}{20}{chapter*.8}
                                                   % [1
 
 ])
@@ -1059,20 +1059,18 @@ Cap\'{\i }tol 3.
 [14]
 
 [15]
+
+[16]
 Cap\'{\i }tol 4.
 
 
-[16
+[17
 
 ]
 
-[17]
+[18]
 Cap\'{\i }tol 5.
 
-
-[18
-
-]
 
 [19
 
@@ -1082,16 +1080,18 @@ Cap\'{\i }tol 5.
 
 ]
 
+[21
+
+]
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 715.
+(hyperref)                removing `math shift' on input line 751.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 715.
+(hyperref)                removing `math shift' on input line 751.
 
 
-
-[21]
 
 [22]
 
@@ -1103,20 +1103,29 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [26]
 
-[27] (Informe de Pràctiques.aux)
+[27]
+
+[28] (Informe de Pràctiques.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-Package rerunfilecheck Info: File `"Informe de Pràctiques".out' has not change
-d.
-(rerunfilecheck)             Checksum: 8C6B703E6D8939B3C15090A60866683F;10219.
+
+
+Package rerunfilecheck Warning: File `"Informe de Pràctiques".out' has changed
+.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Informe de Pràctiques".out':
+(rerunfilecheck)             Before: 8C6B703E6D8939B3C15090A60866683F;10219
+(rerunfilecheck)             After:  3E99B93332F967C348C99171D9E22730;10632.
  ) 
 Here is how much of TeX's memory you used:
- 29375 strings out of 473682
- 545231 string characters out of 5719215
- 1577390 words of memory out of 5000000
- 51582 multiletter control sequences out of 15000+600000
+ 29388 strings out of 473682
+ 545392 string characters out of 5719215
+ 1577495 words of memory out of 5000000
+ 51584 multiletter control sequences out of 15000+600000
  576132 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,12n,121p,1215b,2115s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1155,9 +1164,9 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users
 /ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><
 C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
 t8.pfb>
-Output written on "Informe de Pràctiques.pdf" (28 pages, 13902693 bytes).
+Output written on "Informe de Pràctiques.pdf" (29 pages, 13906920 bytes).
 PDF statistics:
- 1037 PDF objects out of 1200 (max. 8388607)
- 419 named destinations out of 1000 (max. 500000)
+ 1055 PDF objects out of 1200 (max. 8388607)
+ 430 named destinations out of 1000 (max. 500000)
  487 words of extra memory for PDF output out of 10000 (max. 10000000)
 

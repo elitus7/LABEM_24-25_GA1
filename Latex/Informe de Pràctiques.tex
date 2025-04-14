@@ -465,11 +465,11 @@ de manera que obtenim les següents dues expressions alternatives:
 \subsection{Règim permanent}
 En aquest règim assumim que subministrem un senyal sinusoidal al circuit, de manera que:
 \begin{equation}
-	V(t) = V_{max} \sin (\omega t)
+	V(t) = V_{max} \sin (\omega t). \label{eq:3.12}
 \end{equation} 
 La solució de l'equació \eqref{eq:3.8} és també una ona sinusoidal:
 \begin{equation}
-	I(t) = I_{max}\sin(\omega t + \phi)
+	I(t) = I_{max}\sin(\omega t + \phi).
 \end{equation}
 Si expressem això en notació complexa\footnote{Denotem la unitat imaginària amb $j$ per evitar confusions amb la intensitat.}
 \begin{align}
@@ -499,7 +499,7 @@ En aquest règim assumim que se subministra al circuit RLC un senyal de tipus re
 	V(t) = 
 	\begin{cases}
 		E & \text{si } 0 < t < T'/2 \\
-		0 & \text{si } T'/2 < t < T'
+		0 & \text{si } T'/2 < t < T' \label{eq:3.20}
 	\end{cases}
 \end{equation}
 Ens interessa solucionar, amb aquesta funció $V(t)$, l'equació \eqref{eq:3.11}. És una EDO de primer ordre i no homogènia; la solució serà la suma de la solució general per l'EDO homogènia més una solució particular:
@@ -526,7 +526,7 @@ Tenim els següents tres casos:
 	\end{equation}
 	De forma similar, definim la \textit{freqüència de pseudo-pulsació} com\footnote{Fixem-nos que si el circuit està poc amortit ($R\rightarrow 0$), aleshores $\omega \approx \omega_0$.}
 	\begin{equation}
-		\omega \equiv \sqrt{\omega_0 - \frac{1}{4}\left(\frac{R}{L}\right)^2}.
+		\omega \equiv \sqrt{\omega_0 - \frac{1}{4}\left(\frac{R}{L}\right)^2}. \label{eq:3.25}
 	\end{equation}
 	Així mateix, tenint en compte la solució particular podem escriure la solució general de l'EDO com
 	\begin{equation}
@@ -538,7 +538,7 @@ Tenim els següents tres casos:
 	\end{equation}
 	Si només ens fixem en els punts extremals, on $\cos(\omega t - \psi) = \pm 1$, aleshores
 	\begin{equation}
-		\ln\abs{V_C(t_i)-E} = \ln\abs{A}-\lambda t.
+		\ln\abs{V_C(t_i)-E} = \ln\abs{A}-\lambda t. \label{eq:3.28}
 	\end{equation}
 	Aquesta darrera equació és l'equació d'una recta de pendent $-\lambda$. Ens permetrà, a partir d'un conjunt de mesures de $\ln\abs{V_C(t_i)-E}$ i $t$ determinar la constant d'esmorteïment.
 	\item Si $\Delta > 0$ ($R$'s grans), la solució de \eqref{eq:3.21} és
@@ -552,7 +552,7 @@ Tenim els següents tres casos:
 	amb $A_1$ i $A_2$ dues constants a determinar (de nou, usant les condicions inicials).
 	\item Si $\Delta = 0$ tenim que la resistència es correspon amb la \textit{resistència crítica}
 	\begin{equation}
-		R_{crit} = 2\omega_0L = 2\sqrt{\frac{L}{C}}.
+		R_{crit} = 2\omega_0L = 2\sqrt{\frac{L}{C}} \label{eq:3.31}.
 	\end{equation}
 	La solució general de l'EDO (un cop s'han imposat les condicions inicials) és
 	\begin{equation}
@@ -591,8 +591,8 @@ Aquestes freqüències ens permeten estudiar l'amplada de la ressonància. Si us
 \end{equation}
 de manera que tenim dues freqüències de tall, $\omega_1$ i $\omega_2$, que satisfan 
 \begin{align}
-	\omega_2-\omega_1 & = \frac{R}{L}, \\
-	\omega_2 \cdot \omega_1 & = \omega_0^2.
+	\omega_2-\omega_1 & = \frac{R}{L}, \label{eq:3.38} \\
+	\omega_2 \cdot \omega_1 & = \omega_0^2 \label{eq:3.39}.
 \end{align}
 Fixem-nos que l'amplada de banda es correspon amb la diferència entre les dues freqüències de tall, de forma que
 \begin{equation}
@@ -603,10 +603,42 @@ Fixem-nos que l'amplada de banda es correspon amb la diferència entre les dues 
 
 \subsection{Estudi del règim permanent}
 
+Comencem muntant el circuit de la figura \ref{fig:3.2}. Usem una bobina de $L = 22$ mH, un condensador de $C = 15$ nF, una font de corrent altern que ens subministra una senyal del tipus \eqref{eq:3.12}  i, inicialment, una resistència de $R = 2700$ $\Omega$. Efectuem les mesures amb un oscil·loscopi de doble traça; a la figura, $Y_A$ i $Y_B$ representen els dos canals d'aquest.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{screenshot005}
+	\caption{Esquema del circuit usat pel règim permanent.}
+	\label{fig:3.2}
+\end{figure}
+
+Variem la freqüència de la font fins que els dos senyals a l'oscil·loscopi estan en fase (usant el model DUAL del darrer). Aquesta freqüència es correspon amb la freqüència de ressonància. La comparem amb la freqüència de ressonància teòrica (en Hz)
+\begin{equation}
+	f_0 = \frac{1}{2\pi}\sqrt{\frac{1}{LC}},
+\end{equation}
+i mesurem el el guany $\abs{T_R(\omega_0)}$ corresponent a aquesta freqüència.
+
+Mesurem les dues freqüències de tall $f_1$ i $f_2$ (en Hz)\footnote{Recordem que són les freqüències tals que $\abs{T_R(\omega_c)} = \frac{1}{\sqrt{2}}$.}. Comparem els valors mesurats amb els valors teòrics (a partir de la resolució del sistema d'equacions donat per \eqref{eq:3.38} i \eqref{eq:3.39}). Repetim tot el procediment canviant la resistència per una de $R = 270$ $\Omega$.
+
 \subsection{Estudi del règim transitori}
+Muntem el circuit de la figura \ref{fig:3.3}. Usem una bobina de $L = 33$ mH, un condensador de $C = 330$ pF, una font que ens subministri una senyal tipus \eqref{eq:3.20} i una resistència de $R = 180$ $\Omega$.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{screenshot006}
+	\caption{Esquem del circuit usat pel règim transitori.}
+	\label{fig:3.3}
+\end{figure}
+
+Fixem la freqüència del generador de forma que a cada període d'aquest, $T_{generador}$, apareguin 10 oscil·lacions de període $T$ ($f = \frac{T}{10}$), essent aquest període $T$ el corresponent a la freqüència de pseudo-pulsació, calculat usant l'equació \eqref{eq:3.25} i que
+\begin{equation}
+	T = \frac{2\pi}{\omega}.
+\end{equation}
+Seguidament mesurem el període $T$ amb l'oscil·loscopi. 
+
+Canviem la resistència fixa per una de variable, que pot donar resistències de 0 a 100 k$\Omega$. Estudiem els casos $R<R_c$, $R=R_c$ i $R>R_c$ (on $R_c$ és la resistència crítica, donada per l'equació \eqref{eq:3.31}), de forma que podem veure les 3 solucions per a l'EDO del circuit RLC en règim transitori. Finalment, amb els valors recollits de $V_C$ i de $t$, calculem, via l'equació \eqref{eq:3.28}, el valor de la constant d'esmorteïment $\lambda$.
 \section{Resultats i discussió}
-
+posar valors teòrics i explicar d'on surten
 \section{Conclusions}
 
 

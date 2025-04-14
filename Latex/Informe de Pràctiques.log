@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  13 APR 2025 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  14 APR 2025 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,7 +940,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
 (C:\Users\ericg\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<screenshot001.png, id=218, 1505.625pt x 565.36218pt>
+<screenshot001.png, id=226, 1505.625pt x 565.36218pt>
 File: screenshot001.png Graphic file (type png)
 <use screenshot001.png>
 Package pdftex.def Info: screenshot001.png  used on input line 84.
@@ -957,7 +957,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 ...ne {chapter}{Bibliografia}{20}{chapter*.8}
+l.47 ...berline {5.4}Conclusions}{20}{section.5.4}
                                                   % [1
 
 ])
@@ -973,12 +973,12 @@ Cap\'{\i }tol 1.
 [3
 
 ]
-<screenshot002.png, id=322, 389.95688pt x 420.82219pt>
+<screenshot002.png, id=332, 389.95688pt x 420.82219pt>
 File: screenshot002.png Graphic file (type png)
 <use screenshot002.png>
 Package pdftex.def Info: screenshot002.png  used on input line 146.
 (pdftex.def)             Requested size: 218.94255pt x 236.26883pt.
-<screenshot003.png, id=323, 1541.76pt x 1156.32pt>
+<screenshot003.png, id=333, 1541.76pt x 1156.32pt>
 File: screenshot003.png Graphic file (type png)
 <use screenshot003.png>
 Package pdftex.def Info: screenshot003.png  used on input line 153.
@@ -990,22 +990,22 @@ Package pdftex.def Info: screenshot003.png  used on input line 153.
 [5]
 
 [6]
-<dibplaques.png, id=383, 1606.0pt x 1168.365pt>
+<dibplaques.png, id=393, 1606.0pt x 1168.365pt>
 File: dibplaques.png Graphic file (type png)
 <use dibplaques.png>
 Package pdftex.def Info: dibplaques.png  used on input line 248.
 (pdftex.def)             Requested size: 215.08525pt x 156.49014pt.
-<figplaques1.png, id=384, 602.25pt x 518.93875pt>
+<figplaques1.png, id=394, 602.25pt x 518.93875pt>
 File: figplaques1.png Graphic file (type png)
 <use figplaques1.png>
 Package pdftex.def Info: figplaques1.png  used on input line 255.
 (pdftex.def)             Requested size: 214.6319pt x 184.9429pt.
-<screenshot004.png, id=386, 1319.68031pt x 959.83594pt>
+<screenshot004.png, id=396, 1319.68031pt x 959.83594pt>
 File: screenshot004.png Graphic file (type png)
 <use screenshot004.png>
 Package pdftex.def Info: screenshot004.png  used on input line 272.
 (pdftex.def)             Requested size: 218.94255pt x 159.2302pt.
-<figfils.png, id=387, 462.528pt x 346.896pt>
+<figfils.png, id=397, 462.528pt x 346.896pt>
 File: figfils.png Graphic file (type png)
 <use figfils.png>
 Package pdftex.def Info: figfils.png  used on input line 279.
@@ -1017,12 +1017,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [7 <./dibplaques.png> <./figplaques1.png>]
-<confinventJS.jpeg, id=405, 1606.0pt x 1168.365pt>
+<confinventJS.jpeg, id=415, 1606.0pt x 1168.365pt>
 File: confinventJS.jpeg Graphic file (type jpg)
 <use confinventJS.jpeg>
 Package pdftex.def Info: confinventJS.jpeg  used on input line 306.
 (pdftex.def)             Requested size: 238.4084pt x 173.42876pt.
-<figplacarara.png, id=406, 774.0117pt x 669.9429pt>
+<figplacarara.png, id=416, 774.0117pt x 669.9429pt>
 File: figplacarara.png Graphic file (type png)
 <use figplacarara.png>
 Package pdftex.def Info: figplacarara.png  used on input line 313.
@@ -1031,7 +1031,7 @@ Package pdftex.def Info: figplacarara.png  used on input line 313.
 
 [8 <./screenshot004.png> <./figfils.png> <./confinventJS.jpeg> <./figplacarara.
 png>]
-<figV2imagenes.png, id=415, 774.0117pt x 669.9429pt>
+<figV2imagenes.png, id=425, 774.0117pt x 669.9429pt>
 File: figV2imagenes.png Graphic file (type png)
 <use figV2imagenes.png>
 Package pdftex.def Info: figV2imagenes.png  used on input line 325.
@@ -1059,22 +1059,31 @@ Cap\'{\i }tol 3.
 [14]
 
 [15]
+<screenshot005.png, id=528, 601.4972pt x 362.85562pt>
+File: screenshot005.png Graphic file (type png)
+<use screenshot005.png>
+Package pdftex.def Info: screenshot005.png  used on input line 610.
+(pdftex.def)             Requested size: 243.27116pt x 146.7564pt.
+<screenshot006.png, id=534, 643.6547pt x 352.31625pt>
+File: screenshot006.png Graphic file (type png)
+<use screenshot006.png>
+Package pdftex.def Info: screenshot006.png  used on input line 628.
+(pdftex.def)             Requested size: 243.27116pt x 133.1612pt.
 
-[16]
+
+[16 <./screenshot005.png> <./screenshot006.png>]
+
+[17]
 Cap\'{\i }tol 4.
 
 
-[17
+[18
 
 ]
 
-[18]
+[19]
 Cap\'{\i }tol 5.
 
-
-[19
-
-]
 
 [20
 
@@ -1084,16 +1093,18 @@ Cap\'{\i }tol 5.
 
 ]
 
+[22
+
+]
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 751.
+(hyperref)                removing `math shift' on input line 783.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 751.
+(hyperref)                removing `math shift' on input line 783.
 
 
-
-[22]
 
 [23]
 
@@ -1105,27 +1116,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [27]
 
-[28] (Informe de Pràctiques.aux)
+[28]
+
+[29] (Informe de Pràctiques.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-
-
-Package rerunfilecheck Warning: File `"Informe de Pràctiques".out' has changed
-.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Informe de Pràctiques".out':
-(rerunfilecheck)             Before: 8C6B703E6D8939B3C15090A60866683F;10219
-(rerunfilecheck)             After:  3E99B93332F967C348C99171D9E22730;10632.
+Package rerunfilecheck Info: File `"Informe de Pràctiques".out' has not change
+d.
+(rerunfilecheck)             Checksum: 20942DAA8A781D3F8709946B106487D3;10636.
  ) 
 Here is how much of TeX's memory you used:
- 29388 strings out of 473682
- 545392 string characters out of 5719215
- 1577495 words of memory out of 5000000
- 51584 multiletter control sequences out of 15000+600000
+ 29427 strings out of 473682
+ 546091 string characters out of 5719215
+ 1578032 words of memory out of 5000000
+ 51617 multiletter control sequences out of 15000+600000
  576132 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,12n,121p,1215b,2115s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1144,29 +1150,31 @@ ricg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
 10.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmmi12.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmmi5.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ericg/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/ericg/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ericg/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ericg
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Use
-rs/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb>
-<C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r6.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr7.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr8.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr9.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ericg/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/ericg/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ericg/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ericg/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users
-/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><
-C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
-t8.pfb>
-Output written on "Informe de Pràctiques.pdf" (29 pages, 13906920 bytes).
+e1/public/amsfonts/cm/cmmi6.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ericg/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ericg/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/ericg/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ericg
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
+rs/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb
+><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr5.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr6.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmr7.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ericg/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ericg/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/ericg/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/ericg/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/
+ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
+:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti
+10.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmti8.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmtt8.pfb>
+Output written on "Informe de Pràctiques.pdf" (30 pages, 14085207 bytes).
 PDF statistics:
- 1055 PDF objects out of 1200 (max. 8388607)
- 430 named destinations out of 1000 (max. 500000)
- 487 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1099 PDF objects out of 1200 (max. 8388607)
+ 436 named destinations out of 1000 (max. 500000)
+ 513 words of extra memory for PDF output out of 10000 (max. 10000000)
 

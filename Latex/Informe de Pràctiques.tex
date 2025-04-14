@@ -639,6 +639,59 @@ Seguidament mesurem el període $T$ amb l'oscil·loscopi.
 Canviem la resistència fixa per una de variable, que pot donar resistències de 0 a 100 k$\Omega$. Estudiem els casos $R<R_c$, $R=R_c$ i $R>R_c$ (on $R_c$ és la resistència crítica, donada per l'equació \eqref{eq:3.31}), de forma que podem veure les 3 solucions per a l'EDO del circuit RLC en règim transitori. Finalment, amb els valors recollits de $V_C$ i de $t$, calculem, via l'equació \eqref{eq:3.28}, el valor de la constant d'esmorteïment $\lambda$.
 \section{Resultats i discussió}
 posar valors teòrics i explicar d'on surten
+\textcolor{red}{$AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$}
+Els recull de mesures experimentals es troben a l'anex \textcolor{red}{poner anexo}. 
+\subsection{Règim permanent}
+Una vegada muntat el circuit de la figura \ref{fig:3.2} amb $R$, $L$ i $C$ de $2660\Omega$, $22mH$ i $15nF$ respectivament, i una font amb un voltatge d'entrada tipus $V_E = E\sin(\omega t)$, la frequència de ressonancia experimental que vam meusrar és de: \\
+\begin{equation}
+	f_0^{exp} = (8960 \pm 1)s^{-1}
+\end{equation}\\
+La qual podem comparar amb la toerica, que pel notre circuit es de:
+\begin{equation}
+	f_0^{teo} = \frac{1}{2\pi}\sqrt{\frac{1}{LC}} = \frac{1}{2\pi}\sqrt{\frac{1}{22 \times 10^{-3}*15 \times 10^{-9}}} = 8761 s^{-1}
+\end{equation}
+Com podem veure els valors son els mateixos, com calia esperar. D'altre banda, al fer la mateixa mesura pero canviant la resistencia per una de $R=274\Omega$, tot i que teoricament el valor de $f_0^{teo}$ no canvia, experiemtnalment no va ser aixi ja que vam obtenir una frequcuencia de:
+\begin{equation}
+	f_0^{exp} = (8860 \pm 1)s^{-1}
+\end{equation}
+\textcolor{red}{esto es así?? tiene sentido, o cabe la posibilidad que lo hayamos puesto mal y que realmente sea 8960 como antes...es que vaya coincidencia que solo cambie en 100 unidades no?}\\
+Per comprovar si realment estem a la frequència de resonància del sistema podem calcular el guany $\abs{T_R(\omega_0)}$, que teoricmament hauria de ser $\abs{T_R^{teo}(\omega_0)} = 1$, i experimentalment:
+\begin{eqnarray}
+	\text{Per $R=2660\Omega$} \hspace{0.5cm} \abs{T_R^{exp}(\omega_0)} = 1 \pm 0,008\\
+	\text{Per $R=274\Omega$} \hspace{0.5cm} \abs{T_R^{exp}(\omega_0)} = 0,877 \pm 0,006
+\end{eqnarray}
+\textcolor{red}{pues no entiendo pq cambia si estamos en la frecuencia de resonancia}\\
+\\
+L'altre concepte interesant del circuit RLC es mesurar les seves frequencies de tall i amb elles el seu ample de banda. Si resolem el sistema d'equacions donat per les equacions \eqref{eq:3.38} i \eqref{eq:3.39}, tenim que:
+\begin{eqnarray}
+	f_1^{teo} = \frac{1}{4\pi}(-\frac{R}{L} + \sqrt{(\frac{R}{L})^2 + 4\frac{1}{LC}})\\
+	f_2^{teo} = \frac{R}{f_1^{teo}}\\
+	\Delta \omega = \frac{R}{L}
+\end{eqnarray}
+Sustituint els valors de $R$, $L$, i $C$ per a les dues resistencies tenim que:\\
+Per $R = 2660\Omega$:\\
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		& $f_1$ & $f_2$ & $\Delta \omega$ \\ \hline
+		Teóric & $(3391 \pm 94)s^{-1}$ & $(22634 \pm 630)s^{-1}$ & $(120909 \pm 7)s^{-1}$\\ \hline
+		Experimental & $(2860 \pm 1)s^{-1}$ & $(23460 \pm 1)s^{-1}$ & $(129433 \pm 9)s^{-1}$\\ \hline
+	\end{tabular}
+\end{center}
+I per $R = 274\Omega$:
+\begin{center}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		& $f_1$ & $f_2$ & $\Delta \omega$ \\ \hline
+		Teóric & $(7826 \pm 32)s^{-1}$ & $(9808 \pm 4,0)s^{-1}$ & $(12455 \pm 10)s^{-1}$\\ \hline
+		Experimental & $(8040 \pm 1)s^{-1}$ & $(9830 \pm 1)s^{-1}$ & $(11247 \pm 8)s^{-1}$\\ \hline
+	\end{tabular}
+\end{center}
+\textcolor{red}{la table podria ser mas bonita, mirar en otro momento}
+\subsection{Règim transitori}
+Una vegada muntat el cricuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184\Omega$, $33mH$ i $330pF$ respectivament podem presentar els resultats. 
+ 
+\textcolor{red}{$AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$}
 \section{Conclusions}
 
 

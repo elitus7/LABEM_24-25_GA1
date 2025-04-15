@@ -44,7 +44,7 @@
 \usepackage{float}
 \usepackage{titling}
 \usepackage{etoolbox}
-\renewcommand{\labelenumi}{\textbf{\theenumi.}} 
+\renewcommand{\labelenumi}{\textbf{\theenumi.}}
 
 %Definim el següent entorn per tal de poder posar abstracts a cada capítol.
 \newenvironment{chapterabstract}{
@@ -768,11 +768,79 @@ En termes de nomenclatura, anomenarem \textit{primari} al voltatge d'entrada $V_
 
 Tot el descrit fins ara fa referència a un cas ideal però el que s'observa experimentalment és que $M$ és menor a l'esperat, ja que no tot el flux del primer circuit entra a l'altre. Per això, hem d'introduir un paràmetre $k$ denominat coeficient d'acoblament, tal que
 \begin{equation}
-	M=k(L_1L_2)^{1/2}.
+	M=k(L_1L_2)^{1/2}. \label{eq4:12}
 \end{equation}
 És notori, doncs, que el coeficient $k$ prendrà valors entre 0 i 1, sent aquest últim el cas ideal.
 
+\subsection{Estudi d'un transformador com a circuit}
+Per tal de fer un anàlisi més acurat usarem les lleis de Kirchhoff. Per això, cal considerar el transformador com un circuit de corrent altern amb una impedància de càrrega que anomenarem $Z$. Així,
+\begin{equation}
+	V_1 = I_1 R_1 + i \omega L_1 I_1 + i \omega M I_2 \label{eq4:13}
+\end{equation}
+\begin{equation}
+	0 = I_2 R_2 + i \omega L_2 I_2 + i \omega M I_1 + I_2 Z \label{eq4:14},
+\end{equation}
+tenint present que $R_1$ i $R_2$ són les resistències òhmiques de les bobines 1 i 2, respectivament.
+
+Si resolem aquest sistema per a cada una de les intensitats i apliquem l'equació \eqref{eq4:12} per la inductància mútua, obtenim les següents solucions:
+\begin{equation}
+	I_1 = \frac{Z + R_2 + iX_2}{(R_1 + iX_1)(Z + R_2 + iX_2) + k^2 X_1 X_2} V_1 \label{eq4:15}
+\end{equation}
+\begin{equation}
+	I_2 = \frac{-ik\sqrt{X_1 X_2}}{(R_1 + iX_1)(Z + R_2 + iX_2) + k^2 X_1 X_2} V_1 \label{eq4:16}
+\end{equation}
+on les reactàncies de les bobines són $X_{1,2} \equiv \omega L_{1,2}$.
+
+Donada la complexitat d'aquestes solucions, podem fer-ne una simplificació en aquells casos on es comlpeixi que $X_1 >> R_1$ i $X_2 >> R_2$, és a dir, que les reactàncies de les bobines siguin molt més grans que les resistències òhmiques. Així,si escrivim $X_2 = \alpha^2 X_1 = \alpha^2 X$,
+\begin{equation}
+	I_1 \simeq \frac{Z + i\alpha^2 X}{iX Z + X^2 \alpha^2 (k^2 - 1)} V_1, \label{eq4:17}
+\end{equation}
+\begin{equation}
+	I_2 \simeq \frac{i k \alpha}{iZ + X \alpha^2 (k^2 - 1)} V_1. \label{eq4:18}
+\end{equation}
+Aquestes expressions es poden simplificar encara més si ens trobem en un dels tres casos següents:
+\subsubsection{Impedància de càrrega molt gran}
+Es compleix que $(Z >> X,\alpha^2X)$. En aquests casos
+\begin{equation}
+	|I_1| =  \frac{|V_1|}{X}  ; \qquad |I_2| = \frac{k \alpha}{|Z|} |V_1|.
+	\label{eq4:19}
+\end{equation}
+Cal vigilar amb l'amperímetre, ja que aquest mesura valors eficaços, és a dir $|I|/\sqrt{2}$.
+
+Pel que fa a la diferència de potencial en la impedància del secundari és:
+\begin{equation}
+	V_2 = I_2 Z \quad \Longrightarrow \quad |V_2| = k \alpha |V_1|
+	\label{eq4:20}
+\end{equation}
+Si comparem aquesta expressió amb l'equació \eqref{eq:4:9}, s'obté que $\alpha = n_2/n_1$.
+\subsubsection{Impedància de càrrega molt petita}
+Són aquells casos on $(Z << X,\alpha^2X)$. Llavors tindrem
+\begin{equation}
+	|I_1| = \frac{\alpha^2 |V_1|}{\sqrt{Z^2 + X^2 \alpha^4 (k^2 - 1)^2}} \quad ; \quad
+	|I_2| = \frac{k \alpha |V_1|}{\sqrt{Z^2 + X^2 \alpha^4 (k^2 - 1)^2}} = \frac{k}{\alpha} |I_1|
+	\label{eq4:21}
+\end{equation}
+i el potencial en la impedància del secundari serà
+\begin{equation}
+	|V_2| = \frac{k \alpha |Z| \, |V_1|}{\sqrt{Z^2 + X^2 \alpha^4 (k^2 - 1)^2}}.
+	\label{eq4:22}
+\end{equation}
+\subsubsection{Impedància de càrrega de l'ordre de la impedància del secundari}
+És el cas particular on $Z \simeq \alpha^2X$ i $k \simeq 1$ es compleix que
+\begin{equation}
+	|I_1| = \frac{\sqrt{Z^2 + \alpha^4 X^2 |V_1|}}{X |Z|} = \sqrt{ \frac{1}{X^2} + \alpha^4 \frac{1}{Z^2} } \, |V_1| 
+	\quad ; \quad |I_2| = \frac{k \alpha}{|Z|} |V_1|
+	\label{eq4:23}
+\end{equation}
+i el potencial en la impedància del secundari és
+\begin{equation}
+	|V_2| = k \alpha |V_1|.
+	\label{eq4:24}
+\end{equation}
+
 \section{Metodologia experimental}
+\subsection{Estudi de les variables d'un transformador}
+Primer muntem el circuit de la
 
 \section{Resultats i discussió}
 

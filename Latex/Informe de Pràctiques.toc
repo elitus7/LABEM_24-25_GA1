@@ -39,20 +39,25 @@
 \contentsline {section}{\numberline {3.4}Conclusions}{18}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Inductància mútua i transformadors}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introducció i fonament teòric}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Metodologia experimental}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Resultats i discussió}{20}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Conclusions}{20}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Mesura de la resistència d'un metall}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introducció i fonament teòric}{21}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Metodologia experimental}{21}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Resultats i discussió}{21}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Conclusions}{21}{section.5.4}%
-\contentsline {chapter}{Bibliografia}{22}{chapter*.10}%
-\contentsline {chapter}{Annexos}{23}{section*.11}%
-\contentsline {section}{\numberline {A}Càlcul d'incerteses}{23}{section.1..1}%
-\contentsline {subsection}{\numberline {A.1}Incerteses pràctica 1}{23}{subsection.1..1.1}%
-\contentsline {section}{\numberline {B}Annex pràctica 1. Representació de camps}{24}{section.1..2}%
-\contentsline {subsection}{\numberline {B.1}Deducció de l'equació $(1.22)$}{24}{subsection.1..2.1}%
-\contentsline {subsection}{\numberline {B.2}Expressió analítica de la distribució de dos plans secants i un fil}{25}{subsection.1..2.2}%
-\contentsline {subsection}{\numberline {B.3}Dades experimentals de la pràctica 1}{26}{subsection.1..2.3}%
-\contentsline {subsection}{\numberline {B.4}Codis de les simulacions de la pràctica 1}{27}{subsection.1..2.4}%
+\contentsline {subsection}{\numberline {4.1.1}Estudi d'un transformador com a circuit}{20}{subsection.4.1.1}%
+\contentsline {subsubsection}{Impedància de càrrega molt gran}{21}{equation.4.18}%
+\contentsline {subsubsection}{Impedància de càrrega molt petita}{21}{equation.4.20}%
+\contentsline {subsubsection}{Impedància de càrrega de l'ordre de la impedància del secundari}{21}{equation.4.22}%
+\contentsline {section}{\numberline {4.2}Metodologia experimental}{21}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Estudi de les variables d'un transformador}{21}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Resultats i discussió}{21}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Conclusions}{21}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Mesura de la resistència d'un metall}{22}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introducció i fonament teòric}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Metodologia experimental}{22}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Resultats i discussió}{22}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Conclusions}{22}{section.5.4}%
+\contentsline {chapter}{Bibliografia}{23}{chapter*.10}%
+\contentsline {chapter}{Annexos}{24}{section*.11}%
+\contentsline {section}{\numberline {A}Càlcul d'incerteses}{24}{section.1..1}%
+\contentsline {subsection}{\numberline {A.1}Incerteses pràctica 1}{24}{subsection.1..1.1}%
+\contentsline {section}{\numberline {B}Annex pràctica 1. Representació de camps}{25}{section.1..2}%
+\contentsline {subsection}{\numberline {B.1}Deducció de l'equació $(1.22)$}{25}{subsection.1..2.1}%
+\contentsline {subsection}{\numberline {B.2}Expressió analítica de la distribució de dos plans secants i un fil}{26}{subsection.1..2.2}%
+\contentsline {subsection}{\numberline {B.3}Dades experimentals de la pràctica 1}{27}{subsection.1..2.3}%
+\contentsline {subsection}{\numberline {B.4}Codis de les simulacions de la pràctica 1}{28}{subsection.1..2.4}%

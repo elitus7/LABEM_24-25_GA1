@@ -347,14 +347,14 @@ Així, a partir de tres distribucions de conductors diferents amb suficient sime
 
 \chapter{Força entre corrents}
 \begin{chapterabstract}
-	En aquesta pràctica mesurem la força entre dos fils pels quals hi circula un corrent elèctric, comprovant que la llei de Biot i Savart se satisfà, via diferents metodologies. Amb aquests resultats fem una estimació de la permeabilitat magnètica $\mu_0$, tot comparant-la amb el valor teòric. A més a més, utilitzant el mateix sistema, mesurem la component horitzontal del camp magnètic terrestre al laboratori.
+	En aquesta pràctica mesurem la força entre dos fils pels quals hi circula un corrent elèctric, comprovant que la llei de Biot i Savart se satisfà, via diferents metodologies. Amb aquests resultats fem una estimació de la permeabilitat magnètica al buit $\mu_0$, tot comparant-la amb el valor teòric. A més a més, utilitzant el mateix sistema, mesurem la component horitzontal del camp magnètic terrestre al laboratori.
 \end{chapterabstract}
 \section{Introducció i fonament teòric}
 Per quantificar la interacció magnètica entre dos circuits arbitraris tancats pels quals hi circula un corrent constant, és a dir, per mesurar la força que fa un circuit sobre l'altre podem usar que
 \begin{equation}
 	\vec{F}_1 = \frac{\mu_0}{4\pi}I_1I_2\oint \oint \frac{\mathrm{d}\vec{l}_1\cross[\mathrm{d}\vec{l}_2 \cross (\vec{r}_1-\vec{r}_2)]}{\abs{\vec{r}_1 - \vec{r}_2}^3}\label{eq:2.1},
 \end{equation}
-on $\mu_0$, $I_1$ i $I_2$ són les intensitats dels circuits 1 i 2, respectivament, d$\vec{l}_1$ i d$\vec{l}_2$ són els elements infinitesimals de línia i $\vec{r}_1$ i $\vec{r}_2$ són les respectives posicions d'aquests elements.
+on $I_1$ i $I_2$ són les intensitats dels circuits 1 i 2, respectivament, d$\vec{l}_1$ i d$\vec{l}_2$ són els elements infinitesimals de línia i $\vec{r}_1$ i $\vec{r}_2$ són les respectives posicions d'aquests elements.
 
 Per tal de simplificar la integral anterior definim el camp d'inducció magnètica (o densitat de flux magnètic) $\vec{B}(\vec{r})$ en un punt arbitrari $\vec{r}$ com
 \begin{equation}
@@ -376,19 +376,58 @@ podem deduir fàcilment el teorema d'Ampère, que ens diu que:
 \begin{equation}
 	\oint_C\vec{B}\cdot\mathrm{d}\vec{l} = \mu_0\int_S\vec{J}(\vec{r})\cdot\vec{n}\mathrm{d}S,
 \end{equation}
-d'on, mitjançant un càlcul ràpid podem trobar el camp d'inducció magnètica generat per un fil infinit amb intensitat $I$ a una distància $r$ del seu centre
+d'on, via un càlcul ràpid, podem trobar el camp d'inducció magnètica generat per un fil infinit amb intensitat $I$ a una distància $r$ del seu centre
 \begin{equation}
 	B = \frac{\mu_0 I}{2\pi r}.
 \end{equation}
-Així doncs, la força, en mòdul que patirà un altre fil (infinit) paral·lel, de longitud $L$ i que és perpendicular al camp $\vec{B}$ serà
+Així doncs, la força, en mòdul, que patirà un altre fil (infinit) paral·lel, de longitud $L$ I pel qual hi circula la mateixa intensitat $I$ serà
 \begin{equation}
 	F = \frac{\mu_0 I^2L}{2\pi r}.
 \end{equation} 
+
 \section{Metodologia experimental}
 
+El sistema que usarem per tal de fer totes les mesures necessàries serà el de la figura \ref{fig:2.1}. A l'esquema es poden veure tots els elements clau que constitueixen la balança usada. També usem una font de corrent continu, un transformador, un conjunt de masses (de 5, 10, 15 i 25 mg) i una brúixola.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\linewidth]{screenshot008}
+	\caption{Esquema de la balança usada en el transcurs de la pràctica 2.}
+	\label{fig:2.1}
+\end{figure}
+
+Abans de començar amb l'equilibrat de la balança connectem el transformador a 9 V (al lloc indicat amb 'HEATER 9 V') per tal de fondre el gal·li ($T \approx 30$ ºC), que actuarà com a conductor. Tot seguit orientem la balança de forma que els dos fils conductors estiguin en la direcció nord-sud; així evitem els possibles efectes causats pel camp magnètic terrestre. Seguidament connectem la font de corrent continu, tal i com es pot veure a la figura \ref{fig:2.2}, tot assegurant-nos que està en 'OFF' i que els controls d'intensitat i de potencial estan al mínim i al màxim, respectivament. Mesurem la longitud $L$ del fil.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\linewidth]{screenshot009}
+	\caption{Esquema de les connexions de la balança.}
+	\label{fig:2.2}
+\end{figure}
+
 \subsection{Equilibrat de la balança}
+Un cop tenim la balança preparada, cal que l'equilibrem. Primer fem baixar el pot de gal·li per fondre'l i, un cop és líquid, el tornem a pujar fins que toqui el conductor, sense que el darrer estigui totalment submergit. Repetim tot això per l'altre pot de gal·li. Posem el dial a zero i la gafa del filferro oposada a aquest, en posició vertical.
+
+Tot seguit desplacem el contrapés fins que la balança està més o menys equilibrada. Seguidament ens assegurem d'ajustar bé el zero, fent que les dues ratlles de l'imant esmorteïdor i les de la paleta d'esmorteïment estiguin totalment alineades.
+
+Finalment, usant els dos cargols per ajustar la separació entre fils, fem pujar el conductor inferior fins que toca en el màxim nombre de punts el conductor superior\footnote{Notem que, com que ambdós fils no són rectes, en cap moment poden tocar-se en \textit{tots} els punts.}, assegurant-nos que el zero de l'aleta no s'ha mogut (si ho fa, vol dir que els dos conductors estan fent força entre ells). Prenem nota de la posició del zero cargol; aquest es correspon a una separació de 3.1 mm entre els conductors (suma de radis o diàmetre).
+
 \subsection{Força vs. corrent}
+Per tal de mesurar la força entre els fils vs. corrent comencem baixant el conductor paral·lel inferior uns 5 mm (tenint present que cada volta dels cargols equival a 1 mm). Amb això ens assegurem que la separació entre els centres dels fils és de 8.1 mm. Seguidament posem una massa de 5 mg a la cassoleta de pesos i connectem la font de potencial. Ajustem el corrent continu fins que la balança torna al valor d'equilibri, tot prenent nota del valor de $I$. Desconnectem la font de potencial i agafem la massa de 5 mg; ens assegurem de que la balança, en absència de pesos i corrent, segueix al zero (en cas que no sigui així, cal repetir tot el procediment d'equilibrat de la balança).
+
+Repetim tot això uns quants cops (tres en el nostre cas) per la massa de 5 mg i calculem el promig d'intensitats (així minimitzem els possibles errors experimentals que es puguin cometre).
+
+Repetim els anteriors passos augmentant la massa de 5 en 5 mg fins a arribar a 25 mg (com a màxim) o fins que no puguem reequilibrar la balança.
+
+Amb tot el recull de mesures d'intensitat representem $F$ (massa $\cross$ gravetat) vs. $I^2$
+\begin{equation}
+	F = \frac{\mu_0L}{2\pi r}I^2.
+\end{equation}
+De l'anterior recta, a partir del pendent deduïm el valor de $\mu_0$. Recordem que $L$ és la longitud dels fils i $r$ la separació entre aquests.
+
 \subsection{Força vs. separació}
+AAAAAA
+
 \subsection{Mesura del camp magnètic terrestre}
 
 \section{Resultats i discussió}

@@ -52,8 +52,8 @@
 \contentsline {section}{\numberline {5.2}Metodologia experimental}{22}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Resultats i discussió}{22}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Conclusions}{22}{section.5.4}%
-\contentsline {chapter}{Bibliografia}{23}{chapter*.10}%
-\contentsline {chapter}{Annexos}{24}{section*.11}%
+\contentsline {chapter}{Bibliografia}{23}{chapter*.11}%
+\contentsline {chapter}{Annexos}{24}{section*.12}%
 \contentsline {section}{\numberline {A}Càlcul d'incerteses}{24}{section.1..1}%
 \contentsline {subsection}{\numberline {A.1}Incerteses pràctica 1}{24}{subsection.1..1.1}%
 \contentsline {section}{\numberline {B}Annex pràctica 1. Representació de camps}{25}{section.1..2}%

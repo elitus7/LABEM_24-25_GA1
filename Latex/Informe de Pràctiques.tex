@@ -879,16 +879,96 @@ i el potencial en la impedància del secundari és
 
 \section{Metodologia experimental}
 \subsection{Estudi de les variables d'un transformador}
-Primer muntem el circuit de la figura \ref{fig4:1}.
+Primer muntem el circuit de la Figura \ref{fig4:1}.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.32\linewidth]{screenshot007}
+	\includegraphics[width=0.38\linewidth]{screenshot007}
 	\caption{Esquema de les connexions del transformador}
 	\label{fig4:1}
 \end{figure}
 
-Considerem la bobina de l'esquerra el primari i la de la dreta el secundari.
+Considerem que la bobina de l'esquerra és el primari i la de la dreta el secundari.
+
+Com que la font de corrent altern té una escala diferent al voltatge que dona, els 6 V necessaris es corresponen a la marca 5 de la gradació de l'aparell.
+
+Aquesta part de la pràctica pretén estudiar la variació de la relació entre el voltatge d'entrada i el llegit al secundari segons la configuració en què situem les dues bobines. Així, el procediment sempre serà mesurar el voltage de sortida del transformador i comparar-lo amb el valor d'entrda per tal de determinar amb quina de les configuracions obtenim una lectura de voltatge major.
+
+Inicialment treballem amb dues bobines de 400 voltes. Abans de muntar qualsevol de les configuracions, cal mesurar el voltatge de sortida del transformador.
+
+Tot seguit provem les configuracions que ens proposa el guió de la pràctica que són les representades a la Figura \ref{fig4:2}.
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{42a.jpg}
+		\caption{Inserció d'una peça petita i recta entre les bobines.}
+		\label{fig4:2a}
+	\end{subfigure}
+	\hspace{0.5cm}
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{42b.jpg}
+		\caption{Bobines situades als dos costats del nucli en forma d'U.}
+		\label{fig4:2b}
+	\end{subfigure}
+	\hspace{0.5cm}
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{42c.jpg}
+		\caption{Bobines situades als dos costats del nucli amb forma d'U tancat superiorment per la peça recta.}
+		\label{fig4:2c}
+	\end{subfigure}
+	\caption{Configuracions proposades pel guió.}
+	\label{fig4:2}
+\end{figure}
+
+Un cop obtenim les lectures de voltatge corresponents, tractem amb altres configuracions que escollim nosaltres. Aquestes es podem veure a la Figura \ref{fig4:3}.
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{0.35\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{inv1.jpg}
+		\caption{Bobines situades a la columna central del nucli.}
+		\label{fig4:3a}
+	\end{subfigure}
+	\hspace{2cm}
+	\begin{subfigure}[b]{0.35\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{inv2.jpg}
+		\caption{Bobines situades a la columna esquerra del nucli.}
+		\label{fig4:3b}
+	\end{subfigure}
+	\caption{Configuracions triades per nosaltres basades en un nucli format per tres columnes unides tant per la part superior com per la inferior.}
+	\label{fig4:3}
+\end{figure}
+
+Amb totes les lectures de voltatge, seleccionem aquella configuració que ens dona un valor més alt. Ara, amb aquesta disposició, provem totes les combinacions possibles de primaris i secundaris, anotant, de nou, el valor de voltatge del secundari.
+
+\subsection{Estudi de les intensitats i els voltatges d'entrada i de sortida}
+Per tal de poder comparar el guany de voltatge teòric i experimental donat per
+\begin{equation}
+	\frac{V_{sortida}}{V_{entrada}}
+	\label{eq4:25}
+\end{equation}
+necessitem trobar la reactància de les bobines amb què treballarem, aquestes són les de 400 i 800 voltes.
+
+La reactància de les bobines es pot calcular muntant el circuit de la Figura \ref{fig4:4} situant la bobina corresponent al primari i posant el circuit sense connexions a la sortida del transformador, deixant-lo així obert. Mesurant $I_1$ i $V_1$ es calcula la reactància buscada per a cada una de les bobines.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{screenshot010}
+	\caption{Muntatge experimental pel càlcul de la reactància de les bobines.}
+	\label{fig4:4}
+\end{figure}
+
+Un cop obtingut aquest valor, treballem amb el parell de bobines de 400 voltes, situant-ne una al primari i l'altra al secundari. Connectem la resistència de 1000 $\Omega$ i donem un voltatge aproximat de 6 V des de la font d'alimentació. Amb tot això, mesurem el voltatge i el corrent tant d'entrada com de sortida. Aquest mateix procediment es torna a realitzar per les resistències de 10 $\Omega$ i 100 $\Omega$.
+
+Canviem ara la bobina del secundari i la substituïm per una altra de 800 voltes. Realitzant un procediment anàleg a l'anterior, mesurem, de nou, els voltatges i les intensitats d'entrada i de sortida.
+
+Finalment, provem un cas extra en què col·loquem una bobina de 3200 voltes al primari i una de 200 voltes al secundari. Les mesures són anàlogues als casos anteriors.
 
 \section{Resultats i discussió}
 

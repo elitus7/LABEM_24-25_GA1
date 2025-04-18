@@ -464,6 +464,30 @@ trobem que tenim un error relatiu del 36,64 \%.
 	\label{fig:screenshot015}
 \end{figure}
 
+Per altre banda podem comparar amb el càlcul mitjançant l'experiment del fil de torsió. Per aquest com ja hem dit cal determinar primer la constant de torsió del fil. Podem veure la taula de valors experimentals a l'annex \textcolor{red}{poner anexo}, amb aquestes dades podem fer una regressió lineal que ens dona la seguent recta:
+\begin{eqnarray}
+	F = k\theta = \left[(1,96 \pm 0,05)\theta - (0,28 \pm 0,04)\right]\times 10^{-4} N\\
+	\Rightarrow k = (1,96 \pm 0,05)N/rad
+\end{eqnarray}
+Ara mitjançant aquesta constant podem correlacionar les voltes necessàries per equilibrar la balança en cada una de les configuracions a diferents distàncies amb la força magnètica que produeix el corrent de $I = (5,55 \pm 0,01)A$ que apliquem. Fem una representació de força magnètica vs $1/r$, que teòricament hauria de ser una recta, ja que:
+\begin{eqnarray}
+	F = \frac{\mu_0LI^2}{2\pi}\left(\frac{1}{r}\right)
+\end{eqnarray}
+Mirant de la taula a lannex \textcolor{red}{poner anexo}, podem fer la seguen representacio:\\
+\textcolor{red}{poner representacion}\\
+De la cual podem extreure que experimentalment tenim:
+\begin{eqnarray}
+	F  = \left[(3,298 \pm 0,051)\left(\frac{1}{r}\right) - (119,406 \pm 6,620)\right]\times 10^{-6}N
+\end{eqnarray}
+La recta te una $R^2 = 0,9993$ per lo que hem aconseguit captar molt be la dependencia del camp magnetic creat per un fil amb $1/r$, aprofitant aquest ajust podem calcular $\mu_0$ amb el pendent d'quest, comparant amb l'expressó teorica sabem que:
+\begin{eqnarray}
+	\mu_0 = b*\frac{2\pi}{LI^2}
+\end{eqnarray}
+amb $b$ el pendent del nostre ajust. Si ara introduim els nostres valors experimentals:
+\begin{eqnarray}
+	\mu_0 = (2,206 \pm 0,036)\times10^{-6}\text{ N$/$A$^2$}
+\end{eqnarray}
+\textcolor{red}{es decir, una mierda}
 \subsection{Camp magnètic terrestre}
 
 \section{Conclusions}

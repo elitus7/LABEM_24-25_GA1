@@ -1,8 +1,9 @@
-set terminal pngcairo size 1600,1000 enhanced font 'Cambria,18'
+set terminal pngcairo size 1600,1000 enhanced font 'Cambria,22'
 set output 'f_vs_i2.png'
 set xlabel "I^{2} (A^{2})"
 set ylabel "F (N)"
 set grid
+set decimalsign ','
 
 set format y "%.4f"
 set key outside right top

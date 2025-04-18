@@ -6,6 +6,7 @@
 \renewcommand{\appendixpagename}{Annexos}
 \usepackage[catalan]{babel}
 \usepackage{booktabs}
+\usepackage{siunitx}
 \usepackage[nottoc]{tocbibind}
 \usepackage{listings}
 \lstdefinestyle{mystyle}{
@@ -443,17 +444,25 @@ Així, el valor de la permeabilitat magnètica és
 \begin{equation}
 	\mu_0 = (1,704\pm0,057)\cdot 10^{-6} \text{ N/A$^2$}.
 \end{equation}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{screenshot013}
+	\caption{Força entre els dos fils en funció de la intensitat del corrent al quadrat. Dades de l'ajust lineal: $y=mx+n$, amb $m = (1,0\pm4,5)\cdot 10^{-5}$ N$\cdot$A$^{-2}$ i $n = (0,3\pm4,0)\cdot 10^{-6}$ N.}
+	\label{fig:2.3}
+\end{figure}
 Si comparem aquest resultat amb el valor teòric de la permeabilitat magnètica
 \begin{equation}
 	\mu_0^{teoric} = 4\pi\cdot 10^{-7} \text{ N/A$^2$} \approx 1,257\cdot10^{-6} \text{ N/A$^2$},
 \end{equation}
+trobem que tenim un error relatiu del 36,64 \%.
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\linewidth]{screenshot012}
-	\caption{Força entre els dos fils en funció de la intensitat del corrent al quadrat. Dades de l'ajust lineal: $y=mx+n$, amb $m = (1,0\pm4,5)\cdot 10^{-5}$ N$\cdot$A$^{-2}$ i $n = (0,3\pm4,0)\cdot 10^{-6}$ N.}
-	\label{fig:2.3}
+	\includegraphics[width=0.9\linewidth]{screenshot015}
+	\caption{Força en funció de l'angle de torsió $\theta$. Dades de l'ajust lineal: $y=mx+n$, amb $m=(1,9633\pm0,0047)\cdot10^{-4}$ N$\cdot$rad$^{-1}$ i $n=(2,77\pm0,44)\cdot10^{-5}$ N.}
+	\label{fig:screenshot015}
 \end{figure}
-
 
 \subsection{Camp magnètic terrestre}
 
@@ -469,9 +478,15 @@ Si comparem aquest resultat amb el valor teòric de la permeabilitat magnètica
 \section{Introducció i fonament teòric}
 
 \subsection{Explicació qualitativa}
-ESQUEMA DEL CIRCUIT + LINK A ANIMACIÓ DE LA WIKIPEDIA
 
-Per entendre per què aquest tipus de circuits presenten oscil·lacions considerem, inicialment, que no tenim cap resistència i que el condensador es troba totalment carregat. En connectar les plaques del condensador a la bobina, comença a circular una intensitat $I$ per aquesta. La variació de $I$ provoca, en virtut de la llei de Lenz
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.15\linewidth]{screenshot014}
+	\caption{Esquema d'un circuit RLC.}
+	\label{fig:3.1}
+\end{figure}
+
+Per entendre per què aquest tipus de circuits (veure figura \ref{fig:3.1}) presenten oscil·lacions considerem, inicialment, que no tenim cap resistència i que el condensador es troba totalment carregat\footnote{Podeu trobar una animació d'aquest circuit a \url{https://commons.wikimedia.org/wiki/File:Tuned_circuit_animation_3.gif}.}. En connectar les plaques del condensador a la bobina, comença a circular una intensitat $I$ per aquesta. La variació de $I$ provoca, en virtut de la llei de Lenz
 \begin{equation}
 	\varepsilon = - \dv{}{t}\int_S \vec{B} \cdot \mathrm{d}\vec{s} \label{eq:3.1},
 \end{equation}
@@ -779,7 +794,7 @@ El 1831, Faraday va realitzar un experiment que va permetre comprovar que, en va
 
 Aquest fenomen pot ser descrit de la següent manera:
 \begin{equation}
-	\oint_c \Vec{E}\cdot \mathrm{d}\Vec{l}_c = -\dv{}{t} \int \Vec{B}\cdot \mathrm{d} \Vec{S}_c = - \dv{\Phi}{t} \label{eq:4:1}
+	\oint_c \Vec{E}\cdot \mathrm{d}\Vec{l}_c = -\dv{}{t} \int \Vec{B}\cdot \mathrm{d} \Vec{S}_c = - \dv{\Phi}{t} \label{eq:4:1}.
 \end{equation}
 Veiem que la integral és tancada sobre una línia $C$ que delimita la superfície $S_c$, la qual experimenta una variació de flux magnètic $\Phi$ en el temps.
 
@@ -789,27 +804,27 @@ Aquesta força dividida entre la resistència del circuit considerat és igual a
 
 El camp d'inducció magnètica $\Vec{B}$ i la intensitat $I$ que l'indueix són, per a qualsevol punt que considerem, proporcionals entre si. Per tant, es conclou que també ho serà $\Phi$, de manera que:
 \begin{equation}
-	\Phi=LI \label{eq:4:2}
+	\Phi=LI \label{eq:4:2}.
 \end{equation}
 Aquí hem introduït l'\textit{autoinductància} o \textit{autoinducció del circuit}, una constant que depèn de la geometria del circuit i de la permeabilitat del medi d'immersió. És clar que, per l'equació \eqref{eq:4:2}, la $L$ tindrà unitats de weber per amper, és a dir, henrys (H).
 
-Considerem ara un parell de circuits o bobines situades prop una de l'altra. Si per la primera hi circula un corrent $I_1$, conseqüentment travessarà per la segona un flux $\Phi_2$. Com que aquestes dues magnituds han de ser proporcionals,
+Considerem ara un parell de circuits o bobines situades prop una de l'altra. Si per la primera hi circula un corrent $I_1$, conseqüentment travessarà per la segona un flux $\Phi_2$. Com que aquestes dues magnituds han de ser proporcionals
 \begin{equation}
-	\Phi_2=M_{12}I_2 \label{eq:4:3}
+	\Phi_2=M_{12}I_2 \label{eq:4:3},
 \end{equation}
 on $M_{21}$ és la \textit{inductància mútua} entre circuits i també es mesura en henrys.
 
-De manera anàloga al que passava amb la primera bobina que induïa un corrent a la segona, el cas invers també es donarà. Per tant, pel circuit 1 travessarà un flux $\Phi_1$ causat pel corrent de la bobina 2, de manera que
+De manera anàloga al que passava amb la primera bobina que induïa un corrent a la segona, el cas invers també es donarà. Per tant, pel circuit 1 travessarà un flux $\Phi_1$ causat pel corrent de la bobina 2, de forma que
 \begin{equation}
-	\Phi_1=M_{12}I_2 \label{eq:4:4}
+	\Phi_1=M_{12}I_2 \label{eq:4:4}.
 \end{equation}
 Per definició, sabem que
 \begin{equation}
-	\Phi_2=\int_{S_2}\vec{B}_1 \cdot \mathrm{d}\Vec{S}_2 \label{eq:4:5}
+	\Phi_2=\int_{S_2}\vec{B}_1 \cdot \mathrm{d}\Vec{S}_2 \label{eq:4:5}.
 \end{equation}
 Amb totes aquestes equacions mencionades fins ara, es demostra fàcilment l'equació de Neumann:
 \begin{equation}
-	M_{ab}=\frac{\mu_0}{4\pi}\oint_a\oint_b\frac{\mathrm{d}\Vec{l}_a\cdot\mathrm{d}\Vec{l}_b}{r} \label{eq:4:6}
+	M_{ab}=\frac{\mu_0}{4\pi}\oint_a\oint_b\frac{\mathrm{d}\Vec{l}_a\cdot\mathrm{d}\Vec{l}_b}{r} \label{eq:4:6}.
 \end{equation}
 Aquesta equació és simètrica respecte $a$ i $b$, és a dir
 \begin{equation}
@@ -848,7 +863,7 @@ Tot el descrit fins ara fa referència a un cas ideal però el que s'observa exp
 \subsection{Estudi d'un transformador com a circuit}
 Per tal de fer un anàlisi més acurat usarem les lleis de Kirchhoff. Per això, cal considerar el transformador com un circuit de corrent altern amb una impedància de càrrega que anomenarem $Z$. Així,
 \begin{equation}
-	V_1 = I_1 R_1 + i \omega L_1 I_1 + i \omega M I_2 \label{eq4:13}
+	V_1 = I_1 R_1 + i \omega L_1 I_1 + i \omega M I_2 \label{eq4:13},
 \end{equation}
 \begin{equation}
 	0 = I_2 R_2 + i \omega L_2 I_2 + i \omega M I_1 + I_2 Z \label{eq4:14},
@@ -1032,7 +1047,7 @@ Podem observar, a partir dels valors de $k$, que la configuració més òptima �
 
 Cal destacar que la primera configuració proposada per nosaltres també presenta un valor de $k$ molt proper a la idealitat (0,9535 ± 0,00195), tot i ser lleugerament inferior al de la configuració d (0,9562 ± 0,00196). Malgrat això, considerem que aquesta primera configuració hauria de ser la més òptima des del punt de vista geomètric, ja que la seva forma s’ajusta especialment bé al recorregut natural del flux magnètic generat per la bobina primària. Per aquest motiu, l’hem escollida com a base per a les mesures posteriors demanades.
 
-Per finalitzar l'anàlisi, podem veure la importància d’introduir un element ferromagnètic per minimitzar la pèrdua de flux si ens fixem en la configuració 0, que correspon al cas sense cap element ferromagnètic. En aquesta configuració, la constant d’acoblament és de $𝑘 = 0,0419 ± 0,00017 $, el valor més baix amb diferència respecte a la resta de configuracions. Això indica que una gran part del flux magnètic no arriba a la bobina secundària, evidenciant una desviació notable del comportament ideal.
+Per finalitzar l'anàlisi, podem veure la importància d’introduir un element ferromagnètic per minimitzar la pèrdua de flux si ens fixem en la configuració 0, que correspon al cas sense cap element ferromagnètic. En aquesta configuració, la constant d’acoblament és de $k = 0,0419 ± 0,00017 $, el valor més baix amb diferència respecte a la resta de configuracions. Això indica que una gran part del flux magnètic no arriba a la bobina secundària, evidenciant una desviació notable del comportament ideal.
 
 Per a les següents mesures, usem la primera configuració proposada com ja hem comentat. Els valors obtinguts dels voltatges d'entrada i de sortida per a les diferents combinacions de bobines es troben a la taula següent. BLABLA NO ESTA ACABAT AIXO FJDHFJHFOLEFHOEIF
 
@@ -1222,38 +1237,39 @@ A continuació mostrem els valors experimentals obtinguts en el transcurs de la 
 		\toprule
 		$\Delta l_i$ (m) & $\Delta r_i$ (m) & $\Delta V_i$ (V) & $\frac{\Delta V_i\Delta l_i}{\Delta r_i}$ (V)\\
 		\midrule
-		0.005 $\pm$ 0.001 & 0.019 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.26 $\pm$ 0.23 \\
-		0.005 $\pm$ 0.001 & 0.024 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.21 $\pm$ 0.20 \\
-		0.010 $\pm$ 0.001 & 0.038 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.26 $\pm$ 0.16 \\
-		0.010 $\pm$ 0.001 & 0.050 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.20 $\pm$ 0.14 \\
-		0.005 $\pm$ 0.001 & 0.057 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.09 $\pm$ 0.13 \\
-		0.005 $\pm$ 0.001 & 0.063 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.08 $\pm$ 0.13 \\
-		0.010 $\pm$ 0.001 & 0.070 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.14 $\pm$ 0.12 \\
-		0.005 $\pm$ 0.001 & 0.071 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.07 $\pm$ 0.12 \\
-		0.009 $\pm$ 0.001 & 0.066 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.14 $\pm$ 0.12 \\
-		0.010 $\pm$ 0.001 & 0.034 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.29 $\pm$ 0.17 \\
-		0.008 $\pm$ 0.001 & 0.024 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.33 $\pm$ 0.20 \\
-		0.005 $\pm$ 0.001 & 0.014 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.36 $\pm$ 0.27 \\
-		0.005 $\pm$ 0.001 & 0.009 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.56 $\pm$ 0.34 \\
-		0.002 $\pm$ 0.001 & 0.004 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.50 $\pm$ 0.52 \\
-		0.002 $\pm$ 0.001 & 0.003 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.67 $\pm$ 0.62 \\
-		0.003 $\pm$ 0.001 & 0.004 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.75 $\pm$ 0.53 \\
-		0.010 $\pm$ 0.001 & 0.005 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 2.00 $\pm$ 0.60 \\
-		0.010 $\pm$ 0.001 & 0.006 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 1.67 $\pm$ 0.49 \\
-		0.010 $\pm$ 0.001 & 0.006 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 1.67 $\pm$ 0.49 \\
-		0.010 $\pm$ 0.001 & 0.006 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 1.67 $\pm$ 0.49 \\
-		0.010 $\pm$ 0.001 & 0.005 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 2.00 $\pm$ 0.60 \\
-		0.010 $\pm$ 0.001 & 0.005 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 2.00 $\pm$ 0.60 \\
-		0.010 $\pm$ 0.001 & 0.006 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 1.67 $\pm$ 0.49 \\
-		0.005 $\pm$ 0.001 & 0.005 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 1.00 $\pm$ 0.49 \\
-		0.002 $\pm$ 0.001 & 0.005 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.40 $\pm$ 0.45 \\
-		0.002 $\pm$ 0.001 & 0.006 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.33 $\pm$ 0.41 \\
-		0.003 $\pm$ 0.001 & 0.007 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.43 $\pm$ 0.38 \\
-		0.005 $\pm$ 0.001 & 0.011 $\pm$ 0.001 & 1.00 $\pm$ 0.01 & 0.45 $\pm$ 0.30 \\
+		0,005 $\pm$ 0,001 & 0,019 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,26 $\pm$ 0,23 \\
+		0,005 $\pm$ 0,001 & 0,024 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,21 $\pm$ 0,20 \\
+		0,010 $\pm$ 0,001 & 0,038 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,26 $\pm$ 0,16 \\
+		0,010 $\pm$ 0,001 & 0,050 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,20 $\pm$ 0,14 \\
+		0,005 $\pm$ 0,001 & 0,057 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,09 $\pm$ 0,13 \\
+		0,005 $\pm$ 0,001 & 0,063 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,08 $\pm$ 0,13 \\
+		0,010 $\pm$ 0,001 & 0,070 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,14 $\pm$ 0,12 \\
+		0,005 $\pm$ 0,001 & 0,071 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,07 $\pm$ 0,12 \\
+		0,009 $\pm$ 0,001 & 0,066 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,14 $\pm$ 0,12 \\
+		0,010 $\pm$ 0,001 & 0,034 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,29 $\pm$ 0,17 \\
+		0,008 $\pm$ 0,001 & 0,024 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,33 $\pm$ 0,20 \\
+		0,005 $\pm$ 0,001 & 0,014 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,36 $\pm$ 0,27 \\
+		0,005 $\pm$ 0,001 & 0,009 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,56 $\pm$ 0,34 \\
+		0,002 $\pm$ 0,001 & 0,004 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,50 $\pm$ 0,52 \\
+		0,002 $\pm$ 0,001 & 0,003 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,67 $\pm$ 0,62 \\
+		0,003 $\pm$ 0,001 & 0,004 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,75 $\pm$ 0,53 \\
+		0,010 $\pm$ 0,001 & 0,005 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 2,00 $\pm$ 0,60 \\
+		0,010 $\pm$ 0,001 & 0,006 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 1,67 $\pm$ 0,49 \\
+		0,010 $\pm$ 0,001 & 0,006 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 1,67 $\pm$ 0,49 \\
+		0,010 $\pm$ 0,001 & 0,006 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 1,67 $\pm$ 0,49 \\
+		0,010 $\pm$ 0,001 & 0,005 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 2,00 $\pm$ 0,60 \\
+		0,010 $\pm$ 0,001 & 0,005 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 2,00 $\pm$ 0,60 \\
+		0,010 $\pm$ 0,001 & 0,006 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 1,67 $\pm$ 0,49 \\
+		0,005 $\pm$ 0,001 & 0,005 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 1,00 $\pm$ 0,49 \\
+		0,002 $\pm$ 0,001 & 0,005 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,40 $\pm$ 0,45 \\
+		0,002 $\pm$ 0,001 & 0,006 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,33 $\pm$ 0,41 \\
+		0,003 $\pm$ 0,001 & 0,007 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,43 $\pm$ 0,38 \\
+		0,005 $\pm$ 0,001 & 0,011 $\pm$ 0,001 & 1,00 $\pm$ 0,01 & 0,45 $\pm$ 0,30 \\
 		\bottomrule
 	\end{tabular}
 	\label{tab:valores}
 \end{table}
+
 
 Amb aquests valors i usant l'equació \eqref{eq1.17} podem determinar la capacitat del condensador de plaques planoparal·leles dibuixat.
 
@@ -1501,6 +1517,28 @@ plt.show()
 \section{Annex pràctica 2. Força entre corrents}
 \subsection{Dades experimentals}
 En aquesta secció podeu trobar, en forma de taula, els resultats de les mesures experimentals corresponents als apartats de \textit{força vs. corrent}, \textit{força vs. separació} i \textit{mesura del camp magnètic terrestre}.
+
+\begin{table}[h]
+	\centering
+	\small % <-- Hacemos la tabla más pequeña
+	\renewcommand{\arraystretch}{1.2}
+	\caption{Taula amb les mesures de massa, força i intensitat per la determinació de $\mu_0$ representant $F$ vs. $I^2$.}
+	\begin{tabular}{ccccccc}
+		\toprule
+		$m$ (kg) & $F$ (N) & $I_1$ (A) & $I_2$ (A) & $I_3$ (A) & $I_{promig}$ (A) & $I^2$ (A\textsuperscript{2}) \\
+		\midrule
+		\((0,53 \pm 0,10) \cdot 10^{-5}\) & \((5,20 \pm 0,10) \cdot 10^{-5}\) & \(0,98 \pm 0,01\) & \(0,92 \pm 0,01\) & \(0,93 \pm 0,01\) & \(0,94 \pm 0,02\) & \(0,89 \pm 0,04\) \\
+		\((1,02 \pm 0,10) \cdot 10^{-5}\) & \((1,00 \pm 0,10) \cdot 10^{-4}\) & \(2,24 \pm 0,01\) & \(2,22 \pm 0,01\) & \(2,33 \pm 0,01\) & \(2,26 \pm 0,04\) & \(5,12 \pm 0,16\) \\
+		\((1,55 \pm 0,10) \cdot 10^{-5}\) & \((1,52 \pm 0,10) \cdot 10^{-4}\) & \(3,28 \pm 0,01\) & \(3,06 \pm 0,01\) & \(3,26 \pm 0,01\) & \(3,20 \pm 0,07\) & \(10,24 \pm 0,45\) \\
+		\((1,95 \pm 0,10) \cdot 10^{-5}\) & \((1,91 \pm 0,10) \cdot 10^{-4}\) & \(3,95 \pm 0,01\) & \(3,84 \pm 0,01\) & \(3,83 \pm 0,01\) & \(3,87 \pm 0,04\) & \(15,00 \pm 0,31\) \\
+		\((2,48 \pm 0,10) \cdot 10^{-5}\) & \((2,43 \pm 0,10) \cdot 10^{-4}\) & \(4,42 \pm 0,01\) & \(4,32 \pm 0,01\) & \(4,40 \pm 0,01\) & \(4,38 \pm 0,03\) & \(19,18 \pm 0,28\) \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:taula_mesures}
+\end{table}
+
+
+
 \end{appendices}
 
 \end{document}

@@ -433,9 +433,27 @@ AAAAAA
 \section{Resultats i discussió}
 
 \subsection{Valor experimental de la permeabilitat magnètica}
-El càlcul de la permeabilitat magnètica del buit fem a partir de les mesures de \textit{força vs. corrent} i de les mesures de \textit{força vs. separació}. 
+El càlcul de la permeabilitat magnètica del buit el fem a partir de les mesures de \textit{força vs. corrent} i de les mesures de \textit{força vs. separació}. 
 
-De les mesures de $F$ vs. $I^2$, a partir de l'equació \eqref{eq:2.9}, trobem, després de fer un ajust lineal, la recta de la figura 
+De les mesures de $F$ vs. $I^2$, a partir de l'equació \eqref{eq:2.9}, trobem, després de fer un ajust lineal, la recta de la figura \ref{fig:2.3}. Per arribar a aquests resultats fem tres mesures de la força per cada massa, per cinc masses diferents (les indicades a la secció del procediment experimental de la pràctica). Les dades experimentals completes es poden trobar en forma de taula a l'annex \textbf{POSAR UN ANNEX}. De l'ajust lineal de la figura \ref{fig:2.3} en determinem la permeabilitat magnètica del buit, ja que està directament relacionada amb el pendent d'aquesta recta, tenint present que els valors de la longitud del fil $L$, la separació entre fils $r$ i $g$ són
+\begin{equation}
+	L = (0,305\pm 0,001)\text{ m}, \hspace{0.15cm} r = (8,10\pm 0,05)\cdot10^{-3} \text{ m}, \hspace{0.15cm} g = (9,81\pm 0,01) \text{ m/s$^2$}.
+\end{equation}
+Així, el valor de la permeabilitat magnètica és
+\begin{equation}
+	\mu_0 = (1,704\pm0,057)\cdot 10^{-6} \text{ N/A$^2$}.
+\end{equation}
+Si comparem aquest resultat amb el valor teòric de la permeabilitat magnètica
+\begin{equation}
+	\mu_0^{teoric} = 4\pi\cdot 10^{-7} \text{ N/A$^2$} \approx 1,257\cdot10^{-6} \text{ N/A$^2$},
+\end{equation}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{screenshot012}
+	\caption{Força entre els dos fils en funció de la intensitat del corrent al quadrat. Dades de l'ajust lineal: $y=mx+n$, amb $m = (1,0\pm4,5)\cdot 10^{-5}$ N$\cdot$A$^{-2}$ i $n = (0,3\pm4,0)\cdot 10^{-6}$ N.}
+	\label{fig:2.3}
+\end{figure}
+
 
 \subsection{Camp magnètic terrestre}
 
@@ -1395,8 +1413,10 @@ ax.plot([pa],[-np.sqrt(3)/3*pa],'ro', markersize=3)
 plt.show()
 \end{lstlisting}
 
-
-
+\newpage
+\section{Annex pràctica 2. Força entre corrents}
+\subsection{Dades experimentals}
+En aquesta secció podeu trobar, en forma de taula, els resultats de les mesures experimentals corresponents als apartats de \textit{força vs. corrent}, \textit{força vs. separació} i \textit{mesura del camp magnètic terrestre}.
 \end{appendices}
 
 \end{document}

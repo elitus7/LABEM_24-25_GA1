@@ -14,55 +14,58 @@
 \contentsline {chapter}{\numberline {2}Força entre corrents}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introducció i fonament teòric}{10}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Metodologia experimental}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Equilibrat de la balança}{11}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Equilibrat de la balança}{12}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Força vs. corrent}{12}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Força vs. separació}{12}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Mesura del camp magnètic terrestre}{12}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.4}Mesura del camp magnètic terrestre}{13}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}Resultats i discussió}{13}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Valor experimental de la permeabilitat magnètica}{13}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Camp magnètic terrestre}{14}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Conclusions}{14}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Circuit RLC en sèrie}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introducció i fonament teòric}{15}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Explicació qualitativa}{15}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Equació general del circuit RLC}{16}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Règim permanent}{16}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Règim transitori}{17}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Desfasament entre voltatges}{18}{subsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.1.6}Freqüències de tall i amplada de banda}{19}{subsection.3.1.6}%
-\contentsline {section}{\numberline {3.2}Metodologia experimental}{19}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Estudi del règim permanent}{19}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Estudi del règim transitori}{19}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Resultats i discussió}{20}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Règim permanent}{20}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Règim transitori}{21}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Conclusions}{21}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Inductància mútua i transformadors}{22}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introducció i fonament teòric}{22}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Estudi d'un transformador com a circuit}{23}{subsection.4.1.1}%
-\contentsline {subsubsection}{Impedància de càrrega molt gran}{24}{equation.4.18}%
-\contentsline {subsubsection}{Impedància de càrrega molt petita}{24}{equation.4.20}%
-\contentsline {subsubsection}{Impedància de càrrega de l'ordre de la impedància del secundari}{24}{equation.4.22}%
-\contentsline {section}{\numberline {4.2}Metodologia experimental}{24}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Estudi de les variables d'un transformador}{24}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Estudi de les intensitats i els voltatges d'entrada i de sortida}{25}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Resultats i discussió}{26}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Estudi de les variables d'un transformador}{26}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Estudi de les intensitats i voltatges d'entrada i de sortida}{27}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Conclusions}{27}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Mesura de la resistència d'un metall}{28}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introducció i fonament teòric}{28}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Metodologia experimental}{28}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Resultats i discussió}{28}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Conclusions}{28}{section.5.4}%
-\contentsline {chapter}{Bibliografia}{29}{chapter*.23}%
-\contentsline {chapter}{Annexos}{30}{section*.24}%
-\contentsline {section}{\numberline {A}Càlcul d'incerteses}{30}{section.1..1}%
-\contentsline {subsection}{\numberline {A.1}Incerteses pràctica 1}{30}{subsection.1..1.1}%
-\contentsline {section}{\numberline {B}Annex pràctica 1. Representació de camps}{31}{section.1..2}%
-\contentsline {subsection}{\numberline {B.1}Deducció de l'equació $(1.22)$}{31}{subsection.1..2.1}%
-\contentsline {subsection}{\numberline {B.2}Expressió analítica de la distribució de dos plans secants i un fil}{32}{subsection.1..2.2}%
-\contentsline {subsection}{\numberline {B.3}Dades experimentals de la pràctica 1}{33}{subsection.1..2.3}%
-\contentsline {subsection}{\numberline {B.4}Codis de les simulacions de la pràctica 1}{34}{subsection.1..2.4}%
-\contentsline {section}{\numberline {C}Annex pràctica 2. Força entre corrents}{38}{section.1..3}%
-\contentsline {subsection}{\numberline {C.1}Dades experimentals}{38}{subsection.1..3.1}%
+\contentsline {chapter}{\numberline {3}Circuit RLC en sèrie}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducció i fonament teòric}{16}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Explicació qualitativa}{16}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Equació general del circuit RLC}{17}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Règim permanent}{17}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Règim transitori}{18}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Desfasament entre voltatges}{19}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Freqüències de tall i amplada de banda}{20}{subsection.3.1.6}%
+\contentsline {section}{\numberline {3.2}Metodologia experimental}{20}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Estudi del règim permanent}{20}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Estudi del règim transitori}{20}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Resultats i discussió}{21}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Règim permanent}{21}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Règim transitori}{22}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Conclusions}{22}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Inductància mútua i transformadors}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introducció i fonament teòric}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Estudi d'un transformador com a circuit}{24}{subsection.4.1.1}%
+\contentsline {subsubsection}{Impedància de càrrega molt gran}{25}{equation.4.18}%
+\contentsline {subsubsection}{Impedància de càrrega molt petita}{25}{equation.4.20}%
+\contentsline {subsubsection}{Impedància de càrrega de l'ordre de la impedància del secundari}{25}{equation.4.22}%
+\contentsline {section}{\numberline {4.2}Metodologia experimental}{25}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Estudi de les variables d'un transformador}{25}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Estudi de les intensitats i els voltatges d'entrada i de sortida}{26}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Resultats i discussió}{27}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Estudi de les variables d'un transformador}{27}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Estudi de les intensitats i voltatges d'entrada i de sortida}{28}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Conclusions}{28}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Mesura de la resistència d'un metall}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introducció i fonament teòric}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Metodologia experimental}{29}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Resultats i discussió}{29}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Conclusions}{29}{section.5.4}%
+\contentsline {chapter}{Bibliografia}{30}{chapter*.23}%
+\contentsline {chapter}{Annexos}{31}{section*.24}%
+\contentsline {section}{\numberline {A}Càlcul d'incerteses}{31}{section.1..1}%
+\contentsline {subsection}{\numberline {A.1}Incerteses pràctica 1}{31}{subsection.1..1.1}%
+\contentsline {subsection}{\numberline {A.2}Incerteses de la pràctica 2}{31}{subsection.1..1.2}%
+\contentsline {subsection}{\numberline {A.3}Incerteses de la pràctica 3}{31}{subsection.1..1.3}%
+\contentsline {subsection}{\numberline {A.4}Incerteses de la pràctica 4}{31}{subsection.1..1.4}%
+\contentsline {section}{\numberline {B}Annex pràctica 1. Representació de camps}{32}{section.1..2}%
+\contentsline {subsection}{\numberline {B.1}Deducció de l'equació $(1.22)$}{32}{subsection.1..2.1}%
+\contentsline {subsection}{\numberline {B.2}Expressió analítica de la distribució de dos plans secants i un fil}{33}{subsection.1..2.2}%
+\contentsline {subsection}{\numberline {B.3}Dades experimentals de la pràctica 1}{34}{subsection.1..2.3}%
+\contentsline {subsection}{\numberline {B.4}Codis de les simulacions de la pràctica 1}{35}{subsection.1..2.4}%
+\contentsline {section}{\numberline {C}Annex pràctica 2. Força entre corrents}{39}{section.1..3}%
+\contentsline {subsection}{\numberline {C.1}Dades experimentals de la pràctica 2}{39}{subsection.1..3.1}%

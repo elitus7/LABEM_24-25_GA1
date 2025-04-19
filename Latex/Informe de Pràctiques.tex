@@ -383,9 +383,13 @@ d'on, via un càlcul ràpid, podem trobar el camp d'inducció magnètica generat
 \end{equation}
 Així doncs, la força, en mòdul, que patirà un altre fil (infinit) paral·lel, de longitud $L$ I pel qual hi circula la mateixa intensitat $I$ serà
 \begin{equation}
-	F = \frac{\mu_0 I^2L}{2\pi r}. \label{eq2:8}
+	F = \frac{\mu_0 I^2L}{2\pi r}, \label{eq2:8}
 \end{equation} 
-
+o, en termes de $B$
+\begin{equation}
+	F = BLI. \label{eq:2.campmagnetic}
+\end{equation}
+Aquesta darrera equació ens permetrà calcular el camp d'inducció magnètica terrestre\footnote{Nota: Ens referirem a $B$ de forma indistinta per \textit{camp magnètic terrestre} i \textit{camp d'inducció magnètica terrestre}.} (en particular la component horitzontal) a partir de la força que fa aquest sobre un fil de longitud $L$ pel qual hi travessa una intensitat $I$.
 \section{Metodologia experimental}
 
 El sistema que usarem per tal de fer totes les mesures necessàries serà el de la figura \ref{fig:2.1}. A l'esquema es poden veure tots els elements clau que constitueixen la balança usada. També usem una font de corrent continu, un transformador, un conjunt de masses (de 5, 10, 15 i 25 mg) i una brúixola.
@@ -427,30 +431,39 @@ Amb tot el recull de mesures d'intensitat representem $F$ (massa $\cross$ gravet
 De l'anterior recta, a partir del pendent deduïm el valor de $\mu_0$. Recordem que $L$ és la longitud dels fils i $r$ la separació entre aquests.
 
 \subsection{Força vs. separació}
-Per tal de poder calcular un valor de $\mu_0$ experimental a partir de la força vs separació, primer trobem la constant de torsió del fil, la qual relaciona la força del fil d'acer en funció de l'angle de torsió. Aquest paràmetre es pot obtenir equilibrant la balança per a cada una de les masses (5, 10, 15, 20 i 25 mg) i anotant-ne els graus resultants. El procediment s'inicia amb els 20 mg a la cassoleta i després es repeteix el procediment amb la resta. Un cop tenim totes les dades, representem la gràfica de la força en funció de l'angle de torsió, trobant així el pendent de la recta 
+Per tal de poder calcular un valor de $\mu_0$ experimental a partir de la força vs separació, primer trobem la constant de torsió del fil, la qual relaciona la força del fil d'acer en funció de l'angle de torsió. Aquest paràmetre es pot obtenir equilibrant la balança (veure figura \ref{fig:2.1}) per a cada una de les masses (5, 10, 15, 20 i 25 mg) i anotant-ne els graus que cal girar el dial de la balança per tal d'equilibrar el pes d'aquestes. Comencem amb la massa de 20 mg a la cassoleta i després repetim el procediment amb la resta. Un cop tenim totes les dades, representem la gràfica de la força en funció de l'angle de torsió, trobant així el pendent de la recta 
 \begin{equation}
 	F=k\theta.
 	\label{eq2:10}
 \end{equation}
-Seguidament es fixa un corrent d'entre 5 i 6 A que es mantindrà constant durant tot l'experiment. Comprovem que l'aparell continua equilibrat, ja que en cas contrari caldria repetir el procediment descrit a la Sec. 2.2.1. Ara, amb els cargols d'ajust de la balança, fixem també una separació màxima entre conductors. Aquesta distància serà la que anirem reduint per a cada mesura.
+Notem que hem assumit que l'angle de torsió $\theta$ i la força $F$ són proporcionals, mitjançant una constant recuperadora $k$. Això que té sentit si pensem en la llei de Hook, que, recordem, ens diu que la força recuperadora que fa una molla és
+\begin{equation}
+	F = k\Delta x
+\end{equation} 
+on $k$ és la constant recuperadora de la molla i $\Delta x$ el desplaçament respecte de la posició d'equilibri de la darrera.
+
+Seguidament es fixa un corrent d'entre 5 i 6 A que es mantindrà constant durant tot l'experiment. Comprovem que l'aparell continua equilibrat, ja que en cas contrari caldria repetir el procediment descrit a la Sec. 2.2.1. Ara, amb els cargols d'ajust de la balança, fixem també una separació $r$ màxima entre conductors. Aquesta distància serà la que anirem reduint per a cada mesura.
 
 Així, comencem a una $r \sim$ 10 mm. Com que cada variació d'aquesta distància comporta un desequilibri de la balança, caldrà equilibrar-la de nou girant el dial uns determinats graus. D'aquesta manera obtenim les dades experimentals dels graus que es corresponen a cada separació fins una $r \sim$ 4mm. 
 
-Un cop tenim aquestes mesures, només cal representar la força (calculada amb l'equació \eqref{eq2:10}) en funció de $1/r$. A partir de l'equació \eqref{eq:2.9}, veiem que podem obtenir un valor de $\mu_0$ amb el pendent de la nostra gràfica.
-
+Un cop tenim aquestes mesures, només cal representar la força (calculada amb l'equació \eqref{eq2:10}) en funció de $1/r$, usant l'equació \eqref{eq:2.9}, de manera que
+\begin{equation}
+	k\theta = \frac{\mu_0LI^2}{2\pi}\frac{1}{r}.
+\end{equation}
+De la darrera equació, podem trobar el pendent a partir de la representació de $k\theta$ vs. $\frac{1}{r}$ i, amb aquest, el valor de $\mu_0$.
 \subsection{Mesura del camp magnètic terrestre}
-En aquest últim apartat, hem de canviar l'orientació de la balança, de manera que els conductors quedin perpendiculars a la direcció nord-sud de la Terra. Això s'aconsegueix fàcilment fent ús de la brúixola proporcionada.
+En aquest últim apartat, hem de canviar l'orientació de la balança per tal d'assegurar-nos que el camp d'inducció magnètica $\vec{B}$ de la Terra faci força sobre els fils; per fer-ho orientem els conductors de manera que la intensitat que els travessa quedi perpendicular a la direcció nord-sud de la Terra. Això s'aconsegueix fàcilment fent ús de la brúixola proporcionada.
 
 Un cop ens hem assegurat que la balança continua equilibrada (en cas contrari caldria repetir el procediment descrit a la Sec. 2.1.1) es connecta la font d'alimentació de tal manera que només hi hagi intensitat en el conductor paral·lel superior.
 
-Comencem l'experiment donant una intensitat d'uns 6 A i mesurant la força amb la metodologia seguida a la Sec. 2.2.3, és a dir, fent girar el dial fins equilibrar la balança i anotant-ne els graus necessaris. Cal fer vàries mesures amb diferents valors d'intensitats (menors als 6 A inicials), de manera que, fent una mitjana, podem extreure un valor experimental de la component horitzontal del camp magnètic de la Terra fent ús de les equacions \eqref{eq2:7} i \eqref{eq2:8}.
+Comencem l'experiment donant una intensitat d'uns 6 A i mesurant la força amb la metodologia seguida a la Sec. 2.2.3, és a dir, fent girar el dial fins equilibrar la balança i anotant-ne els graus necessaris. Cal fer vàries mesures amb diferents valors d'intensitats (menors als 6 A inicials), de manera que, fent una mitjana, podem extreure un valor experimental de la component horitzontal del camp magnètic de la Terra fent ús de l'equació \eqref{eq:2.campmagnetic}.
 
 \section{Resultats i discussió}
 
 \subsection{Valor experimental de la permeabilitat magnètica}
 El càlcul de la permeabilitat magnètica del buit el fem a partir de les mesures de \textit{força vs. corrent} i de les mesures de \textit{força vs. separació}. 
 
-De les mesures de $F$ vs. $I^2$, a partir de l'equació \eqref{eq:2.9}, trobem, després de fer un ajust lineal, la recta de la figura \ref{fig:2.3}. Per arribar a aquests resultats fem tres mesures de la força per cada massa, per cinc masses diferents (les indicades a la secció del procediment experimental de la pràctica). Les dades experimentals completes es poden trobar en forma de taula a l'annex \textbf{POSAR UN ANNEX}. De l'ajust lineal de la figura \ref{fig:2.3} en determinem la permeabilitat magnètica del buit, ja que està directament relacionada amb el pendent d'aquesta recta, tenint present que els valors de la longitud del fil $L$, la separació entre fils $r$ i $g$ són
+De les mesures de $F$ vs. $I^2$, a partir de l'equació \eqref{eq:2.9}, trobem, després de fer un ajust lineal, la recta de la figura \ref{fig:2.3}\footnote{Totes les gràfiques s'han fet usant el programari \textit{Gnuplot}.}. Per arribar a aquests resultats fem tres mesures de la força per cada massa, per cinc masses diferents (les indicades a la secció del procediment experimental de la pràctica). Les dades experimentals completes es poden trobar en forma de taula a l'annex \ref{an:c1}. De l'ajust lineal de la figura \ref{fig:2.3} en determinem la permeabilitat magnètica del buit, ja que està directament relacionada amb el pendent d'aquesta recta, tenint present que els valors de la longitud del fil $L$, la separació entre fils $r$ i $g$ són
 \begin{equation}
 	L = (0,305\pm 0,001)\text{ m}, \hspace{0.15cm} r = (8,10\pm 0,05)\cdot10^{-3} \text{ m}, \hspace{0.15cm} g = (9,81\pm 0,01) \text{ m/s$^2$}.
 \end{equation}
@@ -461,8 +474,8 @@ Així, el valor de la permeabilitat magnètica és
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\linewidth]{screenshot013}
-	\caption{Força entre els dos fils en funció de la intensitat del corrent al quadrat. Dades de l'ajust lineal: $y=mx+n$, amb $m = (1,0\pm4,5)\cdot 10^{-5}$ N$\cdot$A$^{-2}$ i $n = (0,3\pm4,0)\cdot 10^{-6}$ N.}
+	\includegraphics[width=0.8\linewidth]{screenshot016}
+	\caption{Força entre els dos fils en funció de la intensitat del corrent al quadrat. Dades de l'ajust lineal: $y=mx+n$, amb $m = (1,0\pm4,5)\cdot 10^{-5}$ N$\cdot$A$^{-2}$ i $n = (0,3\pm4,0)\cdot 10^{-6}$ N. Coeficient de correlació $R^2=0,997$. Notem que en alguns punts les barres d'error corresponent a l'eix de les $x$ són tan petites que no s'arriben a distingir.}
 	\label{fig:2.3}
 \end{figure}
 Si comparem aquest resultat amb el valor teòric de la permeabilitat magnètica
@@ -473,17 +486,16 @@ trobem que tenim un error relatiu del 36,64 \%.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\linewidth]{screenshot015}
-	\caption{Força en funció de l'angle de torsió $\theta$. Dades de l'ajust lineal: $y=mx+n$, amb $m=(1,9633\pm0,0047)\cdot10^{-4}$ N$\cdot$rad$^{-1}$ i $n=(2,77\pm0,44)\cdot10^{-5}$ N.}
-	\label{fig:screenshot015}
+	\includegraphics[width=0.8\linewidth]{screenshot017}
+	\caption{Força en funció de l'angle de torsió $\theta$. Dades de l'ajust lineal: $y=mx+n$, amb $m=(1,9633\pm0,0047)\cdot10^{-4}$ N$\cdot$rad$^{-1}$ i $n=(2,77\pm0,44)\cdot10^{-5}$ N. Coeficient de correlació $R^2=0,998$. Notem que en alguns punts les barres d'error corresponent a l'eix de les $x$ són tan petites que no s'arriben a distingir.}
+	\label{fig:2.4}
 \end{figure}
 
-Per altre banda podem comparar amb el càlcul mitjançant l'experiment del fil de torsió. Per aquest com ja hem dit cal determinar primer la constant de torsió del fil. Podem veure la taula de valors experimentals a l'annex \textcolor{red}{poner anexo}, amb aquestes dades podem fer una regressió lineal que ens dona la seguent recta:
-\begin{eqnarray}
-	F = k\theta = \left[(1,96 \pm 0,05)\theta - (0,28 \pm 0,04)\right]\times 10^{-4} N\\
-	\Rightarrow k = (1,96 \pm 0,05)N/rad
-\end{eqnarray}
-Ara mitjançant aquesta constant podem correlacionar les voltes necessàries per equilibrar la balança en cada una de les configuracions a diferents distàncies amb la força magnètica que produeix el corrent de $I = (5,55 \pm 0,01)A$ que apliquem. Fem una representació de força magnètica vs $1/r$, que teòricament hauria de ser una recta, ja que:
+Per altra banda podem comparar amb el càlcul de $\mu_0$ mitjançant l'experiment del fil de torsió, és a dir, representant \textit{força vs. separació}. En aquest cas cal que determinem prèviament la constant de torsió del fil, $k$, suposant que se satisfà que la força recuperadora és proporcional a l'angle de torsió $\theta$. A partir d'un seguit de mesures experimental de $F$ i $\theta$ (veure annex \label{an:c1}) podem fer un ajust lineal, tal i com es pot veure a la figura \ref{fig:2.4}, d'on es dedueix que
+\begin{equation}
+	k = (1,0\pm 4,5)\cdot 10^{-5} \text{ N$\cdot$A$^{-2}$}
+\end{equation}
+Ara, a partir del valor d'aquesta constant, podem correlacionar les voltes necessàries del dial per equilibrar la balança en cada una de les configuracions a diferents distàncies, amb la força magnètica que produeix el corrent fixat de $I = (5,55 \pm 0,01)$ A que apliquem. Si fem una representació de la força entre els fils vs. $1/r$, que teòricament hauria de ser una recta, ja que:
 \begin{eqnarray}
 	F = \frac{\mu_0LI^2}{2\pi}\left(\frac{1}{r}\right)
 \end{eqnarray}
@@ -1184,8 +1196,9 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de fo
 \begin{equation}
 	u_{C_\text{teòric}} = \frac{u_H}{d} \sqrt{1+C^2}.
 \end{equation}
-
-
+\subsection{Incerteses de la pràctica 2}
+\subsection{Incerteses de la pràctica 3}
+\subsection{Incerteses de la pràctica 4}
 \newpage
 \section{Annex pràctica 1. Representació de camps}
 \subsection{Deducció de l'equació $(1.22)$}
@@ -1270,7 +1283,7 @@ A continuació mostrem els valors experimentals obtinguts en el transcurs de la 
 \begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Taula amb els valors experimentals mesurats per tal de poder calcular la capacitat del condensador de plaques planoparal·leles.}
+	\caption{Valors experimentals mesurats per tal de poder calcular la capacitat del condensador de plaques planoparal·leles.}
 	\begin{tabular}{cccc}
 		\toprule
 		$\Delta l_i$ (m) & $\Delta r_i$ (m) & $\Delta V_i$ (V) & $\frac{\Delta V_i\Delta l_i}{\Delta r_i}$ (V)\\
@@ -1553,27 +1566,69 @@ plt.show()
 
 \newpage
 \section{Annex pràctica 2. Força entre corrents}
-\subsection{Dades experimentals}
+\label{an:c1}
+\subsection{Dades experimentals de la pràctica 2}
 En aquesta secció podeu trobar, en forma de taula, els resultats de les mesures experimentals corresponents als apartats de \textit{força vs. corrent}, \textit{força vs. separació} i \textit{mesura del camp magnètic terrestre}.
 
 \begin{table}[h]
 	\centering
 	\small % <-- Hacemos la tabla más pequeña
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Taula amb les mesures de massa, força i intensitat per la determinació de $\mu_0$ representant $F$ vs. $I^2$.}
+	\caption{Mesures de massa, força i intensitat per la determinació de $\mu_0$ representant $F$ vs. $I^2$.}
 	\begin{tabular}{ccccccc}
 		\toprule
 		$m$ (kg) & $F$ (N) & $I_1$ (A) & $I_2$ (A) & $I_3$ (A) & $I_{promig}$ (A) & $I^2$ (A\textsuperscript{2}) \\
 		\midrule
-		\((0,53 \pm 0,10) \cdot 10^{-5}\) & \((5,20 \pm 0,10) \cdot 10^{-5}\) & \(0,98 \pm 0,01\) & \(0,92 \pm 0,01\) & \(0,93 \pm 0,01\) & \(0,94 \pm 0,02\) & \(0,89 \pm 0,04\) \\
-		\((1,02 \pm 0,10) \cdot 10^{-5}\) & \((1,00 \pm 0,10) \cdot 10^{-4}\) & \(2,24 \pm 0,01\) & \(2,22 \pm 0,01\) & \(2,33 \pm 0,01\) & \(2,26 \pm 0,04\) & \(5,12 \pm 0,16\) \\
-		\((1,55 \pm 0,10) \cdot 10^{-5}\) & \((1,52 \pm 0,10) \cdot 10^{-4}\) & \(3,28 \pm 0,01\) & \(3,06 \pm 0,01\) & \(3,26 \pm 0,01\) & \(3,20 \pm 0,07\) & \(10,24 \pm 0,45\) \\
-		\((1,95 \pm 0,10) \cdot 10^{-5}\) & \((1,91 \pm 0,10) \cdot 10^{-4}\) & \(3,95 \pm 0,01\) & \(3,84 \pm 0,01\) & \(3,83 \pm 0,01\) & \(3,87 \pm 0,04\) & \(15,00 \pm 0,31\) \\
-		\((2,48 \pm 0,10) \cdot 10^{-5}\) & \((2,43 \pm 0,10) \cdot 10^{-4}\) & \(4,42 \pm 0,01\) & \(4,32 \pm 0,01\) & \(4,40 \pm 0,01\) & \(4,38 \pm 0,03\) & \(19,18 \pm 0,28\) \\
+		\((5,3 \pm 1,0) \cdot 10^{-6}\) & \((5,20 \pm 0,98) \cdot 10^{-5}\) & \(0,98 \pm 0,01\) & \(0,92 \pm 0,01\) & \(0,93 \pm 0,01\) & \(0,94 \pm 0,02\) & \(0,890 \pm 0,040\) \\
+		\((10,2 \pm 1,0) \cdot 10^{-6}\) & \((10,01 \pm 0,98) \cdot 10^{-5}\) & \(2,24 \pm 0,01\) & \(2,22 \pm 0,01\) & \(2,33 \pm 0,01\) & \(2,26 \pm 0,04\) & \(5,12 \pm 0,16\) \\
+		\((15,5 \pm 1,0) \cdot 10^{-6}\) & \((15,21 \pm 0,98) \cdot 10^{-5}\) & \(3,28 \pm 0,01\) & \(3,06 \pm 0,01\) & \(3,26 \pm 0,01\) & \(3,20 \pm 0,07\) & \(10,24 \pm 0,45\) \\
+		\((19,5 \pm 1,0) \cdot 10^{-6}\) & \((19,13 \pm 0,98) \cdot 10^{-5}\) & \(3,95 \pm 0,01\) & \(3,84 \pm 0,01\) & \(3,83 \pm 0,01\) & \(3,87 \pm 0,04\) & \(15,00 \pm 0,31\) \\
+		\((24,8 \pm 1,0) \cdot 10^{-6}\) & \((24,33 \pm 0,98) \cdot 10^{-5}\) & \(4,42 \pm 0,01\) & \(4,32 \pm 0,01\) & \(4,40 \pm 0,01\) & \(4,38 \pm 0,03\) & \(19,18 \pm 0,28\) \\
 		\bottomrule
 	\end{tabular}
-	\label{tab:taula_mesures}
 \end{table}
+
+\begin{table}[h]
+	\centering
+	\small
+	\renewcommand{\arraystretch}{1.2}
+	\caption{Mesures de massa, angle de torsió i força per la determinació de la constant $k$.}
+	\begin{tabular}{ccc}
+		\toprule
+		$m$ (kg) & $\theta$ (rad) & $F$ (N) \\
+		\midrule
+		\((5,3 \pm 1,0) \cdot 10^{-6}\) & \(0,4014 \pm 0,0017\) & \((5,20 \pm 0,98) \cdot 10^{-5}\) \\
+		\((9,5 \pm 1,0) \cdot 10^{-6}\) & \(0,6109 \pm 0,0017\) & \((9,32 \pm 0,98) \cdot 10^{-5}\) \\
+		\((14,8 \pm 1,0) \cdot 10^{-6}\) & \(0,9076 \pm 0,0017\) & \((14,52 \pm 0,98) \cdot 10^{-5}\) \\
+		\((19,5 \pm 1,0) \cdot 10^{-6}\) & \(1,0996 \pm 0,0017\) & \((19,13 \pm 0,98) \cdot 10^{-5}\) \\
+		\((24,8 \pm 1,0) \cdot 10^{-6}\) & \(1,3788 \pm 0,0017\) & \((24,33 \pm 0,98) \cdot 10^{-5}\) \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:taula_massa_angle_forca}
+\end{table}
+\begin{table}[h]
+	\centering
+	\small
+	\renewcommand{\arraystretch}{1.2}
+	\caption{Mesures d'intensitat, angle i força efectuada pel camp magnètic terrestre i càlcul de la component horitzontal d'aquest a partir de l'equació \eqref{eq:2.campmagnetic}.}
+	\begin{tabular}{cccc}
+		\toprule
+		Intensitat (A) & Angle (rad) & Força (N) & Camp B (T) \\
+		\midrule
+		\(5,93 \pm 0,01\) & \(0,192 \pm 0,017\) & \((3,77 \pm 0,35) \cdot 10^{-5}\) & \((2,08 \pm 0,20) \cdot 10^{-5}\) \\
+		\(5,04 \pm 0,01\) & \(0,175 \pm 0,017\) & \((3,43 \pm 0,35) \cdot 10^{-5}\) & \((2,23 \pm 0,23) \cdot 10^{-5}\) \\
+		\(3,78 \pm 0,01\) & \(0,157 \pm 0,017\) & \((3,08 \pm 0,35) \cdot 10^{-5}\) & \((2,67 \pm 0,30) \cdot 10^{-5}\) \\
+		\(2,48 \pm 0,01\) & \(0,140 \pm 0,017\) & \((2,74 \pm 0,35) \cdot 10^{-5}\) & \((3,62 \pm 0,46) \cdot 10^{-5}\) \\
+		\(1,73 \pm 0,01\) & \(0,087 \pm 0,017\) & \((1,71 \pm 0,35) \cdot 10^{-5}\) & \((3,25 \pm 0,65) \cdot 10^{-5}\) \\
+		\(0,70 \pm 0,01\) & \(0,052 \pm 0,017\) & \((1,03 \pm 0,34) \cdot 10^{-5}\) & \((4,81 \pm 1,61) \cdot 10^{-5}\) \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:taula_intensitat_angle}
+\end{table}
+
+
+
+
 
 
 

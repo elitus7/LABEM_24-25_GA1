@@ -5,7 +5,7 @@ set ylabel "F (N)"
 set grid
 set decimalsign ','
 
-set format y "%.4f"
+set format y "%.5f"
 set key outside right top
 set key box lw 1
 

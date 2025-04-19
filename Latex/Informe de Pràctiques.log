@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  19 APR 2025 19:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  19 APR 2025 19:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1321,14 +1321,20 @@ L3 programming layer <2024-11-02>
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `"Informe de Pràctiques".out' has not change
-d.
-(rerunfilecheck)             Checksum: 46C45CD4D1129869F6AC393FA0C915F7;13747.
+
+Package rerunfilecheck Warning: File `"Informe de Pràctiques".out' has changed
+.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Informe de Pràctiques".out':
+(rerunfilecheck)             Before: 46C45CD4D1129869F6AC393FA0C915F7;13747
+(rerunfilecheck)             After:  623D936DADDA70B2C2353AC61604B095;13783.
  ) 
 Here is how much of TeX's memory you used:
  33570 strings out of 473682
  672137 string characters out of 5719215
- 1669731 words of memory out of 5000000
+ 1669803 words of memory out of 5000000
  55673 multiletter control sequences out of 15000+600000
  576132 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1371,7 +1377,7 @@ ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
 /cm/cmti10.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmti8.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "Informe de Pràctiques.pdf" (40 pages, 15244185 bytes).
+Output written on "Informe de Pràctiques.pdf" (40 pages, 15244183 bytes).
 PDF statistics:
  1322 PDF objects out of 1440 (max. 8388607)
  509 named destinations out of 1000 (max. 500000)

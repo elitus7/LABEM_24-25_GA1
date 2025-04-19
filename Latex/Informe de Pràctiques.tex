@@ -379,11 +379,11 @@ podem deduir fàcilment el teorema d'Ampère, que ens diu que:
 \end{equation}
 d'on, via un càlcul ràpid, podem trobar el camp d'inducció magnètica generat per un fil infinit amb intensitat $I$ a una distància $r$ del seu centre
 \begin{equation}
-	B = \frac{\mu_0 I}{2\pi r}.
+	B = \frac{\mu_0 I}{2\pi r}. \label{eq2:7}
 \end{equation}
 Així doncs, la força, en mòdul, que patirà un altre fil (infinit) paral·lel, de longitud $L$ I pel qual hi circula la mateixa intensitat $I$ serà
 \begin{equation}
-	F = \frac{\mu_0 I^2L}{2\pi r}.
+	F = \frac{\mu_0 I^2L}{2\pi r}. \label{eq2:8}
 \end{equation} 
 
 \section{Metodologia experimental}
@@ -427,9 +427,23 @@ Amb tot el recull de mesures d'intensitat representem $F$ (massa $\cross$ gravet
 De l'anterior recta, a partir del pendent deduïm el valor de $\mu_0$. Recordem que $L$ és la longitud dels fils i $r$ la separació entre aquests.
 
 \subsection{Força vs. separació}
-AAAAAA
+Per tal de poder calcular un valor de $\mu_0$ experimental a partir de la força vs separació, primer trobem la constant de torsió del fil, la qual relaciona la força del fil d'acer en funció de l'angle de torsió. Aquest paràmetre es pot obtenir equilibrant la balança per a cada una de les masses (5, 10, 15, 20 i 25 mg) i anotant-ne els graus resultants. El procediment s'inicia amb els 20 mg a la cassoleta i després es repeteix el procediment amb la resta. Un cop tenim totes les dades, representem la gràfica de la força en funció de l'angle de torsió, trobant així el pendent de la recta 
+\begin{equation}
+	F=k\theta.
+	\label{eq2:10}
+\end{equation}
+Seguidament es fixa un corrent d'entre 5 i 6 A que es mantindrà constant durant tot l'experiment. Comprovem que l'aparell continua equilibrat, ja que en cas contrari caldria repetir el procediment descrit a la Sec. 2.2.1. Ara, amb els cargols d'ajust de la balança, fixem també una separació màxima entre conductors. Aquesta distància serà la que anirem reduint per a cada mesura.
+
+Així, comencem a una $r \sim$ 10 mm. Com que cada variació d'aquesta distància comporta un desequilibri de la balança, caldrà equilibrar-la de nou girant el dial uns determinats graus. D'aquesta manera obtenim les dades experimentals dels graus que es corresponen a cada separació fins una $r \sim$ 4mm. 
+
+Un cop tenim aquestes mesures, només cal representar la força (calculada amb l'equació \eqref{eq2:10}) en funció de $1/r$. A partir de l'equació \eqref{eq:2.9}, veiem que podem obtenir un valor de $\mu_0$ amb el pendent de la nostra gràfica.
 
 \subsection{Mesura del camp magnètic terrestre}
+En aquest últim apartat, hem de canviar l'orientació de la balança, de manera que els conductors quedin perpendiculars a la direcció nord-sud de la Terra. Això s'aconsegueix fàcilment fent ús de la brúixola proporcionada.
+
+Un cop ens hem assegurat que la balança continua equilibrada (en cas contrari caldria repetir el procediment descrit a la Sec. 2.1.1) es connecta la font d'alimentació de tal manera que només hi hagi intensitat en el conductor paral·lel superior.
+
+Comencem l'experiment donant una intensitat d'uns 6 A i mesurant la força amb la metodologia seguida a la Sec. 2.2.3, és a dir, fent girar el dial fins equilibrar la balança i anotant-ne els graus necessaris. Cal fer vàries mesures amb diferents valors d'intensitats (menors als 6 A inicials), de manera que, fent una mitjana, podem extreure un valor experimental de la component horitzontal del camp magnètic de la Terra fent ús de les equacions \eqref{eq2:7} i \eqref{eq2:8}.
 
 \section{Resultats i discussió}
 
@@ -1074,7 +1088,7 @@ Cal destacar que la primera configuració proposada per nosaltres també present
 Per finalitzar l'anàlisi, podem veure la importància d’introduir un element ferromagnètic per minimitzar la pèrdua de flux si ens fixem en la configuració 0, que correspon al cas sense cap element ferromagnètic. En aquesta configuració, la constant d’acoblament és de $k = 0,0419 ± 0,00017 $, el valor més baix amb diferència respecte a la resta de configuracions. Això indica que una gran part del flux magnètic no arriba a la bobina secundària, evidenciant una desviació notable del comportament ideal.
 
 Per a les següents mesures, usem la primera configuració proposada com ja hem comentat. Els valors obtinguts dels voltatges d'entrada i de sortida per a les diferents combinacions de bobines es troben a la taula següent. BLABLA NO ESTA ACABAT AIXO FJDHFJHFOLEFHOEIF
-
+NAAAT PODRIES CITAR LA IMATGE QUE FAS REFERÈNCIA EN PLAN COM A CONFIGURACIÓ ÒPTIMA SAPS
 \begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}

@@ -18,10 +18,10 @@
 \contentsline {subsection}{\numberline {2.2.2}Força vs. corrent}{12}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Força vs. separació}{12}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Mesura del camp magnètic terrestre}{12}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Resultats i discussió}{12}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Valor experimental de la permeabilitat magnètica}{12}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Camp magnètic terrestre}{13}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Conclusions}{13}{section.2.4}%
+\contentsline {section}{\numberline {2.3}Resultats i discussió}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Valor experimental de la permeabilitat magnètica}{13}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Camp magnètic terrestre}{14}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Conclusions}{14}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Circuit RLC en sèrie}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introducció i fonament teòric}{15}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Explicació qualitativa}{15}{subsection.3.1.1}%

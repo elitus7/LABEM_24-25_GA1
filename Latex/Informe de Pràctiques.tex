@@ -1139,9 +1139,72 @@ NAAAT PODRIES CITAR LA IMATGE QUE FAS REFERÈNCIA EN PLAN COM A CONFIGURACIÓ Ò
 	
 \end{table}
 
-DESPRES COMENTO LA MERDA AQUESTA Q MHE ENFADAT.
+ES VEU Q ELS VALORS ESTAN AL REVES LOL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+(s'ha de comentar, quan ho arregli, otro dia, q no puc mes)
 
 \subsection{Estudi de les intensitats i voltatges d'entrada i de sortida}
+En aquesta secció trobem la relació entre les reactàncies d'una bobina de 400 voltes i una de 800 voltes. Els valors mesurats experimentalment dels voltatges i corrents d'entrada es poden trobar a la taula següent. 
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\caption{Reactàncies per a bobines de 400 i 800 voltes.}
+	\begin{tabular}{lcccc}
+		\toprule
+		$n$ & $V (V)$ & $I (A)$ & $X$ \\
+		\midrule
+		400 & $6{,}10 \pm 0{,}01$ & $0{,}72 \pm 0{,}01$ & $8{,}47 \pm 0{,}11$ \\
+		800 & $6{,}06 \pm 0{,}01$ & $0{,}17 \pm 0{,}01$ & $53{,}6 \pm 2{,}1$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+La reactància es calcula com $X = V / I $. 
+La inductància d'una bobina és proporcional al quadrat del nombre de voltes que té. Com la reactància és directament proporcional a la inductància, aquesta també ha de ser proporcional al quadrat del nombre de voltes de la bobina. Si volem trobar la relació entre dues reactàncies, la relació ha de ser el quadrat de la relació entre el nombre de voltes de cada bobina, és a dir.
+
+\begin{equation*}
+	\begin{array}{c}
+		L \propto n^2 \Rightarrow X \propto n^2 \\
+		\frac{X_{800}}{X_{400}} = \left( \frac{800}{400} \right)^2 = 4
+	\end{array}
+\end{equation*}
+
+(AIXÒ D'AQUÍ DALT HAURIA D'ESTAR A METODOLOGIA)
+
+Dividint els resultats de les reactàncies calculades, ens dona un valor de $ 4,21 \pm 0,25 $. 
+Aquest valor és coherent amb el valor teòric esperat de 4, confirmant que la reactància és proporcional al quadrat del nombre de voltes de la bobina. 
+
+
+(AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA)
+Connectem un circuit al secundari i estudiem els corrents d'entrada i de sortida. Es poden trobar els valors de les mesures experimentals a la següent taula per a la combinació de 400 voltes per cada bobina (400/400), per a 800 al primari, 400 al secundari (800/400), i una combinació proposada per nosaltres on el primari hi ha 3200 voltes i al secundari 200 (3200/200). La configuració utilitzada es la que es demana al guió, que és la \textbf{d}. 
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\caption{Valors experimentals del guany en voltatge a partir de les mesures experimentals dels voltatges i corrents per a diferents combinacions de bobines usant la configuració \textbf{d}.}
+	\begin{tabular}{lccccccc}
+		\toprule
+		$n1/n2$ & $\alpha$ & $R\,(\Omega)$ & $V_1$ (V) & $I_1$ (A) & $V_2$ (V) & $I_2$ (A) & $V_2/V_1$ \\
+		\midrule
+		& & 1000 & $7{,}31 \pm 0{,}01$ & $0{,}0489 \pm 0{,}0001$ & $7{,}00 \pm 0{,}01$ & $0{,}0064 \pm 0{,}0001$ & $0{,}9576 \pm 0{,}0019$ \\
+		$400/400$ & 1 & 100  & $7{,}28 \pm 0{,}01$ & $0{,}0778 \pm 0{,}0001$ & $6{,}70 \pm 0{,}01$ & $0{,}0515 \pm 0{,}0001$ & $0{,}9203 \pm 0{,}0019$  \\
+		& & 10   & $7{,}17 \pm 0{,}01$ & $0{,}1862 \pm 0{,}0001$ & $4{,}31 \pm 0{,}01$ & $0{,}1703 \pm 0{,}0001$ & $0{,}6011 \pm 0{,}0016$\\
+		\midrule
+		& & 1000 & $7{,}16 \pm 0{,}01$ & $0{,}0587 \pm 0{,}0001$ & $13{,}45 \pm 0{,}01$ & $0{,}0119 \pm 0{,}0001$ & $1{,}878 \pm 0{,}0030$  \\
+		$800/400$ & 2 & 100  & $7{,}19 \pm 0{,}01$ & $0{,}0881 \pm 0{,}0001$ & $11{,}21 \pm 0{,}01$ & $0{,}0652 \pm 0{,}0001$ & $1{,}5592 \pm 0{,}0026$\\
+		& & 10   & $7{,}26 \pm 0{,}01$ & $0{,}2095 \pm 0{,}0001$ & $3{,}16 \pm 0{,}01$ & $0{,}1838 \pm 0{,}0001$ & $0{,}4353 \pm 0{,}0016$ \\
+		\midrule
+		& & 1000 & $7{,}20 \pm 0{,}01$ & $0{,}0721 \pm 0{,}0001$ & $39{,}12 \pm 0{,}01$ & $0{,}0121 \pm 0{,}0001$ & $5{,}437 \pm 0{,}016$ \\
+		$3200/400$ & 8 & 100  & $7{,}22 \pm 0{,}01$ & $0{,}1014 \pm 0{,}0001$ & $8{,}72 \pm 0{,}01$ & $0{,}0688 \pm 0{,}0001$ & $1{,}207 \pm 0{,}002$  \\
+		& & 10   & $7{,}15 \pm 0{,}01$ & $0{,}2375 \pm 0{,}0001$ & $0{,}95 \pm 0{,}01$ & $0{,}1966 \pm 0{,}0001$ & $0{,}1325 \pm 0{,}0014$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Els valors experimentals calculats per a cada cas es troben a la taula següent. 
+
+(help)
+
 
 \section{Conclusions}
 

@@ -437,7 +437,7 @@ Per tal de poder calcular un valor de $\mu_0$ experimental a partir de la força
 	F=k\theta.
 	\label{eq2:10}
 \end{equation}
-Notem que hem assumit que l'angle de torsió $\theta$ i la força $F$ són proporcionals, mitjançant una constant recuperadora $k$. Això que té sentit si pensem en la llei de Hook, que, recordem, ens diu que la força recuperadora que fa una molla és
+Notem que hem assumit que l'angle de torsió $\theta$ i la força $F$ són proporcionals, mitjançant una constant recuperadora $k$. Això que té sentit si pensem en la llei de Hooke, que, recordem, ens diu que la força recuperadora que fa una molla és
 \begin{equation}
 	F = k\Delta x
 \end{equation} 
@@ -516,7 +516,7 @@ amb $b$ el pendent del nostre ajust. Si ara introduim els nostres valors experim
 \end{eqnarray}
 \textcolor{red}{es decir, una mierda}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{screenshot018}
 	\caption{Força en funció de $1/r$. Dades de l'ajust lineal: $y=mx+n$, amb $m = (3,298\pm0,051)\cdot 10^{-6} \text{ N$\cdot$m}$ i $n=(-1,194\pm 0,066)\cdot10^{-4} \text{ N}$. Coeficient de correlació $R^2=0,9993$. Notem que, en alguns punts, les barres d'error corresponents a l'eix de les $x$ són tan petites que no s'arriben a distingir.}
@@ -524,7 +524,15 @@ amb $b$ el pendent del nostre ajust. Si ara introduim els nostres valors experim
 \end{figure}
 
 \subsection{Camp magnètic terrestre}
-Tal com se'ns indica a la metodologia de la pràctica, l'orientació de la balança ha de ser tal que la intensitat i la direcció nord-sud de la Terra siguin perpendiculars (és a dir, alineats amb la direcció est-oest). Amb aquesta configuració, notem que la component del camp magnètic terrestre que mesurem és l'horitzontal, ja que, si ens fixem en l'equació \eqref{eq2:6}, $\vec{B} \cdot \text{d}\vec{l} = B\cdot\text{d}l\cdot\cos(\theta)$, sent $\theta$ l'angle entre els dos vectors. Observem que si $\vec{B}$ i d$\vec{l}$ són vectors perpendiculars, és a dir $\theta = 90$ º o $\theta = 270$ º, el seu producte escalar s'anul·la. Per tant, en situar els conductors perpendiculars a la direcció nord-sud, aquests es troben alineats amb la component horitzontal (est-oest) de la Terra, fent que així el producte escalar sigui diferent de zero. ERIC DICE QUE NO ESTÁ BIEN. YA LO ESCRIBIRÁS TÚ.
+Contràriament als apartats anteriors, en aquest cas situem els conductors perpendiculars a la direcció nord-sud de la Terra. Això ens permet mesurar únicament la component horitzontal del camp magnètic terrestre ja que, com es pot observar a la figura \ref{fig2:6}, la força causada per aquesta component és la que podem mesurar equilibrant la balança amb el dial. Notem com, per contra, la força corresponent a la component vertical del camp magnètic terrestre no podem mesurar-la amb aquest mateix procediment, de manera que no podem obtenir-ne el valor.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.35\linewidth]{screenshot019}
+	\caption{Diagrama de forces que crea el camp magnètic terrestre a la balança. La força verda $F_h$ és la corresponent a la component horitzontal de $\vec{B}$.}
+	\label{fig2:6}
+\end{figure}
+
 
 A partir de les mesures experimentals recollides a l'annex \ref{an:c1} de l'angle necessari per equilibrar la balança per a diferents valors d'intensitat, trobem que la component horitzontal del camp magnètic de la Terra és
 \begin{equation}

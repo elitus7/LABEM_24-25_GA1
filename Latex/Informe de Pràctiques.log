@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.19)  21 APR 2025 13:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.19)  21 APR 2025 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1153,20 +1153,22 @@ Package pdftex.def Info: screenshot018.png  used on input line 521.
 (pdftex.def)             Requested size: 437.88512pt x 273.67726pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
 [14 <./screenshot016.png>]
+<screenshot019.png, id=568, 790.45313pt x 600.74437pt>
+File: screenshot019.png Graphic file (type png)
+<use screenshot019.png>
+Package pdftex.def Info: screenshot019.png  used on input line 531.
+(pdftex.def)             Requested size: 170.29277pt x 129.42336pt.
 
-[15 <./screenshot017.png>]
 
-[16 <./screenshot018.png>]
+[15 <./screenshot017.png> <./screenshot018.png>]
+
+[16 <./screenshot019.png>]
 Cap\'{\i }tol 3.
-<screenshot014.png, id=583, 101.62968pt x 140.77594pt>
+<screenshot014.png, id=586, 101.62968pt x 140.77594pt>
 File: screenshot014.png Graphic file (type png)
 <use screenshot014.png>
-Package pdftex.def Info: screenshot014.png  used on input line 559.
+Package pdftex.def Info: screenshot014.png  used on input line 567.
 (pdftex.def)             Requested size: 72.97838pt x 101.09222pt.
 
 
@@ -1179,15 +1181,15 @@ Package pdftex.def Info: screenshot014.png  used on input line 559.
 [19]
 
 [20]
-<screenshot005.png, id=663, 601.4972pt x 362.85562pt>
+<screenshot005.png, id=666, 601.4972pt x 362.85562pt>
 File: screenshot005.png Graphic file (type png)
 <use screenshot005.png>
-Package pdftex.def Info: screenshot005.png  used on input line 761.
+Package pdftex.def Info: screenshot005.png  used on input line 769.
 (pdftex.def)             Requested size: 243.27116pt x 146.7564pt.
-<screenshot006.png, id=669, 643.6547pt x 352.31625pt>
+<screenshot006.png, id=672, 643.6547pt x 352.31625pt>
 File: screenshot006.png Graphic file (type png)
 <use screenshot006.png>
-Package pdftex.def Info: screenshot006.png  used on input line 779.
+Package pdftex.def Info: screenshot006.png  used on input line 787.
 (pdftex.def)             Requested size: 243.27116pt x 133.1612pt.
 
 
@@ -1196,19 +1198,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [21 <./screenshot005.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 796--797
+Underfull \hbox (badness 10000) in paragraph at lines 804--805
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 813--817
+Underfull \hbox (badness 10000) in paragraph at lines 821--825
 
  []
 
 
 
 [22 <./screenshot006.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 821--836
+Underfull \hbox (badness 10000) in paragraph at lines 829--844
 
  []
 
@@ -1223,61 +1225,61 @@ Cap\'{\i }tol 4.
 ]
 
 [25]
-<screenshot007.png, id=739, 951.555pt x 352.31625pt>
+<screenshot007.png, id=742, 951.555pt x 352.31625pt>
 File: screenshot007.png Graphic file (type png)
 <use screenshot007.png>
-Package pdftex.def Info: screenshot007.png  used on input line 1010.
+Package pdftex.def Info: screenshot007.png  used on input line 1018.
 (pdftex.def)             Requested size: 184.88846pt x 68.4514pt.
 
 
 [26 <./screenshot007.png>]
-<42a.jpg, id=755, 128.27925pt x 118.041pt>
+<42a.jpg, id=758, 128.27925pt x 118.041pt>
 File: 42a.jpg Graphic file (type jpg)
 <use 42a.jpg>
-Package pdftex.def Info: 42a.jpg  used on input line 1029.
+Package pdftex.def Info: 42a.jpg  used on input line 1037.
 (pdftex.def)             Requested size: 145.96417pt x 134.32675pt.
-<42b.jpg, id=756, 152.36925pt x 107.2005pt>
+<42b.jpg, id=759, 152.36925pt x 107.2005pt>
 File: 42b.jpg Graphic file (type jpg)
 <use 42b.jpg>
-Package pdftex.def Info: 42b.jpg  used on input line 1036.
+Package pdftex.def Info: 42b.jpg  used on input line 1044.
 (pdftex.def)             Requested size: 145.96417pt x 102.70029pt.
-<42c.jpg, id=757, 166.221pt x 112.62074pt>
+<42c.jpg, id=760, 166.221pt x 112.62074pt>
 File: 42c.jpg Graphic file (type jpg)
 <use 42c.jpg>
-Package pdftex.def Info: 42c.jpg  used on input line 1043.
+Package pdftex.def Info: 42c.jpg  used on input line 1051.
 (pdftex.def)             Requested size: 145.96417pt x 98.8969pt.
-<inv1.jpg, id=759, 938.00438pt x 750.55406pt>
+<inv1.jpg, id=762, 938.00438pt x 750.55406pt>
 File: inv1.jpg Graphic file (type jpg)
 <use inv1.jpg>
-Package pdftex.def Info: inv1.jpg  used on input line 1057.
+Package pdftex.def Info: inv1.jpg  used on input line 1065.
 (pdftex.def)             Requested size: 170.29277pt x 136.2506pt.
-<inv2.jpg, id=760, 811.53188pt x 648.92438pt>
+<inv2.jpg, id=763, 811.53188pt x 648.92438pt>
 File: inv2.jpg Graphic file (type jpg)
 <use inv2.jpg>
-Package pdftex.def Info: inv2.jpg  used on input line 1064.
+Package pdftex.def Info: inv2.jpg  used on input line 1072.
 (pdftex.def)             Requested size: 170.29277pt x 136.16922pt.
 
 
 [27 <./42a.jpg> <./42b.jpg> <./42c.jpg> <./inv1.jpg> <./inv2.jpg>]
-<screenshot010.png, id=769, 492.33937pt x 364.36125pt>
+<screenshot010.png, id=772, 492.33937pt x 364.36125pt>
 File: screenshot010.png Graphic file (type png)
 <use screenshot010.png>
-Package pdftex.def Info: screenshot010.png  used on input line 1086.
+Package pdftex.def Info: screenshot010.png  used on input line 1094.
 (pdftex.def)             Requested size: 194.61395pt x 144.02396pt.
 
 
 [28 <./screenshot010.png>]
 
-LaTeX Warning: Command \textpm invalid in math mode on input line 1125.
+LaTeX Warning: Command \textpm invalid in math mode on input line 1133.
 
 
-LaTeX Warning: Command \textpm invalid in math mode on input line 1125.
+LaTeX Warning: Command \textpm invalid in math mode on input line 1133.
 
 Missing character: There is no � in font cmr10!
 
 
 [29]
-Overfull \hbox (151.23676pt too wide) in paragraph at lines 1203--1205
+Overfull \hbox (151.23676pt too wide) in paragraph at lines 1211--1213
 []\OT1/cmr/m/n/10 (AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAA)
  []
@@ -1301,11 +1303,11 @@ Cap\'{\i }tol 5.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1295.
+(hyperref)                removing `math shift' on input line 1303.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1295.
+(hyperref)                removing `math shift' on input line 1303.
 
 
 
@@ -1322,7 +1324,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [39]
 
 [40]
-Overfull \hbox (3.78835pt too wide) in paragraph at lines 1669--1680
+Overfull \hbox (3.78835pt too wide) in paragraph at lines 1677--1688
  [][] 
  []
 
@@ -1335,13 +1337,13 @@ L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `"Informe de Pràctiques".out' has not change
 d.
-(rerunfilecheck)             Checksum: 9831B64A9E38EE6DD5AA359F502BE03A;13783.
+(rerunfilecheck)             Checksum: 7681659B3776350A2A25AAA44008A14B;13783.
  ) 
 Here is how much of TeX's memory you used:
- 33646 strings out of 473650
- 674097 string characters out of 5717934
- 1670809 words of memory out of 5000000
- 55765 multiletter control sequences out of 15000+600000
+ 33658 strings out of 473650
+ 674367 string characters out of 5717934
+ 1670992 words of memory out of 5000000
+ 55776 multiletter control sequences out of 15000+600000
  576132 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,12n,121p,1215b,2709s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1384,9 +1386,9 @@ juuns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
 /amsfonts/cm/cmti8.pfb><C:/Users/juuns/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmtt10.pfb><C:/Users/juuns/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "Informe de Pràctiques.pdf" (42 pages, 15303789 bytes).
+Output written on "Informe de Pràctiques.pdf" (42 pages, 15573056 bytes).
 PDF statistics:
- 1350 PDF objects out of 1440 (max. 8388607)
- 517 named destinations out of 1000 (max. 500000)
- 674 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1353 PDF objects out of 1440 (max. 8388607)
+ 518 named destinations out of 1000 (max. 500000)
+ 679 words of extra memory for PDF output out of 10000 (max. 10000000)
 

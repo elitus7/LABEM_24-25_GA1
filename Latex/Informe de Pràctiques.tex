@@ -1132,15 +1132,14 @@ Cal destacar que la primera configuració proposada per nosaltres també present
 
 Per finalitzar l'anàlisi, podem veure la importància d’introduir un element ferromagnètic per minimitzar la pèrdua de flux si ens fixem en la configuració 0, que correspon al cas sense cap element ferromagnètic. En aquesta configuració, la constant d’acoblament és de $k = 0,0419 ± 0,00017 $, el valor més baix amb diferència respecte a la resta de configuracions. Això indica que una gran part del flux magnètic no arriba a la bobina secundària, evidenciant una desviació notable del comportament ideal.
 
-Per a les següents mesures, usem la primera configuració proposada com ja hem comentat. Els valors obtinguts dels voltatges d'entrada i de sortida per a les diferents combinacions de bobines es troben a la taula següent. BLABLA NO ESTA ACABAT AIXO FJDHFJHFOLEFHOEIF
-NAAAT PODRIES CITAR LA IMATGE QUE FAS REFERÈNCIA EN PLAN COM A CONFIGURACIÓ ÒPTIMA SAPS
-\begin{table}[h]
+Per a la segona part d'aquesta secció usarem la primera configuració proposada (REF) com ja hem comentat anteriorment. Les mesures experimentals dels voltatges d'entrada i de sortida per a les diferents combinacions de bobines es troben a la taula següent. 
+\begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{PET}
+	\caption{Valors experimentals dels voltatges d'entrada $(V_1)$ i de sortida $(V_2)$ i la semblança amb la idealitat per a diferents combinacions de bobines usant la primera configuració proposada per nosaltres.}
 	\begin{tabular}{lccccccc}
 		\toprule
-		$n_1$ & $n_2$ & $n_2/n_1$ & $V_1$ & $V_2$ & $V_2/V_1$ & \%  \\
+		$n_1$ & $n_2$ & $n_2/n_1$ & $V_1 (V)$ & $V_2 (V)$ & $V_2/V_1$ & Semblança (\%) \\
 		\midrule
 		200 & 400 & 2 & $7{,}12 \pm 0{,}01$ & $13{,}89 \pm 0{,}01$ & $1{,}951 \pm 0{,}003$ & 97,5 \\
 		200 & 800 & 4 & $7{,}12 \pm 0{,}01$ & $27{,}3 \pm 0{,}1$ & $3{,}834 \pm 0{,}015$ & 95,9 \\
@@ -1171,9 +1170,16 @@ NAAAT PODRIES CITAR LA IMATGE QUE FAS REFERÈNCIA EN PLAN COM A CONFIGURACIÓ Ò
 	\end{tabular}
 	
 \end{table}
+(CAL POSAR ERROR SEMBLANÇA IG)
 
-ES VEU Q ELS VALORS ESTAN AL REVES LOL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-(s'ha de comentar, quan ho arregli, otro dia, q no puc mes)
+
+Com veiem en el desenvolupament teòric \eqref{eq4:11} idealment el guany de voltatge hauria de ser igual al quocient $\alpha$, segons la llei del transformador ideal. L'última columna de la taula mostra el percentatge de semblança entre el valor experimental i el valor teòric ideal. Tot i que cap dels valors és exactament del $100\%$, degut a les pèrdues reals del sistema, podem afirmar que la llei es compleix amb bona aproximació per a totes les combinacions analitzades.
+
+Cal destacar algunes tendències observades. En general, a mesura que augmenta la diferència relativa entre $n_1$ i $n_2$, la desviació respecte del comportament ideal també augmenta. Això pot explicar-se pel fet que les relacions molt desiguals entre les dues bobines afavoreixen les pèrdues per flux dispers i un pitjor acoblament magnètic.
+
+D'altra banda, es pot observar que quan el nombre de voltes al primari és molt superior al del secundari, les pèrdues d'inducció sobre el secundari tendeixen a ser més significatives. Això és degut a que es genera un flux magnètic més fort però no sempre ben acoblat, de manera que part d’aquest flux no s’aprofita. En canvi, quan el nombre de voltes al primari és menor o comparable al del secundari, l’eficiència en la transferència de flux tendeix a ser més gran, reduint les pèrdues i acostant-se més al comportament ideal.
+
+Aquestes observacions són coherents amb el comportament esperat d’un transformador real, en el qual les pèrdues per flux dispers, histèresi i escalfament impedeixen que la relació \( \frac{V_2}{V_1} = \frac{n_2}{n_1} \) es compleixi exactament.
 
 \subsection{Estudi de les intensitats i voltatges d'entrada i de sortida}
 En aquesta secció trobem la relació entre les reactàncies d'una bobina de 400 voltes i una de 800 voltes. Els valors mesurats experimentalment dels voltatges i corrents d'entrada es poden trobar a la taula següent. 
@@ -1234,11 +1240,7 @@ Connectem un circuit al secundari i estudiem els corrents d'entrada i de sortida
 	\end{tabular}
 \end{table}
 
-Els valors experimentals calculats per a cada cas es troben a la taula següent. 
-
-(help)
-
-
+ 
 \section{Conclusions}
 
 \chapter{Mesura de la resistència d'un metall}

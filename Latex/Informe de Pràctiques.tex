@@ -383,7 +383,7 @@ d'on, via un càlcul ràpid, podem trobar el camp d'inducció magnètica generat
 \begin{equation}
 	B = \frac{\mu_0 I}{2\pi r}. \label{eq2:7}
 \end{equation}
-Així doncs, la força, en mòdul, que patirà un altre fil (infinit) paral·lel, de longitud $L$ I pel qual hi circula la mateixa intensitat $I$ serà
+Així doncs, la força, en mòdul, que patirà un altre fil paral·lel, de longitud $L$  i pel qual hi circula la mateixa intensitat $I$ serà
 \begin{equation}
 	F = \frac{\mu_0 I^2L}{2\pi r}, \label{eq2:8}
 \end{equation} 
@@ -764,7 +764,7 @@ Les freqüències de tall es defineixen com aquelles freqüències $\omega_c$ ta
 \begin{equation}
 	\abs{T_R(\omega_c)} = \frac{1}{\sqrt{2}}.
 \end{equation}
-Aquestes freqüències ens permeten estudiar l'amplada de la ressonància. Si usem la definició del guany a la resistència donada a \eqref{eq:3.33} tenint present la definició de la freqüència de ressonància (equació \eqref{eq:3.19}) trobem
+Aquestes freqüències ens permeten estudiar l'amplada de banda del sistema. Si usem la definició del guany a la resistència donada a \eqref{eq:3.33} tenint present la definició de la freqüència de ressonància (equació \eqref{eq:3.19}) trobem
 \begin{equation}
 	\left(\frac{\omega_c}{\omega_0}\right)^2 \pm \frac{R}{L\omega_0}\left(\frac{\omega_c}{\omega_0}\right) -1=0,
 \end{equation}
@@ -793,7 +793,7 @@ Comencem muntant el circuit de la figura \ref{fig:3.2}\footnote{Les figures corr
 
 Variem la freqüència de la font fins que els dos senyals a l'oscil·loscopi estan en fase (usant el model DUAL del darrer). Aquesta freqüència es correspon amb la freqüència de ressonància. La comparem amb la freqüència de ressonància teòrica (en Hz)
 \begin{equation}
-	f_0 = \frac{1}{2\pi}\sqrt{\frac{1}{LC}},
+	f_0 = \frac{1}{2\pi}\sqrt{\frac{1}{LC}}, \label{eq:3.41}
 \end{equation}
 i mesurem el guany $\abs{T_R(\omega_0)}$ corresponent a aquesta freqüència.
 
@@ -817,65 +817,92 @@ Seguidament mesurem el període $T$ amb l'oscil·loscopi.
 
 Canviem la resistència fixa per una de variable, que pot donar resistències de 0 a 100 k$\Omega$. Estudiem els casos $R<R_c$, $R=R_c$ i $R>R_c$ (on $R_c$ és la resistència crítica, donada per l'equació \eqref{eq:3.31}), de forma que podem veure les 3 solucions per a l'EDO del circuit RLC en règim transitori. Finalment, amb els valors recollits de $V_C$ i de $t$, calculem, via l'equació \eqref{eq:3.28}, el valor de la constant d'esmorteïment $\lambda$.
 \section{Resultats i discussió}
+
 posar valors teòrics i explicar d'on surten\\
 \textcolor{red}{$AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$}
-Els recull de mesures experimentals es troben a l'anex \textcolor{red}{poner anexo}. 
+Els recull de mesures experimentals es troben a l'anex \textcolor{red}{poner anexo}.
+ 
 \subsection{Règim permanent}
-Una vegada muntat el circuit de la figura \ref{fig:3.2} amb $R$, $L$ i $C$ de $2660\Omega$, $22mH$ i $15nF$ respectivament, i una font amb un voltatge d'entrada tipus $V_E = E\sin(\omega t)$, la frequència de ressonancia experimental que vam meusrar és de: \\
-\begin{equation}
-	f_0^{exp} = (8960 \pm 1)s^{-1}
-\end{equation}\\
-La qual podem comparar amb la toerica, que pel notre circuit es de:
-\begin{equation}
-	f_0^{teo} = \frac{1}{2\pi}\sqrt{\frac{1}{LC}} = \frac{1}{2\pi}\sqrt{\frac{1}{22 \times 10^{-3}*15 \times 10^{-9}}} = 8761 s^{-1}
-\end{equation}
-Com podem veure els valors son els mateixos, com calia esperar. D'altre banda, al fer la mateixa mesura pero canviant la resistencia per una de $R=274\Omega$, tot i que teoricament el valor de $f_0^{teo}$ no canvia, experiemtnalment no va ser aixi ja que vam obtenir una frequcuencia de:
-\begin{equation}
-	f_0^{exp} = (8860 \pm 1)s^{-1}
-\end{equation}
-\textcolor{red}{esto es así?? tiene sentido, o cabe la posibilidad que lo hayamos puesto mal y que realmente sea 8960 como antes...es que vaya coincidencia que solo cambie en 100 unidades no?}\\
-Per comprovar si realment estem a la frequència de resonància del sistema podem calcular el guany $\abs{T_R(\omega_0)}$, que teoricmament hauria de ser $\abs{T_R^{teo}(\omega_0)} = 1$, i experimentalment:
-\begin{eqnarray}
-	\text{Per $R=2660\Omega$} \hspace{0.5cm} \abs{T_R^{exp}(\omega_0)} = 1 \pm 0,008\\
-	\text{Per $R=274\Omega$} \hspace{0.5cm} \abs{T_R^{exp}(\omega_0)} = 0,877 \pm 0,006
-\end{eqnarray}
-\textcolor{red}{pues no entiendo pq cambia si estamos en la frecuencia de resonancia}\\
-\\
-L'altre concepte interesant del circuit RLC es mesurar les seves frequencies de tall i amb elles el seu ample de banda. Si resolem el sistema d'equacions donat per les equacions \eqref{eq:3.38} i \eqref{eq:3.39}, tenim que:
-\begin{eqnarray}
-	f_1^{teo} = \frac{1}{4\pi}(-\frac{R}{L} + \sqrt{(\frac{R}{L})^2 + 4\frac{1}{LC}})\\
-	f_2^{teo} = \frac{R}{f_1^{teo}}\\
-	\Delta \omega = \frac{R}{L}
-\end{eqnarray}
-Sustituint els valors de $R$, $L$, i $C$ per a les dues resistencies tenim que:\\
-Per $R = 2660\Omega$:\\
-\begin{table}[H]
+
+\textbf{\textcolor{red}{IMPORTANT: Quins valors dels calculats, $f_{0,1,2}$ i $\abs{T_R}$ romanen iguals i quins canvien? Per què? Si volguéssim un circuit amb una banda de pas estreta, quina resistència escollim?}} (pregunta del guió, a algun lloc s'ha de contestar)
+
+Una vegada muntat el circuit de la figura \ref{fig:3.2} amb $R=2660$ $\Omega$, $L=22$ mH, $C=15$ nF i una font amb un voltatge d'entrada tipus $V(t) = V_{max}\sin(\omega t)$, la freqüència de ressonància mesurada experimentalment és
+\begin{equation*}
+	f_0^{exp} = (8960 \pm 1) \text{ s$^{-1}$}.
+\end{equation*}
+Si comparem aquest valor mesurat amb el valor teòric que s'obté a partir de l'equació \eqref{eq:3.41}
+\begin{equation*}
+	f_0^{teo} = 8761 \text{ s$^{-1}$},
+\end{equation*}
+podem veure que els valors són pràcticament iguals, com era d'esperar. Fent aquesta mateixa mesura, però canviant la resistència per una de $R=274$ $\Omega$, obtenim una freqüència
+\begin{equation*}
+	f_0^{exp} = (8860 \pm 1) \text{ s$^{-1}$},
+\end{equation*}
+tot i que, teòricament, la freqüència de ressonància és independent de la resistència del circuit i, per tant, no hauria de canviar.
+
+\textcolor{red}{esto es así?? tiene sentido, o cabe la posibilidad que lo hayamos puesto mal y que realmente sea 8960 como antes...es que vaya coincidencia que solo cambie en 100 unidades no?}
+
+Per poder comprovar si realment estem en la freqüència de ressonància del sistema calculem el guany $\abs{T_R(\omega_0)}$ que, en principi, hauria de ser màxim sota aquestes condicions (ressonància). Els resultats es poden trobar a la taula \ref{tab:3.1}.
+
+\begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{bla bla}
-	\begin{tabular}{lccc}
+	\caption{Guanys experimentals i teòrics a la freqüència de ressonància del sistema.}
+	\begin{tabular}{lcc}
 		\toprule
-		& $f_1 (s^{-1})$ & $f_2 (s^{-1})$ & $\Delta \omega$ ($rad$/$s$) \\ 
+		& $\abs{T_R(\omega_0)}(R=2660 \text{ $\Omega$})$ & $\abs{T_R(\omega_0)}(R=274 \text{ $\Omega$})$ \\ 
 		\midrule
-		Teóric & $3391 \pm 94$ & $22634 \pm 630$ & $120909 \pm 7$\\ 
-		Experimental & $2860 \pm 1$ & $23460 \pm 1$ & $129433 \pm 9$\\ 
+		\textbf{Teòric} & 1 & 1 \\ 
+		\textbf{Experimental} & $1,000\pm 0,008$ & $0,877 \pm 0,006$\\ 
 		\bottomrule
 	\end{tabular}
+	\label{tab:3.1}
 \end{table}
 
-I per $R = 274\Omega$:
-\begin{table}[H]
+\textcolor{red}{pues no entiendo pq cambia si estamos en la frecuencia de resonancia}
+
+Mesurem també les freqüències de tall del circuit RLC per poder trobar, a partir d'elles, l'amplada de banda del sistema. Si resolem el sistema d'equacions donat per \eqref{eq:3.38} i \eqref{eq:3.39}, podem trobar que
+\begin{equation}
+	f_1^{teo} = \frac{1}{4\pi}\left(-\frac{R}{L} + \sqrt{\left(\frac{R}{L}\right)^2 + 4\frac{1}{LC}}\right),
+\end{equation}
+\begin{equation}	
+	f_2^{teo} = \frac{R}{f_1^{teo}},
+\end{equation}
+\begin{equation}
+	\Delta \omega = \frac{R}{L}.
+\end{equation}
+Substituint els valors de $R$, $L$, i $C$ podem calcular aquests valors. Per altra banda, per tal de mesurar experimentalment les freqüències de tall calculem el $V_R$ necessari per tal que 
+\begin{equation}
+	V_R = V_{max} \cdot \abs{T_R} = \frac{V_{max}}{\sqrt{2}},
+\end{equation}
+on $V_{max}$ és l'amplitud del voltatge d'entrada. Seguidament busquem per quines freqüències $f_1^{exp}$ i $f_2^{exp}$ això se satisfà. Els resultats es poden trobar a les taules \ref{tab:3.2} i \ref{tab:3.3}.
+\begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{bla bla}
+	\caption{Freqüències de tall i amplades de banda experimentals i teòriques pel circuit RLC amb $R=2660$ $\Omega$.}
 	\begin{tabular}{lccc}
 		\toprule
-		& $f_1 (s^{-1})$ & $f_2 (s^{-1})$ & $\Delta \omega$ ($rad$/$s$) \\ 
+		& $f_1 (\text{s}^{-1})$ & $f_2 (\text{s}^{-1})$ & $\Delta \omega$ (rad/s) \\ 
 		\midrule
-		Teóric & $7826 \pm 32$ & $9808 \pm 4.0$ & $12455 \pm 10$\\ 
-		Experimental & $8040 \pm 1$ & $9830 \pm 1$ & $11247 \pm 8$\\ 
+		\textbf{Teòric} & $3391 \pm 94$ & $22634 \pm 630$ & $120909 \pm 7$\\ 
+		\textbf{Experimental} & $2860 \pm 1$ & $23460 \pm 1$ & $129433 \pm 9$\\ 
 		\bottomrule
 	\end{tabular}
+	\label{tab:3.2}
+\end{table}
+\begin{table}[h]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\caption{Freqüències de tall i amplades de banda experimentals i teòriques pel circuit RLC amb $R=274$ $\Omega$.}
+	\begin{tabular}{lccc}
+		\toprule
+		& $f_1 (\text{s}^{-1})$ & $f_2 (\text{s}^{-1})$ & $\Delta \omega$ (rad/s) \\ 
+		\midrule
+		\textbf{Teòric} & $7826 \pm 32$ & $9808 \pm 4$ & $12455 \pm 10$\\ 
+		\textbf{Experimental} & $8040 \pm 1$ & $9830 \pm 1$ & $11247 \pm 8$\\ 
+		\bottomrule
+	\end{tabular}
+	\label{tab:3.3}
 \end{table}
 
 \subsection{Règim transitori}
@@ -1768,7 +1795,9 @@ En aquesta secció podeu trobar, en forma de taula, els resultats de les mesures
 	\label{tab:taula_intensitat_angle}
 \end{table}
 
-
+\section{Annex pràctica 3. Circuit RLC en sèrie}
+\subsection{Dades experimentals de la pràctica 3}
+En aquesta secció podeu trobar, en forma de taula, els resultats de les mesures experimentals
 
 
 

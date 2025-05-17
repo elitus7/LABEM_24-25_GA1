@@ -477,7 +477,7 @@ Així, el valor de la permeabilitat magnètica és
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{screenshot016}
-	\caption{Força entre els dos fils en funció de la intensitat del corrent al quadrat. Dades de l'ajust lineal: $y=mx+n$, amb $m = (1,0\pm4,5)\cdot 10^{-5}$ N$\cdot$A$^{-2}$ i $n = (0,3\pm4,0)\cdot 10^{-6}$ N. Coeficient de correlació $R^2=0,997$. Notem que, en alguns punts, les barres d'error corresponents a l'eix de les $x$ són tan petites que no s'arriben a distingir.}
+	\caption{Força entre els dos fils en funció de la intensitat del corrent al quadrat. Dades de l'ajust lineal: $y=mx+n$, amb $m = (1,02\pm0,03)\cdot 10^{-5}$ N$\cdot$A$^{-2}$ i $n = (4,50\pm0,4)\cdot 10^{-5}$ N. Coeficient de correlació $R^2=0,997$. Notem que, en alguns punts, les barres d'error corresponents a l'eix de les $x$ són tan petites que no s'arriben a distingir.}
 	\label{fig:2.3}
 \end{figure}
 
@@ -530,14 +530,18 @@ A la taula \ref{tab:2.1} podeu trobar agrupats els resultats dels dos experiment
 	\label{tab:2.1}
 \end{table}
 
-Podem veure que, clarament, dels dos experiments duts a terme, el primer (corresponent a l'estudi de la dependència de la força entre els fils en funció del corrent) és el que dóna un resultat de $\mu_0$ més proper al real. El fet que el segon experiment (corresponent a l'estudi de la dependència de la força entre els fils en funció de la separació entre aquests) presenti una desviació de més del doble que el darrer es pot justificar pel fet que per fer aquest càlcul hem hagut de determinar prèviament la constant de torsió del fil; si per determinar $k$ hem comés algun tipus d'error, per petit que sigui, aquest s'haurà propagat a l'hora de fer l'ajust lineal dels punts de $F$ vs. $1/r$.
+Podem veure que, clarament, dels dos experiments duts a terme, el primer (corresponent a l'estudi de la dependència de la força entre els fils en funció del corrent) és el que dóna un resultat de $\mu_0$ més proper al real. El fet que el segon experiment (corresponent a l'estudi de la dependència de la força entre els fils en funció de la separació entre aquests) presenti una desviació de més del doble que el darrer es pot justificar pel fet que per fer aquest càlcul hem hagut de determinar prèviament la constant de torsió del fil amb mesures efectuades amb la balança i posteriorment utilizar aquestes dades per correlacionar mes mesures amb la balança amb la força del camp magnètic per lo que l'error que tinguem en mesurar s'acomula y es propaga al error de $\mu_0$. A part, no només el error intrinsec del mètode es propaga, sinó que el posible error que tinguem per determinar $k$ també s'acumula a l'hora de fer l'ajust lineal dels punts de $F$ vs. $1/r$.
+En general, es normal que el segón metode doni mes error que el primer, que es una mesura mes directa. Tot i aixó al primer mètode tenim un error raonable, com pot ser? Aixó es degut a la propia naturalesa de l'experiment, si recordem al principi per obtenir quina expresió obeeix el camp a causa d'un fil per on circula corrent, hem suposat que aquest fil era infinit, així el camp que genera es proporcional a $1/r$ en tots els punts, en concret sobre l'altre fil el camp es el mateix ja que son paralels, aixo pero no es cert, evidentment no tenim un fil infinit pero ni tan sols la longitudl ($L'$) del fil que crea el camp compleix que $L'\gg L$. Nosaltres realment tenim dos fils de igual longitud, per lo que als extrems del fil que crea el camp, aquest no està generant tant camp com estem suposant ni distribuit de la mateixa manera ja que no es infinit, aixó explica que ens sortís un valor de $\mu_0$ major que el que hauria, es un error intrinsec de l'experiment.
+Encara que tinguem un cert error en la mesura de $\mu_0$, del que podem estar segurs es en que la força segueix el comportament de l'equació \ref{eq:2.9}, ja que l'ajust lineal te una $R^2$ considerablement propera a $1$.
 
-\textbf{SEGUIR COMENTANT COSES I TAL. ideas per dir:}
-\begin{itemize}
-	\item Les dues R's són "bones" (revisar conveni per quants decimals posar).
-	\item La recta de $F = k\theta$ no passa per l'origen exactament $\Rightarrow$ rarete
-	\item Com a mínim els resultats són de l'ordre del valor real!
-\end{itemize}
+Una ultima cosa a comentar es sobre un dels errors comesos en regressió de la que extraiem la constant que modela la força de torsió. Si ens fixem en l'equació \ref{eq2:10}, la regresio de la figura \ref{fig:2.4}, aquesta no hauria de tenir ordenada a l'origen, però si la te, això va ser un error al calibrar la mesura, molt posiblement vam començar amb voltes extres lo que indueix un error sistematic. Tot i així no ens importa molt ja que el que ens interesa es el pendent i això segueix sent correcte.
+
+
+ \textcolor{red}{\textbf{SEGUIR COMENTANT COSES I TAL. ideas per dir:}
+ 	\begin{itemize}
+ 		\item Les dues R's són "bones" (revisar conveni per quants decimals posar). He mirado en bastantes sitios y pone que entre 2 y 3 segun el caso (nunca he visto 4 deciameles), pero no estoy del todo seguro
+ 		\item Com a mínim els resultats són de l'ordre del valor real! creo  que lo pondria en conclusiones esto
+ 	\end{itemize}}
 
 
 

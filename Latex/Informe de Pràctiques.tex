@@ -1278,44 +1278,43 @@ Per a l’última part d’aquesta secció, connectem un circuit al secundari, s
 		\midrule
 		& & 1000 & $7{,}16 \pm 0{,}01$ & $0{,}0587 \pm 0{,}0001$ & $13{,}45 \pm 0{,}01$ & $0{,}0119 \pm 0{,}0001$ & $1{,}878 \pm 0{,}003$  \\
 		$800/400$ & 0{,}5 & 100  & $7{,}10 \pm 0{,}01$ & $0{,}1585 \pm 0{,}0005$ & $11{,}07 \pm 0{,}01$ & $0{,}0712 \pm 0{,}0005$ & $1{,}559 \pm 0{,}003$ \\
-		& & 10   & $7{,}03 \pm 0{,}01$ & $0{,}6200 \pm 0{,}0100$ & $3{,}06 \pm 0{,}01$ & $0{,}29 \pm 0{,}01$ & $0{,}4353 \pm 0{,}0016$ \\
+		& & 10   & $7{,}03 \pm 0{,}01$ & $0{,}62 \pm 0{,}01$ & $3{,}06 \pm 0{,}01$ & $0{,}29 \pm 0{,}01$ & $0{,}4353 \pm 0{,}0016$ \\
 		\midrule
-		& & 1000 & $7{,}21 \pm 0{,}01$ & $0{,}3200 \pm 0{,}0100$ & $39{,}2 \pm 0{,}1$ & $0{,}0385 \pm 0{,}0001$ & $5{,}437 \pm 0{,}016$ \\
-		$3200/400$ & 0{,}125 & 100  & $7{,}16 \pm 0{,}01$ & $0{,}6600 \pm 0{,}0100$ & $8{,}64 \pm 0{,}01$ & $0{,}0811 \pm 0{,}0001$ & $1{,}207 \pm 0{,}002$  \\
-		& & 10   & $7{,}17 \pm 0{,}01$ & $0{,}7200 \pm 0{,}0100$ & $0{,}95 \pm 0{,}01$ & $0{,}0890 \pm 0{,}0001$ & $0{,}1325 \pm 0{,}0014$ \\
+		& & 1000 & $7{,}21 \pm 0{,}01$ & $0{,}32 \pm 0{,}01$ & $39{,}2 \pm 0{,}1$ & $0{,}0385 \pm 0{,}0001$ & $5{,}437 \pm 0{,}016$ \\
+		$3200/400$ & 0{,}125 & 100  & $7{,}16 \pm 0{,}01$ & $0{,}66 \pm 0{,}01$ & $8{,}64 \pm 0{,}01$ & $0{,}0811 \pm 0{,}0001$ & $1{,}207 \pm 0{,}002$  \\
+		& & 10   & $7{,}17 \pm 0{,}01$ & $0{,}72 \pm 0{,}01$ & $0{,}95 \pm 0{,}01$ & $0{,}0890 \pm 0{,}0001$ & $0{,}1325 \pm 0{,}0014$ \\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
 
-HE DE TREURE ZEROS HASHAS
 
-Un cop calculat el guany, el comparem amb el valor teòric. la seguent taula presenta els valors experimental i teorics calculats tenint en compte en quin cas ens trobem. També es troba l'error respecte el valor teoric.  
+Un cop calculat el guany, el comparem amb el valor teòric. la següent taula presenta els valors experimental i teòrics calculats tenint en compte en quin cas ens trobem. També es troba l'error respecte el valor teòric.  
 
 \begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Resultats experimentals per a diferents combinacions $n_1/n_2$ i casos $Z$ respecte a $X$.}
-	\begin{tabular}{llccccc}
+	\caption{Taula de comparació entre el guany experimental i el guany teòric, acompanyat de l'error ($\%$) i les seves incerteses.}
+	\begin{tabular}{llcccccc}
 		\toprule
-		$n_1/n_2$ & Z & Cas & $X$ & $V_2/V_1$ exp & $V_2/V_1$ teòric & Error (\%) \\
+		$n_1/n_2$ & Z & Cas & $X$ & $V_2/V_1$ exp & $V_2/V_1$ teòric & Error (\%) & $u_e$ \\
 		\midrule
-		400/400 & 1000 & $Z \gg X$ &  & 0,9576 & 0,95615 & 0,15 \\
-		400/400 & 100 & $Z \-- X$ & 100,42 & 0,9203 & 0,95615 & 3,75 \\
-		400/400 & 10 & $Z \ll X$ & & 0,6011 & 0,72446 & 17,03 \\
+		400/400 & 1000 & $Z \gg X$ & 100,42 & 0,9576 $\pm$ 0,0019 & 0,956 $\pm$ 0,002 & 0,15 & 0,32 \\
+		& 100  & $Z \-- X$ & 100,42 & 0,9203 $\pm$ 0,0019 & 0,956 $\pm$ 0,002 & 3,75 & 0,31 \\
+		& 10   & $Z \ll X$ & 100,42 & 0,6011 $\pm$ 0,0016 & 0,724 $\pm$ 0,015 & 17,03 & 1,72 \\
 		\midrule
-		800/400 & 1000 & $Z \gg X$ &  & 1,8785 & 0,47808 & 292,93 \\
-		800/400 & 100 & $Z \-- X$ & 385,2 & 1,5592 & 0,47808 & 226,13 \\
-		800/400 & 10 & $Z \ll X$ & & 0,4353 & 0,36858 & 18,10 \\
+		800/400 & 1000 & $Z \gg X$ & 385,2 & 1,878 $\pm$ 0,003 & 0,4781 $\pm$ 0,0016 & 292,93 & 1,47 \\
+		& 100  & $Z \-- X$ & 385,2 & 1,559 $\pm$ 0,003 & 0,4781 $\pm$ 0,0016 & 226,13 & 1,24 \\
+		& 10   & $Z \ll X$ & 385,2 & 0,4353 $\pm$ 0,0016 & 0,369 $\pm$ 0,011 & 18,10 & 3,57 \\
 		\midrule
-		3200/400 & 1000 & $Z \-- X$ &  & 5,4369 & 0,11952 & 4448,97 \\
-		3200/400 & 100 & $Z \ll X$ & 6295,5 & 1,2067 & 0,11910 & 913,22 \\
-		3200/400 & 10 & $Z \ll X$ & & 0,1325 & 0,09135 & 45,04 \\
+		3200/400 & 1000 & $Z \-- X$ & 6295,5 & 5,437 $\pm$ 0,016 & 0,1195 $\pm$ 0,0004 & 4448,97 & 20,33 \\
+		& 100  & $Z \ll X$ & 6295,5 & 1,207 $\pm$ 0,002 & 0,1191 $\pm$ 0,0004 & 913,22 & 4,06 \\
+		& 10   & $Z \ll X$ & 6295,5 & 0,1325 $\pm$ 0,0014 & 0,091 $\pm$ 0,003 & 45,04 & 4,70 \\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
-FUCK MHE DEIXAT LES INCERTESES
+
 
 Abans de comentar els resultats, cal fer una observació sobre la reactància corresponent a la bobina de 3200 voltes, la combinació proposada per nosaltres. Les reactàncies de les altres dues bobines s'han obtingut a partir de mesures experimentals de la primera part d'aquesta secció. En canvi, com que no vam mesurar experimentalment la reactància de la bobina de 3200 voltes, hem hagut de recórrer a la teoria que acabem de demostrar a l'apartat anterior per poder estimar-la. Aquesta teoria estableix la relació entre la reactància de la bobina de 3200 voltes i les reactàncies de les bobines de 800 i 400 voltes, i es pot expressar de la següent manera:
 \begin{align*}
@@ -1325,7 +1324,58 @@ Abans de comentar els resultats, cal fer una observació sobre la reactància co
 
 Hem fet la mitjana amb els dos valors obtinguts, obtenint $X_3200 = 6295,5$. 
 
-FALTA COMENTAR AIXO PERO HE DE MARXAAAR
+Un cop analitzades les diferents configuracions, ens fixem ara en com petites variacions en el coeficient d’acoblament $k$ poden afectar el guany. Per fer-ho, considerem una disminució de $\Delta k = 0{,}0062$, i calculem la variació relativa del guany teòric mantenint la resta de paràmetres constants. Els resultats es recullen a la taula següent.
+
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\caption{Variació del guany teòric per un petit canvi en $k$.}
+	\begin{tabular}{llcccccc}
+		\toprule
+		$n_1/n_2$ & Z & Cas & $k$ & $V_2/V_1$ & $k'$ & $V_2/V_1$ amb $k'$ & Variació relativa del guany (\%) \\
+		\midrule
+		400/400 & 1000 & $Z \gg X$ & 0,9562 & 0,95615 & 0,9500 & 0,9500 & 0,64 \\
+		& 100  & $Z \-- X$ & 0,9562 & 0,95615 & 0,9500 & 0,9500 & 0,64 \\
+		& 10   & $Z \ll X$ & 0,9562 & 0,72446 & 0,9500 & 0,6788 & 6,30 \\
+		\midrule
+		800/400 & 1000 & $Z \gg X$ & 0,9562 & 0,47808 & 0,9500 & 0,4750 & 0,64 \\
+		& 100  & $Z \-- X$ & 0,9562 & 0,47808 & 0,9500 & 0,4750 & 0,64 \\
+		& 10   & $Z \ll X$ & 0,9562 & 0,36858 & 0,9500 & 0,3463 & 6,05 \\
+		\midrule
+		3200/400 & 1000 & $Z \-- X$ & 0,9562 & 0,11952 & 0,9500 & 0,1188 & 0,64 \\
+		& 100  & $Z \ll X$ & 0,9562 & 0,11910 & 0,9500 & 0,1182 & 0,75 \\
+		& 10   & $Z \ll X$ & 0,9562 & 0,09135 & 0,9500 & 0,0857 & 6,18 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+A partir de les dades de la taula, observem que una petita variació de $k$  pot provocar una variació relativa del guany superior al $6\,\%$, però aquest efecte només es manifesta clarament en les configuracions on la impedància de càrrega és molt petita ($Z \ll X$). En la resta de casos, la variació és pràcticament negligible.
+
+
+Cal mencionar que, tot i que les dues configuracions amb $3200/400$ i resistències de $100\,\Omega$ i $10\,\Omega$ pertanyen al mateix règim $Z \ll X$, només en el cas de $10\,\Omega$ el guany teòric mostra una dependència clara amb $k$. Aquest comportament es pot explicar analitzant l’expressió del guany (equació~\ref{eq4:22}), on apareix un terme amb $k$, el denominador sent:
+
+\[
+[ Z^2 + X^2 \alpha^4 (k^2 - 1)^2 ]^{1/2}
+\]
+
+En aquestes dues configuracions, la reactància $X = 6295{,}5\,\Omega$ i el quocient d’espira $\alpha = 0{,}125$ es mantenen constants. Per tant, l’únic paràmetre que canvia és la resistència $Z$. Si comparem els quadrats de les resistències, obtenim $Z^2 = 100$ per al cas de $10\,\Omega$ i $Z^2 = 10\,000$ per al cas de $100\,\Omega$.
+
+En el primer cas ($Z = 10\,\Omega$), el valor de $Z^2$ és del mateix ordre de magnitud que el terme amb $k$, de manera que aquest últim té un pes significatiu en el denominador i el guany passa a dependre clarament del valor de $k$. En canvi, en el cas de $100\,\Omega$, el terme $Z^2$ domina clarament al denominador, fent que la contribució del terme amb $k$ sigui negligible. Aquesta és, doncs, l’excepció que no segueix la tendència observada.
+
+
+De fet, a mesura que el nombre de voltes del primari augmenta respecte del secundari, el quocient $\alpha$ es fa molt petit, i en conseqüència $\alpha^4$ es fa gairebé nul. Tot i que la reactància $X$ també augmenta (ja que $X \propto N_1^2$), aquest creixement no és suficient per compensar la pèrdua deguda a $\alpha^4$ dins el terme $X^2 \alpha^4 (k^2 - 1)^2$, que esdevé totalment negligible.
+
+A més, aquest augment de $X$ permet fer servir resistències relativament grans i continuar estant dins el règim $Z \ll X$. Això fa que el terme $Z^2$ del denominador domini completament i anul·li l’efecte de $k$, independentment de la seva variació.
+
+En resum, com més gran és la diferència entre el nombre de voltes del primari i del secundari, més fàcil és que el coeficient d’acoblament $k$ deixi de tenir impacte en el guany.
+
+Ara si ens fixem ens els altres casos $Z \gg X$ (\ref{eq4:20}) o $Z \sim X$ (\ref{eq4:24}), el guany depèn linealment de $k$ , i per tant, petites variacions en aquest coeficient només provoquen canvis mínims en el guany teòric. Això explica per què els percentatges de variació són molt menors en aquests casos.
+
+
+
+
+
 \section{Conclusions}
 
 \chapter{Mesura de la resistència d'un metall}

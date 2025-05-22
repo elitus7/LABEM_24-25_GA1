@@ -530,12 +530,11 @@ A la taula \ref{tab:2.1} podeu trobar agrupats els resultats dels dos experiment
 	\label{tab:2.1}
 \end{table}
 
-Podem veure que, clarament, dels dos experiments duts a terme, el primer (corresponent a l'estudi de la dependència de la força entre els fils en funció del corrent) és el que dóna un resultat de $\mu_0$ més proper al real. El fet que el segon experiment (corresponent a l'estudi de la dependència de la força entre els fils en funció de la separació entre aquests) presenti una desviació de més del doble que el darrer es pot justificar pel fet que per fer aquest càlcul hem hagut de determinar prèviament la constant de torsió del fil amb mesures efectuades amb la balança i posteriorment utilizar aquestes dades per correlacionar mes mesures amb la balança amb la força del camp magnètic per lo que l'error que tinguem en mesurar s'acomula y es propaga al error de $\mu_0$. A part, no només el error intrinsec del mètode es propaga, sinó que el posible error que tinguem per determinar $k$ també s'acumula a l'hora de fer l'ajust lineal dels punts de $F$ vs. $1/r$.
-En general, es normal que el segón metode doni mes error que el primer, que es una mesura mes directa. Tot i aixó al primer mètode tenim un error raonable, com pot ser? Aixó es degut a la propia naturalesa de l'experiment, si recordem al principi per obtenir quina expresió obeeix el camp a causa d'un fil per on circula corrent, hem suposat que aquest fil era infinit, així el camp que genera es proporcional a $1/r$ en tots els punts, en concret sobre l'altre fil el camp es el mateix ja que son paralels, aixo pero no es cert, evidentment no tenim un fil infinit pero ni tan sols la longitudl ($L'$) del fil que crea el camp compleix que $L'\gg L$. Nosaltres realment tenim dos fils de igual longitud, per lo que als extrems del fil que crea el camp, aquest no està generant tant camp com estem suposant ni distribuit de la mateixa manera ja que no es infinit, aixó explica que ens sortís un valor de $\mu_0$ major que el que hauria, es un error intrinsec de l'experiment.
-Encara que tinguem un cert error en la mesura de $\mu_0$, del que podem estar segurs es en que la força segueix el comportament de l'equació \ref{eq:2.9}, ja que l'ajust lineal te una $R^2$ considerablement propera a $1$.
+Podem veure que, clarament, dels dos experiments duts a terme, el primer (corresponent a l'estudi de la dependència de la força entre els fils en funció del corrent) és el que dóna un resultat de $\mu_0$ més proper al real. Que el segon experiment (corresponent a l'estudi de la dependència de la força entre els fils en funció de la separació entre aquests) presenti una desviació de més del doble que el darrer es pot justificar pel fet que, per fer aquest càlcul, hem hagut de determinar prèviament la constant de torsió del fil amb mesures efectuades amb la balança i, posteriorment, hem utilitzat aquestes dades per fer un ajust lineal i estudiar la dependència entre la força entre els fils en funció de la separació. Tot plegat fa que que l'error que tinguem en mesurar s'acumuli i es propagui a l'error comés en $\mu_0$. A més a més, no només l'error intrínsec del mètode es propaga, sinó que el possible error que tinguem per determinar $k$ també s'acumula a l'hora de fer l'ajust lineal dels punts de $F$ vs. $1/r$.
 
-Una ultima cosa a comentar es sobre un dels errors comesos en regressió de la que extraiem la constant que modela la força de torsió. Si ens fixem en l'equació \ref{eq2:10}, la regresio de la figura \ref{fig:2.4}, aquesta no hauria de tenir ordenada a l'origen, però si la te, això va ser un error al calibrar la mesura, molt posiblement vam començar amb voltes extres lo que indueix un error sistematic. Tot i així no ens importa molt ja que el que ens interesa es el pendent i això segueix sent correcte.
+En general, considerem que és raonable que el segon experiment presenti un error major que el primer, que es fonamenta en mesures més directes (no cal efectuar dos ajusts lineals). El fet que, tot i això, l'error associat al primer sigui considerable pot ser degut a la pròpia naturalesa de l'experiment. Recordem  que, al principi, per tal d'obtenir l'expressió que segueix el camp magnètic creat per un fil per on circula un corrent $I$, hem suposat que aquest fil era infinit, de manera que el camp generat és proporcional a $1/r$ en tots els punts (és a dir, té simetria perfectament cilíndrica) i, en particular, sobre l'altre fil i segons aquestes suposicions, el camp $\vec{B}$ és el mateix en tots els punts del darrer, ja que són paral·lels. Evidentment això últim no és cert per múltiples motius, entre els quals destaquem que: no tenim un fil infinit, ni tan sols la longitud ($L'$) del fil que crea el camp compleix que $L'\gg L$ (essent $L$ la longitud de l'altre fil), i existeixen efectes de vora (degut a que els fins no són infinits) que no hem considerat. Tot plegat fa que el $\vec{B}$ real no estigui generat ni estigui distribuït tal i com estem suposant, cosa que explicaria que ens sortís un valor de $\mu_0$ experimental més gran que el teòric, fem l'experiment que fem, ja que és un error directament relacionat al model considerat.
 
+Tot i que tinguem un error associat a la mesura de $\mu_0$, sí que podem assegurar que la força entre els fils té un comportament que s'adequa al predit per l'equació \ref{eq:2.9} (és lineal), tal i com estableix el coeficient de correlació $R^2$, molt proper a 1 en els dos experiments. Sí que hem de remarcar, però, que tot i que l'equació \ref{eq2:10} no prediu l'existència de cap terme independent (ordenada d'origen) de manera que, per un valor $\theta = 0$ la força hauria de ser nul·la, els nostres resultats no indiquen totalment això, ja que a l'ajust lineal de la figura \ref{fig:2.4} es pot veure clarament que per $\theta = 0$, existeix una certa força 'residual'. Atribuïm aquest error a problemes relacionats amb el calibratge i l'ús de la balança; destaquem, però, que aquest error no hauria de ser d'especial rellevància en els nostres càlculs, ja que estem interessats només en el pendent de la recta (que no es veu influenciat per un canvi en l'ordenada d'origen), ja que és aquest el que ens permet arribar a un valor experimental de $\mu_0$.
 
  \textcolor{red}{\textbf{SEGUIR COMENTANT COSES I TAL. ideas per dir:}
  	\begin{itemize}
@@ -572,7 +571,14 @@ Finalment, és clar que el nombre de mesures preses és limitat. L'error relatiu
 
 
 \section{Conclusions}
-
+Cosas:
+\begin{itemize}
+	\item Molts errors, però és el que cal esperar.
+	\item Clarament l'experiment 1 és millor.
+	\item Comentar regressions.
+	\item Camp magnètic terrestre.
+	\item \textbf{Resultats de l'ordre dels reals!!!}
+\end{itemize}
 
 \chapter{Circuit RLC en sèrie}
 
@@ -1183,7 +1189,7 @@ Podem observar, a partir dels valors de $k$, que la configuració òptima és la
 
 Cal destacar que la primera configuració proposada per nosaltres també presenta un valor de $k$ molt proper a la idealitat (0,9535 ± 0,00195), tot i ser lleugerament inferior al de la configuració d (0,9562 ± 0,00196). Malgrat això, considerem que aquesta primera configuració hauria de ser la millor des del punt de vista geomètric, ja que la seva forma s’ajusta especialment bé al recorregut natural de les línies del camp magnetic generades per la bobina primària. Per aquest motiu, l’hem escollida com a base per a les mesures posteriors demanades.
 
-Per finalitzar l'anàlisi, podem veure la importància d’introduir un element ferromagnètic per minimitzar la pèrdua de flux. Si ens fixem en la configuració 0, que correspon al cas sense cap element ferromagnètic, la constant d’acoblament és de $k = 0,0419 \pm 0,00017 $, el valor més baix amb diferència respecte a la resta de configuracions. Això indica que una gran part del flux magnètic no arriba a la bobina secundària, evidenciant una desviació notable del comportament ideal i una gran pèrdua de voltatge.
+Per finalitzar l'anàlisi, podem veure la importància d’introduir un element ferromagnètic per minimitzar la pèrdua de flux. Si ens fixem en la configuració 0, que correspon al cas sense cap element ferromagnètic, la constant d’acoblament és de $k = 0,0419 \pm 0,0002 $, el valor més baix amb diferència respecte a la resta de configuracions. Això indica que una gran part del flux magnètic no arriba a la bobina secundària, evidenciant una desviació notable del comportament ideal i una gran pèrdua de voltatge.
 
 Per a la segona part d'aquesta secció usarem la primera configuració proposada (REF) com ja hem comentat anteriorment. Les mesures experimentals dels voltatges d'entrada i de sortida per a les diferents combinacions de bobines es troben a la taula següent. 
 \begin{table}[H]
@@ -1232,7 +1238,7 @@ D'altra banda, es pot observar que quan el nombre de voltes al primari és molt 
 Aquestes observacions són coherents amb el comportament esperat d’un transformador real, en el qual les pèrdues per flux dispers, histèresi i escalfament impedeixen que la relació \( \frac{V_2}{V_1} = \frac{n_2}{n_1} \) es compleixi exactament.
 
 \subsection{Estudi de les intensitats i voltatges d'entrada i de sortida}
-En aquesta secció trobem la relació entre les reactàncies d'una bobina de 400 voltes i una de 800 voltes a circuit obert. Els valors mesurats experimentalment dels voltatges i corrents d'entrada es poden trobar a la taula següent. 
+En aquesta secció trobem la relació entre les reactàncies d'una bobina de 400 voltes i una de 800 voltes a circuit obert. Els valors mesurats experimentalment dels voltatges i corrents d'entrada es poden trobar a la taula \ref{tab:4.3}. 
 
 \begin{table}[H]
 	\centering
@@ -1246,18 +1252,17 @@ En aquesta secció trobem la relació entre les reactàncies d'una bobina de 400
 		800 & $7{,}05 \pm 0{,}01$ & $0{,}0183 \pm 0{,}0001$ & $385{,}25 \pm 2{,}17$ \\
 		\bottomrule
 	\end{tabular}
+	\label{tab:4.3}
 \end{table}
 
 La reactància es calcula com $X = V / I $. 
-La inductància d'una bobina és proporcional al quadrat del nombre de voltes que té. Com la reactància és directament proporcional a la inductància, aquesta també ha de ser proporcional al quadrat del nombre de voltes de la bobina. Si volem trobar la relació entre dues reactàncies, la relació ha de ser el quadrat de la relació entre el nombre de voltes de cada bobina, és a dir.
-
+La inductància d'una bobina és proporcional al quadrat del nombre de voltes que té. Com la reactància és directament proporcional a la inductància, aquesta també ha de ser proporcional al quadrat del nombre de voltes de la bobina. Si volem trobar la relació entre dues reactàncies, la relació ha de ser el quadrat de la relació entre el nombre de voltes de cada bobina, és a dir
 \begin{equation*}
 	\begin{array}{c}
-		L \propto n^2 \Rightarrow X \propto n^2 \\
-		\frac{X_{800}}{X_{400}} = \left( \frac{800}{400} \right)^2 = 4
+		L \propto n^2 \Rightarrow X \propto n^2, \\
+		\frac{X_{800}}{X_{400}} = \left( \frac{800}{400} \right)^2 = 4.
 	\end{array}
 \end{equation*}
-
 Dividint els resultats de les reactàncies calculades, ens dona un valor de $ 3,84 \pm 0,02 $. 
 Aquest valor és coherent amb el valor teòric esperat de 4, confirmant que la reactància és proporcional al quadrat del nombre de voltes de la bobina. 
 

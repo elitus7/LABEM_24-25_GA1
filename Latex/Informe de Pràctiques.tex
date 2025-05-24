@@ -58,6 +58,8 @@
 \usepackage{titlesec}
 \usepackage{tikz}
 
+\usepackage{longtable}
+
 
 \titleformat{\chapter}[display]{\normalfont\huge\bfseries}{Pràctica \thechapter}{0pt}{\vspace{0.2cm}\huge\bfseries\raggedright}
 
@@ -790,7 +792,7 @@ Fixem-nos que l'amplada de banda es correspon amb la diferència entre les dues 
 
 \section{Metodologia experimental}
 
-\subsection{Estudi del règim permanent}
+\subsection{Estudi del règim permanent}\label{expermento permanente}
 
 Comencem muntant el circuit de la figura \ref{fig:3.2}\footnote{Les figures corresponents als circuits i al muntatge experimental han estat extretes dels \textit{Guions de les pràctiques de l'assignatura de Laboratori d'Electromagnetisme}\cite{ref3}}. Usem una bobina de $L = 22$ mH, un condensador de $C = 15$ nF, una font de corrent altern que ens subministra una senyal del tipus \eqref{eq:3.12}  i, inicialment, una resistència de $R = 2700$ $\Omega$. Efectuem les mesures amb un oscil·loscopi de doble traça; a la figura, $Y_A$ i $Y_B$ representen els dos canals d'aquest.
 
@@ -827,28 +829,51 @@ Seguidament mesurem el període $T$ amb l'oscil·loscopi.
 
 Canviem la resistència fixa per una de variable, que pot donar resistències de 0 a 100 k$\Omega$. Estudiem els casos $R<R_c$, $R=R_c$ i $R>R_c$ (on $R_c$ és la resistència crítica, donada per l'equació \eqref{eq:3.31}), de forma que podem veure les 3 solucions per a l'EDO del circuit RLC en règim transitori. Finalment, amb els valors recollits de $V_C$ i de $t$, calculem, via l'equació \eqref{eq:3.28}, el valor de la constant d'esmorteïment $\lambda$.
 \section{Resultats i discussió}
+\textcolor{red}{tengo que poner las incertezas bien a bastantes cosas, ahora no me apetece}\\
+Per poder comparar i entendre si els nostres resultats son correctes lo primer de tot serà predir amb el que sabem d'electro el que creiem que passarà. Tenim un circuit com el de la figura \ref{fig:3.2} amb $R=2660$ o $274$ $\Omega$, $L=22$ mH, $C=15$ nF i una font amb un voltatge d'entrada tipus $V(t) = V_{max}\sin(\omega t)$, la freqüència de ressonància del sistema ve donada per $\omega_0 = (LC)^{-1}$ (equació \ref{eq:3.19}), i les freqüències de tall ens les dona el sistema d'equacions definit per les equacions \ref{eq:3.38} i \ref{eq:3.39}, que si el resolem queda que:
 
-posar valors teòrics i explicar d'on surten\\
-\textcolor{red}{$AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$}
+\begin{eqnarray*}
+	\omega_{1,2} = \frac{\text{R}}{2\text{L}} \pm \frac{\sqrt{\left(\frac{\text{R}}{\text{L}}\right)^2 + 4\omega_0^2}}{2}\\
+\end{eqnarray*}
+Així podem calcular certes propietats del circuit, i també d'altres com $\text{T}_\text{R}(\omega)$:
+
+\begin{table}[h]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\caption{Valors teòrics del sistema}
+	\begin{tabular}{lccccc}
+		\toprule
+		& $f_0$ & $f_1$ & $f_2$ & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1,2})}$ \\ 
+		\midrule
+		$\mathbf{R = 2660\Omega}$ & 8761\text{Hz} & 3391\text{Hz} & 22634\text{Hz} & 1 & $1/\sqrt{2}$\\ 
+		$\mathbf{R = 274\Omega}$ & 8761\text{Hz} & 7826\text{Hz} & 9808\text{Hz} & 1 & $1/\sqrt{2}$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
 Els recull de mesures experimentals es troben a l'anex \textcolor{red}{poner anexo}.
  
 \subsection{Règim permanent}
 
 \textbf{\textcolor{red}{IMPORTANT: Quins valors dels calculats, $f_{0,1,2}$ i $\abs{T_R}$ romanen iguals i quins canvien? Per què? Si volguéssim un circuit amb una banda de pas estreta, quina resistència escollim?}} (pregunta del guió, a algun lloc s'ha de contestar)
 
-Una vegada muntat el circuit de la figura \ref{fig:3.2} amb $R=2660$ $\Omega$, $L=22$ mH, $C=15$ nF i una font amb un voltatge d'entrada tipus $V(t) = V_{max}\sin(\omega t)$, la freqüència de ressonància mesurada experimentalment és
-\begin{equation*}
-	f_0^{exp} = (8960 \pm 1) \text{ s$^{-1}$}.
-\end{equation*}
-Si comparem aquest valor mesurat amb el valor teòric que s'obté a partir de l'equació \eqref{eq:3.41}
-\begin{equation*}
-	f_0^{teo} = 8761 \text{ s$^{-1}$},
-\end{equation*}
-podem veure que els valors són pràcticament iguals, com era d'esperar. Fent aquesta mateixa mesura, però canviant la resistència per una de $R=274$ $\Omega$, obtenim una freqüència
-\begin{equation*}
-	f_0^{exp} = (8860 \pm 1) \text{ s$^{-1}$},
-\end{equation*}
-tot i que, teòricament, la freqüència de ressonància és independent de la resistència del circuit i, per tant, no hauria de canviar.
+Una vegada s'han mesurat les freqüències de ressonància i de tall, i els valors dels voltatges d'entrada i de la resistència just com s'explica a la secció \ref{expermento permanente} podem obtenir els següents valors experimentals directament de l'oscil·loscopi:
+
+\begin{table}[h]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\caption{Valors teòrics del sistema}
+	\begin{tabular}{lcccccc}
+		\toprule
+		& $f_0$ & $f_1$ & $f_2$ & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
+		\midrule
+		$\mathbf{R = 2660\Omega}$ & 8960\text{Hz} & 2860\text{Hz} & 23460\text{Hz} & 1 & 0.72340 & 0.72340\\ 
+		$\mathbf{R = 274\Omega}$ & 8860\text{Hz} & 8040\text{Hz} & 9830\text{Hz} & 0.87647 & 0.70588 & 0.88235\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+podem veure que els valors són pràcticament iguals, com era d'esperar. Tot i que, teòricament, la freqüència de ressonància és independent de la resistència del circuit i, per tant, no hauria de canviar.
 
 \textcolor{red}{esto es así?? tiene sentido, o cabe la posibilidad que lo hayamos puesto mal y que realmente sea 8960 como antes...es que vaya coincidencia que solo cambie en 100 unidades no?}
 

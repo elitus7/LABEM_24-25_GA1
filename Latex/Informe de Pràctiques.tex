@@ -833,7 +833,7 @@ Canviem la resistència fixa per una de variable, que pot donar resistències de
 Per poder comparar i entendre si els nostres resultats son correctes lo primer de tot serà predir amb el que sabem d'electro el que creiem que passarà. Tenim un circuit com el de la figura \ref{fig:3.2} amb $R=2660$ o $274$ $\Omega$, $L=22$ mH, $C=15$ nF i una font amb un voltatge d'entrada tipus $V(t) = V_{max}\sin(\omega t)$, la freqüència de ressonància del sistema ve donada per $\omega_0 = (LC)^{-1}$ (equació \ref{eq:3.19}), i les freqüències de tall ens les dona el sistema d'equacions definit per les equacions \ref{eq:3.38} i \ref{eq:3.39}, que si el resolem queda que:
 
 \begin{eqnarray*}
-	\omega_{1,2} = \frac{\text{R}}{2\text{L}} \pm \frac{\sqrt{\left(\frac{\text{R}}{\text{L}}\right)^2 + 4\omega_0^2}}{2}\\
+	\omega_{1,2} = \frac{1}{2L} \left( \sqrt{4L^2\omega_0^2+R^2} \mp R \right)  
 \end{eqnarray*}
 Així podem calcular certes propietats del circuit, i també d'altres com $\text{T}_\text{R}(\omega)$:
 
@@ -843,14 +843,15 @@ Així podem calcular certes propietats del circuit, i també d'altres com $\text
 	\caption{Valors teòrics del sistema}
 	\begin{tabular}{lccccc}
 		\toprule
-		& $f_0$ & $f_1$ & $f_2$ & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1,2})}$ \\ 
+		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1,2})}$ \\ 
 		\midrule
-		$\mathbf{R = 2660\Omega}$ & 8761\text{Hz} & 3391\text{Hz} & 22634\text{Hz} & 1 & $1/\sqrt{2}$\\ 
-		$\mathbf{R = 274\Omega}$ & 8761\text{Hz} & 7826\text{Hz} & 9808\text{Hz} & 1 & $1/\sqrt{2}$ \\
+		$\mathbf{R = 2660\Omega}$ & 8761 $\pm$ 35 & 3391 $\pm$ 98 & 22634 $\pm$ 680 & 1 & $1/\sqrt{2}$\\ 
+		$\mathbf{R = 274\Omega}$ & 8761 $\pm$ 35 & 7826 $\pm$ 35 & 9808 $\pm$ 91 & 1 & $1/\sqrt{2}$ \\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
+\textcolor{red}{poner resultados necesarios para el regimen transitorio tmb}\\
 Els recull de mesures experimentals es troben a l'anex \textcolor{red}{poner anexo}.
  
 \subsection{Règim permanent}
@@ -862,56 +863,33 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, i els valo
 \begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Valors teòrics del sistema}
+	\caption{Valors experimentals del sistema}
 	\begin{tabular}{lcccccc}
 		\toprule
-		& $f_0$ & $f_1$ & $f_2$ & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
+		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
 		\midrule
-		$\mathbf{R = 2660\Omega}$ & 8960\text{Hz} & 2860\text{Hz} & 23460\text{Hz} & 1 & 0.72340 & 0.72340\\ 
-		$\mathbf{R = 274\Omega}$ & 8860\text{Hz} & 8040\text{Hz} & 9830\text{Hz} & 0.87647 & 0.70588 & 0.88235\\
+		$\mathbf{R = 2660\Omega}$ & 8960 $\pm$ 1 & 2860 $\pm$ 1 & 23460 $\pm$ 1 & 1 $\pm$ 0.0075 & 0.72340 $\pm$ 0.0066 & 0.72340 $\pm$ 0.0066\\ 
+		$\mathbf{R = 274\Omega}$ & 8860 $\pm$ 1 & 8040 $\pm$ 1 & 9830 $\pm$ 1 & 0.87647 $\pm$ 0.0078 & 0.70588 $\pm$ 0.0072 & 0.88235$\pm$ 0.0078\\
 		\bottomrule
 	\end{tabular}
 \end{table}
-
+\textcolor{red}{algo raro hay con $\abs{T_R(\omega_0)}$ y $\abs{T_R(\omega_{2})}$ para $\mathbf{R = 274\Omega}$, son muy diferentes de lo que deberia, errores del 12 y 25$\%$....., pero es que si lo recalculo con otro metodo esas dos dan muy guai, pero entonces es $\abs{T_R(\omega_1)}$ que para $\mathbf{R = 2660\Omega}$ y $\mathbf{R = 274\Omega}$ da mal con errores del 11 y 13$\%$, QUE PASA!! pq siempre hay dos que dan mal......., :(}
 podem veure que els valors són pràcticament iguals, com era d'esperar. Tot i que, teòricament, la freqüència de ressonància és independent de la resistència del circuit i, per tant, no hauria de canviar.
 
 \textcolor{red}{esto es así?? tiene sentido, o cabe la posibilidad que lo hayamos puesto mal y que realmente sea 8960 como antes...es que vaya coincidencia que solo cambie en 100 unidades no?}
 
 Per poder comprovar si realment estem en la freqüència de ressonància del sistema calculem el guany $\abs{T_R(\omega_0)}$ que, en principi, hauria de ser màxim sota aquestes condicions (ressonància). Els resultats es poden trobar a la taula \ref{tab:3.1}.
 
-\begin{table}[h]
-	\centering
-	\renewcommand{\arraystretch}{1.2}
-	\caption{Guanys experimentals i teòrics a la freqüència de ressonància del sistema.}
-	\begin{tabular}{lcc}
-		\toprule
-		& $\abs{T_R(\omega_0)}(R=2660 \text{ $\Omega$})$ & $\abs{T_R(\omega_0)}(R=274 \text{ $\Omega$})$ \\ 
-		\midrule
-		\textbf{Teòric} & 1 & 1 \\ 
-		\textbf{Experimental} & $1,000\pm 0,008$ & $0,877 \pm 0,006$\\ 
-		\bottomrule
-	\end{tabular}
-	\label{tab:3.1}
-\end{table}
-
 \textcolor{red}{pues no entiendo pq cambia si estamos en la frecuencia de resonancia}
 
-Mesurem també les freqüències de tall del circuit RLC per poder trobar, a partir d'elles, l'amplada de banda del sistema. Si resolem el sistema d'equacions donat per \eqref{eq:3.38} i \eqref{eq:3.39}, podem trobar que
-\begin{equation}
-	f_1^{teo} = \frac{1}{4\pi}\left(-\frac{R}{L} + \sqrt{\left(\frac{R}{L}\right)^2 + 4\frac{1}{LC}}\right),
-\end{equation}
-\begin{equation}	
-	f_2^{teo} = \frac{R}{f_1^{teo}},
-\end{equation}
-\begin{equation}
-	\Delta \omega = \frac{R}{L}.
-\end{equation}
+Mesurem també les freqüències de tall del circuit RLC per poder trobar, a partir d'elles, l'amplada de banda del sistema.
+
 Substituint els valors de $R$, $L$, i $C$ podem calcular aquests valors. Per altra banda, per tal de mesurar experimentalment les freqüències de tall calculem el $V_R$ necessari per tal que 
 \begin{equation}
 	V_R = V_{max} \cdot \abs{T_R} = \frac{V_{max}}{\sqrt{2}},
 \end{equation}
 on $V_{max}$ és l'amplitud del voltatge d'entrada. Seguidament busquem per quines freqüències $f_1^{exp}$ i $f_2^{exp}$ això se satisfà. Els resultats es poden trobar a les taules \ref{tab:3.2} i \ref{tab:3.3}.
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Freqüències de tall i amplades de banda experimentals i teòriques pel circuit RLC amb $R=2660$ $\Omega$.}
@@ -925,7 +903,7 @@ on $V_{max}$ és l'amplitud del voltatge d'entrada. Seguidament busquem per quin
 	\end{tabular}
 	\label{tab:3.2}
 \end{table}
-\begin{table}[h]
+\begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Freqüències de tall i amplades de banda experimentals i teòriques pel circuit RLC amb $R=274$ $\Omega$.}
@@ -939,7 +917,7 @@ on $V_{max}$ és l'amplitud del voltatge d'entrada. Seguidament busquem per quin
 	\end{tabular}
 	\label{tab:3.3}
 \end{table}
-
+\textcolor{red}{\textbf{STOP}, a ver a ver, ponte a calcular incertezas y a ver si cuadran las cosas y entonces ya sigues que esto sino no tiene sentido}\\
 \subsection{Règim transitori}
 Una vegada muntat el cricuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184\Omega$, $33mH$ i $330pF$ respectivament podem presentar els resultats. 
 

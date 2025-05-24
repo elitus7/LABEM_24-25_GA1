@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.22)  24 MAY 2025 21:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.22)  25 MAY 2025 01:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1178,7 +1178,12 @@ Package pdftex.def Info: screenshot006.png  used on input line 819.
 
 [24 <./screenshot006.png>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `tab:3.1' on page 25 undefined on input line 881.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 920--921
+
+ []
 
 
 
@@ -1193,10 +1198,10 @@ Cap\'{\i }tol 4.
 ]
 
 [28]
-<screenshot007.png, id=769, 951.555pt x 352.31625pt>
+<screenshot007.png, id=762, 951.555pt x 352.31625pt>
 File: screenshot007.png Graphic file (type png)
 <use screenshot007.png>
-Package pdftex.def Info: screenshot007.png  used on input line 1100.
+Package pdftex.def Info: screenshot007.png  used on input line 1078.
 (pdftex.def)             Requested size: 184.88846pt x 68.4514pt.
 
 
@@ -1205,30 +1210,30 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [29]
-<42a.jpg, id=785, 128.27925pt x 118.041pt>
+<42a.jpg, id=778, 128.27925pt x 118.041pt>
 File: 42a.jpg Graphic file (type jpg)
 <use 42a.jpg>
-Package pdftex.def Info: 42a.jpg  used on input line 1117.
+Package pdftex.def Info: 42a.jpg  used on input line 1095.
 (pdftex.def)             Requested size: 121.63557pt x 111.93115pt.
-<42b.jpg, id=786, 152.36925pt x 107.2005pt>
+<42b.jpg, id=779, 152.36925pt x 107.2005pt>
 File: 42b.jpg Graphic file (type jpg)
 <use 42b.jpg>
-Package pdftex.def Info: 42b.jpg  used on input line 1124.
+Package pdftex.def Info: 42b.jpg  used on input line 1102.
 (pdftex.def)             Requested size: 121.63557pt x 85.5773pt.
-<42c.jpg, id=787, 166.221pt x 112.62074pt>
+<42c.jpg, id=780, 166.221pt x 112.62074pt>
 File: 42c.jpg Graphic file (type jpg)
 <use 42c.jpg>
-Package pdftex.def Info: 42c.jpg  used on input line 1131.
+Package pdftex.def Info: 42c.jpg  used on input line 1109.
 (pdftex.def)             Requested size: 121.63557pt x 82.41179pt.
-<inv1.jpg, id=789, 938.00438pt x 750.55406pt>
+<inv1.jpg, id=782, 938.00438pt x 750.55406pt>
 File: inv1.jpg Graphic file (type jpg)
 <use inv1.jpg>
-Package pdftex.def Info: inv1.jpg  used on input line 1147.
+Package pdftex.def Info: inv1.jpg  used on input line 1125.
 (pdftex.def)             Requested size: 145.96417pt x 116.79277pt.
-<inv2.jpg, id=790, 811.53188pt x 648.92438pt>
+<inv2.jpg, id=783, 811.53188pt x 648.92438pt>
 File: inv2.jpg Graphic file (type jpg)
 <use inv2.jpg>
-Package pdftex.def Info: inv2.jpg  used on input line 1154.
+Package pdftex.def Info: inv2.jpg  used on input line 1132.
 (pdftex.def)             Requested size: 145.96417pt x 116.71222pt.
 
 
@@ -1237,10 +1242,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [30 <./screenshot007.png> <./42a.jpg> <./42b.jpg> <./42c.jpg>]
-<screenshot010.png, id=803, 492.33937pt x 364.36125pt>
+<screenshot010.png, id=796, 492.33937pt x 364.36125pt>
 File: screenshot010.png Graphic file (type png)
 <use screenshot010.png>
-Package pdftex.def Info: screenshot010.png  used on input line 1181.
+Package pdftex.def Info: screenshot010.png  used on input line 1159.
 (pdftex.def)             Requested size: 194.61395pt x 144.02396pt.
 
 
@@ -1271,11 +1276,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [39]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1505.
+(hyperref)                removing `math shift' on input line 1483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1505.
+(hyperref)                removing `math shift' on input line 1483.
 
 
 
@@ -1292,7 +1297,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [45]
 
 [46]
-Overfull \hbox (3.78835pt too wide) in paragraph at lines 1879--1890
+Overfull \hbox (3.78835pt too wide) in paragraph at lines 1857--1868
  [][] 
  []
 
@@ -1303,18 +1308,22 @@ Overfull \hbox (3.78835pt too wide) in paragraph at lines 1879--1890
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `"Informe de Pràctiques".out' has not change
 d.
-(rerunfilecheck)             Checksum: CA3AA4DD8F5002B156EDE98EC26B8C15;13619.
+(rerunfilecheck)             Checksum: E98595C05F0B5893D4F8B7E10EA528C5;13619.
  ) 
 Here is how much of TeX's memory you used:
- 33957 strings out of 473189
- 671741 string characters out of 5719958
- 1681325 words of memory out of 5000000
+ 33953 strings out of 473189
+ 671686 string characters out of 5719958
+ 1681214 words of memory out of 5000000
  56185 multiletter control sequences out of 15000+600000
  577880 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,15n,121p,1434b,2709s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,13n,121p,1434b,2709s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/te
 xlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/202
 5/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-d
@@ -1347,10 +1356,10 @@ ts/cm/cmtt8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx120
 texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/20
 25/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2025/texmf-d
 ist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on "Informe de Pràctiques.pdf" (48 pages, 15513930 bytes).
+Output written on "Informe de Pràctiques.pdf" (48 pages, 15512633 bytes).
 PDF statistics:
- 1454 PDF objects out of 1728 (max. 8388607)
- 1273 compressed objects within 13 object streams
- 552 named destinations out of 1000 (max. 500000)
+ 1447 PDF objects out of 1728 (max. 8388607)
+ 1266 compressed objects within 13 object streams
+ 548 named destinations out of 1000 (max. 500000)
  663 words of extra memory for PDF output out of 10000 (max. 10000000)
 

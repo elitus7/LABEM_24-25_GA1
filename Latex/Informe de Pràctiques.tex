@@ -1429,19 +1429,64 @@ on $F(x_1,x_2,\ldots,x_n)$ és la funció considerada i $u_i$ la incertesa assoc
 
 \subsection{Incerteses de la pràctica 1}
 Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de forma que:
-\begin{equation}
-	u_{Y_i} = \sqrt{ \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i} u_{\Delta V_i} \right)^2 + \left( \frac{\Delta V_i \Delta l_i}{\Delta r_i} u_{\Delta l_i} \right)^2 + \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i^2} u_{\Delta r_i} \right)^2 },
-\end{equation}
-\begin{equation}
-	\frac{Q}{Z} = \varepsilon \sum_i Y_i \implies u_{Q/Z} = \varepsilon \sqrt{\sum_i u_{Y_i}^2},
-\end{equation}
-\begin{equation}
-	u_{\frac{C}{Z}} = \sqrt{ \left( \frac{1}{Z \, \Delta V} u_Q \right)^2 + \left( \frac{Q}{Z \, \Delta V^2} u_{\Delta V} \right)^2 },
-\end{equation}
-\begin{equation}
-	u_{C_\text{teòric}} = \frac{u_H}{d} \sqrt{1+C^2}.
-\end{equation}
+\begin{enumerate}
+	\item Paràmetre Y$_i$: \begin{equation}
+		u_{Y_i} = \sqrt{ \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i} u_{\Delta V_i} \right)^2 + \left( \frac{\Delta V_i \Delta l_i}{\Delta r_i} u_{\Delta l_i} \right)^2 + \left( \frac{\Delta l_i \Delta V_i}{\Delta r_i^2} u_{\Delta r_i} \right)^2 }.
+	\end{equation}
+	\item Càrrega per unitat de longitud:\begin{equation}
+		\frac{Q}{Z} = \varepsilon \sum_i Y_i \implies u_{Q/Z} = \varepsilon \sqrt{\sum_i u_{Y_i}^2}.
+	\end{equation}
+	\item Capacitat per unitat de longitud:\begin{equation}
+		u_{\frac{C}{Z}} = \sqrt{ \left( \frac{1}{Z \, \Delta V} u_Q \right)^2 + \left( \frac{Q}{Z \, \Delta V^2} u_{\Delta V} \right)^2 }.
+	\end{equation}
+	\item Capacitat teòrica\begin{equation}
+		u_{C_\text{teòrica}} = \frac{u_H}{d} \sqrt{1+C^2}.
+	\end{equation}
+\end{enumerate}
 \subsection{Incerteses de la pràctica 2}
+\begin{enumerate}
+	\item Força segons la segona llei de Newton: \begin{equation}
+		u_F=\sqrt{m^2u_g^2+g^2u_m^2}.
+	\end{equation}
+	\item Mitjana de les mesures de la intensitat (incertesa estadística): \begin{equation}
+		u_{estad. I}= \frac{s_I}{\sqrt{3}}.
+	\end{equation}
+	\item Intensitat: \begin{equation}
+		u_I=\sqrt{u_{instr. I}^2+u_{estad. I}^2}
+	\end{equation}
+	\item Intensitat al quadrat: \begin{equation}
+		u_{I^2}=2Iu_I.
+	\end{equation}
+	\item $\mu_0$ experimental (I$^2$ vs F):
+
+	Definim el pendent de la representació de la intensitat al quadrat en funció de la força amb un paràmetre $A$ tal que:
+	\begin{equation*}
+		A\equiv\frac{2\pi r}{I^2L}.
+	\end{equation*}
+	Amb això, la incertesa és
+	\begin{equation}
+		u_{\mu_0}=\sqrt{\left(\frac{2\pi u_r}{LA}\right)^2+\left(\frac{2\pi r u_L}{L^2A}\right)^2+\left(\frac{2\pi ru_A}{LA^2}\right)^2}.
+	\end{equation}
+	$u_A$ s'obté a partir dels paràmetres de la recta representada.
+	\item Angle en radiants: \begin{equation}
+		u_{\theta}=\frac{u_{graus}2\pi}{360}.
+	\end{equation}
+	\item Inversa de la distància: \begin{equation}
+		u_{1/r}=\frac{u_r}{r^2}.
+	\end{equation}
+	\item Força calculada a partir de l'angle mesurat: \begin{equation}
+		\sqrt{u_r^2u_{\theta}^2+\theta^2u_{1/r}^2}.
+	\end{equation}
+	\item $\mu_0$ experimental (F vs 1/r):
+	
+	Definim el pendent de la representació de la força en funció de l'invers de la distància amb un paràmetre D tal que: \begin{equation*}
+		D\equiv\frac{\mu_0I^2L}{2\pi}.
+	\end{equation*}
+	Amb això, la incertesa és
+	\begin{equation}
+		u_{\mu_0}=
+	\end{equation}
+\end{enumerate}
 \subsection{Incerteses de la pràctica 3}
 \subsection{Incerteses de la pràctica 4}
 \newpage

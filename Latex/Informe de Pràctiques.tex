@@ -428,21 +428,21 @@ Repetim tot això uns quants cops (tres en el nostre cas) per la massa de 5 mg i
 
 Repetim els anteriors passos augmentant la massa de 5 en 5 mg fins a arribar a 25 mg (com a màxim) o fins que no puguem reequilibrar la balança.
 
-Amb tot el recull de mesures d'intensitat representem $F$ (massa $\cross$ gravetat) vs. $I^2$
+Amb tot el recull de mesures d'intensitat representem $I^2$ vs. $F$ (massa $\cross$ gravetat)
 \begin{equation}
-	F = \frac{\mu_0L}{2\pi r}I^2. \label{eq:2.9}
+	I^2 = \frac{2\pi r}{\mu_0 L} F. \label{eq:2.9}
 \end{equation}
 De l'anterior recta, a partir del pendent deduïm el valor de $\mu_0$. Recordem que $L$ és la longitud dels fils i $r$ la separació entre aquests.
 
 \subsection{Força vs. separació}
-Per tal de poder calcular un valor de $\mu_0$ experimental a partir de la força vs separació, primer trobem la constant de torsió del fil, la qual relaciona la força del fil d'acer en funció de l'angle de torsió. Aquest paràmetre es pot obtenir equilibrant la balança (veure figura \ref{fig:2.1}) per a cada una de les masses (5, 10, 15, 20 i 25 mg) i anotant-ne els graus que cal girar el dial de la balança per tal d'equilibrar el pes d'aquestes. Comencem amb la massa de 20 mg a la cassoleta i després repetim el procediment amb la resta. Un cop tenim totes les dades, representem la gràfica de la força en funció de l'angle de torsió, trobant així el pendent de la recta 
+Per tal de poder calcular un valor de $\mu_0$ experimental a partir de la força vs. separació, primer trobem la constant de torsió del fil, la qual relaciona la força del fil d'acer en funció de l'angle de torsió. Aquest paràmetre es pot obtenir equilibrant la balança (veure figura \ref{fig:2.1}) per a cada una de les masses (5, 10, 15, 20 i 25 mg) i anotant-ne els graus que cal girar el dial de la balança per tal d'equilibrar el pes d'aquestes. Comencem amb la massa de 20 mg a la cassoleta i després repetim el procediment amb la resta. Un cop tenim totes les dades, representem la gràfica de la força en funció de l'angle de torsió, trobant així el pendent de la recta 
 \begin{equation}
 	F=k\theta.
 	\label{eq2:10}
 \end{equation}
 Notem que hem assumit que l'angle de torsió $\theta$ i la força $F$ són proporcionals, mitjançant una constant recuperadora $k$. Això que té sentit si pensem en la llei de Hooke, que, recordem, ens diu que la força recuperadora que fa una molla és
 \begin{equation}
-	F = k\Delta x
+	F = k\Delta x,
 \end{equation} 
 on $k$ és la constant recuperadora de la molla i $\Delta x$ el desplaçament respecte de la posició d'equilibri de la darrera.
 
@@ -467,7 +467,7 @@ Comencem l'experiment donant una intensitat d'uns 6 A i mesurant la força amb l
 \subsection{Valor experimental de la permeabilitat magnètica}
 El càlcul de la permeabilitat magnètica del buit el fem a partir de les mesures de \textit{força vs. corrent} i de les mesures de \textit{força vs. separació}. 
 
-De les mesures de $F$ vs. $I^2$, a partir de l'equació \eqref{eq:2.9}, trobem, després de fer un ajust lineal, la recta de la figura \ref{fig:2.3}\footnote{Totes les gràfiques s'han fet usant el programari \textit{Gnuplot}.}. Per arribar a aquests resultats fem tres mesures de la força per cada massa, per cinc masses diferents (les indicades a la secció del procediment experimental de la pràctica). Les dades experimentals usades es poden trobar en forma de taula a l'annex \ref{an:c1}. De l'ajust lineal de la figura \ref{fig:2.3} en determinem la permeabilitat magnètica del buit, ja que està directament relacionada amb el pendent d'aquesta recta, tenint present que els valors de la longitud del fil $L$, la separació entre fils $r$ i $g$ són
+De les mesures de $I^2$ vs. $F$, a partir de l'equació \eqref{eq:2.9}, trobem, després de fer un ajust lineal, la recta de la figura \ref{fig:2.3}\footnote{Totes les gràfiques s'han fet usant el programari \textit{Gnuplot}.}. Per arribar a aquests resultats fem tres mesures de la força per cada massa, per cinc masses diferents (les indicades a la secció del procediment experimental de la pràctica). Les dades experimentals usades es poden trobar en forma de taula a l'annex \ref{an:c1}. De l'ajust lineal de la figura \ref{fig:2.3} en determinem la permeabilitat magnètica del buit, ja que està directament relacionada amb el pendent d'aquesta recta, tenint present que els valors de la longitud del fil $L$, la separació entre fils $r$ i $g$ són
 \begin{equation*}
 	L = (0,305\pm 0,001)\text{ m}, \hspace{0.15cm} r = (8,10\pm 0,05)\cdot10^{-3} \text{ m}, \hspace{0.15cm} g = (9,81\pm 0,01) \text{ m/s$^2$}.
 \end{equation*}
@@ -476,11 +476,11 @@ Així, el valor de la permeabilitat magnètica és
 	\mu_0 = (1,704\pm0,057)\cdot 10^{-6} \text{ N/A$^2$}.
 \end{equation*}
 
-\begin{figure}[h]
+\begin{figure}
 	\centering
-	\includegraphics[width=0.8\linewidth]{screenshot016}
-	\caption{Força entre els dos fils en funció de la intensitat del corrent al quadrat. Dades de l'ajust lineal: $y=mx+n$, amb $m = (1,02\pm0,03)\cdot 10^{-5}$ N$\cdot$A$^{-2}$ i $n = (4,50\pm0,4)\cdot 10^{-5}$ N. Coeficient de correlació $R^2=0,997$. Notem que, en alguns punts, les barres d'error corresponents a l'eix de les $x$ són tan petites que no s'arriben a distingir.}
-	\label{fig:2.3}
+\includegraphics[width=0.8\linewidth]{screenshot020}
+\caption{Força entre els dos fils en funció de la intensitat del corrent al quadrat. Dades de l'ajust lineal: $y=mx+n$, amb $m = (979 \pm 32)\cdot 10^{2}$ A$^2$$\cdot$N$^{-1}$ i $n = (-4,38\pm0,52)\cdot$ N$^{-1}$. Coeficient de correlació $R^2=0,997$. Notem que, en alguns punts, les barres d'error corresponents a l'eix de les $y$ són tan petites que no s'arriben a distingir.}
+\label{fig:2.3}
 \end{figure}
 
 Si comparem aquest resultat amb el valor teòric de la permeabilitat magnètica
@@ -497,9 +497,9 @@ trobem que tenim un error relatiu del 36,64 \%.
 \end{figure}
 
 Per altra banda podem comparar amb el càlcul de $\mu_0$ mitjançant l'experiment del fil de torsió, és a dir, representant \textit{força vs. separació}. En aquest cas cal que determinem prèviament la constant de torsió del fil $k$, suposant que se satisfà que la força recuperadora és proporcional a l'angle de torsió $\theta$. A partir d'un seguit de mesures experimentals de $F$ i $\theta$ (veure annex \ref{an:c1}) podem fer un ajust lineal, tal i com es pot veure a la figura \ref{fig:2.4}, d'on es dedueix que
-\begin{equation}
+\begin{equation*}
 	k = (1,9633\pm 0,0047)\cdot 10^{-4} \text{ N$\cdot$rad$^{-1}$}.
-\end{equation}
+\end{equation*}
 Ara, amb del valor d'aquesta constant, podem correlacionar les voltes necessàries del dial per equilibrar la balança en cada una de les configuracions a diferents distàncies, amb la força magnètica que produeix el corrent fixat de $I = (5,55 \pm 0,01)$ A que apliquem. 
 
 De les mesures experimentals de $F$ vs. $1/r$ (essent $r$ la separació entre els fils) de l'annex \ref{an:c1}, podem fer un ajust lineal, tot trobant la recta de la figura \ref{fig:2.5}. Com que el pendent d'aquesta recta està directament relacionat amb $\mu_0$ (veure equació \eqref{eq:2.13}), en podem determinar el seu valor, tot trobant que 
@@ -534,9 +534,9 @@ A la taula \ref{tab:2.1} podeu trobar agrupats els resultats dels dos experiment
 
 Podem veure que, clarament, dels dos experiments duts a terme, el primer (corresponent a l'estudi de la dependència de la força entre els fils en funció del corrent) és el que dóna un resultat de $\mu_0$ més proper al real. Que el segon experiment (corresponent a l'estudi de la dependència de la força entre els fils en funció de la separació entre aquests) presenti una desviació de més del doble que el darrer es pot justificar pel fet que, per fer aquest càlcul, hem hagut de determinar prèviament la constant de torsió del fil amb mesures efectuades amb la balança i, posteriorment, hem utilitzat aquestes dades per fer un ajust lineal i estudiar la dependència entre la força entre els fils en funció de la separació. Tot plegat fa que que l'error que tinguem en mesurar s'acumuli i es propagui a l'error comés en $\mu_0$. A més a més, no només l'error intrínsec del mètode es propaga, sinó que el possible error que tinguem per determinar $k$ també s'acumula a l'hora de fer l'ajust lineal dels punts de $F$ vs. $1/r$.
 
-En general, considerem que és raonable que el segon experiment presenti un error major que el primer, que es fonamenta en mesures més directes (no cal efectuar dos ajusts lineals). El fet que, tot i això, l'error associat al primer sigui considerable pot ser degut a la pròpia naturalesa de l'experiment. Recordem  que, al principi, per tal d'obtenir l'expressió que segueix el camp magnètic creat per un fil per on circula un corrent $I$, hem suposat que aquest fil era infinit, de manera que el camp generat és proporcional a $1/r$ en tots els punts (és a dir, té simetria perfectament cilíndrica) i, en particular, sobre l'altre fil i segons aquestes suposicions, el camp $\vec{B}$ és el mateix en tots els punts del darrer, ja que són paral·lels. Evidentment això últim no és cert per múltiples motius, entre els quals destaquem que: no tenim un fil infinit, ni tan sols la longitud ($L'$) del fil que crea el camp compleix que $L'\gg L$ (essent $L$ la longitud de l'altre fil), i existeixen efectes de vora (degut a que els fins no són infinits) que no hem considerat. Tot plegat fa que el $\vec{B}$ real no estigui generat ni estigui distribuït tal i com estem suposant, cosa que explicaria que ens sortís un valor de $\mu_0$ experimental més gran que el teòric, fem l'experiment que fem, ja que és un error directament relacionat al model considerat.
+En general, considerem que és raonable que el segon experiment presenti un error major que el primer, que es fonamenta en mesures més directes (no cal efectuar dos ajusts lineals). El fet que, tot i això, l'error associat al primer sigui considerable, pot ser degut a la pròpia naturalesa de l'experiment. Recordem  que, al principi, per tal d'obtenir l'expressió que segueix el camp magnètic creat per un fil per on circula un corrent $I$, hem suposat que aquest fil era infinit, de manera que el camp generat és proporcional a $1/r$ en tots els punts (és a dir, té simetria perfectament cilíndrica) i, en particular, sobre l'altre fil i segons aquestes suposicions, el camp $\vec{B}$ és el mateix en tots els punts del darrer, ja que són paral·lels. Evidentment això últim no és cert per múltiples motius, entre els quals destaquem que: no tenim un fil infinit, ni tan sols la longitud ($L'$) del fil que crea el camp compleix que $L'\gg L$ (essent $L$ la longitud de l'altre fil), i existeixen efectes de vora (degut a que els fins no són infinits) que no hem considerat. Tot plegat fa que el $\vec{B}$ real no estigui generat ni estigui distribuït tal i com estem suposant, cosa que explicaria que ens sortís un valor de $\mu_0$ experimental més gran que el teòric, fem l'experiment que fem, ja que és un error directament relacionat amb el model considerat.
 
-Tot i que tinguem un error associat a la mesura de $\mu_0$, sí que podem assegurar que la força entre els fils té un comportament que s'adequa al predit per l'equació \ref{eq:2.9} (és lineal), tal i com estableix el coeficient de correlació $R^2$, molt proper a 1 en els dos experiments. Sí que hem de remarcar, però, que tot i que l'equació \ref{eq2:10} no prediu l'existència de cap terme independent (ordenada d'origen) de manera que, per un valor $\theta = 0$ la força hauria de ser nul·la, els nostres resultats no indiquen totalment això, ja que a l'ajust lineal de la figura \ref{fig:2.4} es pot veure clarament que per $\theta = 0$, existeix una certa força 'residual'. Atribuïm aquest error a problemes relacionats amb el calibratge i l'ús de la balança; destaquem, però, que aquest error no hauria de ser d'especial rellevància en els nostres càlculs, ja que estem interessats només en el pendent de la recta (que no es veu influenciat per un canvi en l'ordenada d'origen), ja que és aquest el que ens permet arribar a un valor experimental de $\mu_0$.
+Tot i que tinguem un error associat a la mesura de $\mu_0$, sí que podem assegurar que la força entre els fils té un comportament que s'adequa al predit per l'equació \ref{eq:2.9} (és lineal), tal i com estableix el coeficient de correlació $R^2$, molt proper a 1 en els dos experiments. Sí que hem de remarcar, però, que tot i que l'equació \ref{eq2:10} no prediu l'existència de cap terme independent (ordenada d'origen) de manera que, per un valor $\theta = 0$ la força hauria de ser nul·la, els nostres resultats no indiquen totalment això, ja que a l'ajust lineal de la figura \ref{fig:2.4} es pot veure clarament que per $\theta = 0$, existeix una certa força 'residual'. Atribuïm aquest error a problemes relacionats amb el calibratge i l'ús de la balança; destaquem, però, que aquest error no hauria de ser d'especial rellevància en els nostres càlculs, ja que estem interessats només en el pendent de la recta (que no es veu influenciat per un canvi en l'ordenada d'origen), ja que és aquest el que ens permet arribar a un valor experimental de $\mu_0$. Una cosa molt similar es pot dir del terme independent que apareix en l'ajust $I^2$ vs. $F$.
 
  \textcolor{red}{\textbf{SEGUIR COMENTANT COSES I TAL. ideas per dir:}
  	\begin{itemize}
@@ -547,7 +547,7 @@ Tot i que tinguem un error associat a la mesura de $\mu_0$, sí que podem assegu
 
 
 \subsection{Camp magnètic terrestre}
-Contràriament als apartats anteriors, en aquest cas situem els conductors perpendiculars a la direcció nord-sud de la Terra. Això ens permet mesurar únicament la component horitzontal del camp magnètic terrestre ja que, com es pot observar a la figura \ref{fig2:6}, la força causada per aquesta component és la que podem mesurar equilibrant la balança amb el dial. Notem com, per contra, la força corresponent a la component vertical del camp magnètic terrestre no podem mesurar-la amb aquest mateix procediment, de manera que no podem obtenir-ne el valor.
+Contràriament als apartats anteriors, en aquest cas situem els conductors perpendiculars a la direcció nord-sud de la Terra. Això ens permet mesurar únicament la component horitzontal del camp magnètic terrestre ja que, com es pot observar a la figura \ref{fig2:6}, la força causada per aquesta component és la que podem mesurar equilibrant la balança amb el dial. Notem com, per contra, la força corresponent a la component vertical del camp magnètic terrestre no pot ser mesurada amb aquest mateix procediment.
 
 \begin{figure}[H]
 	\centering
@@ -558,10 +558,10 @@ Contràriament als apartats anteriors, en aquest cas situem els conductors perpe
 
 
 A partir de les mesures experimentals recollides a l'annex \ref{an:c1} de l'angle necessari per equilibrar la balança per a diferents valors d'intensitat, trobem que la component horitzontal del camp magnètic de la Terra és
-\begin{equation}
-	B=(3,11 \pm 0,22)\times 10^{-5} \text{T}.
-\end{equation}
-El valor teòric és de 25053 nT, proporcionat per la pàgina web \textit{World Magnetic Model 2025 Calculator}\cite{ref2} calculat per una latitud i una longitud de 41.50057812688948, 2.1094089949997366, respectivament i una alçada de 185 m sobre el nivell del mar. 
+\begin{equation*}
+	B=(3,11 \pm 0,22)\times 10^{-5} \text{ T}.
+\end{equation*}
+El valor teòric és de 25053 nT, proporcionat per la pàgina web \textit{World Magnetic Model 2025 Calculator}\cite{ref2} calculat per una latitud i una longitud de (41,50057812688948, 2,1094089949997366), respectivament, i una alçada de 185 m sobre el nivell del mar. 
 
 L'error relatiu, doncs, del valor experimental respecte el teòric és d'un 24,2 \%. Aquest percentatge el considerem acceptable per les limitacions que presenten les mesures que comentarem a continuació. A tot això, notem que el resultat experimental és del mateix ordre de magnitud que el teòric.
 
@@ -573,14 +573,11 @@ Finalment, és clar que el nombre de mesures preses és limitat. L'error relatiu
 
 
 \section{Conclusions}
-Cosas:
-\begin{itemize}
-	\item Molts errors, però és el que cal esperar.
-	\item Clarament l'experiment 1 és millor.
-	\item Comentar regressions.
-	\item Camp magnètic terrestre.
-	\item \textbf{Resultats de l'ordre dels reals!!!}
-\end{itemize}
+En aquesta pràctica hem pogut analitzar, a partir de dos experiments diferents, l'equació que governa la força que es fan dos fils (de longitud $L$, suposada suficientment gran com per assumir que són infinits) pels quals hi circula un corrent elèctric, deduïda a partir de la llei de Biot i Savart. Els resultats extrets ens han permès estimar el valor de la permeabilitat magnètica del buit $\mu_0$, seguint dues metodologies diferents. En un cas hem mantingut la separació entre els fils constant i hem mesurat la dependència de la força (mesurada equilibrant la balança de la figura \ref{fig:2.1} amb peces metàl·liques de diferents masses) amb el quadrat de la intensitat; en un segon cas hem deixat el corrent fixat i hem estudiat com variava la força (mesurada equilibrant la balança de la figura \ref{fig:2.1} usant el dial i la constant de torsió del fil d'acer, trobada prèviament) en alterar la separació $r$ entre fils. A partir de vàries mesures (de $F$, $I$ i $r$ en funció del cas), hem pogut fer un ajust lineal que ens ha permès trobar un valor de $\mu_0$, directament relacionat amb el pendent de les rectes de regressió, en cada situació.
+
+Dels dos experiments anteriors, hem vist que, en els dos casos, s'obtenen valors que són de l'ordre de la permeabilitat magnètica del buit teòrica, essent l'error de la segona experiència molt més gran ($\approx$ 76 \%) que l'error del primer cas ($\approx$ 37 \%). Atribuïm aquests errors, com hem discutit prèviament, a les múltiples limitacions del model emprat i de l'experiment dut a terme, entre les quals destaquem que: el model considerat no reflexa completament la naturalesa del sistema (ja que els dos fils no són estrictament infinits i cal considerar efectes de vora, que alteren la forma que pren el camp $\vec{B}$ i, en conseqüència, la força entre els dos fils), i que el muntatge de la balança era summament sensible a que es produïssin problemes relacionats amb el calibratge. En particular, pel segon experiment hem hagut de trobar prèviament un seguit de valors de la força $F$ vs. l'angle de torsió del fil $\theta$ per tal de trobar la constant de torsió $k$ (usant la llei de Hook, $F=k\theta$), a partir de la qual després hem pogut ajustar linealment les dades de $F$ vs. $1/r$. La necessitat de fer tantes mesures (i dos ajusts lineals) és una font d'error afegida que només afecta al segon experiment i que explicaria que tinguem un error en $\mu_0$ tan gran (respecte l'altre cas).  
+
+Més enllà de tot això, també hem mesurat, a partir del mateix muntatge però canviant l'orientació dels fils conductors, la component horitzontal del camp magnètic terrestre al laboratori, a partir de mesures de l'angle de torsió del fil $\theta$ i de la intensitat que passava per un dels fils usant l'equació \eqref{eq:2.9}. Fent el promig de totes les mesures hem pogut estimar la component horitzontal del camp magnètic terrestre, amb un error del 24,2 \% respecte del valor teòric, proporcionat per la pàgina web \textit{World Magnetic Model 2025 Calculator} \cite{ref2}. L'error associat, novament, està relacionat amb les limitacions del muntatge i del model teòric esmentades però, tot i això, hem sigut capaços d'aconseguir resultats de l'ordre dels predits teòricament.
 
 \chapter{Circuit RLC en sèrie}
 

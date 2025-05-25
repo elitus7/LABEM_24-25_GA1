@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.19)  25 MAY 2025 20:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.19)  25 MAY 2025 20:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1134,21 +1134,21 @@ Package pdftex.def Info: screenshot003.png  used on input line 156.
 [5]
 
 [6]
-<dibplaques.png, id=443, 1606.0pt x 1168.365pt>
-File: dibplaques.png Graphic file (type png)
-<use dibplaques.png>
-Package pdftex.def Info: dibplaques.png  used on input line 251.
+<dibplaques.jpg, id=443, 1606.0pt x 1168.365pt>
+File: dibplaques.jpg Graphic file (type jpg)
+<use dibplaques.jpg>
+Package pdftex.def Info: dibplaques.jpg  used on input line 251.
 (pdftex.def)             Requested size: 215.08525pt x 156.49014pt.
 <figplaques1.png, id=444, 602.25pt x 518.93875pt>
 File: figplaques1.png Graphic file (type png)
 <use figplaques1.png>
 Package pdftex.def Info: figplaques1.png  used on input line 258.
 (pdftex.def)             Requested size: 214.6319pt x 184.9429pt.
-<screenshot004.png, id=446, 1319.68031pt x 959.83594pt>
-File: screenshot004.png Graphic file (type png)
-<use screenshot004.png>
-Package pdftex.def Info: screenshot004.png  used on input line 275.
-(pdftex.def)             Requested size: 218.94255pt x 159.2302pt.
+<screenshot004.jpg, id=446, 959.83594pt x 1319.68031pt>
+File: screenshot004.jpg Graphic file (type jpg)
+<use screenshot004.jpg>
+Package pdftex.def Info: screenshot004.jpg  used on input line 275.
+(pdftex.def)             Requested size: 959.8336pt x 1319.67711pt.
 <figfils.png, id=447, 462.528pt x 346.896pt>
 File: figfils.png Graphic file (type png)
 <use figfils.png>
@@ -1160,12 +1160,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[7 <./dibplaques.png> <./figplaques1.png>]
-<confinventJS.jpeg, id=464, 1606.0pt x 1168.365pt>
-File: confinventJS.jpeg Graphic file (type jpg)
-<use confinventJS.jpeg>
-Package pdftex.def Info: confinventJS.jpeg  used on input line 310.
-(pdftex.def)             Requested size: 238.4084pt x 173.42876pt.
+[7 <./dibplaques.jpg> <./figplaques1.png>]
+<confinventJS.jpg, id=464, 876.27374pt x 1204.5pt>
+File: confinventJS.jpg Graphic file (type jpg)
+<use confinventJS.jpg>
+Package pdftex.def Info: confinventJS.jpg  used on input line 310.
+(pdftex.def)             Requested size: 876.27159pt x 1204.49707pt.
 <figplacarara.png, id=465, 774.0117pt x 669.9429pt>
 File: figplacarara.png Graphic file (type png)
 <use figplacarara.png>
@@ -1185,9 +1185,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[8 <./screenshot004.png> <./figfils.png>]
+[8 <./screenshot004.jpg> <./figfils.png>]
 
-[9 <./confinventJS.jpeg> <./figplacarara.png> <./figV2imagenes.png>]
+[9 <./confinventJS.jpg> <./figplacarara.png> <./figV2imagenes.png>]
 
 [10]
 Cap\'{\i }tol 2.
@@ -1196,12 +1196,12 @@ Cap\'{\i }tol 2.
 [11
 
 ]
-<screenshot008.png, id=505, 609.02531pt x 372.64218pt>
+<screenshot008.png, id=504, 609.02531pt x 372.64218pt>
 File: screenshot008.png Graphic file (type png)
 <use screenshot008.png>
 Package pdftex.def Info: screenshot008.png  used on input line 403.
 (pdftex.def)             Requested size: 291.92836pt x 178.6274pt.
-<screenshot009.png, id=507, 561.59813pt x 451.6875pt>
+<screenshot009.png, id=506, 561.59813pt x 451.6875pt>
 File: screenshot009.png Graphic file (type png)
 <use screenshot009.png>
 Package pdftex.def Info: screenshot009.png  used on input line 412.
@@ -1215,12 +1215,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [12 <./screenshot008.png>]
 
 [13 <./screenshot009.png>]
-<screenshot020.png, id=539, 1204.5pt x 752.8125pt>
+<screenshot020.png, id=538, 1204.5pt x 752.8125pt>
 File: screenshot020.png Graphic file (type png)
 <use screenshot020.png>
 Package pdftex.def Info: screenshot020.png  used on input line 481.
 (pdftex.def)             Requested size: 389.23534pt x 243.27124pt.
-<screenshot017.png, id=540, 1204.5pt x 752.8125pt>
+<screenshot017.png, id=539, 1204.5pt x 752.8125pt>
 File: screenshot017.png Graphic file (type png)
 <use screenshot017.png>
 Package pdftex.def Info: screenshot017.png  used on input line 494.
@@ -1230,7 +1230,7 @@ Package pdftex.def Info: screenshot017.png  used on input line 494.
 [14]
 
 [15 <./screenshot020.png> <./screenshot017.png>]
-<screenshot018.png, id=560, 1204.5pt x 752.8125pt>
+<screenshot018.png, id=559, 1204.5pt x 752.8125pt>
 File: screenshot018.png Graphic file (type png)
 <use screenshot018.png>
 Package pdftex.def Info: screenshot018.png  used on input line 512.
@@ -1238,7 +1238,7 @@ Package pdftex.def Info: screenshot018.png  used on input line 512.
 
 
 [16 <./screenshot018.png>]
-<screenshot019.png, id=573, 790.45313pt x 600.74437pt>
+<screenshot019.png, id=572, 790.45313pt x 600.74437pt>
 File: screenshot019.png Graphic file (type png)
 <use screenshot019.png>
 Package pdftex.def Info: screenshot019.png  used on input line 554.
@@ -1249,7 +1249,7 @@ Package pdftex.def Info: screenshot019.png  used on input line 554.
 
 [18]
 Cap\'{\i }tol 3.
-<screenshot014.png, id=592, 101.62968pt x 140.77594pt>
+<screenshot014.png, id=591, 101.62968pt x 140.77594pt>
 File: screenshot014.png Graphic file (type png)
 <use screenshot014.png>
 Package pdftex.def Info: screenshot014.png  used on input line 594.
@@ -1265,12 +1265,12 @@ Package pdftex.def Info: screenshot014.png  used on input line 594.
 [21]
 
 [22]
-<screenshot005.png, id=673, 601.4972pt x 362.85562pt>
+<screenshot005.png, id=672, 601.4972pt x 362.85562pt>
 File: screenshot005.png Graphic file (type png)
 <use screenshot005.png>
 Package pdftex.def Info: screenshot005.png  used on input line 798.
 (pdftex.def)             Requested size: 243.27116pt x 146.7564pt.
-<screenshot006.png, id=679, 643.6547pt x 352.31625pt>
+<screenshot006.png, id=678, 643.6547pt x 352.31625pt>
 File: screenshot006.png Graphic file (type png)
 <use screenshot006.png>
 Package pdftex.def Info: screenshot006.png  used on input line 816.
@@ -1310,7 +1310,7 @@ Cap\'{\i }tol 4.
 ]
 
 [28]
-<screenshot007.png, id=762, 951.555pt x 352.31625pt>
+<screenshot007.png, id=761, 951.555pt x 352.31625pt>
 File: screenshot007.png Graphic file (type png)
 <use screenshot007.png>
 Package pdftex.def Info: screenshot007.png  used on input line 1132.
@@ -1322,32 +1322,32 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [29]
-<42a.jpg, id=778, 128.27925pt x 118.041pt>
+<42a.jpg, id=777, 128.27925pt x 118.041pt>
 File: 42a.jpg Graphic file (type jpg)
 <use 42a.jpg>
 Package pdftex.def Info: 42a.jpg  used on input line 1149.
 (pdftex.def)             Requested size: 107.0399pt x 98.49992pt.
-<42b.jpg, id=779, 152.36925pt x 107.2005pt>
+<42b.jpg, id=778, 152.36925pt x 107.2005pt>
 File: 42b.jpg Graphic file (type jpg)
 <use 42b.jpg>
 Package pdftex.def Info: 42b.jpg  used on input line 1156.
 (pdftex.def)             Requested size: 107.0399pt x 75.30809pt.
-<42c.jpg, id=780, 166.221pt x 112.62074pt>
+<42c.jpg, id=779, 166.221pt x 112.62074pt>
 File: 42c.jpg Graphic file (type jpg)
 <use 42c.jpg>
 Package pdftex.def Info: 42c.jpg  used on input line 1163.
 (pdftex.def)             Requested size: 107.0399pt x 72.5238pt.
-<42d.jpg, id=781, 264.23718pt x 171.64125pt>
+<42d.jpg, id=780, 264.23718pt x 171.64125pt>
 File: 42d.jpg Graphic file (type jpg)
 <use 42d.jpg>
 Package pdftex.def Info: 42d.jpg  used on input line 1170.
 (pdftex.def)             Requested size: 107.0399pt x 69.53003pt.
-<inv1.jpg, id=783, 938.00438pt x 750.55406pt>
+<inv1.jpg, id=782, 938.00438pt x 750.55406pt>
 File: inv1.jpg Graphic file (type jpg)
 <use inv1.jpg>
 Package pdftex.def Info: inv1.jpg  used on input line 1187.
 (pdftex.def)             Requested size: 145.96417pt x 116.79277pt.
-<inv2.jpg, id=784, 383.93437pt x 395.22656pt>
+<inv2.jpg, id=783, 383.93437pt x 395.22656pt>
 File: inv2.jpg Graphic file (type jpg)
 <use inv2.jpg>
 Package pdftex.def Info: inv2.jpg  used on input line 1194.
@@ -1359,7 +1359,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [30 <./screenshot007.png> <./42a.jpg> <./42b.jpg> <./42c.jpg> <./42d.jpg>]
-<screenshot010.png, id=797, 492.33937pt x 364.36125pt>
+<screenshot010.png, id=796, 492.33937pt x 364.36125pt>
 File: screenshot010.png Graphic file (type png)
 <use screenshot010.png>
 Package pdftex.def Info: screenshot010.png  used on input line 1221.
@@ -1437,7 +1437,7 @@ d.
  ) 
 Here is how much of TeX's memory you used:
  35007 strings out of 473650
- 698092 string characters out of 5717934
+ 698083 string characters out of 5717934
  1694088 words of memory out of 5000000
  57027 multiletter control sequences out of 15000+600000
  577112 words of font info for 105 fonts, out of 8000000 for 9000
@@ -1483,9 +1483,9 @@ ic/amsfonts/cm/cmti10.pfb><C:/Users/juuns/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmti8.pfb><C:/Users/juuns/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/juuns/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "Informe de Pràctiques.pdf" (49 pages, 15504899 bytes).
+Output written on "Informe de Pràctiques.pdf" (49 pages, 10175751 bytes).
 PDF statistics:
- 1475 PDF objects out of 1728 (max. 8388607)
+ 1474 PDF objects out of 1728 (max. 8388607)
  574 named destinations out of 1000 (max. 500000)
  668 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -61,7 +61,6 @@
 \usepackage{longtable}
 \usepackage{adjustbox}
 
-
 \titleformat{\chapter}[display]{\normalfont\huge\bfseries}{Pràctica \thechapter}{0pt}{\vspace{0.2cm}\huge\bfseries\raggedright}
 
 \title{\textbf{\huge{Informes de Pràctiques. \\ \vspace{0.2cm} Laboratori d'Electromagnetisme}}}
@@ -1145,29 +1144,37 @@ Tot seguit provem les configuracions que ens proposa el guió de la pràctica qu
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}[b]{0.25\textwidth}
+	\begin{subfigure}[b]{0.22\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{42a.jpg}
 		\caption{Inserció d'una peça petita i recta entre les bobines.}
 		\label{fig4:2a}
 	\end{subfigure}
-	\hspace{0.5cm}
-	\begin{subfigure}[b]{0.25\textwidth}
+	\hspace{0.4cm}
+	\begin{subfigure}[b]{0.22\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{42b.jpg}
 		\caption{Bobines situades als dos costats del nucli en forma d'U.}
 		\label{fig4:2b}
 	\end{subfigure}
-	\hspace{0.5cm}
-	\begin{subfigure}[b]{0.25\textwidth}
+	\hspace{0.4cm}
+	\begin{subfigure}[b]{0.22\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{42c.jpg}
 		\caption{Bobines situades als dos costats del nucli amb forma d'U tancat superiorment per la peça recta.}
 		\label{fig4:2c}
 	\end{subfigure}
+	\hspace{0.4cm}
+	\begin{subfigure}[b]{0.22\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{42d.jpg}
+		\caption{Bobines situades a la columna esquerra del nucli.}
+		\label{fig4:2d}
+	\end{subfigure}
 	\caption{Configuracions proposades pel guió.}
 	\label{fig4:2}
 \end{figure}
+
 
 \textcolor{red}{FALTA LA CONFIGURACIÓ D (que es la b)!!!}
 
@@ -1182,10 +1189,10 @@ Un cop obtenim les lectures de voltatge corresponents, tractem amb altres config
 		\label{fig4:3a}
 	\end{subfigure}
 	\hspace{2cm}
-	\begin{subfigure}[b]{0.3\textwidth}
+	\begin{subfigure}[b]{0.23\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{inv2.jpg}
-		\caption{Bobines situades a la columna esquerra del nucli.}
+		\caption{Bobines situades a les columnes esquerra i central del nucli.}
 		\label{fig4:3b}
 	\end{subfigure}
 	\caption{Configuracions triades per nosaltres basades en un nucli format per tres columnes unides tant per la part superior com per la inferior.}
@@ -1471,6 +1478,17 @@ Pel càlcul de les incerteses associades a cada pràctica s'ha utilitzat la llei
 \end{equation}
 on $F(x_1,x_2,\ldots,x_n)$ és la funció considerada i $u_i$ la incertesa associada a cada $x_i$.
 
+Per aquells casos on és necessari tenir en compte incerteses estadístiques, aquestes es calculen segons
+\begin{equation}
+	u_X=\frac{s_X}{\sqrt{N}}
+\end{equation}
+sent $s_X$ la desviació estàndard de la mostra i $N$ el nombre de mesures efectuades.
+
+Finalment, per la incertesa combinada s'utilitza
+\begin{equation}
+	u_C=\sqrt{u_{instrumental}^2+u_{estadistica}^2}.
+\end{equation}
+
 \subsection{Incerteses de la pràctica 1}
 Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de forma que:
 \begin{enumerate}
@@ -1505,7 +1523,7 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de fo
 
 	Definim el pendent de la representació de la intensitat al quadrat en funció de la força amb un paràmetre $A$ tal que:
 	\begin{equation*}
-		A\equiv\frac{2\pi r}{I^2L}.
+		A\equiv\frac{2\pi r}{\mu_0L}.
 	\end{equation*}
 	Amb això, la incertesa és
 	\begin{equation}
@@ -1518,9 +1536,6 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de fo
 	\item Inversa de la distància: \begin{equation}
 		u_{1/r}=\frac{u_r}{r^2}.
 	\end{equation}
-	\item Força calculada a partir de l'angle mesurat: \begin{equation}
-		\sqrt{u_r^2u_{\theta}^2+\theta^2u_{1/r}^2}.
-	\end{equation}
 	\item $\mu_0$ experimental (F vs 1/r):
 	
 	Definim el pendent de la representació de la força en funció de l'invers de la distància amb un paràmetre D tal que: \begin{equation*}
@@ -1528,11 +1543,58 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de fo
 	\end{equation*}
 	Amb això, la incertesa és
 	\begin{equation}
-		u_{\mu_0}=
+		u_{\mu_0}=\sqrt{\left(\frac{2\pi u_D}{I^2L}\right)^2+\left(\frac{4\pi Du_I}{I^3L}\right)^2+\left(\frac{2\pi D u_L}{I^2L}\right)^2}.
+	\end{equation}
+	\item Força calculada a partir de F=k$\theta$: \begin{equation}
+		u_F=\sqrt{k^2u_{\theta}^2+\theta^2u_{k}^2}.
+	\end{equation}
+	\item Camp d'inducció magnètica: \begin{equation}
+		u_B=\sqrt{\left(\frac{u_F}{IL}\right)^2+\left(\frac{Fu_I}{I^2L}\right)^2+\left(\frac{Iu_L}{IL^2}\right)^2}.
+	\end{equation}
+	\item Camp d'inducció magnètica mitjà (6 mesures): \begin{equation}
+		u_{estad.B}=\frac{s_B}{\sqrt{6}}
 	\end{equation}
 \end{enumerate}
 \subsection{Incerteses de la pràctica 3}
+\begin{enumerate}
+	\item Freqüència de ressonància teòrica: \begin{equation}
+		u_{f_0}=\pi f_0^2\sqrt{\frac{C}{L}u_L^2+\frac{L}{C}u_C^2}.
+	\end{equation}
+	\item Freqüència angular teòrica: \begin{equation}
+		u_{\omega_0}=\frac{1}{2}\omega_0^2\sqrt{\frac{C}{L}u_L^2+\frac{L}{C}u_C^2}
+	\end{equation}
+	\item Percentatge d'error entre el valor teòric $T$ i l'experimental $E$: \begin{equation}
+		u_{Error}=100\sqrt{\left(\frac{E}{T^2}u_T\right)^2+\left(\frac{u_E}{T}\right)^2}.
+	\end{equation}
+	\item Guany de voltatge a la resistència: \begin{equation}
+		\begin{aligned}
+			u_{T_R} = \bigg[ &
+			\left( \frac{T_R}{R} (1 - T_R^2) \, u_R \right)^2 + 
+			\left( -\frac{T_R^3}{R^2} \left( L\omega^2 - \frac{1}{C} \right) u_L \right)^2 + \\
+			& +\left( -\frac{T_R^3}{R^2} \left( L\omega - \frac{1}{C\omega} \left( \frac{1}{C^2 \omega}\right) \right) u_C \right)^2 + 
+			\left( -\frac{T_R^3}{R^2} \left( L\omega - \frac{1}{C\omega} \left( L + \frac{1}{C\omega^2} \right) \right) u_{\omega} \right)^2 
+			\bigg]^{1/2}
+		\end{aligned}
+	\end{equation}
+\end{enumerate}
 \subsection{Incerteses de la pràctica 4}
+\begin{enumerate}
+	\item Coeficient d'acoblament: \begin{equation}
+		u_k=\sqrt{\left(\frac{1}{V_1\alpha}u_{V_2}\right)^2+\left(\frac{V_2}{V_1^2\alpha}u_{V_1}\right)^2}.
+	\end{equation}
+	\item Guany de voltatge: \begin{equation}
+		u_{\frac{V_2}{V_1}}=\alpha u_k.
+	\end{equation}
+	\item Reactància 1: \begin{equation}
+		u_{X_1}=\sqrt{\left(\frac{1}{I_1}u_{V_1}\right)^2+\left(\frac{V_1}{I_1^2}u_{I_1}\right)^2}.
+	\end{equation}
+	\item Relació entre la reactància de cada bobina $\left(X_2/X_1\right)$: \begin{equation}
+		u_{\frac{X_2}{X_1}}=\sqrt{\left(\frac{1}{X_1}u_{X_2}\right)^2+\left(\frac{X_2}{X_1^2}u_{X_1}\right)^2}.
+	\end{equation}
+	\item Guany de voltatge pel cas $Z<<X$: \begin{equation}
+		u_{\frac{V_2}{V_1}}=\sqrt{\left(\frac{\alpha Z\left(Z^2+X^2\alpha^4\left(k^2-1\right)^2\right)-2k^2X^2\alpha^5\left(k^2-1\right)Z}{\left(Z^2+X^2\alpha^4\left(k^2-1\right)^2\right)^{3/2}}u_k\right)^2+\left(\frac{X\alpha^5kZ\left(k^2-1\right)^2}{\left(Z^2+X^2\alpha^4\left(k^2-1\right)^2\right)^{3/2}}u_X\right)^{2}}.
+	\end{equation}
+\end{enumerate}
 \newpage
 \section{Annex pràctica 1. Representació de camps}
 \subsection{Deducció de l'equació $(1.22)$}

@@ -1176,8 +1176,6 @@ Tot seguit provem les configuracions que ens proposa el guió de la pràctica qu
 \end{figure}
 
 
-\textcolor{red}{FALTA LA CONFIGURACIÓ D (que es la b)!!!}
-
 Un cop obtenim les lectures de voltatge corresponents, tractem amb altres configuracions que escollim nosaltres. Aquestes es poden veure a la Figura \ref{fig4:3}.
 
 \begin{figure}[h]
@@ -1199,7 +1197,6 @@ Un cop obtenim les lectures de voltatge corresponents, tractem amb altres config
 	\label{fig4:3}
 \end{figure}
 
-\textcolor{red}{la b es otra :D} 
 
 Amb totes les lectures de voltatge, seleccionem aquella configuració que ens dóna un valor més alt. Ara, amb aquesta disposició, provem totes les combinacions possibles de bobines (primaris i secundaris), anotant, de nou, el valor de voltatge del secundari .
 
@@ -1258,7 +1255,7 @@ Cal destacar que la primera configuració proposada per nosaltres també present
 
 Per finalitzar l'anàlisi, podem veure la importància d’introduir un element ferromagnètic per minimitzar les pèrdues de flux magnètic. Si ens fixem en la configuració 0, que correspon al cas sense cap element ferromagnètic, la constant d’acoblament és de $k = 0,0419 \pm 0,0002 $, el valor més baix amb diferència respecte a la resta de configuracions. Això indica que una gran part del flux magnètic no arriba a la bobina secundària, evidenciant una desviació notable del comportament ideal i una gran pèrdua de voltatge.
 
-Per estudiar com varien els voltatges d'entrada i sortida si canviem les bobines (tan la primària com la secundària), usem la primera configuració proposada (REF \textbf{\textcolor{red}{Què vol dir això?}}) com ja hem comentat anteriorment. Les mesures experimentals dels voltatges d'entrada i de sortida per a les diferents combinacions de bobines es troben a la taula \ref{tab:4.2}. 
+Per estudiar com varien els voltatges d'entrada i sortida si canviem les bobines (tan la primària com la secundària), usem la primera configuració proposada (\ref{fig4:2d}) com ja hem comentat anteriorment. Les mesures experimentals dels voltatges d'entrada i de sortida per a les diferents combinacions de bobines es troben a la taula \ref{tab:4.2}. 
 \begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
@@ -1334,12 +1331,12 @@ La inductància d'una bobina és proporcional al quadrat del nombre de voltes qu
 Dividint els resultats de les reactàncies calculades, ens dona un valor de $ 3,84 \pm 0,02 $. 
 Aquest valor és coherent amb el valor teòric esperat de 4, confirmant que la reactància és proporcional al quadrat del nombre de voltes de la bobina. 
 
-Per a segona part d'aquesta secció, connectem un circuit al secundari, sempre amb una bobina de 400 voltes, i estudiem els corrents d’entrada i de sortida. A la taula \ref{tab:4.4} es mostren les mesures experimentals dels voltatges i les intensitats d'entrada i sortida per a les combinacions amb 400 i 800 voltes al primari, i una combinació proposada per nosaltres amb 3200 voltes. La configuració usada és la que es demana al guió, que és la \textbf{d} \textcolor{red}{posaré ref quan es posi la configuracio d a metodologia, q falta!!}. 
+Per a segona part d'aquesta secció, connectem un circuit al secundari, sempre amb una bobina de 400 voltes, i estudiem els corrents d’entrada i de sortida. A la taula \ref{tab:4.4} es mostren les mesures experimentals dels voltatges i les intensitats d'entrada i sortida per a les combinacions amb 400 i 800 voltes al primari, i una combinació proposada per nosaltres amb 3200 voltes. La configuració usada és la que es demana al guió, que és la \textbf{d} (\ref{fig4:2d}). 
 
 \begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Valors experimentals del guany en voltatge a partir de les mesures experimentals dels voltatges i corrents per a diferents combinacions de bobines usant la configuració \textbf{d}.}
+	\caption{Valors experimentals del guany en voltatge a partir de les mesures experimentals dels voltatges i corrents per a diferents combinacions de bobines usant la configuració \textbf{d} (\ref{fig4:2d}).}
 	\begin{tabular}{lccccccc}
 		\toprule
 		$n_1/n_2$ & $\alpha$ & $R\,(\Omega)$ & $V_1$ (V) & $I_1$ (A) & $V_2$ (V) & $I_2$ (A) & $V_2/V_1$ \\
@@ -1365,22 +1362,22 @@ Un cop calculat el guany $\frac{V_2}{V_1}$, el comparem amb el valor teòric. La
 \begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Taula de comparació entre el guany experimental i el guany teòric, acompanyat de l'error ($\%$) i les seves incerteses. \textbf{\textcolor{red}{Què és $u_e$? Si és la incertesa en l'error, hauria d'acompanyar-lo amb el $\pm$ típic. Tot i això és rarete que un error tingui un error associat (hablemoslo)}}}
-	\begin{tabular}{llcccccc}
+	\caption{Taula de comparació entre el guany experimental i el guany teòric, acompanyat de l'error (\%) i les seves incerteses.}
+	\begin{tabular}{llccccc}
 		\toprule
-		$n_1/n_2$ & $Z$ ($\Omega$) & Cas & $X$ ($\Omega$) & $V_2/V_1$ exp & $V_2/V_1$ teòric & Error (\%) & $u_e$ \\
+		$n_1/n_2$ & $Z$ ($\Omega$) & Cas & $X$ ($\Omega$) & $V_2/V_1$ exp & $V_2/V_1$ teòric & Error (\%) \\
 		\midrule
-		400/400 & 1000 & $Z \gg X$ & 100,42 & 0,9576 $\pm$ 0,0019 & 0,956 $\pm$ 0,002 & 0,15 & 0,32 \\
-		& 100  & $Z \sim X$ & 100,42 & 0,9203 $\pm$ 0,0019 & 0,956 $\pm$ 0,002 & 3,75 & 0,31 \\
-		& 10   & $Z \ll X$ & 100,42 & 0,6011 $\pm$ 0,0016 & 0,724 $\pm$ 0,015 & 17,03 & 1,72 \\
+		400/400 & 1000 & $Z \gg X$ & 100,42 & 0,9576 $\pm$ 0,0019 & 0,956 $\pm$ 0,002 & 0,15 \\
+		& 100  & $Z \sim X$ & 100,42 & 0,9203 $\pm$ 0,0019 & 0,956 $\pm$ 0,002 & 3,75 \\
+		& 10   & $Z \ll X$ & 100,42 & 0,6011 $\pm$ 0,0016 & 0,724 $\pm$ 0,015 & 17,03 \\
 		\midrule
-		800/400 & 1000 & $Z \gg X$ & 385,2 & 1,878 $\pm$ 0,003 & 0,4781 $\pm$ 0,0016 & 292,93 & 1,47 \\
-		& 100  & $Z \sim X$ & 385,2 & 1,559 $\pm$ 0,003 & 0,4781 $\pm$ 0,0016 & 226,13 & 1,24 \\
-		& 10   & $Z \ll X$ & 385,2 & 0,4353 $\pm$ 0,0016 & 0,369 $\pm$ 0,011 & 18,10 & 3,57 \\
+		800/400 & 1000 & $Z \gg X$ & 385,2 & 1,878 $\pm$ 0,003 & 0,4781 $\pm$ 0,0016 & 292,93 \\
+		& 100  & $Z \sim X$ & 385,2 & 1,559 $\pm$ 0,003 & 0,4781 $\pm$ 0,0016 & 226,13 \\
+		& 10   & $Z \ll X$ & 385,2 & 0,4353 $\pm$ 0,0016 & 0,369 $\pm$ 0,011 & 18,10 \\
 		\midrule
-		3200/400 & 1000 & $Z \sim X$ & 6295,5 & 5,437 $\pm$ 0,016 & 0,1195 $\pm$ 0,0004 & 4448,97 & 20,33 \\
-		& 100  & $Z \ll X$ & 6295,5 & 1,207 $\pm$ 0,002 & 0,1191 $\pm$ 0,0004 & 913,22 & 4,06 \\
-		& 10   & $Z \ll X$ & 6295,5 & 0,1325 $\pm$ 0,0014 & 0,091 $\pm$ 0,003 & 45,04 & 4,70 \\
+		3200/400 & 1000 & $Z \sim X$ & 6295,5 & 5,437 $\pm$ 0,016 & 0,1195 $\pm$ 0,0004 & 4448,97 \\
+		& 100  & $Z \ll X$ & 6295,5 & 1,207 $\pm$ 0,002 & 0,1191 $\pm$ 0,0004 & 913,22 \\
+		& 10   & $Z \ll X$ & 6295,5 & 0,1325 $\pm$ 0,0014 & 0,091 $\pm$ 0,003 & 45,04 \\
 		\bottomrule
 	\end{tabular}
 	\label{tab:4.5}
@@ -1399,16 +1396,18 @@ Fent la mitjana entre els dos valors obtinguts, tenim que
 	X_{3200} = 6295,5 \text{ $\Omega$}
 \end{equation}
 
-Un cop analitzades les diferents configuracions, ens fixem ara en com petites variacions en el coeficient d’acoblament $k$ poden afectar el guany. Per fer-ho, considerem una disminució de $\Delta k = 0{,}0062$ \textbf{\textcolor{red}{Wow però per què aquesta variació tan concreta???}}, i calculem la variació relativa del guany teòric mantenint la resta de paràmetres constants. Els resultats es recullen a la taula \ref{tab:4.6}.
+\textcolor{red}{VALE AQUI HAURIA DE COMENTAR ALGO LOKA (ERRORS???????????????????)}
+
+Un cop analitzades les diferents configuracions, ens fixem ara en com petites variacions en el coeficient d’acoblament $k$ poden afectar el guany. Per fer-ho, considerem una disminució de $\Delta k = 0{,}0062$, tenint doncs, un valor de $k' = 0,9500$, i calculem la variació relativa del guany teòric mantenint la resta de paràmetres constants. Els resultats es recullen a la taula \ref{tab:4.6}.
 
 
 \begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Variació del guany teòric per un petit canvi en $k$ \textbf{\textcolor{red}{$k'$ què és? entiendo que el valor de $k$ en fer el canvi aquest de $\Delta k$, però hauries de mencionar-ho}}.}
+	\caption{Variació del guany teòric per un petit canvi en $k$.}
 	\begin{tabular}{llcccccc}
 		\toprule
-		$n_1/n_2$ & $Z$ ($\Omega$) & Cas & $k$ & $V_2/V_1$ & $k'$ & $V_2/V_1$ amb $k'$ & Variació relativa del guany (\%) \\
+		$n_1/n_2$ & $Z$ ($\Omega$) & Cas & $k$ & $V_2/V_1$ amb $k$ & $k'$ & $V_2/V_1$ amb $k'$ & Variació relativa del guany (\%) \\
 		\midrule
 		400/400 & 1000 & $Z \gg X$ & 0,9562 & 0,95615 & 0,9500 & 0,9500 & 0,64 \\
 		& 100  & $Z \sim X$ & 0,9562 & 0,95615 & 0,9500 & 0,9500 & 0,64 \\
@@ -1432,21 +1431,18 @@ Cal mencionar que, tot i que les dues configuracions amb $3200/400$ voltes i res
 \begin{equation*}
 	\sqrt{Z^2 + X^2 \alpha^4 (k^2 - 1)^2}.
 \end{equation*}
-En aquestes dues configuracions, la reactància $X = 6295,5$ $\Omega$ i la relació de voltes $\alpha = 0{,}125$ es mantenen constants, de forma que l’únic paràmetre que canvia és la resistència $Z$. Si comparem els quadrats de les resistències, obtenim $Z^2 = 100$ per al cas de 10 $\Omega$ i $Z^2 = 10000$ per al cas de 100 $\Omega$.
-
-\textbf{\textcolor{red}{Pot ser que confonguis resistència per impedància a vegades? Lo digo porque antes has puesto \textit{de forma que l’únic paràmetre que canvia és la resistència $Z$} (però $Z$ és la impedància i no pas la resistència, o no? (no sé, pregunto no tengo ni idea akjbsdgkjbasdg))}}
+En aquestes dues configuracions, la reactància $X = 6295,5$ $\Omega$ i la relació de voltes $\alpha = 0{,}125$ es mantenen constants, de forma que l’únic paràmetre que canvia és la impedància $Z$, que és igual, en aquest experiment, a la resistència aplicada al secundari, $R$, per tant, $Z =R $. Si comparem els quadrats de les impedàncies, obtenim $Z^2 = 100$ per al cas de 10 $\Omega$ i $Z^2 = 10000$ per al cas de 100 $\Omega$.
 
 En el primer cas ($Z = 10$ $\Omega$), el valor de $Z^2$ és del mateix ordre de magnitud que el terme en $k$, de manera que aquest últim té un pes significatiu en el denominador i el guany passa a dependre clarament del valor de $k$. En canvi, en el segon cas ($Z=10$ $\Omega$), el terme $Z^2$ domina clarament al denominador, fent que la contribució del terme amb $k$ sigui negligible. Aquesta és, doncs, l’excepció que no segueix la tendència observada.
 
-De fet, a mesura que el nombre de voltes del primari augmenta respecte del secundari, el quocient $\alpha$ es fa molt petit, i en conseqüència $\alpha^4$ es fa gairebé nul. Tot i que la reactància $X$ també augmenta (ja que $X \propto n_1^2$ \textbf{\textcolor{red}{WHY, DE DONDE SACAS ESO PONME REFERENCIA}}), aquest creixement no és suficient per compensar la pèrdua deguda a $\alpha^4$ dins el terme $X^2 \alpha^4 (k^2 - 1)^2$, que esdevé totalment negligible. A més a més, aquest augment de $X$ permet fer servir resistències relativament grans i continuar estant dins el règim $Z \ll X$. Això fa que el terme $Z^2$ del denominador domini completament i anul·li l’efecte de $k$, independentment de la seva variació. En resum, com més gran és la diferència entre el nombre de voltes del primari i del secundari, més fàcil és que el coeficient d’acoblament $k$ deixi de tenir impacte en el guany.
+De fet, a mesura que el nombre de voltes del primari augmenta respecte del secundari, el quocient $\alpha$ es fa molt petit, i en conseqüència $\alpha^4$ es fa gairebé nul. Tot i que la reactància $X$ també augmenta (ja que, com hem vist $X \propto n_1^2$ REF), aquest creixement no és suficient per compensar la pèrdua deguda a $\alpha^4$ dins el terme $X^2 \alpha^4 (k^2 - 1)^2$, que esdevé totalment negligible. A més a més, aquest augment de $X$ permet fer servir resistències relativament grans i continuar estant dins el règim $Z \ll X$. Això fa que el terme $Z^2$ del denominador domini completament i anul·li l’efecte de $k$, independentment de la seva variació. En resum, com més gran és la diferència entre el nombre de voltes del primari i del secundari, més fàcil és que el coeficient d’acoblament $k$ deixi de tenir impacte en el guany.
 
 Per contra, si ens fixem ens els altres casos, $Z \gg X$ (\ref{eq4:20}) o $Z \sim X$ (\ref{eq4:24}), el guany té una dependència lineal en $k$ , i per tant, petites variacions en aquest coeficient només provoquen canvis mínims en el guany teòric. Això explica per què els percentatges de variació són molt menors en aquests casos.
 
 
 
-
-
 \section{Conclusions}
+
 
 
 \begin{thebibliography}{99}

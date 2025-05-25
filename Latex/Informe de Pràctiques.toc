@@ -41,9 +41,9 @@
 \contentsline {section}{\numberline {4.1}Introducció i fonament teòric}{27}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Descripció d'un transformador}{28}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Estudi d'un transformador com a circuit}{28}{subsection.4.1.2}%
-\contentsline {subsubsection}{Impedància de càrrega molt gran}{29}{equation.4.19}%
-\contentsline {subsubsection}{Impedància de càrrega molt petita}{29}{equation.4.21}%
-\contentsline {subsubsection}{Impedància de càrrega de l'ordre de la impedància del secundari}{29}{equation.4.23}%
+\contentsline {subsubsection}{Impedància de càrrega molt gran}{29}{equation.4.1.19}%
+\contentsline {subsubsection}{Impedància de càrrega molt petita}{29}{equation.4.1.21}%
+\contentsline {subsubsection}{Impedància de càrrega de l'ordre de la impedància del secundari}{29}{equation.4.1.23}%
 \contentsline {section}{\numberline {4.2}Metodologia experimental}{30}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Estudi de les variables d'un transformador}{30}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Estudi de les intensitats i els voltatges d'entrada i de sortida}{30}{subsection.4.2.2}%
@@ -53,17 +53,17 @@
 \contentsline {section}{\numberline {4.4}Conclusions}{36}{section.4.4}%
 \contentsline {chapter}{Bibliografia}{37}{chapter*.35}%
 \contentsline {chapter}{Annexos}{38}{section*.36}%
-\contentsline {section}{\numberline {A}Càlcul d'incerteses}{38}{section.1..1}%
-\contentsline {subsection}{\numberline {A.1}Incerteses de la pràctica 1}{38}{subsection.1..1.1}%
-\contentsline {subsection}{\numberline {A.2}Incerteses de la pràctica 2}{38}{subsection.1..1.2}%
-\contentsline {subsection}{\numberline {A.3}Incerteses de la pràctica 3}{39}{subsection.1..1.3}%
-\contentsline {subsection}{\numberline {A.4}Incerteses de la pràctica 4}{40}{subsection.1..1.4}%
-\contentsline {section}{\numberline {B}Annex pràctica 1. Representació de camps}{41}{section.1..2}%
-\contentsline {subsection}{\numberline {B.1}Deducció de l'equació $(1.22)$}{41}{subsection.1..2.1}%
-\contentsline {subsection}{\numberline {B.2}Expressió analítica de la distribució de dos plans secants i un fil}{42}{subsection.1..2.2}%
-\contentsline {subsection}{\numberline {B.3}Dades experimentals de la pràctica 1}{43}{subsection.1..2.3}%
-\contentsline {subsection}{\numberline {B.4}Codis de les simulacions de la pràctica 1}{44}{subsection.1..2.4}%
-\contentsline {section}{\numberline {C}Annex pràctica 2. Força entre corrents}{48}{section.1..3}%
-\contentsline {subsection}{\numberline {C.1}Dades experimentals de la pràctica 2}{48}{subsection.1..3.1}%
-\contentsline {section}{\numberline {D}Annex pràctica 3. Circuit RLC en sèrie}{48}{section.1..4}%
-\contentsline {subsection}{\numberline {D.1}Dades experimentals de la pràctica 3}{48}{subsection.1..4.1}%
+\contentsline {section}{\numberline {A}Càlcul d'incerteses}{38}{section.a..1}%
+\contentsline {subsection}{\numberline {A.1}Incerteses de la pràctica 1}{38}{subsection.a..1.1}%
+\contentsline {subsection}{\numberline {A.2}Incerteses de la pràctica 2}{38}{subsection.a..1.2}%
+\contentsline {subsection}{\numberline {A.3}Incerteses de la pràctica 3}{39}{subsection.a..1.3}%
+\contentsline {subsection}{\numberline {A.4}Incerteses de la pràctica 4}{40}{subsection.a..1.4}%
+\contentsline {section}{\numberline {B}Annex pràctica 1. Representació de camps}{41}{section.a..2}%
+\contentsline {subsection}{\numberline {B.1}Deducció de l'equació $(1.22)$}{41}{subsection.a..2.1}%
+\contentsline {subsection}{\numberline {B.2}Expressió analítica de la distribució de dos plans secants i un fil}{42}{subsection.a..2.2}%
+\contentsline {subsection}{\numberline {B.3}Dades experimentals de la pràctica 1}{43}{subsection.a..2.3}%
+\contentsline {subsection}{\numberline {B.4}Codis de les simulacions de la pràctica 1}{44}{subsection.a..2.4}%
+\contentsline {section}{\numberline {C}Annex pràctica 2. Força entre corrents}{48}{section.a..3}%
+\contentsline {subsection}{\numberline {C.1}Dades experimentals de la pràctica 2}{48}{subsection.a..3.1}%
+\contentsline {section}{\numberline {D}Annex pràctica 3. Circuit RLC en sèrie}{48}{section.a..4}%
+\contentsline {subsection}{\numberline {D.1}Dades experimentals de la pràctica 3}{48}{subsection.a..4.1}%

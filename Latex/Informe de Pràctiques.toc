@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {3.2.2}Estudi del règim transitori}{24}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Resultats i discussió}{24}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Règim permanent}{24}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Règim transitori}{25}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Règim transitori}{26}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Conclusions}{26}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Inductància mútua i transformadors}{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introducció i fonament teòric}{27}{section.4.1}%
@@ -51,8 +51,8 @@
 \contentsline {subsection}{\numberline {4.3.1}Estudi de les variables d'un transformador}{31}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Estudi de les intensitats i voltatges d'entrada i de sortida}{33}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}Conclusions}{36}{section.4.4}%
-\contentsline {chapter}{Bibliografia}{37}{chapter*.32}%
-\contentsline {chapter}{Annexos}{38}{section*.33}%
+\contentsline {chapter}{Bibliografia}{37}{chapter*.35}%
+\contentsline {chapter}{Annexos}{38}{section*.36}%
 \contentsline {section}{\numberline {A}Càlcul d'incerteses}{38}{section.1..1}%
 \contentsline {subsection}{\numberline {A.1}Incerteses de la pràctica 1}{38}{subsection.1..1.1}%
 \contentsline {subsection}{\numberline {A.2}Incerteses de la pràctica 2}{38}{subsection.1..1.2}%

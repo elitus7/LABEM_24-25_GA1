@@ -1442,13 +1442,13 @@ Per contra, si ens fixem ens els altres casos, $Z \gg X$ (\ref{eq4:20}) o $Z \si
 
 
 \section{Conclusions}
-En aquesta pràctica hem pogut observar la importància d'incorporar un nucli ferromagnètic en un transformador per tal de minimitzar les pèrdues de flux magnètic. Per analitzar aquest efecte, s’han muntat diferents configuracions amb diverses geometries del nucli, i s’ha determinat que la configuració més òptima és la que segueix millor les línies de camp generades per les bobines, ja que presenta una millor canalització del flux magnètic i, per tant, un coeficient d’acoblament més proper a la idealitat ($k = 1$).
+En aquesta pràctica hem pogut constatar la importància d'incorporar un nucli ferromagnètic en un transformador per tal de minimitzar les pèrdues de flux magnètic. Per analitzar aquest efecte, s’han muntat diferents configuracions amb diverses geometries pel nucli, i s’ha determinat que la configuració òptima és la que segueix millor les línies de camp generades per les bobines, ja que presenta una millor canalització del flux magnètic i, per tant, un coeficient d’acoblament més proper a la idealitat ($k = 1$).
 
-A continuació, s’han estudiat diferents combinacions del nombre de voltes al primari i secundari, mantenint constant la resta de paràmetres, per comprovar la llei que relaciona els voltatges d'entrada i de sortida en funció de les característiques de les bobines. Tot i que els resultats obtinguts mostren valors de guany propers a la idealitat, s’ha observat que com més gran és el nombre de voltes al primari respecte al secundari, més s’accentua la desviació respecte al comportament ideal.
+A continuació, hem estudiat diferents combinacions del nombre de voltes al primari i secundari, mantenint constant la resta de paràmetres, per comprovar la llei que relaciona els voltatges d'entrada i de sortida en funció de les característiques de les bobines. Tot i que els resultats obtinguts mostren valors de guany propers a la idealitat, hem observat que com més gran és el nombre de voltes al primari respecte al secundari, més s’accentua la desviació respecte el comportament ideal.
 
-En la segona part de la pràctica, s’ha demostrat la relació entre les reactàncies de dues bobines en circuit obert i s’ha utilitzat aquesta expressió per estimar la reactància d’una bobina amb 3200 voltes que no es va mesurar experimentalment, però que era necessària per a les anàlisis posteriors.
+En la segona part de la pràctica, hem demostrat la relació entre les reactàncies de dues bobines en circuit obert i s’ha utilitzat aquesta expressió per estimar la reactància d’una bobina amb 3200 voltes que no es va mesurar experimentalment, però que era necessària per a les anàlisis posteriors.
 
-Finalment, s’ha comparat el guany en voltatge experimental amb el teòric, per diferents valors de la relació $n_2/n_1$ i per diferents resistències. Per calcular el guany en voltatge teòric, s'ha tingut en compte en quin règim ens trobem ($Z \gg X$, $Z \approx X$ i $Z \ll X$). En cada cas, s’han aplicat les aproximacions teòriques corresponents, i s’ha observat que, en el règim $Z \ll X$, la dependència del guany respecte al coeficient d’acoblament $k$ és molt més significativa que en la resta.
+Finalment, hem comparat el guany en voltatge experimental amb el teòric, per diferents valors de la relació $n_2/n_1$ i per diferents resistències. Per calcular el guany en voltatge teòric, s'ha tingut en compte en quin règim ens trobem ($Z \gg X$, $Z \sim X$ i $Z \ll X$). En cada cas, s’han aplicat les aproximacions teòriques corresponents, i hem observat que, en el règim $Z \ll X$, la dependència del guany respecte el coeficient d’acoblament $k$ és molt més significativa que en la resta.
 
 
 \begin{thebibliography}{99}
@@ -1474,7 +1474,7 @@ Finalment, s’ha comparat el guany en voltatge experimental amb el teòric, per
 
 \section{Càlcul d'incerteses}
 \label{an:a3}
-Pel càlcul de les incerteses associades a cada pràctica s'ha utilitzat la llei de propagació d'incerteses:
+Pel càlcul de les incerteses associades a cada pràctica s'ha utilitzat la llei de propagació d'incerteses
 \begin{equation}
 	u_F = \sqrt{ \left( \frac{\partial F}{\partial x_1} \right)^2 u_{x_1}^2 + \left( \frac{\partial F}{\partial x_2} \right)^2 u_{x_2}^2 + \dots + \left( \frac{\partial F}{\partial x_n} \right)^2 u_{x_n}^2 },
 \end{equation}
@@ -1516,12 +1516,12 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de fo
 		u_{estad. I}= \frac{s_I}{\sqrt{3}}.
 	\end{equation}
 	\item Intensitat: \begin{equation}
-		u_I=\sqrt{u_{instr. I}^2+u_{estad. I}^2}
+		u_I=\sqrt{u_{instr. I}^2+u_{estad. I}^2}.
 	\end{equation}
 	\item Intensitat al quadrat: \begin{equation}
 		u_{I^2}=2Iu_I.
 	\end{equation}
-	\item $\mu_0$ experimental (I$^2$ vs F):
+	\item $\mu_0$ experimental ($I^2$ vs. $F$):
 
 	Definim el pendent de la representació de la intensitat al quadrat en funció de la força amb un paràmetre $A$ tal que:
 	\begin{equation*}
@@ -1538,7 +1538,7 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de fo
 	\item Inversa de la distància: \begin{equation}
 		u_{1/r}=\frac{u_r}{r^2}.
 	\end{equation}
-	\item $\mu_0$ experimental (F vs 1/r):
+	\item $\mu_0$ experimental ($F$ vs. $1/r$):
 	
 	Definim el pendent de la representació de la força en funció de l'invers de la distància amb un paràmetre D tal que: \begin{equation*}
 		D\equiv\frac{\mu_0I^2L}{2\pi}.
@@ -1547,14 +1547,14 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de fo
 	\begin{equation}
 		u_{\mu_0}=\sqrt{\left(\frac{2\pi u_D}{I^2L}\right)^2+\left(\frac{4\pi Du_I}{I^3L}\right)^2+\left(\frac{2\pi D u_L}{I^2L}\right)^2}.
 	\end{equation}
-	\item Força calculada a partir de F=k$\theta$: \begin{equation}
+	\item Força calculada a partir de $F=k\theta$: \begin{equation}
 		u_F=\sqrt{k^2u_{\theta}^2+\theta^2u_{k}^2}.
 	\end{equation}
 	\item Camp d'inducció magnètica: \begin{equation}
 		u_B=\sqrt{\left(\frac{u_F}{IL}\right)^2+\left(\frac{Fu_I}{I^2L}\right)^2+\left(\frac{Iu_L}{IL^2}\right)^2}.
 	\end{equation}
 	\item Camp d'inducció magnètica mitjà (6 mesures): \begin{equation}
-		u_{estad.B}=\frac{s_B}{\sqrt{6}}
+		u_{estad.B}=\frac{s_B}{\sqrt{6}}.
 	\end{equation}
 \end{enumerate}
 \subsection{Incerteses de la pràctica 3}
@@ -1563,7 +1563,7 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de fo
 		u_{f_0}=\pi f_0^2\sqrt{\frac{C}{L}u_L^2+\frac{L}{C}u_C^2}.
 	\end{equation}
 	\item Freqüència angular teòrica: \begin{equation}
-		u_{\omega_0}=\frac{1}{2}\omega_0^2\sqrt{\frac{C}{L}u_L^2+\frac{L}{C}u_C^2}
+		u_{\omega_0}=\frac{1}{2}\omega_0^2\sqrt{\frac{C}{L}u_L^2+\frac{L}{C}u_C^2}.
 	\end{equation}
 	\item Percentatge d'error entre el valor teòric $T$ i l'experimental $E$: \begin{equation}
 		u_{Error}=100\sqrt{\left(\frac{E}{T^2}u_T\right)^2+\left(\frac{u_E}{T}\right)^2}.
@@ -1575,7 +1575,7 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de fo
 			\left( -\frac{T_R^3}{R^2} \left( L\omega^2 - \frac{1}{C} \right) u_L \right)^2 + \\
 			& +\left( -\frac{T_R^3}{R^2} \left( L\omega - \frac{1}{C\omega} \left( \frac{1}{C^2 \omega}\right) \right) u_C \right)^2 + 
 			\left( -\frac{T_R^3}{R^2} \left( L\omega - \frac{1}{C\omega} \left( L + \frac{1}{C\omega^2} \right) \right) u_{\omega} \right)^2 
-			\bigg]^{1/2}
+			\bigg]^{1/2}.
 		\end{aligned}
 	\end{equation}
 \end{enumerate}
@@ -1593,7 +1593,9 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de fo
 	\item Relació entre la reactància de cada bobina $\left(X_2/X_1\right)$: \begin{equation}
 		u_{\frac{X_2}{X_1}}=\sqrt{\left(\frac{1}{X_1}u_{X_2}\right)^2+\left(\frac{X_2}{X_1^2}u_{X_1}\right)^2}.
 	\end{equation}
-	\item Guany de voltatge pel cas $Z<<X$: \begin{equation}
+	\item Guany de voltatge pel cas $Z\ll X$: 
+	\begin{equation}
+		\small
 		u_{\frac{V_2}{V_1}}=\sqrt{\left(\frac{\alpha Z\left(Z^2+X^2\alpha^4\left(k^2-1\right)^2\right)-2k^2X^2\alpha^5\left(k^2-1\right)Z}{\left(Z^2+X^2\alpha^4\left(k^2-1\right)^2\right)^{3/2}}u_k\right)^2+\left(\frac{X\alpha^5kZ\left(k^2-1\right)^2}{\left(Z^2+X^2\alpha^4\left(k^2-1\right)^2\right)^{3/2}}u_X\right)^{2}}.
 	\end{equation}
 \end{enumerate}

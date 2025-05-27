@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1748204810.62464 "c:/Users/natvi/OneDrive/Documents/GitHub/LABEM_24-25_GA1/Latex/Informe de Pràctiques.tex" "Informe de Pràctiques.pdf" "Informe de Pràctiques" 1748204815.36489 0
+["pdflatex"] 1748338048.4379 "c:/Users/natvi/OneDrive/Documents/GitHub/LABEM_24-25_GA1/Latex/Informe de Pràctiques.tex" "Informe de Pràctiques.pdf" "Informe de Pràctiques" 1748338053.13618 0
   "42a.jpg" 1744971975 9515 67ea728195f931bdbbbb87871c431d07 ""
   "42b.jpg" 1744971975 9198 a05898c5e990dee732b430e4232efc20 ""
   "42c.jpg" 1744971975 10704 145ecba23e6a50114b2088ddaa097a5b ""
@@ -88,6 +88,7 @@
   "C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb" 1247596666 35660 fb24af7afbadb71801619f1415838111 ""
   "C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1247596667 31099 342ef5a582aacbd3346f3cf4579679fa ""
   "C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb" 1247596666 24287 6b803fa9eb1ddff9112e00519b09dd9e ""
+  "C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb" 1247596670 30212 f7062d6da71d1ec66ffb8906891648f7 ""
   "C:/Users/natvi/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/natvi/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "C:/Users/natvi/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty" 1704647332 150008 7a05b0fdc0167c04e192003e780ab195 ""
@@ -254,11 +255,11 @@
   "C:/Users/natvi/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/natvi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/natvi/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Informe de Pràctiques.aux" 1748204814 35163 7be74a00958018bd2ff20b397c644a9f "pdflatex"
-  "Informe de Pràctiques.out" 1748204815 13619 2ede762772ff9716fc135baef0ac2955 "pdflatex"
-  "Informe de Pràctiques.tex" 1748204761 142734 ee06a703bd9f3d6f66ee0dff33c79dc2 ""
-  "Informe de Pràctiques.toc" 1748204815 6473 f9bea97e8bce5cc7e36e4d28330718d4 "pdflatex"
-  "c:/Users/natvi/OneDrive/Documents/GitHub/LABEM_24-25_GA1/Latex/Informe de Pràctiques.tex" 1748204761 142734 ee06a703bd9f3d6f66ee0dff33c79dc2 ""
+  "Informe de Pràctiques.aux" 1748338052 35366 2122aa75ae0427ef3307c09e6531b06c "pdflatex"
+  "Informe de Pràctiques.out" 1748338052 13619 2ede762772ff9716fc135baef0ac2955 "pdflatex"
+  "Informe de Pràctiques.tex" 1748338037 145223 60274e750c64e515648455b03b65c102 ""
+  "Informe de Pràctiques.toc" 1748338052 6473 05e7b0e1be8edfbf8ca2fc265a56aa4c "pdflatex"
+  "c:/Users/natvi/OneDrive/Documents/GitHub/LABEM_24-25_GA1/Latex/Informe de Pràctiques.tex" 1748338037 145223 60274e750c64e515648455b03b65c102 ""
   "confinventJS.jpg" 1748201711 384361 813490f199cf0695ffa42847c2396f83 ""
   "dibplaques.jpg" 1748201711 302728 91bb98a104f530b800fa22384529be78 ""
   "figV2imagenes.png" 1742669439 481264 cca7589a522bdea8ed91d8a8a20038d9 ""

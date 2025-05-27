@@ -1026,6 +1026,21 @@ Aquesta equació és simètrica respecte $a$ i $b$, és a dir
 	M_{12}=M_{21}. \label{eq:4:7}
 \end{equation}
 
+El camp magnètic creat per una bobina ve donat per 
+\begin{equation}
+	B = \frac{\mu n I}{l}
+\end{equation}
+Si substituïm a $\ref{eq:4:5}$, obtenim
+\begin{equation}
+	\Phi = \frac{\mu n^2 S}{l} I
+\end{equation}
+
+Que si comparem amb l'expressió $\ref{eq:4:2}$, obtenim l'expressió de l'autoinductància
+\begin{equation}
+	L = \frac{\mu n^2 S}{l}
+	\label{eq:4:100}
+\end{equation}
+
 \subsection{Descripció d'un transformador}
 Un transformador consisteix en un parell de bobines amb un nucli d'un material de molt alta permeabilitat (aleacions de ferro amb un petit percentatge de silici o altres aliatges més barats) que concentra les línies de camp magnètic, evitant així la disminució de flux. A més, per tal de minimitzar les pèrdues de potència causades pels corrents de Foucault que s'indueixen aplicant un corrent altern, el nucli es constitueix d'un seguit de làmines aïllades unes de les altres. 
 
@@ -1210,7 +1225,8 @@ necessitem trobar la reactància de les bobines amb què treballarem, aquestes s
 
 La reactància de les bobines es pot calcular muntant el circuit de la Figura \ref{fig4:4} (on $R=1000$ $\Omega$) situant la bobina corresponent al primari i posant el circuit sense connexions a la sortida del transformador, deixant-lo així obert. Mesurant $I_1$ i $V_1$ es calcula la reactància buscada per a cada una de les bobines, usant que
 \begin{equation}
-	X = \frac{\abs{V}}{\abs{I}}.
+	X = \frac{\abs{V}}{\abs{I}}
+	\label{eq4:27}
 \end{equation}
 
 \begin{figure}[h]
@@ -1317,18 +1333,23 @@ Comencem buscant la relació entre les reactàncies d'una bobina de 400 voltes i
 	\end{tabular}
 	\label{tab:4.3}
 \end{table}
-La reactància es calcula com
+La reactància de cada bobina la calculem a partir de l'equació trobada a teoria (\ref{eq4:27}).
+
+La inductància ve donada per l'expressió $\ref{eq:4:100}$, és a dir, és proporcional al quadrat del nombre de voltes de la bobina. Com que la reactància és directament proporcional a la inductància, aquesta també serà proporcional al quadrat del nombre de voltes
+
 \begin{equation}
-	X = \frac{V}{I}.
+	L \propto n^2, \quad X \propto L \quad \Rightarrow \quad X \propto n^2
 \end{equation}
-La inductància d'una bobina és proporcional al quadrat del nombre de voltes que té. Com la reactància és directament proporcional a la inductància, aquesta també ha de ser proporcional al quadrat del nombre de voltes de la bobina \textcolor{red}{\textbf{Les proporcionalitats aquestes d'on surten? ref? alguna equació que no està posada?}}. Si volem trobar la relació entre dues reactàncies, la relació ha de ser el quadrat de la relació entre el nombre de voltes de cada bobina, és a dir
-\begin{equation}
-	L \propto n^2 \Rightarrow X \propto n^2, 
-\end{equation}
+
+Les constants que intervenen en el valor de la inductància (com la permeabilitat del nucli o les dimensions de la bobina) són comunes a ambdues bobines, ja que tenen la mateixa configuració. Per tant, quan es vol comparar la reactància de dues bobines a circuit obert, la relació entre elles serà igual al quadrat del quocient del nombre de voltes de cada bobina
+
 \begin{equation}
 	\frac{X_{800}}{X_{400}} = \left( \frac{800}{400} \right)^2 = 4. \label{eq:4.30}
 \end{equation}
-Dividint els resultats de les reactàncies calculades, ens dona un valor de $ 3,84 \pm 0,02 $. 
+
+
+La relació ens dona un valor de $ 3,84 \pm 0,02 $. 
+
 Aquest valor és coherent amb el valor teòric esperat de 4, confirmant que la reactància és proporcional al quadrat del nombre de voltes de la bobina. 
 
 Per a segona part d'aquesta secció, connectem un circuit al secundari, sempre amb una bobina de 400 voltes, i estudiem els corrents d’entrada i de sortida. A la taula \ref{tab:4.4} es mostren les mesures experimentals dels voltatges i les intensitats d'entrada i sortida per a les combinacions amb 400 i 800 voltes al primari, i una combinació proposada per nosaltres amb 3200 voltes. La configuració usada és la que es demana al guió, que és la \textbf{d} (\ref{fig4:2d}). 
@@ -1444,7 +1465,7 @@ Per contra, si ens fixem ens els altres casos, $Z \gg X$ (\ref{eq4:20}) o $Z \si
 \section{Conclusions}
 En aquesta pràctica hem pogut constatar la importància d'incorporar un nucli ferromagnètic en un transformador per tal de minimitzar les pèrdues de flux magnètic. Per analitzar aquest efecte, s’han muntat diferents configuracions amb diverses geometries pel nucli, i s’ha determinat que la configuració òptima és la que segueix millor les línies de camp generades per les bobines, ja que presenta una millor canalització del flux magnètic i, per tant, un coeficient d’acoblament més proper a la idealitat ($k = 1$).
 
-A continuació, hem estudiat diferents combinacions del nombre de voltes al primari i secundari, mantenint constant la resta de paràmetres, per comprovar la llei que relaciona els voltatges d'entrada i de sortida en funció de les característiques de les bobines. Tot i que els resultats obtinguts mostren valors de guany propers a la idealitat, hem observat que com més gran és el nombre de voltes al primari respecte al secundari, més s’accentua la desviació respecte el comportament ideal.
+A continuació, hem estudiat diferents combinacions del nombre de voltes al primari i secundari, mantenint constant la resta de paràmetres, per comprovar la llei que relaciona els voltatges d'entrada i de sortida en funció de les característiques de les bobines. Tot i que els resultats obtinguts mostren valors de guany propers a la idealitat, hem observat que com més gran és el nombre de voltes al primari respecte al secundari, més s’accentua la desviació respecte el comportament ideal. \textcolor{red}{posa aquí perquè}
 
 En la segona part de la pràctica, hem demostrat la relació entre les reactàncies de dues bobines en circuit obert i s’ha utilitzat aquesta expressió per estimar la reactància d’una bobina amb 3200 voltes que no es va mesurar experimentalment, però que era necessària per a les anàlisis posteriors.
 

@@ -675,7 +675,7 @@ que ens permet, per tal de tenir una expressió anàloga a la llei d'Ohm de la f
 \end{equation}
 Notem que, com que, si prenem mòduls
 \begin{equation}
-	\abs{I} = \frac{\abs{V}}{\abs{Z}} = \frac{\abs{V}}{\sqrt{R^2+\left( L\omega - \frac{1}{C\omega}\right)^2 }},
+	\abs{I} = \frac{\abs{V}}{\abs{Z}} = \frac{\abs{V}}{\sqrt{R^2+\left( L\omega - \frac{1}{C\omega}\right)^2 }}, \label{eq:3.18}
 \end{equation}
 veiem que la intensitat serà màxima quan se satisfaci que $L\omega - \frac{1}{C\omega} = 0$. La freqüència \textit{pròpia} o \textit{de ressonància} del circuit RLC és aquella tal que aquesta darrera condició se satisfà i es defineix segons\footnote{Fem notar que $\abs{Z(\omega_0)} = R$.}:
 \begin{equation}
@@ -785,7 +785,7 @@ de manera que tenim dues freqüències de tall, $\omega_1$ i $\omega_2$, que sat
 \end{align}
 Fixem-nos que l'amplada de banda es correspon amb la diferència entre les dues freqüències de tall, de forma que
 \begin{equation}
-	\Delta \omega = \frac{R}{L}.
+	\Delta \omega = \frac{R}{L}. \label{eq:3.40}
 \end{equation}
 
 \section{Metodologia experimental}
@@ -882,27 +882,80 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, i els valo
 	\caption{Error en les mesures respecte els valors teòrics esperats}
 	\label{error exp trans}
 	\begin{adjustbox}{max width=\textwidth}
-	\begin{tabular}{lcccccc}
-		\toprule
-		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
-		\midrule
-		$\mathbf{R = 2660\Omega}$ & (2,27 $\pm$ 0,41$)\%$ & (15,66 $\pm$ 2,43$)\%$ & (3,65 $\pm$ 3,11$)\%$ & (0,00 $\pm$ 0,75$)\%$ & (2,30 $\pm$ 0,93$)\%$ & (2,30 $\pm$ 0,93$)\%$\\ 
-		$\mathbf{R = 274\Omega}$ & (1,13 $\pm$ 0,41$)\%$ & (2,73 $\pm$ 0,47$)\%$ & (0,22 $\pm$ 0,93$)\%$ & \textcolor{magenta}{(12,35 $\pm$ 0,000089$)\%$} & (0,17 $\pm$ 1,02$)\%$ & \textcolor{magenta}{(24,78 $\pm$ 1,11$)\%$}\\
-		\bottomrule
-	\end{tabular}
+		\begin{tabular}{lcccccc}
+			\toprule
+			& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
+			\midrule
+			$\mathbf{R = 2660\Omega}$ & (2,27 $\pm$ 0,41$)\%$ & (15,66 $\pm$ 2,43$)\%$ & (3,65 $\pm$ 3,11$)\%$ & (0,00 $\pm$ 0,75$)\%$ & (2,30 $\pm$ 0,93$)\%$ & (2,30 $\pm$ 0,93$)\%$\\ 
+			$\mathbf{R = 274\Omega}$ & (1,13 $\pm$ 0,41$)\%$ & (2,73 $\pm$ 0,47$)\%$ & (0,22 $\pm$ 0,93$)\%$ & \textcolor{magenta}{(12,35 $\pm$ 0,000089$)\%$} & (0,17 $\pm$ 1,02$)\%$ & \textcolor{magenta}{(24,78 $\pm$ 1,11$)\%$}\\
+			\bottomrule
+		\end{tabular}
 	\end{adjustbox}
 \end{table}
 
-A la taula \ref{val exp trans} es troben els resultats de l'experiment, com els valors son bastant variats farem l'anàlisi d'aquestes dades sobretot a partir del percentatge d'error respecte als valors teòricament predits que adjuntem a la taula \ref{error exp trans}. \\
+A la taula \ref{val exp trans} es troben els resultats de l'experiment, com els valors son bastant variats farem l'anàlisi d'aquestes dades sobretot a partir del percentatge d'error respecte als valors teòricament predits que adjuntem a la taula \ref{error exp trans}. 
 
-Amb el procediment experimental seguit hem aconseguit recrear bastant bé tant la freqüència pròpia del sistema com les freqüències de tall amb els dos valors de la resistència. Encara que en general els resultats estan aproximadament dins del que esperàvem notem que tenim dos grans errors, un en $f_1$ per a $R = 2660\Omega$ que tenim un error considerablement gran, del $(15,66 \pm 2,43) \%$, i l'altre pels valors de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$, que temim uns errors del $(12,35 \pm 0,000089) \%$ i $(24,78 \pm 1,11) \%$ respectivament. Comentem un a un:\\
+Amb el procediment experimental seguit hem aconseguit recrear bastant bé tant la freqüència pròpia del sistema com les freqüències de tall amb els dos valors de la resistència. Encara que en general els resultats estan aproximadament dins del que esperàvem notem que tenim dos grans errors, un en $f_1$ per a $R = 2660\Omega$ que tenim un error considerablement gran, del $(15,66 \pm 2,43) \%$, i l'altre pels valors de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per a $R = 274\Omega$, que tenim uns errors del $(12,35 \pm 0,000089) \%$ i $(24,78 \pm 1,11) \%$ respectivament. Comentem un a un:
 
- L'error $f_1$ per $R = 2660\Omega$ es degut a que al laboratori no vam anar amb molta cura en seleccionar les freqüències, l'oscil·loscopi pot donar freqüències amb molta precisió però nosaltres donat que les freqüències son de l'ordre dels milers vam considerar que anar fent salts de 50Hz en 50Hz o 100Hz en 100Hz era bona idea, a la practica podia semblar que això ja era suficient però acabem de veure que no. Ho vam considerar així ja que experimentalment tampoc s'aprecia un gran salt en $\abs{T_R(\omega)}$ al moure la freqüència de 100 en 100Hz (ho podem veure a la figura \textcolor{red}{poner ref}), el problema es que $\abs{T_R(\omega)}$ a freqüències molt baixes o molt altes comparades amb $f_0$, com ho son $f_1$ i $f_2$, $\abs{T_R(\omega)}$ canvia lentament (això es dedueix de la forma de l'equació \ref{eq:3.33}), i a més $\abs{T_R(\omega)}$ està acotat en $(0,1]$, per lo que el canvi en $\abs{T_R(\omega)}$ a aquests oredes de frecuencia no s'aprecia molt. Aixó explica que en algunes freqüències tinguem un error relativament alt però per aquestes mateixes freqüències l'error en $\abs{T_R(\omega)}$ no sigui molt important. \\
+L'error de $f_1$ per a $R = 2660\Omega$ es degut a que al laboratori no vam anar amb molta cura en seleccionar les freqüències, l'oscil·loscopi pot donar freqüències amb molta precisió però nosaltres donat que les freqüències son de l'ordre dels milers vam considerar que anar fent salts de 50Hz en 50Hz o de 100Hz en 100Hz era bona idea, a la practica podia semblar que això ja era suficient però acabem de veure que no. Ho vam considerar així ja que experimentalment tampoc s'aprecia un gran salt en $\abs{T_R(\omega)}$ al moure la freqüència de 100 en 100Hz (ho podem veure a la figura \ref{fig:3.4}. Això últim podem afirmar que es cert i concorda amb la teoria, ja que $\abs{T_R(\omega)}$ a freqüències molt baixes o molt altes comparades amb $f_0$, com ho son $f_1$ i $f_2$, $\abs{T_R(\omega)}$ canvia lentament, això es pot deduir veient la forma de l'equació \ref{eq:3.33} i tenint en compte que $\abs{T_R(\omega)}$ està acotat en $(0,1]$, per lo que el canvi en $\abs{T_R(\omega)}$ a aquests ordres de freqüència no s'aprecia molt. Això explica que en algunes freqüències tinguem un error relativament alt però per aquestes mateixes freqüències l'error en $\abs{T_R(\omega)}$ no sigui molt important. 
 
-El que es important observar es que hem aconseguit reproduir perfectament els ordes de magnitud de totes les freqüències i veure com la ganància en el voltatge de la resistència va canviant amb aquestes, sent la màxima possible en la freqüència de ressonància del sistema.    
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{R2660.png}
+	\caption{$\abs{T_R(f)}$ per $R = 274\Omega$ en funció de  la freqüència aplicada $f$ (en gris $f=f_0$, en vermell $f=f_1^{\text{experimental}}$ i en lila $f=f_1^{\text{teòric}}$)}
+	\label{fig:3.4}
+\end{figure}
+
+El segon cas d'error es el de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per a $R = 274\Omega$, que, aquí ens està passant una cosa similar però al reves, ara al baixar el valor de la resistència $\abs{T_R(\omega)}$ si que es molt sensible a canvis en la freqüència, com podem veure ara en la figura \ref{fig:3.5} es veu clarament que pel rang de freqüències en les que ens movem aquesta te uns canvis de comportament bruscos, de fet si ens fixem en els valors de $f_0$, $f_1$ i $f_2$ que subministrem a la taula \ref{val exp trans} s'assemblen molt mes entre ells per $R = 274\Omega$ que no per $R = 2660\Omega$. Per tant en aquest cas el que ens ha passat es que encara que hem mesurat relativament be els valors de $f_0$ i $f_2$, al canviar tan ràpidament $\abs{T_R(\omega)}$, especialment prop de $f_0$ hem comès molt error en $\abs{T_R(\omega_2)}$ i $\abs{T_R(\omega_2)}$.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\linewidth]{R274.png}
+	\caption{$\abs{T_R(f)}$ per $R = 274\Omega$ en funció de  la freqüència aplicada $f$ (en gris $f=f_0$)}
+	\label{fig:3.5}
+\end{figure}
+
+El que es important observar es que hem aconseguit reproduir perfectament els ordes de magnitud de totes les freqüències i veure com la ganància en el voltatge de la resistència va canviant amb aquestes, sent la màxima possible en la freqüència de ressonància del sistema. També gràcies als errors comesos hem pogut experimentar el diferent comportament del sistema per a diferents valors de la resistència, com hem pogut veure en els valors de $\abs{T_R(\omega)}$. \\
+
+Ara, passant dels errors, podem comparar valors i veure com tot i canviar la resistència els valors de la freqüència de ressonància, $f_0$, es la mateixa per a les dues resistències, just com prediu la fórmula \ref{eq:3.19}, ja que aquesta segons la teoria no depèn de cap manera de la resistència.  
+Donat que $f_0$ no canvia $\abs{T_R(\omega_0)}$ tampoc ho fa, però es que per molt que la freqüència de ressonància canvies (per exemple si canviéssim el condensador o la inductància) si recalculéssim $\abs{T_R(\omega_0)}$ per aquesta nova freqüència seguiria complint-se que $\abs{T_R(\omega_0)} = 1$ ja que es així per definició com hem deduït a la introducció de l'equació \ref{eq:3.18}.
+
+On si que podem notar que canvia en funció de la resistència que posem son les freqüències de tall, aquestes depenen explícitament de la forma de $\abs{T_R(\omega)}$ i no d'on aquesta es màxima que com hem vist això es a $f_0$ i aquest queda fixe independentment de $R$. A les dades es pot veure be, i com hem comentat, mentre que a $R = 274\Omega$, $f_1$ i $f_2$ quedaven molt a prop de $f_0$ degut a la forma de pic de $\abs{T_R(\omega)}$ que hem comentat abans (hem apreciat els seus canvis bruscos), en posar $R = 2660\Omega$, $f_1$ si queda proper a $f_0$ però $f_2$ queda bastant allunyat de l'ordre del doble de freqüència. De fet aquesta diferencia de comportament no només la podem veure visualment a les figures \ref{fig:3.4} i \ref{fig:3.5}, sinó que també la podem quantificar amb un paràmetre que s'anomena ample de banda: 
+\begin{eqnarray}
+	\Delta\omega \equiv \omega_2 - \omega_1
+\end{eqnarray}
+Que si substituim els nostres valors experimentals podem calcular $\Delta f \equiv f_2 - f_1$ ($\Delta\omega /(2\pi)$):
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\caption{Valors de l'ample de banda}
+	\begin{tabular}{lccc}
+		\toprule
+		& $\Delta f_{\text{teòric}}$ (\text{Hz}) & $\Delta f_{\text{experimental}}$ (\text{Hz}) & $\%$ d'error\\ 
+		\midrule
+		$\mathbf{R = 2660\Omega}$ & 19240 $\pm$ 730 & 19503,0 $\pm$ 1,4 & 1,35 $\pm$ 3,8\\ 
+		$\mathbf{R = 274\Omega}$ & 1982 $\pm$ 12 & 1744,0 $\pm$ 1,4 & 12,02 $\pm$ 0,52\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Veiem com el circuit amb una resistència mes petita te un ample de banda també mes petit, això quadra perfectament amb el que hem estat comentant fins ara i amb la teoria ja que aquest fet es pot deduir d'una expressió equivalent per $\Delta\omega$, que exposem a l'equació \ref{eq:3.40} la qual suggereix que l'ample de banda es proporcional a la resistència. Aquest fet el podem veure reflexat en les nostres dades si fem:
+\begin{eqnarray}
+	\frac{\Delta\omega(R=2660)}{2660} = 7,3 \thickapprox 6,4 = \frac{\Delta\omega(R=274)}{274}
+\end{eqnarray}
+
+El fet que $\Delta\omega$ sigui menor per a resistències petites o equivalentment $f_1$ i $f_2$ siguin propers també es pot deduir a partir d'una intuïció mes física. Pensem en un circuit LC, si comencem amb el condensador carregat aquest en descarregar-se provoca un canvi de corrent que provoca un camp magnètic en la bobina (la bobina es carrega en energia magnètica) i per tant es crea en aquesta un corrent que s'oposa al canvi el qual torna a carregar el condensador i així infinitament, si en comptes d'un circuit LC tinguéssim  un RLC com tenim realment es el mateix però pel camí es va perdent energia (va disminuint la intensitat de corrent) perquè es dissipa per la resistència. En el nostre cas no comencem amb el condensador carregat, el que fem es aplicar-li un corrent sinusoidal tal que en el temps el circuit s'acopla a aquest i acaba oscil·lant sinusoidalment, en el camí també es perd energia per la resistència per efecte Joule, però la intensitat de corrent no disminueix perquè l'energia que es perd se la donem externament nosaltres amb el corrent sinusoidal amb el que forcem el circuit. Si forcem amb exactament la mateixa freqüència que la freqüència de ressonància tenim que aquest corrents que es van intercanviant el condensador i la bobina queden perfectament sincronitzats amb l'extern que estem proporcionant per lo que es sumen donant la màxima amplitud de corrent, si això mateix ho fem amb una resistència molt petita, es a dir $R \sim 0$, no es dissipa energia, i per tant tota l'energia que li proporcionem queda retenida al sistema perquè els corrents estan en fase, es sumen i per tant es energia que queda emmagatzemada al circuit, lo que fa que en el limit:
+\begin{eqnarray}
+	\lim_{R \to 0} E = \infty
+\end{eqnarray}
+On $E$ es l'energia emmagatzemada al sistema passat un temps infinit. El cas que tenim nosaltres òbviament no es $R \sim 0$, però el que si que hem vist es la tendència que al fer $R$ mes petit l'ample de banda es va fent mes estret, lo que es equivalent a que l'intensitat pasat un temps llarg es dispari, o com hem estat parlant fins ara, que la ganància en voltatge tingui un pic cada vegada mes estret en baixar la resistència, ja que ens apropem cada vegada mes al circuit LC que pot oscil·lar a una única freqüència, la freqüència pròpia o de ressonància.
+
+\textcolor{red}{podria cuadrar los resultados un poco mas si calculara la R tal que los resultados cuadren y así por diferencia calcular la R del cable y verificar si cuadra con la R de un cable tipico? Podria recalcularse todo para este nuevo valor de R y hacer un mini anàlisi. Estaria guapisismo y explicaria el prqueño error en las medidas, pq es una idealizacion que en un principio no considerabamos}\\
 
 \textcolor{red}{quitar lila}\\
-\textcolor{red}{algo raro hay con $\abs{T_R(\omega_0)}$ y $\abs{T_R(\omega_{2})}$ para $\mathbf{R = 274\Omega}$, son muy diferentes de lo que debería, errores del 12 y 25$\%$....., pero es que si lo recalculo con otro método esas dos dan muy guai, pero entonces es $\abs{T_R(\omega_1)}$ que para $\mathbf{R = 2660\Omega}$ y $\mathbf{R = 274\Omega}$ da mal con errores del 11 y 13$\%$, QUE PASA!! pq siempre hay dos que dan mal......., :(}\\
+
+
 \textcolor{red}{A ver, vamos a probar a recalcular todo esto pero con otro método. Los valores de las frecuencias no hay nada que hacerle porque son las que nos soltaba directamente el osciloscopio al hacer el experimento e ir variando $f$ poco a poco para que las ondas estén en fase para medir $f_0$, y ir variando $f$ para que los voltajes pico cumplan la relación de $1/\sqrt{2}$ para medir $f_{1,2}$. Pero que en las ganancias $\abs{T_R(\omega)}$ haya errores del 24$\%$ no se como justificarlo.}\\
 
 \textcolor{red}{Para “arreglar eso”, vamos a calcular las $\abs{T_R(\omega)}$ de otra manera, en vez de hacer la división de $V_R/V_E$, donde estos dos voltajes de nuevo son valores que te suelta directamente el osciloscopio al hacer el experimento lo que haré es aprovechar que tenemos medidas experimentalmente $f_{0,1,2}$ y utilizo la formula \ref{eq:3.33} para calcular las $\abs{T_R(\omega)}$, con este método los resultados son: (recordar que las $f_{0,1,2}$ son exactamente las mismas que antes)}\\
@@ -938,51 +991,14 @@ El que es important observar es que hem aconseguit reproduir perfectament els or
 	\end{adjustbox}
 \end{table}
 
-
-podem veure que els valors són pràcticament iguals, com era d'esperar. Tot i que, teòricament, la freqüència de ressonància és independent de la resistència del circuit i, per tant, no hauria de canviar.
-
-\textcolor{red}{esto es así?? tiene sentido, o cabe la posibilidad que lo hayamos puesto mal y que realmente sea 8960 como antes...es que vaya coincidencia que solo cambie en 100 unidades no?}
-
-Per poder comprovar si realment estem en la freqüència de ressonància del sistema calculem el guany $\abs{T_R(\omega_0)}$ que, en principi, hauria de ser màxim sota aquestes condicions (ressonància). Els resultats es poden trobar a la taula \ref{tab:3.1}.
-
-\textcolor{red}{pues no entiendo pq cambia si estamos en la frecuencia de resonancia}
-
-Mesurem també les freqüències de tall del circuit RLC per poder trobar, a partir d'elles, l'amplada de banda del sistema.
-
-Substituint els valors de $R$, $L$, i $C$ podem calcular aquests valors. Per altra banda, per tal de mesurar experimentalment les freqüències de tall calculem el $V_R$ necessari per tal que 
 \begin{equation}
 	V_R = V_{max} \cdot \abs{T_R} = \frac{V_{max}}{\sqrt{2}},
 \end{equation}
 on $V_{max}$ és l'amplitud del voltatge d'entrada. Seguidament busquem per quines freqüències $f_1^{exp}$ i $f_2^{exp}$ això se satisfà. Els resultats es poden trobar a les taules \ref{tab:3.2} i \ref{tab:3.3}.
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.2}
-	\caption{Freqüències de tall i amplades de banda experimentals i teòriques pel circuit RLC amb $R=2660$ $\Omega$.}
-	\begin{tabular}{lccc}
-		\toprule
-		& $f_1 (\text{s}^{-1})$ & $f_2 (\text{s}^{-1})$ & $\Delta \omega$ (rad/s) \\ 
-		\midrule
-		\textbf{Teòric} & $3391 \pm 94$ & $22634 \pm 630$ & $120909 \pm 7$\\ 
-		\textbf{Experimental} & $2860 \pm 1$ & $23460 \pm 1$ & $129433 \pm 9$\\ 
-		\bottomrule
-	\end{tabular}
-	\label{tab:3.2}
-\end{table}
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.2}
-	\caption{Freqüències de tall i amplades de banda experimentals i teòriques pel circuit RLC amb $R=274$ $\Omega$.}
-	\begin{tabular}{lccc}
-		\toprule
-		& $f_1 (\text{s}^{-1})$ & $f_2 (\text{s}^{-1})$ & $\Delta \omega$ (rad/s) \\ 
-		\midrule
-		\textbf{Teòric} & $7826 \pm 32$ & $9808 \pm 4$ & $12455 \pm 10$\\ 
-		\textbf{Experimental} & $8040 \pm 1$ & $9830 \pm 1$ & $11247 \pm 8$\\ 
-		\bottomrule
-	\end{tabular}
-	\label{tab:3.3}
-\end{table}
+
+
 \textcolor{red}{\textbf{STOP}, a ver a ver, ponte a calcular incertezas y a ver si cuadran las cosas y entonces ya sigues que esto sino no tiene sentido}\\
+
 \subsection{Règim transitori}
 Una vegada muntat el cricuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184\Omega$, $33mH$ i $330pF$ respectivament podem presentar els resultats. 
 

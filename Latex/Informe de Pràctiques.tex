@@ -863,6 +863,7 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, i els valo
 	\centering
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Valors experimentals del sistema}
+	\label{val exp trans}
 	\begin{tabular}{lcccccc}
 		\toprule
 		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
@@ -878,6 +879,7 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, i els valo
 	\centering
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Error en les mesures respecte els valors teòrics esperats}
+	\label{error exp trans}
 	\begin{adjustbox}{max width=\textwidth}
 	\begin{tabular}{lcccccc}
 		\toprule
@@ -890,7 +892,15 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, i els valo
 	\end{adjustbox}
 \end{table}
 
+A la taula \ref{val exp trans} es troben els resultats de l'experiment, com els valors son bastant variats farem l'anàlisi d'aquestes dades sobretot a partir del percentatge d'error respecte als valors teòricament predits que adjuntem a la taula \ref{error exp trans}. \\
 
+Amb el procediment experimental seguit hem aconseguit recrear bastant bé tant la freqüència pròpia del sistema com les freqüències de tall amb els dos valors de la resistència. Encara que en general els resultats estan aproximadament dins del que esperàvem notem que tenim dos grans errors, un en $f_1$ per a $R = 2660\Omega$ que tenim un error considerablement gran, del $(15,66 \pm 2,43) \%$, i l'altre pels valors de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$, que temim uns errors del $(12,35 \pm 0,000089) \%$ i $(24,78 \pm 1,11) \%$ respectivament. Comentem un a un:\\
+
+ L'error $f_1$ per $R = 2660\Omega$ es degut a que al laboratori no vam anar amb molta cura en seleccionar les freqüències, l'oscil·loscopi pot donar freqüències amb molta precisió però nosaltres donat que les freqüències son de l'ordre dels milers vam considerar que anar fent salts de 50Hz en 50Hz o 100Hz en 100Hz era bona idea, a la practica podia semblar que això ja era suficient però acabem de veure que no. Ho vam considerar així ja que experimentalment tampoc s'aprecia un gran salt en $\abs{T_R(\omega)}$ al moure la freqüència de 100 en 100Hz (ho podem veure a la figura \textcolor{red}{poner ref}), el problema es que $\abs{T_R(\omega)}$ a freqüències molt baixes o molt altes comparades amb $f_0$, com ho son $f_1$ i $f_2$, $\abs{T_R(\omega)}$ canvia lentament (això es dedueix de la forma de l'equació \ref{eq:3.33}), i a més $\abs{T_R(\omega)}$ està acotat en $(0,1]$, per lo que el canvi en $\abs{T_R(\omega)}$ a aquests oredes de frecuencia no s'aprecia molt. Aixó explica que en algunes freqüències tinguem un error relativament alt però per aquestes mateixes freqüències l'error en $\abs{T_R(\omega)}$ no sigui molt important. \\
+
+El que es important observar es que hem aconseguit reproduir perfectament els ordes de magnitud de totes les freqüències i veure com la ganància en el voltatge de la resistència va canviant amb aquestes, sent la màxima possible en la freqüència de ressonància del sistema.    
+
+\textcolor{red}{quitar lila}\\
 \textcolor{red}{algo raro hay con $\abs{T_R(\omega_0)}$ y $\abs{T_R(\omega_{2})}$ para $\mathbf{R = 274\Omega}$, son muy diferentes de lo que debería, errores del 12 y 25$\%$....., pero es que si lo recalculo con otro método esas dos dan muy guai, pero entonces es $\abs{T_R(\omega_1)}$ que para $\mathbf{R = 2660\Omega}$ y $\mathbf{R = 274\Omega}$ da mal con errores del 11 y 13$\%$, QUE PASA!! pq siempre hay dos que dan mal......., :(}\\
 \textcolor{red}{A ver, vamos a probar a recalcular todo esto pero con otro método. Los valores de las frecuencias no hay nada que hacerle porque son las que nos soltaba directamente el osciloscopio al hacer el experimento e ir variando $f$ poco a poco para que las ondas estén en fase para medir $f_0$, y ir variando $f$ para que los voltajes pico cumplan la relación de $1/\sqrt{2}$ para medir $f_{1,2}$. Pero que en las ganancias $\abs{T_R(\omega)}$ haya errores del 24$\%$ no se como justificarlo.}\\
 

@@ -1405,7 +1405,7 @@ Per a segona part d'aquesta secció, connectem un circuit al secundari, sempre a
 	\label{tab:4.4}
 \end{table}
 
-De la taula $\ref{tab:4.4}$ observem que la disminució de la resistència del circuit secundari provoca un augment de les intensitats tant al primari com al secundari. A partir dels valors experimentals obtinguts, . També es pot veure que el voltatge al secundari disminueix en aquestes condicions, fet que repercuteix en una reducció del guany en voltatge mesurat. També podem concloure que aquest efecte és major com més gran sigui la diferència entre $n1$ i $n2$.
+De la taula $\ref{tab:4.4}$ observem que la disminució de la resistència del circuit secundari provoca un augment de les intensitats tant al primari com al secundari. A partir dels valors experimentals obtinguts, . També es pot veure que el voltatge al secundari disminueix en aquestes condicions, fet que repercuteix en una reducció del guany en voltatge mesurat. També podem concloure que aquest efecte és major com més gran sigui la diferència entre $n_1$ i $n_2$.
 
 A continuació comparem el guany en voltatge experimental amb el valor teòric. La  taula \ref{tab:4.5} presenta els valors experimentals i teòrics calculats tenint en compte en quin cas dels tres presentats a la introducció teòrica ens trobem ($Z \gg X$, $Z \sim X$, $Z\ll X$). També es troba l'error relatiu.  
 
@@ -1476,22 +1476,20 @@ Un cop analitzades les diferents configuracions, ens fixem ara en com petites va
 	\label{tab:4.6}
 \end{table}
 
-A partir de les dades de la taula, observem que una petita variació de $k$  pot provocar una variació relativa del guany superior al $6\,\%$ en el cas de $400/400$, i un superior al $12\,\%$ en les altres configuracions, però aquest efecte només es manifesta clarament en les configuracions on la impedància de càrrega és molt petita ($Z \ll X$). En la resta de casos, la variació és pràcticament negligible.
+Per tal que \( k \) tingui una influència apreciable en el guany, és necessari que el terme \( X^2 \alpha^4 (k^2 - 1)^2 \) domini el denominador. 
 
 
-$\textcolor{red}{ESTA MAL!!!!!!!!!}$
 
-Cal mencionar que, tot i que les dues configuracions amb $3200/400$ voltes i resistències de $100\,\Omega$ i $10\,\Omega$ pertanyen al mateix règim ($Z \ll X$), només en el cas de $10\,\Omega$ el guany teòric mostra una dependència clara amb $k$. Aquest comportament es pot explicar analitzant l’expressió del guany (equació~\ref{eq4:22}), on apareix un terme amb $k$ en el denominador
+A partir de les dades de la taula \ref{tab:4.6}, observem que una petita variació del coeficient d'acoblament $k$  pot provocar una variació relativa del guany superior al $6\,\%$ en la configuració de $400/400$, i un superior al $12\,\%$ en les altres configuracions. Aquest efecte però, només es manifesta clarament en les configuracions on la impedància de càrrega és molt petita ($Z \ll X$). En la resta de casos, la variació és pràcticament negligible.
+
+
+Aquest comportament es pot explicar analitzant l'expressió del guany en voltatge (equació $\ref{eq4:22}$), on el coeficient $k$ apareix en el denominador
+
 \begin{equation*}
 	\sqrt{Z^2 + X^2 \alpha^4 (k^2 - 1)^2}.
 \end{equation*}
-En aquestes dues configuracions, la reactància $X = 6295,5$ $\Omega$ i la relació de voltes $\alpha = 0{,}125$ es mantenen constants, de forma que l’únic paràmetre que canvia és la impedància $Z$, que és igual, en aquest experiment, a la resistència aplicada al secundari, $R$, per tant, $Z =R $. Si comparem els quadrats de les impedàncies, obtenim $Z^2 = 100$ per al cas de 10 $\Omega$ i $Z^2 = 10000$ per al cas de 100 $\Omega$.
 
-En el primer cas ($Z = 10$ $\Omega$), el valor de $Z^2$ és del mateix ordre de magnitud que el terme en $k$, de manera que aquest últim té un pes significatiu en el denominador i el guany passa a dependre clarament del valor de $k$. En canvi, en el segon cas ($Z=10$ $\Omega$), el terme $Z^2$ domina clarament al denominador, fent que la contribució del terme amb $k$ sigui negligible. Aquesta és, doncs, l’excepció que no segueix la tendència observada.
-
-De fet, a mesura que el nombre de voltes del primari augmenta respecte del secundari, el quocient $\alpha$ es fa molt petit, i en conseqüència $\alpha^4$ es fa gairebé nul. Tot i que la reactància $X$ també augmenta (ja que, com hem vist $X \propto n_1^2$ REF), aquest creixement no és suficient per compensar la pèrdua deguda a $\alpha^4$ dins el terme $X^2 \alpha^4 (k^2 - 1)^2$, que esdevé totalment negligible. A més a més, aquest augment de $X$ permet fer servir resistències relativament grans i continuar estant dins el règim $Z \ll X$. Això fa que el terme $Z^2$ del denominador domini completament i anul·li l’efecte de $k$, independentment de la seva variació. En resum, com més gran és la diferència entre el nombre de voltes del primari i del secundari, més fàcil és que el coeficient d’acoblament $k$ deixi de tenir impacte en el guany.
-
-$\textcolor{red}{FINS AQUÍ!!!!!!!!!}$
+Per tal que $k$ tingui influència en el guany, és necessari que el terme $X^2 \alpha^4 (k^2 - 1)^2$ sigui del mateix ordre de magnitud que $Z^2$ o superior. Això ocorre precisament quan $Z$ és petit comparat amb $X$, és a dir, quan $ Z \ll X $. A més, com més gran és $\alpha$, més gran és també la reactància $X $, i per tant, més gran és el pes del terme dependent de $k$ al denominador. Això fa que el guany sigui més sensible a petites variacions en $k$, com s’ha observat experimentalment en les configuracions de majors voltes. 
 
 
 Per contra, si ens fixem ens els altres casos, $Z \gg X$ (\ref{eq4:20}) o $Z \sim X$ (\ref{eq4:24}), el guany té una dependència lineal en $k$ , i per tant, petites variacions en aquest coeficient només provoquen canvis mínims en el guany teòric. Això explica per què els percentatges de variació són molt menors en aquests casos.
@@ -1501,7 +1499,7 @@ Per contra, si ens fixem ens els altres casos, $Z \gg X$ (\ref{eq4:20}) o $Z \si
 \section{Conclusions}
 En aquesta pràctica hem pogut constatar la importància d'incorporar un nucli ferromagnètic en un transformador per tal de minimitzar les pèrdues de flux magnètic. Per analitzar aquest efecte, s’han muntat diferents configuracions amb diverses geometries pel nucli, i s’ha determinat que la configuració òptima és la que segueix millor les línies de camp generades per les bobines, ja que presenta una millor canalització del flux magnètic i, per tant, un coeficient d’acoblament més proper a la idealitat ($k = 1$).
 
-A continuació, hem estudiat diferents combinacions del nombre de voltes al primari i secundari, mantenint constant la resta de paràmetres, per comprovar la llei que relaciona els voltatges d'entrada i de sortida en funció de les característiques de les bobines. Tot i que els resultats obtinguts mostren valors de guany propers a la idealitat, s’ha observat que, a mesura que augmenta la diferència entre el nombre de voltes del primari i del secundari, i sent $n1$ major a $n2$, el comportament del transformador s’allunya més del model ideal. Aquesta desigualtat afavoreix les pèrdues de flux i redueix l’eficiència de l’acoblament magnètic.
+A continuació, hem estudiat diferents combinacions del nombre de voltes al primari i secundari, mantenint constant la resta de paràmetres, per comprovar la llei que relaciona els voltatges d'entrada i de sortida en funció de les característiques de les bobines. Tot i que els resultats obtinguts mostren valors de guany propers a la idealitat, s’ha observat que, a mesura que augmenta la diferència entre el nombre de voltes del primari i del secundari, el comportament del transformador s’allunya més del model ideal. Aquesta desigualtat afavoreix les pèrdues de flux i redueix l’eficiència de l’acoblament magnètic.
 
 En la segona part de la pràctica, hem demostrat la relació entre les reactàncies de dues bobines en circuit obert i s’ha utilitzat aquesta expressió per estimar la reactància d’una bobina amb 3200 voltes que no es va mesurar experimentalment, però que era necessària per a les anàlisis posteriors.
 

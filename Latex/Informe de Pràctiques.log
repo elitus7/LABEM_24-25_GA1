@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.8)  28 MAY 2025 12:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.8)  28 MAY 2025 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1343,85 +1343,74 @@ Package pdftex.def Info: screenshot010.png  used on input line 1261.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [33 <./inv1.jpg> <./inv2.jpg> <./screenshot010.png>] [34] [35] [36] [37]
-
-LaTeX Warning: Command \' invalid in math mode on input line 1494.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \ifmmode \els...
-l.1494 $\textcolor{red}{FINS AQUÍ!!!!!!!!!}
-                                            $
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
 [38] [39] [40
 
 ] [41
 
 ] [42]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1655.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1653.
 
-LaTeX Font Info:    Calculating math sizes for size <> on input line 1657.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 1655.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 1657.
+(Font)              size <5> substituted on input line 1655.
 
 [43]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1661.
+(hyperref)                removing `math shift' on input line 1659.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1661.
+(hyperref)                removing `math shift' on input line 1659.
 
 [44] [45] [46] [47] [48] [49] [50]
-Overfull \hbox (3.78835pt too wide) in paragraph at lines 2035--2046
+Overfull \hbox (3.78835pt too wide) in paragraph at lines 2033--2044
  [][] 
  []
 
@@ -1443,10 +1432,10 @@ d.
 (rerunfilecheck)             Checksum: F17DBB30AE3377175D7F3F9E465D120B;13619.
  ) 
 Here is how much of TeX's memory you used:
- 35104 strings out of 474486
- 698669 string characters out of 5743756
+ 35100 strings out of 474486
+ 698617 string characters out of 5743756
  2590542 words of memory out of 5000000
- 56293 multiletter control sequences out of 15000+600000
+ 56289 multiletter control sequences out of 15000+600000
  578688 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,14n,107p,1782b,2736s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1491,9 +1480,9 @@ blic/amsfonts/cm/cmti10.pfb><C:/Users/natvi/AppData/Local/Programs/MiKTeX/fonts
 eX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/natvi/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/natvi/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Informe de Pràctiques.pdf" (52 pages, 10274653 bytes).
+Output written on "Informe de Pràctiques.pdf" (52 pages, 10273251 bytes).
 PDF statistics:
- 1522 PDF objects out of 1728 (max. 8388607)
+ 1523 PDF objects out of 1728 (max. 8388607)
  583 named destinations out of 1000 (max. 500000)
  678 words of extra memory for PDF output out of 10000 (max. 10000000)
 

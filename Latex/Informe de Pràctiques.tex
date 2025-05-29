@@ -696,7 +696,7 @@ Ens interessa solucionar, amb aquesta funció $V(t)$, l'equació \eqref{eq:3.11}
 	\end{equation}
 	que tindrà diferents solucions en funció de com sigui el discriminant
 	\begin{equation}
-		\Delta = \left(\frac{R}{L}\right)^2-\frac{4}{LC}.
+		\Delta = \left(\frac{R}{L}\right)^2-\frac{4}{LC}. \label{eq:3.22}
 	\end{equation}
 \end{itemize}
 Tenim els següents tres casos:
@@ -838,7 +838,7 @@ Així podem calcular certes propietats del circuit, i també d'altres com $\text
 \begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Valors teòrics del sistema}
+	\caption{Valors teòrics del sistema.}
 	\begin{tabular}{lccccc}
 		\toprule
 		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1,2})}$ \\ 
@@ -861,7 +861,7 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, i els valo
 \begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Valors experimentals del sistema}
+	\caption{Valors experimentals del sistema.}
 	\label{val exp trans}
 	\begin{tabular}{lcccccc}
 		\toprule
@@ -877,7 +877,7 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, i els valo
 \begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Error en les mesures respecte els valors teòrics esperats}
+	\caption{Error en les mesures respecte els valors teòrics esperats.}
 	\label{error exp trans}
 	\begin{adjustbox}{max width=\textwidth}
 		\begin{tabular}{lcccccc}
@@ -899,7 +899,7 @@ L'error de $f_1$ per a $R = 2660\Omega$ es degut a que al laboratori no vam anar
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.75\linewidth]{R2660.png}
+	\includegraphics[width=0.6\linewidth]{R2660.png}
 	\caption{$\abs{T_R(f)}$ per $R = 274\Omega$ en funció de  la freqüència aplicada $f$ (en gris $f=f_0$, en vermell $f=f_1^{\text{experimental}}$ i en lila $f=f_1^{\text{teòric}}$)}
 	\label{fig:3.4}
 \end{figure}
@@ -908,7 +908,7 @@ El segon cas d'error es el de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.75\linewidth]{R274.png}
+	\includegraphics[width=0.6\linewidth]{R274.png}
 	\caption{$\abs{T_R(f)}$ per $R = 274\Omega$ en funció de  la freqüència aplicada $f$ (en gris $f=f_0$)}
 	\label{fig:3.5}
 \end{figure}
@@ -998,31 +998,29 @@ on $V_{max}$ és l'amplitud del voltatge d'entrada. Seguidament busquem per quin
 \textcolor{red}{\textbf{STOP}, a ver a ver, ponte a calcular incertezas y a ver si cuadran las cosas y entonces ya sigues que esto sino no tiene sentido}\\
 
 \subsection{Règim transitori}
-Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184\Omega$, $33mH$ i $330pF$ respectivament podem presentar els resultats. 
+Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184$ $\Omega$, $33$ mH i $330$ pF respectivament podem presentar els resultats. 
 
 \textcolor{red}{$AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$}
 
-Per finalitzar, trobarem el valor experimental de $\lambda$ i el compararem amb el valor teòric.
+\subsection{Constant d'esmorteïment del circuit}
+En les condicions del règim transitori, ens proposem ara buscar la constant d'esmorteïment $\lambda$ del sistema. Recordem que aquest valor apareix quan estem en el cas $\Delta < 0$ (resistències petites)\footnote{$\Delta$ ve donat per l'equació \eqref{eq:3.22}.} a partir d'un seguit de mesures de $V_C$ vs. $t$, tal i com s'ha explicat a la introducció teòrica de la pràctica. Un cop haguem trobat el valor experimental el compararem amb el teòric.
 
-El valor teòric s'obté a partir de l'equació \eqref{eq:3.24}, que pel nostre cas amb una resistència de $R = 1448\,\Omega$ i autoinductància de $L = 33\,\text{mH}$,   obtenim
-
+El valor teòric s'obté a partir de l'equació \eqref{eq:3.24}, que pel nostre cas amb una resistència de $R = 1448\,\Omega$ i autoinductància de $L = 33\,\text{mH}$,   és de
 \begin{equation}
-	\lambda = \left( 21939{,}40 \pm 15{,}15 \right) \, \text{s}^{-1}
+	\lambda = \left( 21939 \pm 16 \right) \, \text{s}^{-1}.
 \end{equation}
+Així, per trobar el valor experimental de $\lambda$, representem la recta corresponent a l’equació \eqref{eq:3.28}, on el pendent serà $ -\lambda$. 
 
-Per trobar el valor experimental de $\lambda$, representem la recta corresponent a l’equació \eqref{eq:3.28}, on la pendent serà $ -\lambda$. 
-
-Tot i que el valor de $E$ és conegut perquè correspon al voltatge d’entrada aplicat pel generador, hem optat per determinar-lo de manera gràfica. En la pràctica experimental, poden aparèixer factors que fan que el valor real percebut pel circuit no coincideixi exactament amb el valor del generador. Aquests factors poden ser pèrdues de senyal, el soroll de fons  o una resposta no ideal del sistema. L'obtenim fent el límit de l’equació \eqref{eq:3.27}, quan $t \to \infty$:
-
+Tot i que el valor de $E$ és conegut perquè es correspon amb el voltatge d’entrada aplicat pel generador, hem optat per determinar-lo de manera gràfica. A la pràctica, poden aparèixer factors experimentals que fan que el valor real de $E$ percebut pel circuit no coincideixi exactament amb el valor del generador. Aquests factors poden estar relacionats amb pèrdues de senyal, el soroll de fons del laboratori o una resposta no ideal del sistema. Podem obtenir una estimació del valor de $E$ si fem el límit de l’equació \eqref{eq:3.27}, quan $t \to \infty$
 \begin{equation}
-	\lim_{t \to \infty} V_C(t) = E
+	\lim_{t \to \infty} V_C(t) = E,
 \end{equation}
-
-Aquest límit s’ha determinat gràficament a partir de la gràfica $\ref{fig:3.6}$, construïda amb les dades de la taula $\ref{tab:3.7}$.
+tot evitant els problemes anteriors. Aquest límit s’ha determinat gràficament a partir de la gràfica $\ref{fig:3.6}$, construïda amb les dades de la taula $\ref{tab:3.7}$.
 
 \begin{table}[H]
 	\centering
-	\begin{minipage}{0.48\textwidth}
+	\small
+	\begin{minipage}{0.28\textwidth}
 		\centering
 		\caption{Valors experimentals de $V_C$ en funció del temps $t$.}
 		\begin{tabular}{lc}
@@ -1044,9 +1042,9 @@ Aquest límit s’ha determinat gràficament a partir de la gràfica $\ref{fig:3
 		\label{tab:3.7}
 	\end{minipage}%
 	\hfill
-	\begin{minipage}{0.48\textwidth}
+	\begin{minipage}{0.68\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{Grafica.png} 
+		\includegraphics[width=\linewidth]{vc_vs_t.png} 
 		\captionof{figure}{Gràfica de $V_C$ en funció del temps $t$.}
 		\label{fig:3.6}
 	\end{minipage}
@@ -1059,7 +1057,8 @@ Per fer l’ajust lineal i extreure $\lambda$, utilitzem només els pics màxims
 
 \begin{table}[H]
 	\centering
-	\begin{minipage}{0.48\textwidth}
+	\small
+	\begin{minipage}{0.28\textwidth}
 		\centering
 		\caption{Valors de $\ln|V_C(t_n) - E|$ en funció del temps agafant els pics màxims de $V_c$.}
 		\begin{tabular}{lc}
@@ -1076,18 +1075,19 @@ Per fer l’ajust lineal i extreure $\lambda$, utilitzem només els pics màxims
 		\label{tab:3.8}
 	\end{minipage}%
 	\hfill
-	\begin{minipage}{0.48\textwidth}
+	\begin{minipage}{0.68\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{grafica.png} 
-		\captionof{figure}{Gràfica de $\ln|V_C(t_n) - E|$ en funció del temps $t$.}
+		\includegraphics[width=\linewidth]{lambda.png} 
+		\captionof{figure}{Representació de $\ln|V_C(t_n) - E|$ ($E$ i $V_C$ en volts) en funció del temps $t$. Dades de l'ajust lineal: $y=mx+n$, amb $m=(-250,9\pm7,8)\cdot10^{2}$ s$^{-1}$ i $n=(1,307\pm0,051)$. Coeficient de correlació $R^2=0,997$.}
 		\label{fig:3.7}
 	\end{minipage}
 \end{table}
 
-
-La regressió lineal de la gràfica $\ref{fig:3.7}$ ens queda $y = -25091x + 1{,}3074 $, obtenint $\lambda = 25091\, \text{s}^{-1} $. 
-
-Finalment, si comparem el valor experimental amb el valor teòric, obtenim un error relatiu del $14{,}37\% $, que es pot considerar acceptable tenint en compte les incerteses experimentals i el fet que no tenim un circuit ideal. 
+A partir de l'ajust lineal de la figura $\ref{fig:3.7}$ obtenim un valor experimental de la constant d'esmorteïment de
+\begin{equation*}
+	\lambda = (-250,9\pm 7,8)\cdot 10^{-2} \text{s$^{-1}$},
+\end{equation*} 
+que, si el comparem amb el valor teòric, obtenim un error relatiu del $14{,}37\% $, que es pot considerar acceptable tenint en compte les incerteses experimentals i el fet que ni els elements del circuit (condensador i inductor) ni el circuit en si tenen un comportament totalment ideal. 
 
 \section{Conclusions}
 

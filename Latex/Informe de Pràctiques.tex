@@ -708,6 +708,7 @@ Tenim els següents tres casos:
 	essent $\lambda$ la \textit{constant d'esmorteïment}, definida segons
 	\begin{equation}
 		\lambda \equiv \frac{R}{2L}.
+		\label{eq:3.24}
 	\end{equation}
 	De forma similar, definim la \textit{freqüència de pseudo-pulsació} com\footnote{Fixem-nos que si el circuit està poc amortit ($R\rightarrow 0$), aleshores $\omega \approx \omega_0$.}
 	\begin{equation}
@@ -720,6 +721,7 @@ Tenim els següents tres casos:
 	si imposem les condicions inicials adequades (a $t=0$ la diferència de potencial en el condensador i la intensitat del circuit són 0), acabem trobant
 	\begin{equation}
 		\boxed{V_C(t) = E \left[1-\sqrt{1+\left(\frac{\lambda}{\omega}\right)^2}\mathrm{e}^{-\lambda t}\cos(\omega t - \psi)\right]}. 
+		\label{eq:3.27}
 	\end{equation}
 	Si només ens fixem en els punts extremals, on $\cos(\omega t - \psi) = \pm 1$, aleshores
 	\begin{equation}
@@ -996,9 +998,96 @@ on $V_{max}$ és l'amplitud del voltatge d'entrada. Seguidament busquem per quin
 \textcolor{red}{\textbf{STOP}, a ver a ver, ponte a calcular incertezas y a ver si cuadran las cosas y entonces ya sigues que esto sino no tiene sentido}\\
 
 \subsection{Règim transitori}
-Una vegada muntat el cricuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184\Omega$, $33mH$ i $330pF$ respectivament podem presentar els resultats. 
+Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184\Omega$, $33mH$ i $330pF$ respectivament podem presentar els resultats. 
 
 \textcolor{red}{$AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$}
+
+Per finalitzar, trobarem el valor experimental de $\lambda$ i el compararem amb el valor teòric.
+
+El valor teòric s'obté a partir de l'equació \eqref{eq:3.24}, que pel nostre cas amb una resistència de $R = 1448\,\Omega$ i autoinductància de $L = 33\,\text{mH}$,   obtenim
+
+\begin{equation}
+	\lambda = \left( 21939{,}40 \pm 15{,}15 \right) \, \text{s}^{-1}
+\end{equation}
+
+Per trobar el valor experimental de $\lambda$, representem la recta corresponent a l’equació \eqref{eq:3.28}, on la pendent serà $ -\lambda$. 
+
+Tot i que el valor de $E$ és conegut perquè correspon al voltatge d’entrada aplicat pel generador, hem optat per determinar-lo de manera gràfica. En la pràctica experimental, poden aparèixer factors que fan que el valor real percebut pel circuit no coincideixi exactament amb el valor del generador. Aquests factors poden ser pèrdues de senyal, el soroll de fons  o una resposta no ideal del sistema. L'obtenim fent el límit de l’equació \eqref{eq:3.27}, quan $t \to \infty$:
+
+\begin{equation}
+	\lim_{t \to \infty} V_C(t) = E
+\end{equation}
+
+Aquest límit s’ha determinat gràficament a partir de la gràfica $\ref{fig:3.6}$, construïda amb les dades de la taula $\ref{tab:3.7}$.
+
+\begin{table}[H]
+	\centering
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\caption{Valors experimentals de $V_C$ en funció del temps $t$.}
+		\begin{tabular}{lc}
+			\toprule
+			$V_C \, (\text{V})$ & $t\,(\text{s})$ \\
+			\midrule
+			$0{,}24 \pm 0{,}10$ & $0{,}0 $ \\
+			$4{,}98 \pm 0{,}08$ & $1{,}0 \cdot 10^{-5}$ \\
+			$-0{,}22 \pm 0{,}08$ & $2{,}2 \cdot 10^{-5}$ \\
+			$3{,}66 \pm 0{,}08$ & $3{,}4 \cdot 10^{-5}$ \\
+			$0{,}64 \pm 0{,}08$ & $4{,}4 \cdot 10^{-5}$ \\
+			$2{,}98 \pm 0{,}08$ & $5{,}6 \cdot 10^{-5}$ \\
+			$1{,}32 \pm 0{,}08$ & $6{,}8 \cdot 10^{-5}$ \\
+			$2{,}64 \pm 0{,}08$ & $8{,}0 \cdot 10^{-5}$ \\
+			$1{,}56 \pm 0{,}08$ & $9{,}2 \cdot 10^{-5}$ \\
+			$1{,}84 \pm 0{,}08$ & $1{,}04 \cdot 10^{-4}$ \\
+			\bottomrule
+		\end{tabular}
+		\label{tab:3.7}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Grafica.png} 
+		\captionof{figure}{Gràfica de $V_C$ en funció del temps $t$.}
+		\label{fig:3.6}
+	\end{minipage}
+\end{table}
+
+A partir d’aquesta gràfica, estimem el valor d’$E$ com $E = 2{,}1\,V $.
+
+
+Per fer l’ajust lineal i extreure $\lambda$, utilitzem només els pics màxims de la senyal, mostrats a la taula $\ref{tab:3.8}$. 
+
+\begin{table}[H]
+	\centering
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\caption{Valors de $\ln|V_C(t_n) - E|$ en funció del temps agafant els pics màxims de $V_c$.}
+		\begin{tabular}{lc}
+			\toprule
+			$\ln{|V_C(t_n) - E|}$ & $t\,(\text{s})$ \\
+			\midrule
+			$1{,}0578 \pm 0{,}0278$ & $1{,}0 \cdot 10^{-5}$  \\
+			$0{,}4447 \pm 0{,}0513$ & $3{,}4 \cdot 10^{-5}$  \\
+			$-0{,}1278 \pm 0{,}0909$ & $5{,}6 \cdot 10^{-5}$  \\
+			$-0{,}6162\pm 0{,}1481 $ & $8{,}0 \cdot 10^{-5}$ \\
+			$-1{,}3471 \pm 0{,}3077$ & $1{,}04 \cdot 10^{-4}$ \\
+			\bottomrule
+		\end{tabular}
+		\label{tab:3.8}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{grafica.png} 
+		\captionof{figure}{Gràfica de $\ln|V_C(t_n) - E|$ en funció del temps $t$.}
+		\label{fig:3.7}
+	\end{minipage}
+\end{table}
+
+
+La regressió lineal de la gràfica $\ref{fig:3.7}$ ens queda $y = -25091x + 1{,}3074 $, obtenint $\lambda = 25091\, \text{s}^{-1} $. 
+
+Finalment, si comparem el valor experimental amb el valor teòric, obtenim un error relatiu del $14{,}37\% $, que es pot considerar acceptable tenint en compte les incerteses experimentals i el fet que no tenim un circuit ideal. 
 
 \section{Conclusions}
 

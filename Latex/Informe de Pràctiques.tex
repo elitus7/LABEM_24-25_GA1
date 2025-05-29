@@ -807,7 +807,7 @@ i mesurem el guany $\abs{T_R(\omega_0)}$ corresponent a aquesta freqüència.
 
 Mesurem les dues freqüències de tall $f_1$ i $f_2$ (en Hz)\footnote{Recordem que són les freqüències tals que $\abs{T_R(\omega_c)} = \frac{1}{\sqrt{2}}$.}. Comparem els valors mesurats amb els valors teòrics (a partir de la resolució del sistema d'equacions donat per \eqref{eq:3.38} i \eqref{eq:3.39}). Repetim tot el procediment canviant la resistència per una de $R = 270$ $\Omega$.
 
-\subsection{Estudi del règim transitori}
+\subsection{Estudi del règim transitori} \label{sec 3.2.2}
 Muntem el circuit de la figura \ref{fig:3.3}. Usem una bobina de $L = 33$ mH, un condensador de $C = 330$ pF, una font que ens subministri una senyal tipus \eqref{eq:3.20} i una resistència de $R = 180$ $\Omega$.
 
 \begin{figure}[h]
@@ -817,7 +817,7 @@ Muntem el circuit de la figura \ref{fig:3.3}. Usem una bobina de $L = 33$ mH, un
 	\label{fig:3.3}
 \end{figure}
 
-Fixem la freqüència del generador de forma que a cada període d'aquest, $T_{generador}$, apareguin 10 oscil·lacions de període $T$ ($f = \frac{T}{10}$), essent aquest període $T$ el corresponent a la freqüència de pseudo-pulsació, calculat usant l'equació \eqref{eq:3.25} i que
+Fixem la freqüència del generador de forma que a cada període d'aquest, $T_{generador}$, apareguin 10 oscil·lacions de període $T$ ($f = \frac{1}{10T}$), essent aquest període $T$ el corresponent a la freqüència de pseudo-pulsació, calculat usant l'equació \eqref{eq:3.25} i que
 \begin{equation}
 	T = \frac{2\pi}{\omega}.
 \end{equation}
@@ -828,7 +828,7 @@ Canviem la resistència fixa per una de variable, que pot donar resistències de
 
 \section{Resultats i discussió}
 \textcolor{red}{tengo que poner las incertidumbres bien a bastantes cosas, ahora no me apetece}\\
-Per poder comparar i entendre si els nostres resultats son correctes lo primer de tot serà predir amb el que sabem d'electro el que creiem que passarà. Tenim un circuit com el de la figura \ref{fig:3.2} amb $R=2660$ o $274$ $\Omega$, $L=22$ mH, $C=15$ nF i una font amb un voltatge d'entrada tipus $V(t) = V_{max}\sin(\omega t)$, la freqüència de ressonància del sistema ve donada per $\omega_0 = (LC)^{-1}$ (equació \ref{eq:3.19}), i les freqüències de tall ens les dona el sistema d'equacions definit per les equacions \ref{eq:3.38} i \ref{eq:3.39}, que si el resolem queda que:
+Per poder comparar i entendre si els nostres resultats son correctes lo primer de tot serà predir amb el que sabem d'electro el que creiem que passarà. Per l'estudi del regim permanent tenim un circuit com el de la figura \ref{fig:3.2} amb $R=2660$ o $274$ $\Omega$, $L=22$ mH, $C=15$ nF i una font amb un voltatge d'entrada tipus $V(t) = V_{max}\sin(\omega t)$, la freqüència de ressonància del sistema ve donada per $\omega_0 = (LC)^{-1}$ (equació \ref{eq:3.19}), i les freqüències de tall ens les dona el sistema d'equacions definit per les equacions \ref{eq:3.38} i \ref{eq:3.39}, que si el resolem queda que:
 
 \begin{eqnarray*}
 	\omega_{1,2} = \frac{1}{2L} \left( \sqrt{4L^2\omega_0^2+R^2} \mp R \right)  
@@ -838,7 +838,7 @@ Així podem calcular certes propietats del circuit, i també d'altres com $\text
 \begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Valors teòrics del sistema.}
+	\caption{Valors teòrics del sistema pel règim permanent}
 	\begin{tabular}{lccccc}
 		\toprule
 		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1,2})}$ \\ 
@@ -849,43 +849,57 @@ Així podem calcular certes propietats del circuit, i també d'altres com $\text
 	\end{tabular}
 \end{table}
 
-\textcolor{red}{poner resultados necesarios para el régimen transitorio tmb}\\
+Posteriorment per l'estudi del regim transitori muntarem altre circuit com ja hem explicat a la secció \ref{sec 3.2.2}. En conret muntem el circuit de la figura \ref{fig:3.3} amb una resistència de $R = 180\Omega$, $L = 33$mH i $C=330$pF. Amb aquestos valros calculem teoricament alguns paràmetres del circuit com la pseudo-frequencia, $\omega$, el pseudo periode, $T$, i la freqüència, $f$, que hem de posar al generador tal que $f=1/(10T)$:
+
+\begin{table}[h]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\caption{Valors teòrics del sistema pel règim permanent}
+	\label{val teo trans}
+	\begin{tabular}{lccc} 
+		\toprule
+		& $\omega$ (\text{rad/s}) & $T$ (\text{s}) & $f$ (\text{Hz})\\ 
+		\midrule
+		$\mathbf{R = 180\Omega}$ & (3,03 $\pm$ 0,56)$\cdot 10^5$ & (2,07 $\pm$ 0,31)$\cdot 10^{-5}$ & (4,82 $\pm$ 0,73)$\cdot 10^3$\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
 Els recull de mesures experimentals es troben a l'annex \textcolor{red}{poner anexo}.
 
 \subsection{Règim permanent}
-
-\textbf{\textcolor{red}{IMPORTANT: Quins valors dels calculats, $f_{0,1,2}$ i $\abs{T_R}$ romanen iguals i quins canvien? Per què? Si volguéssim un circuit amb una banda de pas estreta, quina resistència escollim?}} (pregunta del guió, a algun lloc s'ha de contestar)
-
 Una vegada s'han mesurat les freqüències de ressonància i de tall, i els valors dels voltatges d'entrada i de la resistència just com s'explica a la secció \ref{expermento permanente} podem obtenir els següents valors experimentals directament de l'oscil·loscopi:
 
 \begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Valors experimentals del sistema.}
+	\caption{Valors experimentals del sistema pel règim permanent}
 	\label{val exp trans}
 	\begin{tabular}{lcccccc}
 		\toprule
 		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
 		\midrule
 		$\mathbf{R = 2660\Omega}$ & 8960 $\pm$ 1 & 2860 $\pm$ 1 & 23460 $\pm$ 1 & 1 $\pm$ 0,0075 & 0,72340 $\pm$ 0,0066 & 0,72340 $\pm$ 0,0066\\ 
-		$\mathbf{R = 274\Omega}$ & 8860 $\pm$ 1 & 8040 $\pm$ 1 & 9830 $\pm$ 1 & \textcolor{magenta}{0,87647 $\pm$ 0,0078} & 0,70588 $\pm$ 0,0072 & \textcolor{magenta}{0,88235$\pm$ 0,0078}\\
+		$\mathbf{R = 274\Omega}$ & 8860 $\pm$ 1 & 8040 $\pm$ 1 & 9830 $\pm$ 1 & 0,87647 $\pm$ 0,0078 & 0,70588 $\pm$ 0,0072 & 0,88235$\pm$ 0,0078\\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
 
+
 \begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Error en les mesures respecte els valors teòrics esperats.}
+	\caption{Error en les mesures respecte els valors teòrics esperats pel règim permanent}
 	\label{error exp trans}
 	\begin{adjustbox}{max width=\textwidth}
 		\begin{tabular}{lcccccc}
 			\toprule
 			& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
 			\midrule
-			$\mathbf{R = 2660\Omega}$ & (2,27 $\pm$ 0,41$)\%$ & (15,66 $\pm$ 2,43$)\%$ & (3,65 $\pm$ 3,11$)\%$ & (0,00 $\pm$ 0,75$)\%$ & (2,30 $\pm$ 0,93$)\%$ & (2,30 $\pm$ 0,93$)\%$\\ 
-			$\mathbf{R = 274\Omega}$ & (1,13 $\pm$ 0,41$)\%$ & (2,73 $\pm$ 0,47$)\%$ & (0,22 $\pm$ 0,93$)\%$ & \textcolor{magenta}{(12,35 $\pm$ 0,000089$)\%$} & (0,17 $\pm$ 1,02$)\%$ & \textcolor{magenta}{(24,78 $\pm$ 1,11$)\%$}\\
+			$\mathbf{R = 2660\Omega}$ & (2,27 $\pm$ 0,41$)\%$ & (15,7 $\pm$ 2,4$)\%$ & (3,7 $\pm$ 3,1$)\%$ & (0,00 $\pm$ 0,75$)\%$ & (2,30 $\pm$ 0,93$)\%$ & (2,30 $\pm$ 0,93$)\%$\\ 
+			$\mathbf{R = 274\Omega}$ & (1,13 $\pm$ 0,41$)\%$ & (2,73 $\pm$ 0,47$)\%$ & (0,22 $\pm$ 0,93$)\%$ & (12,352941 $\pm$ 0,000089$)\%$ & (0,2 $\pm$ 1,0$)\%$ & (24,8 $\pm$ 1,1$)\%$\\
 			\bottomrule
 		\end{tabular}
 	\end{adjustbox}
@@ -893,7 +907,7 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, i els valo
 
 A la taula \ref{val exp trans} es troben els resultats de l'experiment, com els valors son bastant variats farem l'anàlisi d'aquestes dades sobretot a partir del percentatge d'error respecte als valors teòricament predits que adjuntem a la taula \ref{error exp trans}. 
 
-Amb el procediment experimental seguit hem aconseguit recrear bastant bé tant la freqüència pròpia del sistema com les freqüències de tall amb els dos valors de la resistència. Encara que en general els resultats estan aproximadament dins del que esperàvem notem que tenim dos grans errors, un en $f_1$ per a $R = 2660\Omega$ que tenim un error considerablement gran, del $(15,66 \pm 2,43) \%$, i l'altre pels valors de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per a $R = 274\Omega$, que tenim uns errors del $(12,35 \pm 0,000089) \%$ i $(24,78 \pm 1,11) \%$ respectivament. Comentem un a un:
+Amb el procediment experimental seguit hem aconseguit recrear bastant bé tant la freqüència pròpia del sistema com les freqüències de tall amb els dos valors de la resistència. Encara que en general els resultats estan aproximadament dins del que esperàvem notem que tenim dos grans errors, un en $f_1$ per a $R = 2660\Omega$ que tenim un error considerablement gran, del $(15,7 \pm 2,4) \%$, i l'altre pels valors de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per a $R = 274\Omega$, que tenim uns errors del $(12,352941 \pm 0,000089) \%$ i $(24,8 \pm 1,1) \%$ respectivament. Comentem un a un:
 
 L'error de $f_1$ per a $R = 2660\Omega$ es degut a que al laboratori no vam anar amb molta cura en seleccionar les freqüències, l'oscil·loscopi pot donar freqüències amb molta precisió però nosaltres donat que les freqüències son de l'ordre dels milers vam considerar que anar fent salts de 50Hz en 50Hz o de 100Hz en 100Hz era bona idea, a la practica podia semblar que això ja era suficient però acabem de veure que no. Ho vam considerar així ja que experimentalment tampoc s'aprecia un gran salt en $\abs{T_R(\omega)}$ al moure la freqüència de 100 en 100Hz (ho podem veure a la figura \ref{fig:3.4}. Això últim podem afirmar que es cert i concorda amb la teoria, ja que $\abs{T_R(\omega)}$ a freqüències molt baixes o molt altes comparades amb $f_0$, com ho son $f_1$ i $f_2$, $\abs{T_R(\omega)}$ canvia lentament, això es pot deduir veient la forma de l'equació \ref{eq:3.33} i tenint en compte que $\abs{T_R(\omega)}$ està acotat en $(0,1]$, per lo que el canvi en $\abs{T_R(\omega)}$ a aquests ordres de freqüència no s'aprecia molt. Això explica que en algunes freqüències tinguem un error relativament alt però per aquestes mateixes freqüències l'error en $\abs{T_R(\omega)}$ no sigui molt important. 
 
@@ -932,7 +946,7 @@ Que si substituim els nostres valors experimentals podem calcular $\Delta f \equ
 		\toprule
 		& $\Delta f_{\text{teòric}}$ (\text{Hz}) & $\Delta f_{\text{experimental}}$ (\text{Hz}) & $\%$ d'error\\ 
 		\midrule
-		$\mathbf{R = 2660\Omega}$ & 19240 $\pm$ 730 & 19503,0 $\pm$ 1,4 & 1,35 $\pm$ 3,8\\ 
+		$\mathbf{R = 2660\Omega}$ & 19240 $\pm$ 730 & 19503,0 $\pm$ 1,4 & 1,4 $\pm$ 3,8\\ 
 		$\mathbf{R = 274\Omega}$ & 1982 $\pm$ 12 & 1744,0 $\pm$ 1,4 & 12,02 $\pm$ 0,52\\
 		\bottomrule
 	\end{tabular}
@@ -945,62 +959,77 @@ Veiem com el circuit amb una resistència mes petita te un ample de banda també
 
 El fet que $\Delta\omega$ sigui menor per a resistències petites o equivalentment $f_1$ i $f_2$ siguin propers també es pot deduir a partir d'una intuïció mes física. Pensem en un circuit LC, si comencem amb el condensador carregat aquest en descarregar-se provoca un canvi de corrent que provoca un camp magnètic en la bobina (la bobina es carrega en energia magnètica) i per tant es crea en aquesta un corrent que s'oposa al canvi el qual torna a carregar el condensador i així infinitament, si en comptes d'un circuit LC tinguéssim  un RLC com tenim realment es el mateix però pel camí es va perdent energia (va disminuint la intensitat de corrent) perquè es dissipa per la resistència. En el nostre cas no comencem amb el condensador carregat, el que fem es aplicar-li un corrent sinusoidal tal que en el temps el circuit s'acopla a aquest i acaba oscil·lant sinusoidalment, en el camí també es perd energia per la resistència per efecte Joule, però la intensitat de corrent no disminueix perquè l'energia que es perd se la donem externament nosaltres amb el corrent sinusoidal amb el que forcem el circuit. Si forcem amb exactament la mateixa freqüència que la freqüència de ressonància tenim que aquest corrents que es van intercanviant el condensador i la bobina queden perfectament sincronitzats amb l'extern que estem proporcionant per lo que es sumen donant la màxima amplitud de corrent, si això mateix ho fem amb una resistència molt petita, es a dir $R \sim 0$, no es dissipa energia, i per tant tota l'energia que li proporcionem queda retenida al sistema perquè els corrents estan en fase, es sumen i per tant es energia que queda emmagatzemada al circuit, lo que fa que en el limit:
 \begin{eqnarray}
-	\lim_{R \to 0} E = \infty
+	\lim_{R \to 0} U = \infty
 \end{eqnarray}
-On $E$ es l'energia emmagatzemada al sistema passat un temps infinit. El cas que tenim nosaltres òbviament no es $R \sim 0$, però el que si que hem vist es la tendència que al fer $R$ mes petit l'ample de banda es va fent mes estret, lo que es equivalent a que l'intensitat pasat un temps llarg es dispari, o com hem estat parlant fins ara, que la ganància en voltatge tingui un pic cada vegada mes estret en baixar la resistència, ja que ens apropem cada vegada mes al circuit LC que pot oscil·lar a una única freqüència, la freqüència pròpia o de ressonància.
+On $U$ es l'energia emmagatzemada al sistema passat un temps infinit. El cas que tenim nosaltres òbviament no es $R \sim 0$, però el que si que hem vist es la tendència que al fer $R$ mes petit l'ample de banda es va fent mes estret, lo que es equivalent a que l'intensitat pasat un temps llarg es dispari, o com hem estat parlant fins ara, que la ganància en voltatge tingui un pic cada vegada mes estret en baixar la resistència, ja que ens apropem cada vegada mes al circuit LC que pot oscil·lar a una única freqüència, la freqüència pròpia o de ressonància.\\
+\textcolor{red}{poner alguna foto de osciloscopio}
 
-\textcolor{red}{podria cuadrar los resultados un poco mas si calculara la R tal que los resultados cuadren y así por diferencia calcular la R del cable y verificar si cuadra con la R de un cable tipico? Podria recalcularse todo para este nuevo valor de R y hacer un mini anàlisi. Estaria guapisismo y explicaria el prqueño error en las medidas, pq es una idealizacion que en un principio no considerabamos}\\
+\subsection{Règim transitori}
+Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184$ $\Omega$, $33$ mH i $330$ pF respectivament podem presentar els resultats i comparar amb lo predit anteriorment a la taula \ref{val teo trans}:
 
-\textcolor{red}{quitar lila}\\
-
-
-\textcolor{red}{A ver, vamos a probar a recalcular todo esto pero con otro método. Los valores de las frecuencias no hay nada que hacerle porque son las que nos soltaba directamente el osciloscopio al hacer el experimento e ir variando $f$ poco a poco para que las ondas estén en fase para medir $f_0$, y ir variando $f$ para que los voltajes pico cumplan la relación de $1/\sqrt{2}$ para medir $f_{1,2}$. Pero que en las ganancias $\abs{T_R(\omega)}$ haya errores del 24$\%$ no se como justificarlo.}\\
-
-\textcolor{red}{Para “arreglar eso”, vamos a calcular las $\abs{T_R(\omega)}$ de otra manera, en vez de hacer la división de $V_R/V_E$, donde estos dos voltajes de nuevo son valores que te suelta directamente el osciloscopio al hacer el experimento lo que haré es aprovechar que tenemos medidas experimentalmente $f_{0,1,2}$ y utilizo la formula \ref{eq:3.33} para calcular las $\abs{T_R(\omega)}$, con este método los resultados son: (recordar que las $f_{0,1,2}$ son exactamente las mismas que antes)}\\
-
-\begin{table}[H]
+\begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Valors experimentals del sistema (2n mètode)}
-	\begin{tabular}{lcccccc}
+	\caption{Valors experimentals del sistema pel règim transitori}
+	\label{val eexp trans}
+	\begin{tabular}{lccc} 
 		\toprule
-		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
+		& $\omega$ (\text{rad/s}) & $T$ (\text{s}) & $f$ (\text{Hz})\\ 
 		\midrule
-		$\mathbf{R = 2660\Omega}$ & - & - & - & 0,999791 $\pm$ 0,000076 & \textcolor{magenta}{0,626 $\pm$ 0,015} & 0,690 $\pm$ 0,014\\ 
-		$\mathbf{R = 274\Omega}$ & - & - & - & 0,9951 $\pm$ 0,0035 & \textcolor{magenta}{0,796 $\pm$ 0,014} & 0,700$\pm$ 0,012\\
+		$\mathbf{R = 180\Omega}$ & - & (2,060 $\pm$ 0,020)$\cdot 10^{-5}$ & (4,854 $\pm$ 0,047)$\cdot 10^3$\\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
-
-\begin{table}[H]
+\begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Error en les mesures respecte els valors teórics esperats (2n mètode)}
-	\begin{adjustbox}{max width=\textwidth}
-		\begin{tabular}{lcccccc}
-			\toprule
-			& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
-			\midrule
-			$\mathbf{R = 2660\Omega}$ & - & - & - & (0,0209 $\pm$ 0,0076$)\%$ & \textcolor{magenta}{(11,49 $\pm$ 2,06$)\%$} & (2,42 $\pm$ 1,94$)\%$\\ 
-			$\mathbf{R = 274\Omega}$ & - & - & - & (0,49 $\pm$ 0,35$)\%$ & \textcolor{magenta}{(12,58 $\pm$ 2,01$)\%$} & (0,98 $\pm$ 1,72$)\%$\\
-			\bottomrule
-		\end{tabular}
-	\end{adjustbox}
+	\caption{Error en les mesures respecte els valors teòrics esperats pel règim transitori}
+	\label{error trans}
+	\begin{tabular}{lccc} 
+		\toprule
+		& $\omega$ (\text{rad/s}) & $T$ (\text{s}) & $f$ (\text{Hz})\\ 
+		\midrule
+		$\mathbf{R = 180\Omega}$ & - & (0,7 $\pm$ 1,5)$\%$  & (0,7 $\pm$ 1,5)$\%$ \\
+		\bottomrule
+	\end{tabular}
 \end{table}
 
-\begin{equation}
-	V_R = V_{max} \cdot \abs{T_R} = \frac{V_{max}}{\sqrt{2}},
-\end{equation}
-on $V_{max}$ és l'amplitud del voltatge d'entrada. Seguidament busquem per quines freqüències $f_1^{exp}$ i $f_2^{exp}$ això se satisfà. Els resultats es poden trobar a les taules \ref{tab:3.2} i \ref{tab:3.3}.
+Observem que en aquestes mesures hem comés molt poc error, lo qual concorda amb el que hem vist abans, al tenir una resistència petita el circuit es comporta de manera molt sensible sota un cavi en la freqüència, per lo que en fer l'experiment hem pogut mesurar amb molta exactitud el pseudo-període, que es aquell pel qual es sistema oscil·la en aquestes condicions.\\
+(Com a valor experimental no posem la pseudo-freqüència $\omega$, perque el que mesurem experimentalment el el pseudo-període, per lo que fem l'anàlisi a partir d'ell)
 
+Per últim veurem com afecta la resistència en altre caracteristica del sistema, i es que per a diferent valors d'aquesta el sistema pot oscilar o no. Lo primer es veure quina es la frecuencia critica caracteristica del nostre circuit, de l'ecuació \ref{eq:3.31} tenim que pel nostre sistema 
+\begin{eqnarray}
+	R_c = (2,00 \pm 0,30)\cdot10^4 \hspace{0,2cm}\Omega
+\end{eqnarray}
+Ara al posar diferents resistències amb la resistència variable, $R<R_c$, $R=R_c$ i $R>R_c$ obtenim els comportaments d'oscil·lació amortida, oscil·lació critica, i un comportament sobreamortit respectivament, que els podem veure directament al oscil·loscopi:
 
-\textcolor{red}{\textbf{STOP}, a ver a ver, ponte a calcular incertezas y a ver si cuadran las cosas y entonces ya sigues que esto sino no tiene sentido}\\
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.32\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{trans amort.jpeg}
+		\caption{Resposta per $R<R_c$}
+		\label{fig trans amort}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.32\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{tranas crit.jpeg}
+		\caption{Resposta per $R=R_c$}
+		\label{fig trans crit}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.32\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{trans sobre.PNG}
+		\caption{Resposta per $R>R_c$}
+		\label{fig trans sobre}
+	\end{subfigure}
+	\label{fig trans}
+\end{figure}
 
-\subsection{Règim transitori}
-Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184$ $\Omega$, $33$ mH i $330$ pF respectivament podem presentar els resultats. 
-
-\textcolor{red}{$AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$}
+Veient la figura \ref{fig trans amort} podem entendre molt millor el que dèiem abans de que el sistema perd energia, notem com en cada cicle l'amplitud de la tensió va decreixent exponencialment degut a que l'energia del sistema que es guarda al condensador i la bobina es va dissipant en cada oscil·lació a traves de la resistència. Cuan augmentem el valor de la resistència fins al valor crític notem com el sistema pràcticament no oscil·la, figura \ref{fig trans crit}, i només s'aprecia la tensió aplicada i un soroll de fons, aixó ja que al augmentar fins a aquest valor la resistència el sistema per tanta energia com la que li estem donant de forma instantanea i no pot oscil·lar. Si encara seguim augmentant el valor de la resistència el sistema es comporta com en la figura \ref{fig trans sobre}, que no només no oscil·la sinó que la dissipació d'energia es tal que li costa inclús mantenir la tensió que li subministrem, es dissipa mes energia de la que li proporcionem.
 
 \subsection{Constant d'esmorteïment del circuit}
 En les condicions del règim transitori, ens proposem ara buscar la constant d'esmorteïment $\lambda$ del sistema. Recordem que aquest valor apareix quan estem en el cas $\Delta < 0$ (resistències petites)\footnote{$\Delta$ ve donat per l'equació \eqref{eq:3.22}.} a partir d'un seguit de mesures de $V_C$ vs. $t$, tal i com s'ha explicat a la introducció teòrica de la pràctica. Un cop haguem trobat el valor experimental el compararem amb el teòric.

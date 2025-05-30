@@ -901,8 +901,8 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, els valors
 			\toprule
 			& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
 			\midrule
-			$\mathbf{R = 2660\text{ }\Omega}$ & (2,27 $\pm$ 0,41$)\%$ & (15,7 $\pm$ 2,4$)\%$ & (3,7 $\pm$ 3,1$)\%$ & (0,00 $\pm$ 0,75$)\%$ & (2,30 $\pm$ 0,93$)\%$ & (2,30 $\pm$ 0,93$)\%$\\ 
-			$\mathbf{R = 274\text{ }\Omega}$ & (1,13 $\pm$ 0,41$)\%$ & (2,73 $\pm$ 0,47$)\%$ & (0,22 $\pm$ 0,93$)\%$ & (12,352941 $\pm$ 0,000089$)\%$ & (0,2 $\pm$ 1,0$)\%$ & (24,8 $\pm$ 1,1$)\%$\\
+			$\mathbf{R = 2660\text{ }\Omega}$ & 2,27 $\%$ & 15,7 $\%$ & 3,65 $\%$ & 0,00 $\%$ & 2,30 $\%$ & 2,30 $\%$\\ 
+			$\mathbf{R = 274\text{ }\Omega}$ & 1,13 $\%$ & 2,73 $\%$ & 0,22 $\%$ & 12,35 $\%$ & 0,17 $\%$ & 24,78 $\%$\\
 			\bottomrule
 		\end{tabular}
 	\end{adjustbox}
@@ -910,7 +910,7 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, els valors
 
 A la taula \ref{val exp trans} es troben els resultats de l'experiment. Com que els valors varien considerablement, l'anàlisi d'aquestes dades es farà, sobretot, a partir del percentatge d'error respecte als valors teòrics predits que s'adjunten a la taula \ref{error exp trans}. 
 
-Amb el procediment experimental seguit hem aconseguit recrear bastant bé tant la freqüència pròpia del sistema com les freqüències de tall amb els dos valors de la resistència. Encara que, en general, els resultats estan aproximadament dins del que esperàvem, notem que tenim dos grans errors: un en $f_1$ per a $R = 2660$ $\Omega$ amb un valor del $(15,7 \pm 2,4) \%$, i l'altre pels valors de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per a $R = 274$ $\Omega$, amb uns errors del $(12,352941 \pm 0,000089) \%$ i del $(24,8 \pm 1,1) \%$ respectivament. A continuació els comentem un a un.
+Amb el procediment experimental seguit hem aconseguit recrear bastant bé tant la freqüència pròpia del sistema com les freqüències de tall amb els dos valors de la resistència. Encara que, en general, els resultats estan aproximadament dins del que esperàvem, notem que tenim dos grans errors: un en $f_1$ per a $R = 2660$ $\Omega$ amb un valor del 15,7 $\%$, i l'altre pels valors de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per a $R = 274$ $\Omega$, amb uns errors del 12,35 $\%$ i del 24,78 $\%$ respectivament. A continuació els comentem un a un.
 
 L'error de $f_1$ per a $R = 2660$ $\Omega$ pot ser causat per la falta de precisió en la selecció de freqüències de l'oscil·loscopi, ja que aquest pot donar valors amb molta precisió però nosaltres vam considerar que anar fent salts de 50Hz o de 100Hz era bona idea, ja que les freqüències eren de l'ordre de milers d'hertzs. Ho vam considerar així perquè experimentalment tampoc s'apreciava una gran variació del guany $\abs{T_R(\omega)}$ en moure la freqüència de 100 Hz en 100 Hz (tal i com es pot veure a la figura \ref{fig:3.4}). Això últim concorda amb el que es podria predir teòricament, ja que $\abs{T_R(\omega)}$ a freqüències molt baixes o molt altes comparades amb $f_0$, com ho son $f_1$ i $f_2$, canvia molt lentament. Aquest fet es pot deduir veient la forma de l'equació \ref{eq:3.33} i tenint en compte que $\abs{T_R(\omega)}$ està acotat entre $(0,1]$. Així, el canvi en $\abs{T_R(\omega)}$ per a aquests ordres de freqüència no és pràcticament apreciable. Això podria explicar que, en algunes freqüències, tinguem un error relativament alt però que per a aquestes mateixes freqüències l'error en $\abs{T_R(\omega)}$ no sigui molt important. 
 
@@ -948,10 +948,10 @@ Substituint els nostres valors experimentals podem calcular $\Delta f \equiv f_2
 	\caption{Valors de l'ample de banda.}
 	\begin{tabular}{lccc}
 		\toprule
-		& $\Delta f_{\text{teòric}}$ (\text{Hz}) & $\Delta f_{\text{experimental}}$ (\text{Hz}) & $\%$ d'error\\ 
+		& $\Delta f_{\text{teòric}}$ (\text{Hz}) & $\Delta f_{\text{experimental}}$ (\text{Hz}) & Error relatiu\\ 
 		\midrule
-		$\mathbf{R = 2660\Omega}$ & 19240 $\pm$ 730 & 19503,0 $\pm$ 1,4 & 1,4 $\pm$ 3,8\\ 
-		$\mathbf{R = 274\Omega}$ & 1982 $\pm$ 12 & 1744,0 $\pm$ 1,4 & 12,02 $\pm$ 0,52\\
+		$\mathbf{R = 2660\Omega}$ & 19240 $\pm$ 730 & 19503,0 $\pm$ 1,4 & 1,35 $\%$\\ 
+		$\mathbf{R = 274\Omega}$ & 1982 $\pm$ 12 & 1744,0 $\pm$ 1,4 & 12,02 $\%$\\
 		\bottomrule
 	\end{tabular}
 	\label{tab:3.5}
@@ -996,7 +996,7 @@ Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $1
 		\toprule
 		& $\omega$ (\text{rad/s}) & $T$ (\text{s}) & $f$ (\text{Hz})\\ 
 		\midrule
-		$\mathbf{R = 184\text{ }\Omega}$ & - & (0,7 $\pm$ 1,5)$\%$  & (0,7 $\pm$ 1,5)$\%$ \\
+		$\mathbf{R = 184\text{ }\Omega}$ & - & 0,65 $\%$  & 0,66 $\%$ \\
 		\bottomrule
 	\end{tabular}
 	\label{tab:37}

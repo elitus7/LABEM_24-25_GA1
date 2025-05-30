@@ -99,25 +99,24 @@
 \end{chapterabstract}
 
 \section{Introducció i fonament teòric}
-Per a materials lineals, isòtrops i homogenis (sense $\rho_F$), sota la presència d'un camp electrostàtic $\vec{E}$, s'apliquen les següents equacions si el medi és conductor:
+Per a materials lineals, isòtrops i homogenis (sense $\rho_F$), sota la presència d'un camp electrostàtic $\vec{E}$, s'apliquen les següents equacions si el medi és conductor
 \begin{align}
 	\vec{\nabla} \cross \vec{E} = 0, \\
 	\vec{J} = \sigma \vec{E} \label{eq1.2},  \\ 
 	\vec{\nabla}\cdot \vec{J} = 0 \label{eq1.3},
 \end{align}
-o, si el medi és dielèctric:
+o, si el medi és dielèctric
 \begin{align}
 	\vec{\nabla} \cross \vec{E} = 0, \\
 	\vec{D} = \varepsilon \vec{E} \label{eq1.5}, \\ 
 	\vec{\nabla}\cdot \vec{D} = 0 \label{eq1.6}.
 \end{align}
-
-Per aquest tipus de medis $\varepsilon$ i $\sigma$ són constants, així, combinant les darreres equacions trobem:
+Per aquest tipus de medis $\varepsilon$ i $\sigma$ són constants, així, combinant les darreres equacions trobem
 \begin{align}
 	\vec{\nabla} \cross \vec{J} = 0, \\
 	\vec{\nabla} \cross \vec{D} = 0.
 \end{align}
-Això últim implica que tant $\vec{J}$ com $\vec{D}$ són camps conservatius i, per tant, es poden definir com el gradient (canviat de signe) d'una funció escalar, és a dir:
+Això últim implica que tant $\vec{J}$ com $\vec{D}$ són camps conservatius i, per tant, es poden definir com el gradient (canviat de signe) d'una funció escalar, és a dir
 \begin{align}
 	\vec{J} = -\vec{\nabla}{U}, \\
 	\vec{D} = -\vec{\nabla}{U'}.
@@ -144,14 +143,14 @@ Per tal de poder representar les línies equipotencials usem fulls de paper impr
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{0.41\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{screenshot002}
 		\caption{Paper conductor i retolador de tinta basada en una suspensió de plata.}
 		\label{fig1.1a}
 	\end{subfigure}
-	\hfill
-	\begin{subfigure}{0.45\textwidth}
+	\hspace{1em}
+	\begin{subfigure}{0.35\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{screenshot003}
 		\caption{Muntatge experimental per a la representació de les corbes equipotencials pels dos fils infinits. D'esquerra a dreta: Font de corrent DC connectada als dos elèctrodes (dos punts pel cas representat) mitjançant dos cables; suro amb el paper conductor en el que prèviament s'han dibuixat els dos elèctrodes, enganxat amb xinxetes; multímetre usat per mesurar les diferències de potencial.}
@@ -174,7 +173,7 @@ Si aproximem la integral donada per l'equació \eqref{eq1.13} per un sumatori i 
 \begin{equation}
 	E_i \approx \frac{\Delta V_i}{\Delta r_i} \label{eq1.14},
 \end{equation}
-on $\Delta r_i$ és la distància radial, $\Delta V_i$ és la diferència de potencial de l'element $\Delta l_i$, i el subíndex $i$ fa referència a la \textit{i-èssima} mesura. De tot això tenim:
+on $\Delta r_i$ és la distància radial, $\Delta V_i$ és la diferència de potencial de l'element $\Delta l_i$, i el subíndex $i$ fa referència a la \textit{i-èsima} mesura. De tot això tenim:
 \begin{equation}
 	\frac{Q}{Z} \approx \varepsilon \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i}.
 \end{equation}
@@ -199,9 +198,7 @@ A més a més, es pot demostrar fàcilment que en funció de l'angle d'intersecc
 \end{equation}
 on $N_q$ és el nombre de càrregues imatge i $\theta$ l'angle format pels dos plans. Fixem-nos en què $\theta = 180\text{º} \Rightarrow N_q = 1$, $\theta=90\text{º}\Rightarrow N_q =3$,$\dots$\footnote{Aquests són els resultats que vam veure en el problema 2.31 de la col·lecció de problemes de l'assignatura d'\textit{Electromagnetisme} (veure \cite{ref1}).} 
 \subsection{Simulacions}
-Els codis de les simulacions es poden trobar a l'annex \ref{an:a4}.
-
-Per tal de simular el condensador planoparal·lel, considerem la distribució representada com la suma de doscentes càrregues puntuals (de valor $-q$ pel fil de l'esquerra i $q$ pel de la dreta) distribuïdes uniformement en les plaques, de manera que una es troba a $x = -d/2$, i l'altra a $x =  d/2$. Pel que fa a l'eix de les ordenades, les càrregues estan situades des de $y = -H/2$ fins a $y = H/2$, on $H$ és l'alçada de la placa. Així, per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$ usant el principi de superposició.
+Per tal de simular\footnote{Els codis de les simulacions es poden trobar a l'annex \ref{an:a4}.} el condensador planoparal·lel, considerem la distribució representada com la suma de doscentes càrregues puntuals (de valor $-q$ pel fil de l'esquerra i $q$ pel de la dreta) distribuïdes uniformement en les plaques, de manera que una es troba a $x = -d/2$, i l'altra a $x =  d/2$. Pel que fa a l'eix de les ordenades, les càrregues estan situades des de $y = -H/2$ fins a $y = H/2$, on $H$ és l'alçada de la placa. Així, per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$ usant el principi de superposició.
 
 Per la simulació dels dos fils infinits, considerem la seva projecció en el pla X$-$Y com dues càrregues puntuals separades una distància $d+2r$, essent aquest valor la separació entre els centres dels discos dibuixats experimentalment (de radi $r$).
 
@@ -214,8 +211,6 @@ Per simular la tercera distribució de càrrega posem l'origen de coordenades en
 \end{itemize}
 
 \section{Resultats i discussió}
-Els resultats experimentals es poden trobar a l'annex \ref{an:a2}.
-
 \subsection{Condensador de plaques planoparal·leles}
 La primera configuració estudiada es correspon amb un condensador planoparal·lel, format per dos plans infinits (en l'eix Z, perpendicular al pla del paper) carregats i separats per una distància $d$. La seva projecció en el pla X$-$Y  resulta en dos fils infinits separats també per una distància $d$.
 
@@ -223,7 +218,7 @@ Les corbes equipotencials trobades experimentalment són les que es poden observ
 
 A les vores de les plaques, es manifesta l’efecte punta (degut a l'acumulació de càrregues a la superfície), on el camp deixa de ser uniforme i es distribueix de manera més complexa, amb línies equipotencials corbades cap a l’exterior. Aquest efecte és més acusat en condensadors de mida finita, ja que en el cas ideal de plaques infinites, el camp fora de la regió entre elles seria nul. Els resultats són, aproximadament els mateixos predits per la simulació de la figura \ref{fig:1.2b}.
 
-Com ja hem comentat abans, podem utilitzar la llei de Gauss per tal de calcular la capacitat per unitat de longitud que tindria el condensador infinitament llarg en la direcció $Z$. Per fer-ho emprem l'expressió \eqref{eq1.17}, prèviament deduïda, i els resultats experimentals obtinguts en el transcurs de la pràctica\footnote{Aquests es poden trobar a la taula de l'annex \ref{an:a2}.}:
+Com ja hem comentat abans, podem utilitzar la llei de Gauss per tal de calcular la capacitat per unitat de longitud que tindria el condensador infinitament llarg en la direcció $Z$. Per fer-ho emprem l'expressió \eqref{eq1.17}, prèviament deduïda, i els resultats experimentals obtinguts en el transcurs de la pràctica\footnote{Aquests es poden trobar a la taula de l'annex \ref{an:a2}. Les incerteses, per la seva banda, les podeu veure a l'annex \ref{an:in}.}
 \begin{equation}
 	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} = (2,06 \pm 0,21)\varepsilon \text{ F/m}.
 \end{equation}
@@ -246,16 +241,16 @@ Hi ha principalment dos motius pels quals no hem obtingut la càrrega per unitat
 
 \begin{figure}
 	\centering
-	\begin{subfigure}{0.45\linewidth}
+	\begin{subfigure}[t]{0.4\linewidth}
 		\centering
-		\includegraphics[height=5.5cm]{dibplaques} % Augmenta la mida
+		\includegraphics[height=5.5cm]{dibplaques}
 		\caption{Corbes equipotencials (en blanc) i línies de camp $\vec{E}$ (en lila) pel cas del condensador planoparal·lel trobades experimentalment.}
 		\label{fig:1.2a}
 	\end{subfigure}
-	\hfill
-	\begin{subfigure}{0.53\linewidth}
+	\hspace{2em}
+	\begin{subfigure}[t]{0.5\linewidth}
 		\centering
-		\includegraphics[height=6.5cm]{figplaques1} % Mateixa alçada
+		\includegraphics[height=5.5cm]{figplaques1} % Igualada l'alçada per alineació
 		\caption{Simulació del camp elèctric i del potencial pel condensador planoparal·lel.}
 		\label{fig:1.2b}
 	\end{subfigure}
@@ -272,14 +267,14 @@ La segona configuració estudiada és la projecció en el pla X$-$Y (pla de la i
 Les corbes equipotencials trobades experimentalment són les que es poden observar a la figura \ref{fig:1.3a}. Observem com aquestes formen el·lipses on els fils estan cada cop més descentrats conforme agafem corbes més externes. 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{0.45\linewidth}
+	\begin{subfigure}{0.4\linewidth}
 		\centering
 		\includegraphics[angle=270,width=\linewidth]{screenshot004}
 		\caption{Corbes equipotencials (en blanc) i línies de camp $\vec{E}$ (en lila) pel cas dels dos fils infinits trobades experimentalment.}
 		\label{fig:1.3a}
 	\end{subfigure}
-	\hfill
-	\begin{subfigure}{0.5\linewidth}
+	\hspace{1em}
+	\begin{subfigure}{0.45\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{figfils}
 		\caption{Simulació del camp elèctric i del potencial pels dos fils infinits.}
@@ -307,14 +302,14 @@ Les corbes equipotencials trobades experimentalment són les que es poden observ
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{0.49\linewidth}
+	\begin{subfigure}[b]{0.4\linewidth}
 		\centering
 		\includegraphics[angle=90, width=\linewidth]{confinventJS}
 		\caption{Corbes equipotencials (en blanc) i línies de camp $\vec{E}$ (en lila) pel cas dels dos plans infinits i un fil infinit trobades experimentalment.}
 		\label{fig:1.4a}
 	\end{subfigure}
-	\hfill
-	\begin{subfigure}{0.49\linewidth}
+	\hspace{1em}
+	\begin{subfigure}[b]{0.4\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{figplacarara}
 		\caption{Simulació del camp elèctric i del potencial pels dos plans i el fil infinit.}
@@ -325,10 +320,9 @@ Les corbes equipotencials trobades experimentalment són les que es poden observ
 \end{figure}
 
 Notem que aquesta configuració de càrrega és molt més complexa que les anteriors, ja que una de les distribucions, pel fet de ser triangular, l'efecte punta es fa molt notable als extrems. De fet, veiem que en aquests punts el camp divergeix molt més que en altres regions.
-
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.45\linewidth]{figV2imagenes}
+	\includegraphics[width=0.4\linewidth]{figV2imagenes}
 	\caption{Simulació de les corbes equipotencials i de les línies de camp elèctric associades a la distribució de càrregues imatge solució.}
 	\label{fig:1.5}
 \end{figure}
@@ -397,27 +391,31 @@ o, en termes de $B$
 	F = BLI. \label{eq:2.campmagnetic}
 \end{equation}
 Aquesta darrera equació ens permetrà calcular el camp d'inducció magnètica terrestre\footnote{Nota: Ens referirem a $B$ de forma indistinta per \textit{camp magnètic terrestre} i \textit{camp d'inducció magnètica terrestre}.} (en particular la component horitzontal) a partir de la força que fa aquest sobre un fil de longitud $L$ pel qual hi travessa una intensitat $I$.
-\section{Metodologia experimental}
 
-El sistema que usarem per tal de fer totes les mesures necessàries serà el de la figura \ref{fig:2.1}\footnote{Tots els esquemes dels muntatges experimentals han estat extrets dels \textit{Guions de les pràctiques de l'assignatura de Laboratori d'Electromagnetisme}\cite{ref3}.}. A l'esquema es poden veure tots els elements clau que constitueixen la balança usada. També usem una font de corrent continu, un transformador, un conjunt de masses (de 5, 10, 15 i 25 mg) i una brúixola.
+\section{Metodologia experimental}
+El sistema que usarem per tal de fer totes les mesures necessàries serà el de la figura \ref{fig:2.1a}\footnote{Tots els esquemes dels muntatges experimentals han estat extrets dels \textit{Guions de les pràctiques de l'assignatura de Laboratori d'Electromagnetisme}\cite{ref3}.}. A l'esquema es poden veure tots els elements clau que constitueixen la balança usada. També usem una font de corrent continu, un transformador, un conjunt de masses (de 5, 10, 15 i 25 mg) i una brúixola.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{screenshot008}
-	\caption{Esquema de la balança usada en el transcurs de la pràctica 2.}
-	\label{fig:2.1}
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{screenshot008}
+		\caption{Esquema de la balança usada en el transcurs de la pràctica 2.}
+		\label{fig:2.1a}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.40\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{screenshot009}
+		\caption{Esquema de les connexions de la balança.}
+		\label{fig:2.1b}
+	\end{subfigure}
+	\caption{Esquemes del muntatge emprat en el transcurs de la pràctica.}
 \end{figure}
 
-Abans de començar amb l'equilibrat de la balança connectem el transformador a 9 V (al lloc indicat amb 'HEATER 9 V') per tal de fondre el gal·li ($T_{fus} \approx 30$ ºC), que actuarà com a conductor. Tot seguit orientem la balança de forma que els dos fils conductors estiguin en la direcció nord-sud; així evitem els possibles efectes causats pel camp magnètic terrestre. Seguidament connectem la font de corrent continu, tal i com es pot veure a la figura \ref{fig:2.2}, tot assegurant-nos que està en 'OFF' i que els controls d'intensitat i de potencial estan al mínim i al màxim, respectivament. Mesurem la longitud $L$ del fil superior.
+Abans de començar amb l'equilibrat de la balança connectem el transformador a 9 V (al lloc indicat amb 'HEATER 9 V') per tal de fondre el gal·li ($T_{fus} \approx 30$ ºC), que actuarà com a conductor. Tot seguit orientem la balança de forma que els dos fils conductors estiguin en la direcció nord-sud; així evitem els possibles efectes causats pel camp magnètic terrestre. Seguidament connectem la font de corrent continu, tal i com es pot veure a la figura \ref{fig:2.1b}, tot assegurant-nos que està en 'OFF' i que els controls d'intensitat i de potencial estan al mínim i al màxim, respectivament. Mesurem la longitud $L$ del fil superior.
 
 Notem que el fet d'usar gal·li per tal d'unir el circuit es deu als següents motius, fonamentalment. El primer d'ells és que és un element amb propietats conductores que fon a temperatura ambient, de manera que, quan el punxó que connecta el sistema amb el pont de gal·li entra en contacte amb aquest, ho fa recobrint la major quantitat de superfície possible, evitant possibles pèrdues de corrent per errors de contacte. A més a més, l'ús de cables podria desestabilitzar la balança (que és molt sensible), fent que les mesures esdevinguessin menys precises i exactes.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.6\linewidth]{screenshot009}
-	\caption{Esquema de les connexions de la balança.}
-	\label{fig:2.2}
-\end{figure}
 
 \subsection{Equilibrat de la balança}
 Un cop tenim la balança preparada, cal que l'equilibrem. Primer fem baixar el pot de gal·li per fondre'l i, un cop és líquid, el tornem a pujar fins que toqui el conductor, sense que el darrer estigui totalment submergit. Repetim tot això per l'altre pot de gal·li. Posem el dial a zero i la gafa del filferro oposada a aquest, en posició vertical.
@@ -429,18 +427,12 @@ Finalment, usant els dos cargols per ajustar la separació entre fils, fem pujar
 \subsection{Força vs. corrent}
 Per tal de mesurar la força entre els fils vs. corrent comencem baixant el conductor paral·lel inferior uns 5 mm (tenint present que cada volta dels cargols equival a 1 mm). Amb això ens assegurem que la separació entre els centres dels fils és de 8.1 mm. Seguidament posem una massa de 5 mg a la cassoleta de pesos i connectem la font de potencial. Ajustem el corrent continu fins que la balança torna al valor d'equilibri, tot prenent nota del valor de $I$. Desconnectem la font de potencial i agafem la massa de 5 mg; ens assegurem de que la balança, en absència de pesos i corrent, segueix al zero (en cas que no sigui així, cal repetir tot el procediment d'equilibrat de la balança).
 
-Repetim tot això uns quants cops (tres en el nostre cas) per la massa de 5 mg i calculem el promig d'intensitats (així minimitzem els possibles errors experimentals que es puguin cometre).
+Repetim tot això uns quants cops (tres en el nostre cas) per la massa de 5 mg i calculem el promig d'intensitats (així minimitzem els possibles errors experimentals que es puguin cometre). Això últim ho tornem a fer augmentant la massa de 5 en 5 mg fins a arribar a 25 mg (com a màxim) o fins que no puguem reequilibrar la balança.
 
-Repetim els anteriors passos augmentant la massa de 5 en 5 mg fins a arribar a 25 mg (com a màxim) o fins que no puguem reequilibrar la balança.
-
-Amb tot el recull de mesures d'intensitat representem $I^2$ vs. $F$ (massa $\cross$ gravetat)
-\begin{equation}
-	I^2 = \frac{2\pi r}{\mu_0 L} F. \label{eq:2.9}
-\end{equation}
-De l'anterior recta, a partir del pendent deduïm el valor de $\mu_0$. Recordem que $L$ és la longitud dels fils i $r$ la separació entre aquests.
+Amb tot el recull de mesures d'intensitat representem $I^2$ vs. $F$ (massa $\cross$ gravetat), a partir de l'equació \eqref{eq2:8} (expressada en termes de $I^2 = f(F)$). De l'anterior recta, a partir del seu pendent deduïm el valor de $\mu_0$. Recordem que $L$ és la longitud dels fils i $r$ la separació entre aquests.
 
 \subsection{Força vs. separació}
-Per tal de poder calcular un valor de $\mu_0$ experimental a partir de la força vs. separació, primer trobem la constant de torsió del fil, la qual relaciona la força del fil d'acer en funció de l'angle de torsió. Aquest paràmetre es pot obtenir equilibrant la balança (veure figura \ref{fig:2.1}) per a cada una de les masses (5, 10, 15, 20 i 25 mg) i anotant-ne els graus que cal girar el dial de la balança per tal d'equilibrar el pes d'aquestes. Comencem amb la massa de 20 mg a la cassoleta i després repetim el procediment amb la resta. Un cop tenim totes les dades, representem la gràfica de la força en funció de l'angle de torsió, trobant així el pendent de la recta 
+Per tal de poder calcular un valor de $\mu_0$ experimental a partir de la força vs. separació, primer trobem la constant de torsió del fil, la qual relaciona la força del fil d'acer en funció de l'angle de torsió. Aquest paràmetre es pot obtenir equilibrant la balança (veure figura \ref{fig:2.1a}) per a cada una de les masses (5, 10, 15, 20 i 25 mg) i anotant-ne els graus que cal girar el dial de la balança per tal d'equilibrar el pes d'aquestes. Comencem amb la massa de 20 mg a la cassoleta i després repetim el procediment amb la resta. Un cop tenim totes les dades, representem la gràfica de la força en funció de l'angle de torsió, trobant així el pendent de la recta 
 \begin{equation}
 	F=k\theta.
 	\label{eq2:10}
@@ -470,9 +462,9 @@ Comencem l'experiment donant una intensitat d'uns 6 A i mesurant la força amb l
 \section{Resultats i discussió}
 
 \subsection{Valor experimental de la permeabilitat magnètica}
-El càlcul de la permeabilitat magnètica del buit el fem a partir de les mesures de \textit{força vs. corrent} i de les mesures de \textit{força vs. separació}. 
+El càlcul de la permeabilitat magnètica del buit el fem a partir de les mesures de \textit{força vs. corrent} i de les mesures de \textit{força vs. separació}\footnote{El càlcul de les incerteses el podeu trobar a l'annex \ref{an:in}.}. 
 
-De les mesures de $I^2$ vs. $F$, a partir de l'equació \eqref{eq:2.9}, trobem, després de fer un ajust lineal, la recta de la figura \ref{fig:2.3}\footnote{Totes les gràfiques s'han fet usant el programari \textit{Gnuplot}.}. Per arribar a aquests resultats fem tres mesures de la força per cada massa, per cinc masses diferents (les indicades a la secció del procediment experimental de la pràctica). Les dades experimentals usades es poden trobar en forma de taula a l'annex \ref{an:c1}. De l'ajust lineal de la figura \ref{fig:2.3} en determinem la permeabilitat magnètica del buit, ja que està directament relacionada amb el pendent d'aquesta recta, tenint present que els valors de la longitud del fil $L$, la separació entre fils $r$ i $g$ són
+De les mesures de $I^2$ vs. $F$, a partir de l'equació \eqref{eq2:8} (expressada en termes de $I^2 = f(F)$), trobem, després de fer un ajust lineal, la recta de la figura \ref{fig:2.3}\footnote{Totes les gràfiques s'han fet usant el programari \textit{Gnuplot}.}. Per arribar a aquests resultats fem tres mesures de la força per cada massa, per cinc masses diferents (les indicades a la secció del procediment experimental de la pràctica). Les dades experimentals usades es poden trobar en forma de taula a l'annex \ref{an:c1}. De l'ajust lineal de la figura \ref{fig:2.3} en determinem la permeabilitat magnètica del buit, ja que està directament relacionada amb el pendent d'aquesta recta, tenint present que els valors de la longitud del fil $L$, la separació entre fils $r$ i $g$ són
 \begin{equation*}
 	L = (0,305\pm 0,001)\text{ m}, \hspace{0.15cm} r = (8,10\pm 0,05)\cdot10^{-3} \text{ m}, \hspace{0.15cm} g = (9,81\pm 0,01) \text{ m/s$^2$}.
 \end{equation*}
@@ -481,9 +473,9 @@ Així, el valor de la permeabilitat magnètica del buit és
 	\mu_0 = (1,704\pm0,057)\cdot 10^{-6} \text{ N/A$^2$}.
 \end{equation*}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
-\includegraphics[width=0.8\linewidth]{screenshot020}
+\includegraphics[width=0.6\linewidth]{screenshot020}
 \caption{Intensitat del corrent al quadrat en funció de la força entre els dos fils. Dades de l'ajust lineal: $y=mx+n$, amb $m = (979 \pm 32)\cdot 10^{2}$ A$^2$$\cdot$N$^{-1}$ i $n = (-4,38\pm0,52)\cdot$ A$^{2}$. Coeficient de correlació $R^2=0,997$. Notem que, en alguns punts, les barres d'error corresponents a l'eix de les $y$ són tan petites que no s'arriben a distingir.}
 \label{fig:2.3}
 \end{figure}
@@ -494,9 +486,9 @@ Si comparem aquest resultat amb el valor teòric de la permeabilitat magnètica 
 \end{equation*}
 trobem que tenim un error relatiu del 36,64 \%.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\linewidth]{screenshot017}
+	\includegraphics[width=0.6\linewidth]{screenshot017}
 	\caption{Força en funció de l'angle de torsió $\theta$. Dades de l'ajust lineal: $y=mx+n$, amb $m=(1,9633\pm0,0047)\cdot10^{-4}$ N$\cdot$rad$^{-1}$ i $n=(-2,77\pm0,44)\cdot10^{-5}$ N. Coeficient de correlació $R^2=0,998$. Notem que, en alguns punts, les barres d'error corresponents a l'eix de les $x$ són tan petites que no s'arriben a distingir.}
 	\label{fig:2.4}
 \end{figure}
@@ -512,9 +504,9 @@ De les mesures experimentals de $F$ vs. $1/r$ (essent $r$ la separació entre el
 	\mu_0 = (2,206 \pm 0,036)\cdot 10^{-6}\text{ N$/$A$^2$}
 \end{equation*}
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\linewidth]{filsexper}
+	\includegraphics[width=0.6\linewidth]{filsexper}
 	\caption{Força en funció de $1/r$. Dades de l'ajust lineal: $y=mx+n$, amb $m = (3,298\pm0,051)\cdot 10^{-6} \text{ N$\cdot$m}$ i $n=(-1,194\pm 0,066)\cdot10^{-4} \text{ N}$. Coeficient de correlació $R^2=0,9993$. Notem que, en alguns punts, les barres d'error corresponents a l'eix de les $x$ són tan petites que no s'arriben a distingir.}
 	\label{fig:2.5}
 \end{figure}
@@ -524,6 +516,7 @@ Si comparem aquest resultat amb el valor de $\mu_0$ teòric trobem que cometem u
 A la taula \ref{tab:2.1} podeu trobar agrupats els resultats dels dos experiments.
 \begin{table}[h]
 	\centering
+	\small
 	\caption{Resultats del càlcul de la permeabilitat magnètica del buit amb el corresponent error relatiu i el coeficient de correlació de l'ajust lineal per l'experiment de \textit{força vs. corrent} (1) i \textit{força vs. separació} (2).}
 	\begin{tabular}{cccc}
 		\toprule
@@ -550,7 +543,7 @@ Contràriament als apartats anteriors, en aquest cas situem els conductors perpe
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.35\linewidth]{screenshot019}
+	\includegraphics[width=0.25\linewidth]{screenshot019}
 	\caption{Diagrama de forces que crea el camp magnètic terrestre a la balança. La força verda $F_h$ és la corresponent a la component horitzontal de $\vec{B}$.}
 	\label{fig2:6}
 \end{figure}
@@ -572,11 +565,11 @@ Finalment, és clar que el nombre de mesures preses és limitat. L'error relatiu
 
 
 \section{Conclusions}
-En aquesta pràctica hem pogut analitzar, a partir de dos experiments diferents, l'equació que governa la força que es fan dos fils (de longitud $L$, suposada suficientment gran com per assumir que són infinits) pels quals hi circula un corrent elèctric, deduïda a partir de la llei de Biot i Savart. Els resultats extrets ens han permès estimar el valor de la permeabilitat magnètica del buit $\mu_0$, seguint dues metodologies diferents. En un cas hem mantingut la separació entre els fils constant i hem mesurat la dependència de la força (mesurada equilibrant la balança de la figura \ref{fig:2.1} amb peces metàl·liques de diferents masses) amb el quadrat de la intensitat; en un segon cas hem deixat el corrent fixat i hem estudiat com variava la força (mesurada equilibrant la balança de la figura \ref{fig:2.1} usant el dial i la constant de torsió del fil d'acer, trobada prèviament) en alterar la separació $r$ entre fils. A partir de vàries mesures (de $F$, $I$ i $r$ en funció del cas), hem pogut fer un ajust lineal que ens ha permès trobar un valor de $\mu_0$, directament relacionat amb el pendent de les rectes de regressió, en cada situació.
+En aquesta pràctica hem pogut analitzar, a partir de dos experiments diferents, l'equació que governa la força que es fan dos fils (de longitud $L$, suposada suficientment gran com per assumir que són infinits) pels quals hi circula un corrent elèctric, deduïda a partir de la llei de Biot i Savart. Els resultats extrets ens han permès estimar el valor de la permeabilitat magnètica del buit $\mu_0$, seguint dues metodologies diferents. En un cas hem mantingut la separació entre els fils constant i hem mesurat la dependència de la força (mesurada equilibrant la balança de la figura \ref{fig:2.1a} amb peces metàl·liques de diferents masses) amb el quadrat de la intensitat; en un segon cas hem deixat el corrent fixat i hem estudiat com variava la força (mesurada equilibrant la balança de la figura \ref{fig:2.1a} usant el dial i la constant de torsió del fil d'acer, trobada prèviament) en alterar la separació $r$ entre fils. A partir de vàries mesures (de $F$, $I$ i $r$ en funció del cas), hem pogut fer un ajust lineal que ens ha permès trobar un valor de $\mu_0$, directament relacionat amb el pendent de les rectes de regressió, en cada situació.
 
 Dels dos experiments anteriors, hem vist que, en els dos casos, s'obtenen valors que són de l'ordre de la permeabilitat magnètica del buit teòrica, essent l'error de la segona experiència molt més gran ($\approx$ 76 \%) que l'error del primer cas ($\approx$ 37 \%). Atribuïm aquests errors, com hem discutit prèviament, a les múltiples limitacions del model emprat i de l'experiment dut a terme, entre les quals destaquem que: el model considerat no reflexa completament la naturalesa del sistema (ja que els dos fils no són estrictament infinits i cal considerar efectes de vora, que alteren la forma que pren el camp $\vec{B}$ i, en conseqüència, la força entre els dos fils), i que el muntatge de la balança era summament sensible a que es produïssin problemes relacionats amb el calibratge. En particular, pel segon experiment hem hagut de trobar prèviament un seguit de valors de la força $F$ vs. l'angle de torsió del fil $\theta$ per tal de trobar la constant de torsió $k$ (usant la llei de Hook, $F=k\theta$, aplicada a aquest cas), a partir de la qual després hem pogut ajustar linealment les dades de $F$ vs. $1/r$. La necessitat de fer tantes mesures (i dos ajusts lineals) és una font d'error afegida que només afecta al segon experiment i que explicaria que tinguem un error en $\mu_0$ tan gran (respecte l'altre cas). Destaquem el fet que, com hem dit, tot i les limitacions s'ha aconseguit percebre l'ordre de magnitud de la permeabilitat magnètica del buit $\mu_0$ amb un muntatge no gaire complicat que involucrava l'ús d'una balança dissenyada per l'experiment en qüestió.
 
-Més enllà de tot això, també hem mesurat, a partir del mateix muntatge però canviant l'orientació dels fils conductors, la component horitzontal del camp magnètic terrestre al laboratori, a partir de mesures de l'angle de torsió del fil $\theta$ i de la intensitat que passava per un dels fils usant l'equació \eqref{eq:2.9}. Fent el promig de totes les mesures hem pogut estimar la component horitzontal del camp magnètic terrestre, amb un error del 24,2 \% respecte del valor teòric, proporcionat per la pàgina web \textit{World Magnetic Model 2025 Calculator} \cite{ref2}. L'error associat, novament, està relacionat amb les limitacions del muntatge i del model teòric esmentades però, tot i això, hem sigut capaços d'aconseguir resultats de l'ordre dels predits teòricament.
+Més enllà de tot això, també hem mesurat, a partir del mateix muntatge però canviant l'orientació dels fils conductors, la component horitzontal del camp magnètic terrestre al laboratori, a partir de mesures de l'angle de torsió del fil $\theta$ i de la intensitat que passava per un dels fils usant l'equació \eqref{eq:2.campmagnetic}. Fent el promig de totes les mesures hem pogut estimar la component horitzontal del camp magnètic terrestre, amb un error del 24,2 \% respecte del valor teòric, proporcionat per la pàgina web \textit{World Magnetic Model 2025 Calculator} \cite{ref2}. L'error associat, novament, està relacionat amb les limitacions del muntatge i del model teòric esmentades però, tot i això, hem sigut capaços d'aconseguir resultats de l'ordre dels predits teòricament.
 
 \chapter{Circuit RLC en sèrie}
 
@@ -628,11 +621,9 @@ Per circuits en sèrie els voltatges se sumen i les intensitats són iguals per 
 	V = V_R + V_L + V_C = RI + L \dv{I}{t} + \frac{1}{C} \int I\mathrm{d}t, \label{eq:3.4}
 \end{equation}
 on hem emprat les expressions 
-\begin{align}
-	V_R & = RI, \\
-	V_L & = L \dv{I}{t}, \\
-	V_C & = \frac{1}{C} \int I \mathrm{d}t,
-\end{align}
+\begin{equation}
+	V_R = RI, \hspace{0.25cm} V_L = L \dv{I}{t}, \hspace{0.25cm} V_C  = \frac{1}{C} \int I \mathrm{d}t,
+\end{equation}
 i on $I$ és la intensitat que circula pel circuit i $V_R$, $V_C$ i $V_L$ són els voltatges a la resistència, el condensador i la bobina, respectivament. 
 
 Si derivem respecte del temps l'expressió \eqref{eq:3.4} i reorganitzem obtenim:
@@ -829,11 +820,10 @@ Canviem la resistència fixa per una de variable, que pot donar resistències de
 
 
 \section{Resultats i discussió}
-Per tal de poder comparar i entendre si els nostres resultats són correctes, el primer que cal fer és predir, amb els coneixements que tenim, què creiem que passarà. Per a l'estudi del règim permanent tenim un circuit com el de la figura \ref{fig:3.2} amb $R=2660$ o $274$ $\Omega$, $L=22$ mH, $C=15$ nF i una font amb un voltatge d'entrada tipus $V(t) = V_{max}\sin(\omega t)$. La freqüència de ressonància del sistema ve donada per $\omega_0^2 = (LC)^{-1}$ (equació \ref{eq:3.19}), i les freqüències de tall ens les dona el sistema d'equacions definit per les equacions \ref{eq:3.38} i \ref{eq:3.39}. Resolent aquest sistema obtenim:
-
-\begin{eqnarray*}
-	\omega_{1,2} = \frac{1}{2L} \left( \sqrt{4L^2\omega_0^2+R^2} \mp R \right)  
-\end{eqnarray*}
+Per tal de poder comparar i entendre si els nostres resultats\footnote{El càlcul de les incerteses el podeu trobar a l'annex \ref{an:in}.} són correctes, el primer que cal fer és predir, amb els coneixements que tenim, què creiem que passarà. Per a l'estudi del règim permanent tenim un circuit com el de la figura \ref{fig:3.2} amb $R=2660$ o $274$ $\Omega$, $L=22$ mH, $C=15$ nF i una font amb un voltatge d'entrada tipus $V(t) = V_{max}\sin(\omega t)$. La freqüència de ressonància del sistema ve donada per $\omega_0^2 = (LC)^{-1}$ (equació \ref{eq:3.19}), i les freqüències de tall ens les dona el sistema d'equacions definit per les equacions \ref{eq:3.38} i \ref{eq:3.39}. Resolent aquest sistema obtenim
+\begin{equation}
+	\omega_{1,2} = \frac{1}{2L} \left( \sqrt{4L^2\omega_0^2+R^2} \mp R \right).  
+\end{equation}
 Això ens permet calcular certes propietats del circuit, com per exemple: $\text{T}_\text{R}(\omega)$:
 
 \begin{table}[h]
@@ -1011,21 +1001,21 @@ Ara al posar diferents resistències amb la resistència variable, $R<R_c$, $R=R
 	\begin{subfigure}{0.32\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{trans amort.jpeg}
-		\caption{Resposta per $R<R_c$}
+		\caption{Resposta per $R<R_c$.}
 		\label{fig trans amort}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.32\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{tranas crit.jpeg}
-		\caption{Resposta per $R=R_c$}
+		\caption{Resposta per $R=R_c$.}
 		\label{fig trans crit}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.32\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{trans sobre.PNG}
-		\caption{Resposta per $R>R_c$}
+		\caption{Resposta per $R>R_c$.}
 		\label{fig trans sobre}
 	\end{subfigure}
 	\label{fig trans}
@@ -1167,10 +1157,6 @@ De manera anàloga al que passava amb la primera bobina que induïa un corrent a
 \begin{equation}
 	\Phi_1=M_{12}I_2 \label{eq:4:4}.
 \end{equation}
-Recordem, a més a més, que, per definició
-\begin{equation}
-	\Phi_2=\int_{S_2}\vec{B}_1 \cdot \mathrm{d}\Vec{S}_2 \label{eq:4:5}.
-\end{equation}
 Amb totes aquestes equacions mencionades fins ara, es pot demostrar fàcilment l'equació de Neumann (Griffiths, 2017, p. 322 \cite{ref4})
 \begin{equation}
 	M_{ab}=\frac{\mu_0}{4\pi}\oint_a\oint_b\frac{\mathrm{d}\Vec{l}_a\cdot\mathrm{d}\Vec{l}_b}{r} \label{eq:4:6}.
@@ -1236,12 +1222,12 @@ Per tal de fer un anàlisi més acurat usarem les lleis de Kirchhoff. Per això,
 \end{align}
 tenint present que $R_1$, $R_2$, $L_1$ i $L_2$ són les resistències òhmiques i les autoinductàncies de les bobines 1 i 2, respectivament, i que $V_1$ és el voltatge d'entrada i $\omega$ la freqüència angular del corrent (altern).
 
-Si resolem aquest sistema per a cada una de les intensitats i apliquem l'equació \eqref{eq4:12} per la inductància mútua, obtenim les següents solucions:
+Si resolem aquest sistema per a cada una de les intensitats i apliquem l'equació \eqref{eq4:12} per la inductància mútua, obtenim les solucions
 \begin{equation}
-	I_1 = \frac{Z + R_2 + iX_2}{(R_1 + iX_1)(Z + R_2 + iX_2) + k^2 X_1 X_2} V_1 \label{eq4:15}
+	I_1 = \frac{Z + R_2 + iX_2}{(R_1 + iX_1)(Z + R_2 + iX_2) + k^2 X_1 X_2} V_1 \label{eq4:15},
 \end{equation}
 \begin{equation}
-	I_2 = \frac{-ik\sqrt{X_1 X_2}}{(R_1 + iX_1)(Z + R_2 + iX_2) + k^2 X_1 X_2} V_1 \label{eq4:16}
+	I_2 = \frac{-ik\sqrt{X_1 X_2}}{(R_1 + iX_1)(Z + R_2 + iX_2) + k^2 X_1 X_2} V_1 \label{eq4:16},
 \end{equation}
 on les reactàncies de les bobines són $X_{1,2} \equiv \omega L_{1,2}$.
 
@@ -1261,9 +1247,9 @@ Es compleix que $(Z \gg X,\alpha^2X)$. En aquests casos
 \end{equation}
 Cal vigilar amb l'amperímetre, ja que aquest mesura valors eficaços, és a dir $|I|/\sqrt{2}$.
 
-Pel que fa a la diferència de potencial en la impedància del secundari és:
+Pel que fa a la diferència de potencial en la impedància del secundari és
 \begin{equation}
-	V_2 = I_2 Z \quad \Longrightarrow \quad |V_2| = k \alpha |V_1|
+	V_2 = I_2 Z \quad \Longrightarrow \quad |V_2| = k \alpha |V_1|.
 	\label{eq4:20}
 \end{equation}
 
@@ -1272,7 +1258,7 @@ Són aquells casos on $(Z \ll X,\alpha^2X)$. Llavors tindrem
 \begin{equation}
 	|I_1| = \frac{\alpha^2 |V_1|}{\sqrt{Z^2 + X^2 \alpha^4 (k^2 - 1)^2}} \quad ; \quad
 	|I_2| = \frac{k \alpha |V_1|}{\sqrt{Z^2 + X^2 \alpha^4 (k^2 - 1)^2}} = \frac{k}{\alpha} |I_1|
-	\label{eq4:21}
+	\label{eq4:21},
 \end{equation}
 i el potencial en la impedància del secundari serà
 \begin{equation}
@@ -1294,13 +1280,25 @@ i el potencial en la impedància del secundari és
 
 \section{Metodologia experimental}
 \subsection{Estudi de les variables d'un transformador}
-Primer muntem el circuit de la Figura \ref{fig4:1}\footnote{Tots els esquemes dels muntatges han estat extrets dels \textit{Guions de les pràctiques de l'assignatura de Laboratori d'Electromagnetisme}\cite{ref3}.} considerant que la bobina de l'esquerra és el primari i la de la dreta el secundari.
+Primer muntem el circuit de la Figura \ref{fig4:1a}\footnote{Tots els esquemes dels muntatges han estat extrets dels \textit{Guions de les pràctiques de l'assignatura de Laboratori d'Electromagnetisme}\cite{ref3}.} considerant que la bobina de l'esquerra és el primari i la de la dreta el secundari.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.38\linewidth]{screenshot007}
-	\caption{Esquema de les connexions del transformador}
-	\label{fig4:1}
+	\begin{subfigure}[t]{0.30\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{screenshot007}
+		\caption{Esquema de les connexions del transformador}
+		\label{fig4:1a}
+	\end{subfigure}
+	\hspace{1em} % Espacio pequeño entre imágenes (puedes ajustar)
+	\begin{subfigure}[t]{0.24\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{screenshot010}
+		\caption{Muntatge experimental pel càlcul de la reactància de les bobines.}
+		\label{fig4:1b}
+	\end{subfigure}
+	\caption{Muntatges de la pràctica 4.}
+	\label{fig:4.1}
 \end{figure}
 
 Com que la font de corrent altern té una escala diferent al voltatge que dóna, els 6 V necessaris es corresponen, teòricament, a la marca 5 de la gradació de l'aparell. A la pràctica usem la marca 6 per ser aquesta més propera al valor de 6 V demanat.
@@ -1343,20 +1341,17 @@ Tot seguit provem les configuracions que ens proposa el guió de la pràctica qu
 	\caption{Configuracions proposades pel guió. Els nuclis són d'un material ferromagnètic d'alta permeabilitat magnètica.}
 	\label{fig4:2}
 \end{figure}
-
-
 Un cop obtenim les lectures de voltatge corresponents, tractem amb altres configuracions que escollim nosaltres. Aquestes es poden veure a la figura \ref{fig4:3}.
-
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}[b]{0.3\textwidth}
+	\begin{subfigure}[t]{0.26\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{inv1.jpg}
 		\caption{Bobines situades a la columna central del nucli.}
 		\label{fig4:3a}
 	\end{subfigure}
-	\hspace{2cm}
-	\begin{subfigure}[b]{0.23\textwidth}
+	\hspace{1em}
+	\begin{subfigure}[t]{0.20\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{inv2.jpg}
 		\caption{Bobines situades a les columnes esquerra i central del nucli.}
@@ -1370,36 +1365,22 @@ Un cop obtenim les lectures de voltatge corresponents, tractem amb altres config
 Amb totes les lectures de voltatge, seleccionem aquella configuració que ens dóna un valor més alt de la constant d'acoblament $k$, és a dir, busquem aquella configuració que implica menys pèrdues de flux (i que té, per tant, un comportament més pròxim a la idealitat). Ara, amb aquesta disposició, provem totes les combinacions possibles de bobines (primaris i secundaris), anotant, de nou, el valor de voltatge del secundari .
 
 \subsection{Estudi de les intensitats i els voltatges d'entrada i de sortida}
-Per tal de poder comparar el guany de voltatge teòric i experimental donat per
-\begin{equation}
-	T_{s/e}=\frac{V_{sortida}}{V_{entrada}}
-	\label{eq4:25}
-\end{equation}
-necessitem trobar la reactància de les bobines amb què treballarem, aquestes són les de 400 i 800 voltes.
+Per tal de poder comparar el guany de voltatge teòric amb l'experimental necessitem trobar la reactància de les bobines amb què treballarem, aquestes són les de 400 i 800 voltes.
 
-La reactància de les bobines es pot calcular muntant el circuit de la Figura \ref{fig4:4} (on $R=1000$ $\Omega$) situant la bobina corresponent al primari i posant el circuit sense connexions a la sortida del transformador, deixant-lo així obert. Mesurant $I_1$ i $V_1$ es calcula la reactància buscada per a cada una de les bobines, usant que
+La reactància de les bobines es pot calcular muntant el circuit de la figura \ref{fig4:1b} (on $R=1000$ $\Omega$) situant la bobina corresponent al primari i posant el circuit sense connexions a la sortida del transformador, deixant-lo així obert. Mesurant $I_1$ i $V_1$ es calcula la reactància buscada per a cada una de les bobines, usant que
 \begin{equation}
 	X = \frac{\abs{V}}{\abs{I}}
 	\label{eq4:27}
 \end{equation}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.4\linewidth]{screenshot010}
-	\caption{Muntatge experimental pel càlcul de la reactància de les bobines.}
-	\label{fig4:4}
-\end{figure}
-
-Un cop obtingut aquest valor, treballem amb el parell de bobines de 400 voltes, situant-ne una al primari i l'altra al secundari. Connectem la resistència de 1000 $\Omega$ i donem un voltatge aproximat de 6 V des de la font d'alimentació. Amb tot això, mesurem el voltatge i el corrent tant d'entrada com de sortida. Aquest mateix procediment es torna a realitzar per les resistències de 10 $\Omega$ i 100 $\Omega$.
-
-Canviem ara la bobina del secundari i la substituïm per una altra de 800 voltes. Realitzant un procediment anàleg a l'anterior, mesurem, de nou, els voltatges i les intensitats d'entrada i de sortida.
+Un cop obtingut aquest valor, treballem amb el parell de bobines de 400 voltes, situant-ne una al primari i l'altra al secundari. Connectem la resistència de 1000 $\Omega$ i donem un voltatge aproximat de 6 V des de la font d'alimentació. Amb tot això, mesurem el voltatge i el corrent tant d'entrada com de sortida. Aquest mateix procediment es torna a realitzar per les resistències de 10 $\Omega$ i 100 $\Omega$. Canviem ara la bobina del secundari i la substituïm per una altra de 800 voltes. Realitzant un procediment anàleg a l'anterior, mesurem, de nou, els voltatges i les intensitats d'entrada i de sortida.
 
 \section{Resultats i discussió}
 \subsection{Estudi de les variables d'un transformador}
-En aquesta secció mesurem els valors experimentals dels voltatges d’entrada i de sortida per a diferents configuracions d’acoblament, utilitzant dues bobines de 400 voltes cadascuna. Cada configuració es correspon a una disposició diferent d’elements ferromagnètics amb diverses geometries. A partir dels voltatges mesurats, calculem els valors de $k$, que es recullen a la taula \ref{tab:4.1}.
+En aquesta secció\footnote{El càlcul de les incerteses es pot trobar a l'annex \ref{an:in}.} mesurem els valors experimentals dels voltatges d’entrada i de sortida per a diferents configuracions d’acoblament, utilitzant dues bobines de 400 voltes cadascuna. Cada configuració es correspon a una disposició diferent d’elements ferromagnètics amb diverses geometries. A partir dels voltatges mesurats, calculem els valors de $k$, que es recullen a la taula \ref{tab:4.1}.
 
 \begin{table}[h]
 	\centering
+	\small
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Valors experimentals dels voltatges d'entrada, $V_1$, dels voltatges de sortida, $V_2$, i de la constant d'acoblament, $k$, per a diferents configuracions del muntatge 400/400.}
 	\begin{tabular}{lccc}
@@ -1428,6 +1409,7 @@ Per estudiar com varien els voltatges d'entrada i sortida si canviem les bobines
 
 \begin{table}[h]
 	\centering
+	\small
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Valors experimentals dels voltatges d'entrada $(V_1)$ i de sortida $(V_2)$ i la semblança amb la idealitat per a diferents combinacions de bobines (essent $n_1$ i $n_2$ les voltes corresponents a cada bobina) usant la primera configuració proposada per nosaltres.}
 	\begin{tabular}{lccccccc}
@@ -1475,6 +1457,7 @@ Comencem buscant la relació entre les reactàncies d'una bobina de 400 voltes i
 
 \begin{table}[H]
 	\centering
+	\small
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Reactàncies per a bobines de 400 i 800 voltes.}
 	\begin{tabular}{lcccc}
@@ -1505,8 +1488,9 @@ Aquest valor és coherent amb el valor teòric esperat de 4, confirmant que la r
 
 Per a la segona part d'aquesta secció, connectem un circuit al secundari, sempre amb una bobina de 400 voltes al primari, i estudiem els corrents d’entrada i de sortida. A la taula \ref{tab:4.4} es mostren les mesures experimentals dels voltatges i les intensitats d'entrada i sortida per a les combinacions amb 400 i 800 voltes al secundari, i una combinació proposada per nosaltres amb 3200 voltes. La geometria usada és la més ideal de totes, que és la configuració d (\ref{fig4:2d}). 
 
-\begin{table}[H]
+\begin{table}[h]
 	\centering
+	\small
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Valors experimentals del guany en voltatge a partir de les mesures experimentals dels voltatges i corrents per a diferents combinacions de bobines usant la configuració d (\ref{fig4:2d}).}
 	\begin{tabular}{lccccccc}
@@ -1531,10 +1515,11 @@ Per a la segona part d'aquesta secció, connectem un circuit al secundari, sempr
 
 De la taula $\ref{tab:4.4}$ observem que la disminució de la resistència del circuit secundari provoca un augment de les intensitats tant al primari com al secundari. També es pot veure que el voltatge al secundari disminueix en aquestes condicions, fet que repercuteix en una reducció del guany en voltatge mesurat. A més a més podem veure que aquest efecte és major com més gran sigui la diferència entre $n_1$ i $n_2$.
 
-A continuació comparem el guany en voltatge experimental amb el valor teòric. La  taula \ref{tab:4.5} presenta els valors experimentals i teòrics calculats tenint en compte en quin cas dels tres presentats a la introducció teòrica ens trobem ($Z \gg X$, $Z \sim X$, $Z\ll X$).  
+A la taula \ref{tab:4.5}, comparem el guany en voltatge experimental vs. teòric; aquesta presenta els diferents valors tenint en compte en quin cas dels tres presentats a la introducció teòrica ens trobem ($Z \gg X$, $Z \sim X$, $Z\ll X$).  
 
 \begin{table}[H]
 	\centering
+	\small
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Comparació entre el guany experimental i el teòric amb les seves incerteses, i l’error relatiu (\%).}
 	\begin{tabular}{llccccc}
@@ -1558,17 +1543,13 @@ A continuació comparem el guany en voltatge experimental amb el valor teòric. 
 \end{table}
 
 Abans de comentar els resultats, cal fer una observació sobre la reactància corresponent a la bobina de 3200 voltes, la combinació proposada per nosaltres. Les reactàncies de les altres dues bobines s'han obtingut a partir de mesures experimentals de la primera part d'aquesta secció. En canvi, com que no vam mesurar experimentalment la reactància de la bobina de 3200 voltes, hem hagut de recórrer a la relació que acabem de demostrar a l'apartat anterior (equació \eqref{eq:4.31}) per poder estimar-la. A partir d'això podem establir una relació entre la reactància de la bobina de 3200 voltes i les reactàncies de les bobines de 800 i 400 voltes, de manera que
-\begin{align*}
-	X_{3200}  &= \left(\frac{3200}{800}\right)^2 X_{800} = 16 X_{800},  \\
-	X_{3200}  &= \left(\frac{3200}{400}\right)^2 X_{400} = 64 X_{400}. 
-\end{align*}
+\begin{equation*}
+	X_{3200}  = \left(\frac{3200}{800}\right)^2 X_{800} = 16 X_{800},  \hspace{0.25cm} X_{3200}  = \left(\frac{3200}{400}\right)^2 X_{400} = 64 X_{400}. 
+\end{equation*}
 Fent la mitjana entre els dos valors obtinguts, tenim que 
-
 \begin{equation*}
 	X_{3200} = ( 5935,12 \pm 15,84)  \text{ $\Omega$}.
 \end{equation*}
-
-
 Tornant a la taula $\ref{tab:4.5}$, observem que l’error relatiu segueix una tendència clara. A mesura que la resistència disminueix dins d’una configuració de voltes concreta, l’error també disminueix. D’altra banda, com més voltes hi ha al secundari (és a dir, a mesura que augmenta el valor de $\alpha$), l’error tendeix a augmentar.
 Aquest comportament es pot explicar pel fet que, en el primer cas, les pèrdues associades a un corrent elevat, com s’ha vist a la taula $\ref{tab:4.4}$, redueixen l’eficiència del transformador i afecten el voltatge transmès.
 En el segon cas, els efectes no ideals es fan més rellevants com més gran és el nombre de voltes al secundari, cosa que provoca una desviació més pronunciada entre el guany teòric i l’experimental.
@@ -1578,6 +1559,7 @@ Un cop analitzades les diferents configuracions, ens fixem ara en com petites va
 
 \begin{table}[H]
 	\centering
+	\small
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Variació del guany teòric per un petit canvi en $k$.}
 	\begin{tabular}{llcccccc}
@@ -1650,7 +1632,7 @@ Finalment, hem comparat el guany en voltatge experimental amb el teòric, per di
 \setcounter{equation}{0} % Reinicia contador de ecuaciones en cada sección
 
 \section{Càlcul d'incerteses}
-\label{an:a3}
+\label{an:in}
 Pel càlcul de les incerteses associades a cada pràctica s'ha utilitzat la llei de propagació d'incerteses
 \begin{equation}
 	u_F = \sqrt{ \left( \frac{\partial F}{\partial x_1} \right)^2 u_{x_1}^2 + \left( \frac{\partial F}{\partial x_2} \right)^2 u_{x_2}^2 + \dots + \left( \frac{\partial F}{\partial x_n} \right)^2 u_{x_n}^2 },

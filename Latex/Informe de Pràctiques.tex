@@ -542,7 +542,7 @@ Podem veure que, clarament, dels dos experiments duts a terme, el primer (corres
 
 En general, considerem que és raonable que el segon experiment presenti un error major que el primer, que es fonamenta en mesures més directes (no cal efectuar dos ajusts lineals). El fet que, tot i això, l'error associat al primer sigui considerable, pot ser degut a la pròpia naturalesa de l'experiment. Recordem  que, al principi, per tal d'obtenir l'expressió que segueix el camp magnètic creat per un fil per on circula un corrent $I$, hem suposat que aquest fil era infinit, de manera que el camp generat és proporcional a $1/r$ en tots els punts (és a dir, té simetria perfectament cilíndrica) i, en particular, sobre l'altre fil i segons aquestes suposicions, el camp $\vec{B}$ és el mateix en tots els punts del darrer, ja que són paral·lels. Evidentment això últim no és cert per múltiples motius, entre els quals destaquem que: no tenim un fil infinit, ni tan sols la longitud ($L'$) del fil que crea el camp compleix que $L'\gg L$ (essent $L$ la longitud de l'altre fil), i existeixen efectes de vora (degut a que els fins no són infinits) que no hem considerat. Tot plegat fa que el $\vec{B}$ real no estigui generat ni estigui distribuït tal i com estem suposant, cosa que explicaria que ens sortís un valor de $\mu_0$ experimental més gran que el teòric, fem l'experiment que fem, ja que és un error directament relacionat amb el model considerat.
 
-Tot i que tinguem un error associat a la mesura de $\mu_0$, sí que podem assegurar que la força entre els fils té un comportament que s'adequa al predit per l'equació \ref{eq:2.9} (és lineal), tal i com estableix el coeficient de correlació $R^2$, molt proper a 1 en els dos experiments. Sí que hem de remarcar, però, que tot i que l'equació \ref{eq2:10} no prediu l'existència de cap terme independent (ordenada d'origen) de manera que, per un valor $\theta = 0$ la força hauria de ser nul·la, els nostres resultats no indiquen totalment això, ja que a l'ajust lineal de la figura \ref{fig:2.4} es pot veure clarament que per $\theta = 0$, existeix una certa força 'residual'. Atribuïm aquest error a problemes relacionats amb el calibratge i l'ús de la balança; destaquem, però, que aquest error no hauria de ser d'especial rellevància en els nostres càlculs, ja que estem interessats només en el pendent de la recta (que no es veu influenciat per un canvi en l'ordenada d'origen), ja que és aquest el que ens permet arribar a un valor experimental de $\mu_0$. Una cosa molt similar es pot dir del terme independent que apareix en l'ajust $I^2$ vs. $F$.
+Tot i que tinguem un error associat a la mesura de $\mu_0$, sí que podem assegurar que la força entre els fils té un comportament que s'adequa al predit per l'equació \ref{eq2:8}, tal i com estableix el coeficient de correlació $R^2$, molt proper a 1 en els dos experiments. Sí que hem de remarcar, però, que tot i que l'equació \ref{eq2:10} no prediu l'existència de cap terme independent (ordenada d'origen) de manera que, per un valor $\theta = 0$ la força hauria de ser nul·la, els nostres resultats no indiquen totalment això, ja que a l'ajust lineal de la figura \ref{fig:2.4} es pot veure clarament que per $\theta = 0$, existeix una certa força 'residual'. Atribuïm aquest error a problemes relacionats amb el calibratge i l'ús de la balança; destaquem, però, que aquest error no hauria de ser d'especial rellevància en els nostres càlculs, ja que estem interessats només en el pendent de la recta (que no es veu influenciat per un canvi en l'ordenada d'origen), ja que és aquest el que ens permet arribar a un valor experimental de $\mu_0$. Una cosa molt similar es pot dir del terme independent que apareix en l'ajust $I^2$ vs. $F$.
 
 A més a més, és raonable pensar que en el laboratori existissin camps magnètics que hagin pogut alterar els nostres resultats, provinents d'altres experiments que s'estaven efectuant de forma simultània en el mateix laboratori o que, fins i tot, el camp magnètic terrestre hagi pogut esbiaixar les mesures fetes (perquè, per exemple, no s'hagi orientat adequadament la balança, tal i com requeria el procediment experimental).
 
@@ -847,14 +847,14 @@ Això ens permet calcular certes propietats del circuit, com per exemple $\text{
 		\toprule
 		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1,2})}$ \\ 
 		\midrule
-		$\mathbf{R = 2660\text{ } \Omega}$ & 8761 $\pm$ 35 & 3391 $\pm$ 98 & 22634 $\pm$ 680 & 1 & $1/\sqrt{2}$\\ 
+		$\mathbf{R = 2660\text{ } \Omega}$ & 8761 $\pm$ 35 & 3391 $\pm$ 98 & (2263 $\pm$ 68)$\cdot10^1$ & 1 & $1/\sqrt{2}$\\ 
 		$\mathbf{R = 274\text{ } \Omega}$ & 8761 $\pm$ 35 & 7826 $\pm$ 35 & 9808 $\pm$ 91 & 1 & $1/\sqrt{2}$ \\
 		\bottomrule
 	\end{tabular}
 	\label{tab:3.1}
 \end{table}
 
-Posteriorment, per l'estudi del règim transitori, muntarem un altre circuit com ja hem explicat a la secció \ref{sec 3.2.2}. En concret reproduïrem el circuit de la figura \ref{fig:3.3} amb una resistència de $R = 180$ $\Omega$, $L = 33$ mH i $C=330$ pF. Amb aquests valors calculem teòricament alguns paràmetres del circuit com la pseudo-frequència, $\omega$, el pseudo-període, $T$, i la freqüència, $f$, que hem de posar al generador per tal que $f=1/(10T)$. Aquests valors es troben a la taula \ref{tab:3.2}.
+Posteriorment, per l'estudi del règim transitori, muntarem un altre circuit com ja hem explicat a la secció \ref{sec 3.2.2}. En concret reproduïrem el circuit de la figura \ref{fig:3.3} amb una resistència de $R = 180$ $\Omega$, $L = 33$ mH i $C=330$ pF. Amb aquests valors calculem teòricament alguns paràmetres del circuit com la pseudo-frequència, $\omega$, el pseudo-període, $T$, i la freqüència, $f$, que hem de posar al generador per tal que $f=1/(10T)$. Aquests valors es troben a la taula \ref{val teo trans}.
 
 \begin{table}[h]
 	\centering
@@ -883,8 +883,8 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, els valors
 		\toprule
 		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
 		\midrule
-		$\mathbf{R = 2660\text{ }\Omega}$ & 8960 $\pm$ 1 & 2860 $\pm$ 1 & 23460 $\pm$ 1 & 1 $\pm$ 0,0075 & 0,72340 $\pm$ 0,0066 & 0,72340 $\pm$ 0,0066\\ 
-		$\mathbf{R = 274\text{ }\Omega}$ & 8860 $\pm$ 1 & 8040 $\pm$ 1 & 9830 $\pm$ 1 & 0,87647 $\pm$ 0,0078 & 0,70588 $\pm$ 0,0072 & 0,88235$\pm$ 0,0078\\
+		$\mathbf{R = 2660\text{ }\Omega}$ & 8960 $\pm$ 1 & 2860 $\pm$ 1 & 23460 $\pm$ 1 & 1,0000 $\pm$ 0,0075 & 0,7234 $\pm$ 0,0066 & 0,7234 $\pm$ 0,0066\\ 
+		$\mathbf{R = 274\text{ }\Omega}$ & 8860 $\pm$ 1 & 8040 $\pm$ 1 & 9830 $\pm$ 1 & 0,8765 $\pm$ 0,0078 & 0,7059 $\pm$ 0,0072 & 0,8824 $\pm$ 0,0078\\
 		\bottomrule
 	\end{tabular}
 	\label{tab:3.3}

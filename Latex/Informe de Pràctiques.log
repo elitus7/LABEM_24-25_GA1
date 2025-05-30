@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.5.26)  30 MAY 2025 09:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.5.26)  30 MAY 2025 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1098,15 +1098,17 @@ Package pdftex.def Info: screenshot001.png  used on input line 87.
 [1
 
 {C:/Users/W10/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./screenshot00
-1.png>] (Informe de Pràctiques.toc
+1.png>]
+
+[1] (Informe de Pràctiques.toc
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.51 ...3}Resultats i discussió}{33}{section.4.3}
-                                                  % [1
+                                                  % [2
 
 ])
 \tf@toc=\write5
@@ -1114,75 +1116,87 @@ l.51 ...3}Resultats i discussió}{33}{section.4.3}
 
 
 
-[2]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.98 \newpage
+              [3]
 Cap\'{\i }tol 1.
 
 
-[3
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.141 \end{equation}
+                     [1
 
 ]
-<screenshot002.png, id=378, 389.95688pt x 420.82219pt>
+<screenshot002.png, id=380, 389.95688pt x 420.82219pt>
 File: screenshot002.png Graphic file (type png)
 <use screenshot002.png>
-Package pdftex.def Info: screenshot002.png  used on input line 148.
+Package pdftex.def Info: screenshot002.png  used on input line 154.
 (pdftex.def)             Requested size: 199.48413pt x 215.27144pt.
-<screenshot003.png, id=379, 1541.76pt x 1156.32pt>
+<screenshot003.png, id=381, 1541.76pt x 1156.32pt>
 File: screenshot003.png Graphic file (type png)
 <use screenshot003.png>
-Package pdftex.def Info: screenshot003.png  used on input line 155.
+Package pdftex.def Info: screenshot003.png  used on input line 161.
 (pdftex.def)             Requested size: 170.29277pt x 127.70726pt.
 
 
-[4 <./screenshot002.png> <./screenshot003.png>]
+[2 <./screenshot002.png> <./screenshot003.png>]
 
-[5]
+[3]
 
-[6]
-<dibplaques.jpg, id=441, 1606.0pt x 1168.365pt>
+[4]
+<dibplaques.jpg, id=443, 1606.0pt x 1168.365pt>
 File: dibplaques.jpg Graphic file (type jpg)
 <use dibplaques.jpg>
-Package pdftex.def Info: dibplaques.jpg  used on input line 246.
+Package pdftex.def Info: dibplaques.jpg  used on input line 252.
 (pdftex.def)             Requested size: 215.08525pt x 156.49014pt.
 
-Overfull \hbox (20.4713pt too wide) in paragraph at lines 246--247
+Overfull \hbox (20.4713pt too wide) in paragraph at lines 252--253
  [][] 
  []
 
-<figplaques1.png, id=442, 602.25pt x 518.93875pt>
+<figplaques1.png, id=444, 602.25pt x 518.93875pt>
 File: figplaques1.png Graphic file (type png)
 <use figplaques1.png>
-Package pdftex.def Info: figplaques1.png  used on input line 253.
+Package pdftex.def Info: figplaques1.png  used on input line 259.
 (pdftex.def)             Requested size: 181.61372pt x 156.49014pt.
-<screenshot004.jpg, id=444, 959.83594pt x 1319.68031pt>
+<screenshot004.jpg, id=446, 959.83594pt x 1319.68031pt>
 File: screenshot004.jpg Graphic file (type jpg)
 <use screenshot004.jpg>
-Package pdftex.def Info: screenshot004.jpg  used on input line 272.
+Package pdftex.def Info: screenshot004.jpg  used on input line 278.
 (pdftex.def)             Requested size: 959.8336pt x 1319.67711pt.
-<figfils.png, id=445, 462.528pt x 346.896pt>
+<figfils.png, id=447, 462.528pt x 346.896pt>
 File: figfils.png Graphic file (type png)
 <use figfils.png>
-Package pdftex.def Info: figfils.png  used on input line 279.
+Package pdftex.def Info: figfils.png  used on input line 285.
 (pdftex.def)             Requested size: 218.94255pt x 164.20564pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[7 <./dibplaques.jpg> <./figplaques1.png>]
-<confinventJS.jpg, id=463, 876.27374pt x 1204.5pt>
+[5 <./dibplaques.jpg> <./figplaques1.png>]
+<confinventJS.jpg, id=465, 876.27374pt x 1204.5pt>
 File: confinventJS.jpg Graphic file (type jpg)
 <use confinventJS.jpg>
-Package pdftex.def Info: confinventJS.jpg  used on input line 307.
+Package pdftex.def Info: confinventJS.jpg  used on input line 313.
 (pdftex.def)             Requested size: 876.27159pt x 1204.49707pt.
-<figplacarara.png, id=464, 774.0117pt x 669.9429pt>
+<figplacarara.png, id=466, 774.0117pt x 669.9429pt>
 File: figplacarara.png Graphic file (type png)
 <use figplacarara.png>
-Package pdftex.def Info: figplacarara.png  used on input line 314.
+Package pdftex.def Info: figplacarara.png  used on input line 320.
 (pdftex.def)             Requested size: 194.61395pt x 168.44621pt.
-<figV2imagenes.png, id=465, 774.0117pt x 669.9429pt>
+<figV2imagenes.png, id=467, 774.0117pt x 669.9429pt>
 File: figV2imagenes.png Graphic file (type png)
 <use figV2imagenes.png>
-Package pdftex.def Info: figV2imagenes.png  used on input line 325.
+Package pdftex.def Info: figV2imagenes.png  used on input line 331.
 (pdftex.def)             Requested size: 194.61395pt x 168.44621pt.
 
 
@@ -1190,44 +1204,42 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[8 <./screenshot004.jpg> <./figfils.png> <./confinventJS.jpg> <./figplacarara.p
+[6 <./screenshot004.jpg> <./figfils.png> <./confinventJS.jpg> <./figplacarara.p
 ng>]
 
-[9 <./figV2imagenes.png>]
+[7 <./figV2imagenes.png>]
+
+[8]
 Cap\'{\i }tol 2.
 
 
-[10
+[9
 
 ]
-<screenshot008.png, id=500, 609.02531pt x 372.64218pt>
+<screenshot008.png, id=507, 609.02531pt x 372.64218pt>
 File: screenshot008.png Graphic file (type png)
 <use screenshot008.png>
-Package pdftex.def Info: screenshot008.png  used on input line 402.
+Package pdftex.def Info: screenshot008.png  used on input line 410.
 (pdftex.def)             Requested size: 233.53824pt x 142.89055pt.
-<screenshot009.png, id=501, 561.59813pt x 451.6875pt>
+<screenshot009.png, id=508, 561.59813pt x 451.6875pt>
 File: screenshot009.png Graphic file (type png)
 <use screenshot009.png>
-Package pdftex.def Info: screenshot009.png  used on input line 409.
+Package pdftex.def Info: screenshot009.png  used on input line 417.
 (pdftex.def)             Requested size: 194.61395pt x 156.52156pt.
 
 
-[11 <./screenshot008.png> <./screenshot009.png>]
+[10 <./screenshot008.png> <./screenshot009.png>]
 
-LaTeX Warning: Reference `eq:2.9' on page 12 undefined on input line 450.
-
-
-
-[12]
-<screenshot020.png, id=535, 1204.5pt x 752.8125pt>
+[11]
+<screenshot020.png, id=541, 1204.5pt x 752.8125pt>
 File: screenshot020.png Graphic file (type png)
 <use screenshot020.png>
-Package pdftex.def Info: screenshot020.png  used on input line 478.
+Package pdftex.def Info: screenshot020.png  used on input line 486.
 (pdftex.def)             Requested size: 291.92836pt x 182.45917pt.
-<screenshot017.png, id=536, 1204.5pt x 752.8125pt>
+<screenshot017.png, id=542, 1204.5pt x 752.8125pt>
 File: screenshot017.png Graphic file (type png)
 <use screenshot017.png>
-Package pdftex.def Info: screenshot017.png  used on input line 491.
+Package pdftex.def Info: screenshot017.png  used on input line 499.
 (pdftex.def)             Requested size: 291.92836pt x 182.45917pt.
 
 
@@ -1235,11 +1247,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[13 <./screenshot020.png>]
-<filsexper.png, id=551, 1204.5pt x 752.8125pt>
+[12 <./screenshot020.png>]
+<filsexper.png, id=557, 1204.5pt x 752.8125pt>
 File: filsexper.png Graphic file (type png)
 <use filsexper.png>
-Package pdftex.def Info: filsexper.png  used on input line 509.
+Package pdftex.def Info: filsexper.png  used on input line 517.
 (pdftex.def)             Requested size: 291.92836pt x 182.45917pt.
 
 
@@ -1247,25 +1259,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[14 <./screenshot017.png> <./filsexper.png>]
+[13 <./screenshot017.png> <./filsexper.png>]
 
-LaTeX Warning: Reference `eq:2.9' on page 15 undefined on input line 537.
+LaTeX Warning: Reference `eq:2.9' on page 14 undefined on input line 545.
 
-<screenshot019.png, id=564, 790.45313pt x 600.74437pt>
+<screenshot019.png, id=570, 790.45313pt x 600.74437pt>
 File: screenshot019.png Graphic file (type png)
 <use screenshot019.png>
-Package pdftex.def Info: screenshot019.png  used on input line 546.
+Package pdftex.def Info: screenshot019.png  used on input line 554.
 (pdftex.def)             Requested size: 121.63557pt x 92.43608pt.
 
 
-[15 <./screenshot019.png>]
+[14 <./screenshot019.png>]
+
+[15]
 
 [16]
 Cap\'{\i }tol 3.
-<screenshot014.png, id=584, 101.62968pt x 140.77594pt>
+<screenshot014.png, id=595, 101.62968pt x 140.77594pt>
 File: screenshot014.png Graphic file (type png)
 <use screenshot014.png>
-Package pdftex.def Info: screenshot014.png  used on input line 586.
+Package pdftex.def Info: screenshot014.png  used on input line 598.
 (pdftex.def)             Requested size: 72.97838pt x 101.09222pt.
 
 
@@ -1278,15 +1292,15 @@ Package pdftex.def Info: screenshot014.png  used on input line 586.
 [19]
 
 [20]
-<screenshot005.png, id=665, 601.4972pt x 362.85562pt>
+<screenshot005.png, id=675, 601.4972pt x 362.85562pt>
 File: screenshot005.png Graphic file (type png)
 <use screenshot005.png>
-Package pdftex.def Info: screenshot005.png  used on input line 790.
+Package pdftex.def Info: screenshot005.png  used on input line 802.
 (pdftex.def)             Requested size: 145.96417pt x 88.0505pt.
-<screenshot006.png, id=671, 643.6547pt x 352.31625pt>
+<screenshot006.png, id=681, 643.6547pt x 352.31625pt>
 File: screenshot006.png Graphic file (type png)
 <use screenshot006.png>
-Package pdftex.def Info: screenshot006.png  used on input line 808.
+Package pdftex.def Info: screenshot006.png  used on input line 820.
 (pdftex.def)             Requested size: 145.96417pt x 79.89671pt.
 
 
@@ -1296,6 +1310,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [21 <./screenshot005.png>]
 
+LaTeX Warning: Reference `tab:3.2' on page 22 undefined on input line 857.
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
@@ -1304,84 +1321,71 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [22 <./screenshot006.png>]
-<R2660.png, id=714, 1606.0pt x 1003.75pt>
+<R2660.png, id=726, 1606.0pt x 1003.75pt>
 File: R2660.png Graphic file (type png)
 <use R2660.png>
-Package pdftex.def Info: R2660.png  used on input line 905.
-(pdftex.def)             Requested size: 291.92836pt x 182.44385pt.
-<R274.png, id=717, 1606.0pt x 1003.75pt>
+Package pdftex.def Info: R2660.png  used on input line 919.
+(pdftex.def)             Requested size: 233.53824pt x 145.96121pt.
+<R274.png, id=727, 1606.0pt x 1003.75pt>
 File: R274.png Graphic file (type png)
 <use R274.png>
-Package pdftex.def Info: R274.png  used on input line 914.
-(pdftex.def)             Requested size: 291.92836pt x 182.44385pt.
+Package pdftex.def Info: R274.png  used on input line 926.
+(pdftex.def)             Requested size: 233.53824pt x 145.96121pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[23 <./R2660.png> <./R274.png>]
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 919--920
-
- []
-
-
-
-[23 <./R2660.png>]
-
-[24 <./R274.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 955--956
-
- []
-
-<trans amort.jpeg, id=742, 2007.5pt x 1505.625pt>
+[24]
+<trans amort.jpeg, id=755, 2007.5pt x 1505.625pt>
 File: trans amort.jpeg Graphic file (type jpg)
 <use trans amort.jpeg>
-Package pdftex.def Info: trans amort.jpeg  used on input line 1003.
+Package pdftex.def Info: trans amort.jpeg  used on input line 1016.
 (pdftex.def)             Requested size: 155.6971pt x 116.75365pt.
-<tranas crit.jpeg, id=743, 2007.5pt x 1505.625pt>
+<tranas crit.jpeg, id=756, 2007.5pt x 1505.625pt>
 File: tranas crit.jpeg Graphic file (type jpg)
 <use tranas crit.jpeg>
-Package pdftex.def Info: tranas crit.jpeg  used on input line 1010.
+Package pdftex.def Info: tranas crit.jpeg  used on input line 1023.
 (pdftex.def)             Requested size: 155.6971pt x 116.75365pt.
-<trans sobre.PNG, id=744, 589.4522pt x 442.65375pt>
+<trans sobre.PNG, id=757, 589.4522pt x 442.65375pt>
 File: trans sobre.PNG Graphic file (type png)
 <use trans sobre.PNG>
-Package pdftex.def Info: trans sobre.PNG  used on input line 1017.
+Package pdftex.def Info: trans sobre.PNG  used on input line 1030.
 (pdftex.def)             Requested size: 155.6971pt x 116.92444pt.
 
 
-[25]
-<vc_vs_t.png, id=763, 1204.5pt x 752.8125pt>
+[25 <./trans amort.jpeg> <./tranas crit.jpeg> <./trans sobre.PNG>]
+<vc_vs_t.png, id=777, 1204.5pt x 752.8125pt>
 File: vc_vs_t.png Graphic file (type png)
 <use vc_vs_t.png>
-Package pdftex.def Info: vc_vs_t.png  used on input line 1068.
-(pdftex.def)             Requested size: 330.84521pt x 206.7771pt.
+Package pdftex.def Info: vc_vs_t.png  used on input line 1082.
+(pdftex.def)             Requested size: 282.19543pt x 176.37106pt.
 
-
-[26 <./trans amort.jpeg> <./tranas crit.jpeg> <./trans sobre.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 1084--1084
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1097
 []\OT1/cmr/bx/n/10 Taula 3.9: |\OT1/cmr/m/n/10 Va-lors de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1084--1084
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1097
 [] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 V[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]\
 OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 E\OMS/cmsy/m/n/10 j$ \OT
 1/cmr/m/n/10 en fun-ci^^So
  []
 
 
-Underfull \hbox (badness 4569) in paragraph at lines 1084--1084
+Underfull \hbox (badness 4569) in paragraph at lines 1097--1097
 \OT1/cmr/m/n/10 del temps aga-fant els pics
  []
 
-<lambda.png, id=775, 1204.5pt x 752.8125pt>
+<lambda.png, id=779, 1204.5pt x 752.8125pt>
 File: lambda.png Graphic file (type png)
 <use lambda.png>
-Package pdftex.def Info: lambda.png  used on input line 1101.
-(pdftex.def)             Requested size: 330.84521pt x 206.7771pt.
+Package pdftex.def Info: lambda.png  used on input line 1114.
+(pdftex.def)             Requested size: 282.19543pt x 176.37106pt.
 
 
-[27 <./vc_vs_t.png> <./lambda.png>]
+[26 <./vc_vs_t.png>]
+
+[27 <./lambda.png>]
 
 [28]
 Cap\'{\i }tol 4.
@@ -1391,53 +1395,49 @@ Cap\'{\i }tol 4.
 
 ]
 
-LaTeX Warning: Reference `eq:4:5' on page 30 undefined on input line 1173.
-
-
-
 [30]
-<screenshot007.png, id=823, 951.555pt x 352.31625pt>
+<screenshot007.png, id=835, 951.555pt x 352.31625pt>
 File: screenshot007.png Graphic file (type png)
 <use screenshot007.png>
-Package pdftex.def Info: screenshot007.png  used on input line 1289.
+Package pdftex.def Info: screenshot007.png  used on input line 1304.
 (pdftex.def)             Requested size: 145.96417pt x 54.04398pt.
-<screenshot010.png, id=824, 492.33937pt x 364.36125pt>
+<screenshot010.png, id=836, 492.33937pt x 364.36125pt>
 File: screenshot010.png Graphic file (type png)
 <use screenshot010.png>
-Package pdftex.def Info: screenshot010.png  used on input line 1296.
+Package pdftex.def Info: screenshot010.png  used on input line 1311.
 (pdftex.def)             Requested size: 116.77283pt x 86.41437pt.
 
 
 [31]
-<42a.jpg, id=842, 128.27925pt x 118.041pt>
+<42a.jpg, id=854, 128.27925pt x 118.041pt>
 File: 42a.jpg Graphic file (type jpg)
 <use 42a.jpg>
-Package pdftex.def Info: 42a.jpg  used on input line 1316.
+Package pdftex.def Info: 42a.jpg  used on input line 1331.
 (pdftex.def)             Requested size: 107.0399pt x 98.49992pt.
-<42b.jpg, id=843, 152.36925pt x 107.2005pt>
+<42b.jpg, id=855, 152.36925pt x 107.2005pt>
 File: 42b.jpg Graphic file (type jpg)
 <use 42b.jpg>
-Package pdftex.def Info: 42b.jpg  used on input line 1323.
+Package pdftex.def Info: 42b.jpg  used on input line 1338.
 (pdftex.def)             Requested size: 107.0399pt x 75.30809pt.
-<42c.jpg, id=844, 166.221pt x 112.62074pt>
+<42c.jpg, id=856, 166.221pt x 112.62074pt>
 File: 42c.jpg Graphic file (type jpg)
 <use 42c.jpg>
-Package pdftex.def Info: 42c.jpg  used on input line 1330.
+Package pdftex.def Info: 42c.jpg  used on input line 1345.
 (pdftex.def)             Requested size: 107.0399pt x 72.5238pt.
-<42d.jpg, id=845, 264.23718pt x 171.64125pt>
+<42d.jpg, id=857, 264.23718pt x 171.64125pt>
 File: 42d.jpg Graphic file (type jpg)
 <use 42d.jpg>
-Package pdftex.def Info: 42d.jpg  used on input line 1337.
+Package pdftex.def Info: 42d.jpg  used on input line 1352.
 (pdftex.def)             Requested size: 107.0399pt x 69.53003pt.
-<inv1.jpg, id=847, 938.00438pt x 750.55406pt>
+<inv1.jpg, id=859, 938.00438pt x 750.55406pt>
 File: inv1.jpg Graphic file (type jpg)
 <use inv1.jpg>
-Package pdftex.def Info: inv1.jpg  used on input line 1349.
+Package pdftex.def Info: inv1.jpg  used on input line 1364.
 (pdftex.def)             Requested size: 126.49832pt x 101.21735pt.
-<inv2.jpg, id=848, 383.93437pt x 395.22656pt>
+<inv2.jpg, id=860, 383.93437pt x 395.22656pt>
 File: inv2.jpg Graphic file (type jpg)
 <use inv2.jpg>
-Package pdftex.def Info: inv2.jpg  used on input line 1356.
+Package pdftex.def Info: inv2.jpg  used on input line 1371.
 (pdftex.def)             Requested size: 97.30698pt x 100.16931pt.
 
 
@@ -1462,9 +1462,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [37]
 
-[38
-
-]
+[38]
 
 [39
 
@@ -1472,75 +1470,77 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [40]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1757.
+[41
 
-LaTeX Font Info:    Calculating math sizes for size <> on input line 1759.
+]
+
+[42]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 1777.
+
+LaTeX Font Info:    Calculating math sizes for size <> on input line 1779.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 1759.
+(Font)              size <5> substituted on input line 1779.
 
 
-
-[41]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1763.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1763.
-
-
-
-[42]
 
 [43]
 
 [44]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1785.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1785.
+
+
 
 [45]
 
@@ -1549,13 +1549,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [47]
 
 [48]
-Overfull \hbox (3.78835pt too wide) in paragraph at lines 2137--2148
+
+[49]
+
+[50]
+
+[51]
+
+[52]
+Overfull \hbox (3.78835pt too wide) in paragraph at lines 2161--2172
  [][] 
  []
 
 
 
-[49] (Informe de Pràctiques.aux)
+[53] (Informe de Pràctiques.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1570,16 +1578,16 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `"Informe de Pràctiques".out' has not change
 d.
-(rerunfilecheck)             Checksum: 025F12C33413ED40CF66804560CD8B3B;13334.
+(rerunfilecheck)             Checksum: 13850A94824A26D82372777F13B7FEE4;13334.
  ) 
 Here is how much of TeX's memory you used:
- 35036 strings out of 473523
- 695837 string characters out of 5715618
- 1695328 words of memory out of 5000000
- 57163 multiletter control sequences out of 15000+600000
+ 35045 strings out of 473523
+ 695905 string characters out of 5715618
+ 1695998 words of memory out of 5000000
+ 57169 multiletter control sequences out of 15000+600000
  579456 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,14n,107p,1819b,2708s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,14n,107p,1886b,2708s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\W10\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti10
 00.pk> <C:\Users\W10\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
 rm0900.pk> <C:\Users\W10\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
@@ -1620,9 +1628,9 @@ iKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/W10/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/W10/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/W10/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Informe de Pràctiques.pdf" (50 pages, 11758941 bytes).
+Output written on "Informe de Pràctiques.pdf" (57 pages, 11768814 bytes).
 PDF statistics:
- 1548 PDF objects out of 1728 (max. 8388607)
- 584 named destinations out of 1000 (max. 500000)
+ 1577 PDF objects out of 1728 (max. 8388607)
+ 587 named destinations out of 1000 (max. 500000)
  695 words of extra memory for PDF output out of 10000 (max. 10000000)
 

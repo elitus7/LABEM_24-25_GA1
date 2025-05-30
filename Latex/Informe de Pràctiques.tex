@@ -89,9 +89,15 @@
 	\end{figure}
 \end{titlepage}
 
+\pagenumbering{gobble}
+\newpage
+\thispagestyle{empty}
+\null
+\newpage
 \tableofcontents
 \newpage
-
+\pagenumbering{arabic}
+\setcounter{page}{1}
 \chapter{Representació de camps} 
 
 \begin{chapterabstract}
@@ -344,7 +350,9 @@ Tal i com s'ha anat comentant, tant les línies equipotencials com les de camp b
 Per altra banda, hem calculat la capacitat per unitat de longitud d'un condensador de plaques planoparal·leles a partir del teorema de Gauss. Com s'ha explicat, el càlcul experimental s'ha realitzat amb un sumatori com a aproximació de la integral de l'equació \ref{eq1.13}. Atès que el resultat obtingut és coherent amb el valor teòric esperat, podem considerar vàlida l'aproximació emprada.
 
 Així, a partir de tres distribucions de conductors diferents amb suficient simetria com per reduir el problema a dues dimensions, hem comprovat l'existència de la dualitat entre la densitat de corrent $\vec{J}$ i el vector desplaçament $\vec{D}$.
-
+\newpage
+\null
+\newpage
 \chapter{Força entre corrents}
 \begin{chapterabstract}
 	En aquesta pràctica mesurem la força entre dos fils pels quals hi circula un corrent elèctric, comprovant que la llei de Biot i Savart se satisfà, via diferents metodologies. Amb aquests resultats fem una estimació de la permeabilitat magnètica al buit $\mu_0$, tot comparant-la amb el valor teòric. A més a més, utilitzant el mateix sistema, mesurem la component horitzontal del camp magnètic terrestre al laboratori.
@@ -447,7 +455,7 @@ Seguidament es fixa un corrent d'entre 5 i 6 A que es mantindrà constant durant
 
 Així, comencem a una $r \sim$ 10 mm. Com que cada variació d'aquesta distància comporta un desequilibri de la balança, caldrà equilibrar-la de nou girant el dial uns determinats graus. D'aquesta manera obtenim les dades experimentals dels graus que es corresponen a cada separació fins una $r \sim$ 4mm. 
 
-Un cop tenim aquestes mesures, només cal representar la força (calculada amb l'equació \eqref{eq2:10}) en funció de $1/r$, usant l'equació \eqref{eq:2.9}, de manera que
+Un cop tenim aquestes mesures, només cal representar la força (calculada amb l'equació \eqref{eq2:10}) en funció de $1/r$ de manera que
 \begin{equation}
 	k\theta = \frac{\mu_0LI^2}{2\pi}\frac{1}{r}. \label{eq:2.13}
 \end{equation}
@@ -567,10 +575,14 @@ Finalment, és clar que el nombre de mesures preses és limitat. L'error relatiu
 \section{Conclusions}
 En aquesta pràctica hem pogut analitzar, a partir de dos experiments diferents, l'equació que governa la força que es fan dos fils (de longitud $L$, suposada suficientment gran com per assumir que són infinits) pels quals hi circula un corrent elèctric, deduïda a partir de la llei de Biot i Savart. Els resultats extrets ens han permès estimar el valor de la permeabilitat magnètica del buit $\mu_0$, seguint dues metodologies diferents. En un cas hem mantingut la separació entre els fils constant i hem mesurat la dependència de la força (mesurada equilibrant la balança de la figura \ref{fig:2.1a} amb peces metàl·liques de diferents masses) amb el quadrat de la intensitat; en un segon cas hem deixat el corrent fixat i hem estudiat com variava la força (mesurada equilibrant la balança de la figura \ref{fig:2.1a} usant el dial i la constant de torsió del fil d'acer, trobada prèviament) en alterar la separació $r$ entre fils. A partir de vàries mesures (de $F$, $I$ i $r$ en funció del cas), hem pogut fer un ajust lineal que ens ha permès trobar un valor de $\mu_0$, directament relacionat amb el pendent de les rectes de regressió, en cada situació.
 
-Dels dos experiments anteriors, hem vist que, en els dos casos, s'obtenen valors que són de l'ordre de la permeabilitat magnètica del buit teòrica, essent l'error de la segona experiència molt més gran ($\approx$ 76 \%) que l'error del primer cas ($\approx$ 37 \%). Atribuïm aquests errors, com hem discutit prèviament, a les múltiples limitacions del model emprat i de l'experiment dut a terme, entre les quals destaquem que: el model considerat no reflexa completament la naturalesa del sistema (ja que els dos fils no són estrictament infinits i cal considerar efectes de vora, que alteren la forma que pren el camp $\vec{B}$ i, en conseqüència, la força entre els dos fils), i que el muntatge de la balança era summament sensible a que es produïssin problemes relacionats amb el calibratge. En particular, pel segon experiment hem hagut de trobar prèviament un seguit de valors de la força $F$ vs. l'angle de torsió del fil $\theta$ per tal de trobar la constant de torsió $k$ (usant la llei de Hook, $F=k\theta$, aplicada a aquest cas), a partir de la qual després hem pogut ajustar linealment les dades de $F$ vs. $1/r$. La necessitat de fer tantes mesures (i dos ajusts lineals) és una font d'error afegida que només afecta al segon experiment i que explicaria que tinguem un error en $\mu_0$ tan gran (respecte l'altre cas). Destaquem el fet que, com hem dit, tot i les limitacions s'ha aconseguit percebre l'ordre de magnitud de la permeabilitat magnètica del buit $\mu_0$ amb un muntatge no gaire complicat que involucrava l'ús d'una balança dissenyada per l'experiment en qüestió.
+Dels dos experiments anteriors, hem vist que, en els dos casos, s'obtenen valors que són de l'ordre de la permeabilitat magnètica del buit teòrica, essent l'error de la segona experiència molt més gran ($\approx$ 76 \%) que l'error del primer cas ($\approx$ 37 \%). Atribuïm aquests errors, com hem discutit prèviament, a les múltiples limitacions del model emprat i de l'experiment dut a terme, entre les quals destaquem que: el model considerat no reflexa completament la naturalesa del sistema (ja que els dos fils no són estrictament infinits i cal considerar efectes de vora, que alteren la forma que pren el camp $\vec{B}$ i, en conseqüència, la força entre els dos fils), i que el muntatge de la balança era summament sensible a que es produïssin problemes relacionats amb el calibratge. 
+
+En particular, pel segon experiment hem hagut de trobar prèviament un seguit de valors de la força $F$ vs. l'angle de torsió del fil $\theta$ per tal de trobar la constant de torsió $k$ (usant la llei de Hooke, $F=k\theta$, aplicada a aquest cas), a partir de la qual després hem pogut ajustar linealment les dades de $F$ vs. $1/r$. La necessitat de fer tantes mesures (i dos ajusts lineals) és una font d'error afegida que només afecta al segon experiment i que explicaria que tinguem un error en $\mu_0$ tan gran (respecte l'altre cas). Destaquem el fet que, com hem dit, tot i les limitacions s'ha aconseguit percebre l'ordre de magnitud de la permeabilitat magnètica del buit $\mu_0$ amb un muntatge no gaire complicat que involucrava l'ús d'una balança dissenyada per l'experiment en qüestió.
 
 Més enllà de tot això, també hem mesurat, a partir del mateix muntatge però canviant l'orientació dels fils conductors, la component horitzontal del camp magnètic terrestre al laboratori, a partir de mesures de l'angle de torsió del fil $\theta$ i de la intensitat que passava per un dels fils usant l'equació \eqref{eq:2.campmagnetic}. Fent el promig de totes les mesures hem pogut estimar la component horitzontal del camp magnètic terrestre, amb un error del 24,2 \% respecte del valor teòric, proporcionat per la pàgina web \textit{World Magnetic Model 2025 Calculator} \cite{ref2}. L'error associat, novament, està relacionat amb les limitacions del muntatge i del model teòric esmentades però, tot i això, hem sigut capaços d'aconseguir resultats de l'ordre dels predits teòricament.
-
+\newpage
+\null
+\newpage
 \chapter{Circuit RLC en sèrie}
 
 \begin{chapterabstract}
@@ -824,44 +836,46 @@ Per tal de poder comparar i entendre si els nostres resultats\footnote{El càlcu
 \begin{equation}
 	\omega_{1,2} = \frac{1}{2L} \left( \sqrt{4L^2\omega_0^2+R^2} \mp R \right).  
 \end{equation}
-Això ens permet calcular certes propietats del circuit, com per exemple: $\text{T}_\text{R}(\omega)$:
+Això ens permet calcular certes propietats del circuit, com per exemple $\text{T}_\text{R}(\omega)$. A la taula \ref{tab:3.1} es poden veure alguns paràmetres teòrics característics del circuit.
 
 \begin{table}[h]
 	\centering
+	\small
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Valors teòrics del sistema pel règim permanent}
+	\caption{Valors teòrics del sistema pel règim permanent.}
 	\begin{tabular}{lccccc}
 		\toprule
 		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1,2})}$ \\ 
 		\midrule
-		$\mathbf{R = 2660\Omega}$ & 8761 $\pm$ 35 & 3391 $\pm$ 98 & 22634 $\pm$ 680 & 1 & $1/\sqrt{2}$\\ 
-		$\mathbf{R = 274\Omega}$ & 8761 $\pm$ 35 & 7826 $\pm$ 35 & 9808 $\pm$ 91 & 1 & $1/\sqrt{2}$ \\
+		$\mathbf{R = 2660\text{ } \Omega}$ & 8761 $\pm$ 35 & 3391 $\pm$ 98 & 22634 $\pm$ 680 & 1 & $1/\sqrt{2}$\\ 
+		$\mathbf{R = 274\text{ } \Omega}$ & 8761 $\pm$ 35 & 7826 $\pm$ 35 & 9808 $\pm$ 91 & 1 & $1/\sqrt{2}$ \\
 		\bottomrule
 	\end{tabular}
+	\label{tab:3.1}
 \end{table}
 
-Posteriorment, per l'estudi del règim transitori, muntarem altre circuit com ja hem explicat a la secció \ref{sec 3.2.2}. En concret reproduïrem el circuit de la figura \ref{fig:3.3} amb una resistència de $R = 180\Omega$, $L = 33$mH i $C=330$pF. Amb aquests valors calculem teòricament alguns paràmetres del circuit com la pseudo-frequencia, $\omega$, el pseudo període, $T$, i la freqüència, $f$, que hem de posar al generador per tal que $f=1/(10T)$:
+Posteriorment, per l'estudi del règim transitori, muntarem un altre circuit com ja hem explicat a la secció \ref{sec 3.2.2}. En concret reproduïrem el circuit de la figura \ref{fig:3.3} amb una resistència de $R = 180$ $\Omega$, $L = 33$ mH i $C=330$ pF. Amb aquests valors calculem teòricament alguns paràmetres del circuit com la pseudo-frequència, $\omega$, el pseudo-període, $T$, i la freqüència, $f$, que hem de posar al generador per tal que $f=1/(10T)$. Aquests valors es troben a la \ref{tab:3.2}.
 
 \begin{table}[h]
 	\centering
+	\small
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Valors teòrics del sistema pel règim transitori}
+	\caption{Valors teòrics del sistema pel règim transitori.}
 	\label{val teo trans}
 	\begin{tabular}{lccc} 
 		\toprule
 		& $\omega$ (\text{rad/s}) & $T$ (\text{s}) & $f$ (\text{Hz})\\ 
 		\midrule
-		$\mathbf{R = 180\Omega}$ & (3,03 $\pm$ 0,56)$\cdot 10^5$ & (2,07 $\pm$ 0,31)$\cdot 10^{-5}$ & (4,82 $\pm$ 0,73)$\cdot 10^3$\\
+		$\mathbf{R = 180\text{ }\Omega}$ & (3,03 $\pm$ 0,56)$\cdot 10^5$ & (2,07 $\pm$ 0,31)$\cdot 10^{-5}$ & (4,82 $\pm$ 0,73)$\cdot 10^3$\\
 		\bottomrule
 	\end{tabular}
 \end{table}
-
-
 \subsection{Règim permanent}
-Una vegada s'han mesurat les freqüències de ressonància i de tall, els valors dels voltatges d'entrada i de la resistència just com s'explica a la secció \ref{expermento permanente} podem obtenir els següents valors experimentals directament de l'oscil·loscopi:
+Una vegada s'han mesurat les freqüències de ressonància i de tall, els valors dels voltatges d'entrada i de la resistència just com s'explica a la secció \ref{expermento permanente} podem obtenir els valors experimentals, directament de l'oscil·loscopi.
 
 \begin{table}[h]
 	\centering
+	\small
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Valors experimentals del sistema pel règim permanent}
 	\label{val exp trans}
@@ -869,16 +883,15 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, els valors
 		\toprule
 		& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
 		\midrule
-		$\mathbf{R = 2660\Omega}$ & 8960 $\pm$ 1 & 2860 $\pm$ 1 & 23460 $\pm$ 1 & 1 $\pm$ 0,0075 & 0,72340 $\pm$ 0,0066 & 0,72340 $\pm$ 0,0066\\ 
-		$\mathbf{R = 274\Omega}$ & 8860 $\pm$ 1 & 8040 $\pm$ 1 & 9830 $\pm$ 1 & 0,87647 $\pm$ 0,0078 & 0,70588 $\pm$ 0,0072 & 0,88235$\pm$ 0,0078\\
+		$\mathbf{R = 2660\text{ }\Omega}$ & 8960 $\pm$ 1 & 2860 $\pm$ 1 & 23460 $\pm$ 1 & 1 $\pm$ 0,0075 & 0,72340 $\pm$ 0,0066 & 0,72340 $\pm$ 0,0066\\ 
+		$\mathbf{R = 274\text{ }\Omega}$ & 8860 $\pm$ 1 & 8040 $\pm$ 1 & 9830 $\pm$ 1 & 0,87647 $\pm$ 0,0078 & 0,70588 $\pm$ 0,0072 & 0,88235$\pm$ 0,0078\\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
-
-
 \begin{table}[h]
 	\centering
+	\small
 	\renewcommand{\arraystretch}{1.2}
 	\caption{Error en les mesures respecte els valors teòrics esperats pel règim permanent}
 	\label{error exp trans}
@@ -887,50 +900,51 @@ Una vegada s'han mesurat les freqüències de ressonància i de tall, els valors
 			\toprule
 			& $f_0$ (\text{Hz}) & $f_1$ (\text{Hz}) & $f_2$ (\text{Hz}) & $\abs{T_R(\omega_0)}$ & $\abs{T_R(\omega_{1})}$ & $\abs{T_R(\omega_{2})}$ \\ 
 			\midrule
-			$\mathbf{R = 2660\Omega}$ & (2,27 $\pm$ 0,41$)\%$ & (15,7 $\pm$ 2,4$)\%$ & (3,7 $\pm$ 3,1$)\%$ & (0,00 $\pm$ 0,75$)\%$ & (2,30 $\pm$ 0,93$)\%$ & (2,30 $\pm$ 0,93$)\%$\\ 
-			$\mathbf{R = 274\Omega}$ & (1,13 $\pm$ 0,41$)\%$ & (2,73 $\pm$ 0,47$)\%$ & (0,22 $\pm$ 0,93$)\%$ & (12,352941 $\pm$ 0,000089$)\%$ & (0,2 $\pm$ 1,0$)\%$ & (24,8 $\pm$ 1,1$)\%$\\
+			$\mathbf{R = 2660\text{ }\Omega}$ & (2,27 $\pm$ 0,41$)\%$ & (15,7 $\pm$ 2,4$)\%$ & (3,7 $\pm$ 3,1$)\%$ & (0,00 $\pm$ 0,75$)\%$ & (2,30 $\pm$ 0,93$)\%$ & (2,30 $\pm$ 0,93$)\%$\\ 
+			$\mathbf{R = 274\text{ }\Omega}$ & (1,13 $\pm$ 0,41$)\%$ & (2,73 $\pm$ 0,47$)\%$ & (0,22 $\pm$ 0,93$)\%$ & (12,352941 $\pm$ 0,000089$)\%$ & (0,2 $\pm$ 1,0$)\%$ & (24,8 $\pm$ 1,1$)\%$\\
 			\bottomrule
 		\end{tabular}
 	\end{adjustbox}
 \end{table}
 
-A la taula \ref{val exp trans} es troben els resultats de l'experiment. Com els valors són varien considerablement, l'anàlisi d'aquestes dades es farà, sobretot, a partir del percentatge d'error respecte als valors teòrics predits que s'adjunten a la taula \ref{error exp trans}. 
+A la taula \ref{val exp trans} es troben els resultats de l'experiment. Com que els valors varien considerablement, l'anàlisi d'aquestes dades es farà, sobretot, a partir del percentatge d'error respecte als valors teòrics predits que s'adjunten a la taula \ref{error exp trans}. 
 
-Amb el procediment experimental seguit hem aconseguit recrear bastant bé tant la freqüència pròpia del sistema com les freqüències de tall amb els dos valors de la resistència. Encara que, en general, els resultats estan aproximadament dins del que esperàvem, notem que tenim dos grans errors: un en $f_1$ per a $R = 2660\Omega$ amb un valor del $(15,7 \pm 2,4) \%$, i l'altre pels valors de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per a $R = 274\Omega$, amb uns errors del $(12,352941 \pm 0,000089) \%$ i del $(24,8 \pm 1,1) \%$ respectivament. A continuació els comentem un a un.
+Amb el procediment experimental seguit hem aconseguit recrear bastant bé tant la freqüència pròpia del sistema com les freqüències de tall amb els dos valors de la resistència. Encara que, en general, els resultats estan aproximadament dins del que esperàvem, notem que tenim dos grans errors: un en $f_1$ per a $R = 2660$ $\Omega$ amb un valor del $(15,7 \pm 2,4) \%$, i l'altre pels valors de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per a $R = 274$ $\Omega$, amb uns errors del $(12,352941 \pm 0,000089) \%$ i del $(24,8 \pm 1,1) \%$ respectivament. A continuació els comentem un a un.
 
-L'error de $f_1$ per a $R = 2660\Omega$ pot ser causat per la falta de presició en la selecció de freqüències de l'oscil·loscopi, ja que aquest pot donar valors amb molta precisió però nosaltres vam considerar que anar fent salts de 50Hz o de 100Hz era bona idea, ja que freqüències eren de l'ordre de milers d'hertzs. Ho vam considerar així perquè experimentalment tampoc s'aprecia un gran salt en $\abs{T_R(\omega)}$ en moure la freqüència de 100 Hz en 100 Hz (ho podem veure a la figura \ref{fig:3.4}. Això últim concorda amb la teoria, ja que $\abs{T_R(\omega)}$ a freqüències molt baixes o molt altes comparades amb $f_0$, com ho son $f_1$ i $f_2$, canvia molt lentament. Aquest fet es pot deduir veient la forma de l'equació \ref{eq:3.33} i tenint en compte que $\abs{T_R(\omega)}$ està acotat en $(0,1]$. Així, el canvi en $\abs{T_R(\omega)}$ per a aquests ordres de freqüència no és pràcticament apreciable. Això podria explicar que, en algunes freqüències, tinguem un error relativament alt però que per a aquestes mateixes freqüències l'error en $\abs{T_R(\omega)}$ no sigui molt important. 
+L'error de $f_1$ per a $R = 2660$ $\Omega$ pot ser causat per la falta de precisió en la selecció de freqüències de l'oscil·loscopi, ja que aquest pot donar valors amb molta precisió però nosaltres vam considerar que anar fent salts de 50Hz o de 100Hz era bona idea, ja que les freqüències eren de l'ordre de milers d'hertzs. Ho vam considerar així perquè experimentalment tampoc s'apreciava una gran variació del guany $\abs{T_R(\omega)}$ en moure la freqüència de 100 Hz en 100 Hz (tal i com es pot veure a la figura \ref{fig:3.4}). Això últim concorda amb el que es podria predir teòricament, ja que $\abs{T_R(\omega)}$ a freqüències molt baixes o molt altes comparades amb $f_0$, com ho son $f_1$ i $f_2$, canvia molt lentament. Aquest fet es pot deduir veient la forma de l'equació \ref{eq:3.33} i tenint en compte que $\abs{T_R(\omega)}$ està acotat entre $(0,1]$. Així, el canvi en $\abs{T_R(\omega)}$ per a aquests ordres de freqüència no és pràcticament apreciable. Això podria explicar que, en algunes freqüències, tinguem un error relativament alt però que per a aquestes mateixes freqüències l'error en $\abs{T_R(\omega)}$ no sigui molt important. 
 
 \begin{figure}[H]
+\begin{subfigure}[t]{0.48\textwidth}
 	\centering
-	\includegraphics[width=0.6\linewidth]{R2660.png}
-	\caption{$\abs{T_R(f)}$ per $R = 2660\Omega$ en funció de  la freqüència aplicada $f$ (en gris $f=f_0$, en vermell $f=f_1^{\text{experimental}}$ i en lila $f=f_1^{\text{teòric}}$)}
+	\includegraphics[width=\linewidth]{R2660.png}
+	\caption{$\abs{T_R(f)}$ per $R = 2660$ $\Omega$ en funció de  la freqüència aplicada $f$ (en gris $f=f_0$, en vermell $f=f_1^{\text{experimental}}$ i en lila $f=f_1^{\text{teòric}}$).}
 	\label{fig:3.4}
-\end{figure}
-
-El segon error notable és el de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per a $R = 274\Omega$. Aquí creiem que, en baixar el valor de la resistència $\abs{T_R(\omega)}$ la sensibilitat a canvis en la freqüència augmenta molt. Com podem veure a la figura \ref{fig:3.5}, notem que, pel rang de freqüències en què ens movem, aquesta experimenta uns canvis de comportament bruscos. De fet, si ens fixem en els valors de $f_0$, $f_1$ i $f_2$ que subministrem a la taula \ref{val exp trans} s'assemblen molt més entre ells per $R = 274\Omega$ que no pas per $R = 2660\Omega$. Per tant, en aquest cas, creiem que el possible problema ha estat que, tot i que els valors de $f_0$ i $f_2$ estan ben mesurats, en canviar tan ràpidament $\abs{T_R(\omega)}$, especialment prop de $f_0$, hem comès molt error en $\abs{T_R(\omega_2)}$ i $\abs{T_R(\omega_2)}$.
-
-\begin{figure}[h]
+\end{subfigure}
+\hspace{1em}
+\begin{subfigure}[t]{0.48\textwidth}
 	\centering
-	\includegraphics[width=0.6\linewidth]{R274.png}
-	\caption{$\abs{T_R(f)}$ per $R = 274\Omega$ en funció de  la freqüència aplicada $f$ (en gris $f=f_0$)}
+	\includegraphics[width=\linewidth]{R274.png}		\caption{$\abs{T_R(f)}$ per $R = 274$ $\Omega$ en funció de  la freqüència aplicada $f$ (en gris $f=f_0$).}
 	\label{fig:3.5}
+\end{subfigure}
+\caption{Gràfiques de guany vs. freqüència per diferents valors de resistència.}
 \end{figure}
+El segon error notable és el de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per a $R = 274$ $\Omega$. Aquí creiem que, en baixar el valor de la resistència $\abs{T_R(\omega)}$ la sensibilitat a canvis en la freqüència augmenta molt. Tal i com es pot veure a la figura \ref{fig:3.5}, pel rang de freqüències en què ens movem, el guany experimenta uns canvis de comportament bruscos. De fet, si ens fixem en els valors de $f_0$, $f_1$ i $f_2$ que subministrem a la taula \ref{val exp trans} s'assemblen molt més entre ells per $R = 274$ $\Omega$ que no pas per $R = 2660$ $\Omega$. Per tant, en aquest cas, creiem que el possible problema ha estat que, tot i que els valors de $f_0$ i $f_2$ estan ben mesurats, en canviar tan ràpidament $\abs{T_R(\omega)}$, especialment prop de $f_0$, hem comès molt error en $\abs{T_R(\omega_2)}$ i $\abs{T_R(\omega_2)}$.
 
-És important observar que hem aconseguit reproduir perfectament els ordes de magnitud de totes les freqüències i veure com el guany en voltatge de la resistència va canviant amb aquestes, sent màxima en la freqüència de ressonància del sistema. També, gràcies als errors comesos hem pogut experimentar el diferent comportament del sistema per a diferents valors de la resistència, com hem pogut veure en els valors de $\abs{T_R(\omega)}$. \\
+És important observar que hem aconseguit reproduir perfectament els ordes de magnitud de totes les freqüències i veure com el guany en voltatge de la resistència va canviant amb aquestes, essent aquest màxim quan estàvem a la freqüència de ressonància del sistema. També, gràcies als errors comesos, hem pogut estudiar en profunditat el diferent comportament del sistema per a diferents valors de la resistència, com hem pogut veure en els valors de $\abs{T_R(\omega)}$. 
 
-Ara, un cop els errors han estat discutits, podem comparar valors i veure com, tot i canviar la resistència, la freqüència de ressonància, $f_0$, és la mateixa per a les dues resistències, just com prediu la fórmula \ref{eq:3.19}, ja que aquesta, segons la teoria, no depèn de la resistència.  
-Donat que $f_0$ no canvia, $\abs{T_R(\omega_0)}$ tampoc ho fa. De fet, per molt que la freqüència de ressonància canviï (per exemple canviant el condensador o la inductància), si recalculem $\abs{T_R(\omega_0)}$ per a aquesta nova freqüència, se seguiria complint que $\abs{T_R(\omega_0)} = 1$. Això és així per definició, tal i com hem deduït a la introducció de l'equació \ref{eq:3.18}.
+Ara, un cop els errors han estat discutits, podem comparar valors i veure com, tot i canviar la resistència, la freqüència de ressonància, $f_0$, és la mateixa, just com prediu la fórmula \ref{eq:3.19}.
+Donat que $f_0$ no canvia, $\abs{T_R(\omega_0)}$ tampoc ho fa. De fet, per molt que la freqüència de ressonància canviï (per exemple canviant el condensador o la inductància), si recalculem $\abs{T_R(\omega_0)}$ per a aquesta nova freqüència, se seguiria complint que $\abs{T_R(\omega_0)} = 1$. Això és així per definició, tal i com s'ha explicat a la introducció teòrica.
 
-Per contra, el que sí que podem notar que canvia en funció de la resistència que posem són les freqüències de tall. Aquestes depenen explícitament de la forma de $\abs{T_R(\omega)}$ i no d'on aquesta sigui màxima (tal i com passava amb $f_0$ que quedava fixada independentment de $R$). Això es pot veure bé les dades presentades. Com hem comentat, mentre que a $R = 274\Omega$, $f_1$ i $f_2$ quedaven molt a prop de $f_0$ per la forma del pic de $\abs{T_R(\omega)}$ (hem apreciat els seus canvis bruscos), en posar $R = 2660\Omega$, tot i que tampoc diríem que $f_1$ queda lluny de $f_0$, $f_2$ està bastant allunyat (de l'ordre del doble de freqüència). De fet, aquesta diferència de comportament no només la podem veure visualment a les figures \ref{fig:3.4} i \ref{fig:3.5}, sinó que també es pot quantificar amb un paràmetre anomenat ample de banda: 
-\begin{eqnarray}
-	\Delta\omega \equiv \omega_2 - \omega_1
-\end{eqnarray}
-Substituint els nostres valors experimentals podem calcular $\Delta f \equiv f_2 - f_1$ ($\Delta\omega /(2\pi)$):
+Per contra, el que sí que podem veure que canvia en funció de la resistència que posem són les freqüències de tall. Aquestes depenen explícitament de la forma de $\abs{T_R(\omega)}$ i no d'on aquesta sigui màxima (tal i com passava amb $f_0$ que quedava fixada independentment de $R$). Això es pot veure bé a les dades presentades. Com hem comentat, mentre que a $R = 274$ $\Omega$, $f_1$ i $f_2$ quedaven molt a prop de $f_0$ per la forma del pic de $\abs{T_R(\omega)}$ (hem apreciat els seus canvis bruscos), en posar $R = 2660$ $\Omega$, tot i que tampoc diríem que $f_1$ queda lluny de $f_0$, $f_2$ està bastant allunyat (de l'ordre del doble de freqüència). De fet, aquesta diferència de comportament no només la podem veure visualment a les figures \ref{fig:3.4} i \ref{fig:3.5}, sinó que també es pot quantificar amb un paràmetre anomenat ample de banda
+\begin{equation}
+	\Delta\omega \equiv \omega_2 - \omega_1.
+\end{equation}
+Substituint els nostres valors experimentals podem calcular $\Delta f \equiv f_2 - f_1$ ($\Delta\omega /(2\pi)$), tal i com es pot veure a la taula \ref{tab:3.5}.
 
 \begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Valors de l'ample de banda}
+	\caption{Valors de l'ample de banda.}
 	\begin{tabular}{lccc}
 		\toprule
 		& $\Delta f_{\text{teòric}}$ (\text{Hz}) & $\Delta f_{\text{experimental}}$ (\text{Hz}) & $\%$ d'error\\ 
@@ -939,23 +953,23 @@ Substituint els nostres valors experimentals podem calcular $\Delta f \equiv f_2
 		$\mathbf{R = 274\Omega}$ & 1982 $\pm$ 12 & 1744,0 $\pm$ 1,4 & 12,02 $\pm$ 0,52\\
 		\bottomrule
 	\end{tabular}
+	\label{tab:3.5}
 \end{table}
 
-Veiem com el circuit amb una resistència menor té una amplada de banda també mes petita. Això concorda perfectament tant amb el que hem estat comentant fins ara com amb la teoria, ja que aquest fet es pot deduir d'una expressió equivalent per $\Delta\omega$ que exposem a l'equació \ref{eq:3.40}. Aquesta suggereix que l'amplada de banda és proporcional a la resistència. Aquest fet el podem veure reflexat en les nostres dades fent
-\begin{eqnarray}
+Veiem com el circuit amb una resistència menor té una amplada de banda també mes petita. Això concorda perfectament tant amb el que hem estat comentant fins ara com amb la teoria, ja que aquest fet es pot deduir d'una expressió equivalent per $\Delta\omega$ (vegeu l'equació \ref{eq:3.40}). Aquesta suggereix que l'amplada de banda és proporcional a la resistència. Això ho podem veure reflectit en les nostres dades fent
+\begin{equation*}
 	\frac{\Delta\omega(R=2660)}{2660} = 7,3 \thickapprox 6,4 = \frac{\Delta\omega(R=274)}{274}
-\end{eqnarray}
-
-El fet que $\Delta\omega$ sigui menor per a resistències petites o, equivalentment, que $f_1$ i $f_2$ siguin properes, també es pot deduir a partir d'una intuïció mes física. Pensem en un circuit LC. Si comencem amb el condensador carregat, aquest provoca un canvi de corrent en descarregar-se que, al seu torn genera un camp magnètic en la bobina la qual es carrega en energia magnètica. Per tant, es crea en aquesta un corrent que s'oposa al canvi, de manera que es torna a carregar el condensador, i així infinitament. Si en comptes d'un circuit LC tinguéssim  un RLC (com tenim realment) el comportament seria el mateix però s'aniria perdent energia (disminuint la intensitat de corrent), ja que es dissiparia a la resistència. En el nostre cas,, però, no comencem amb el condensador carregat, sinó que li apliquem un corrent sinusoidal tal que, amb el temps, el circuit s'acobla a aquest i acaba oscil·lant també sinusoidalment. Addicionalment, també es perd energia a resistència per efecte Joule, però tot i això la intensitat de corrent no disminueix perquè l'energia perduda l'aportem externament mitjançant el corrent sinusoidal amb què forcem el circuit. Si ho forcem exactament a la mateixa freqüència de ressonància, aquest corrents que es van intercanviant al condensador i a la bobina queden perfectament sincronitzats amb l'extern proporcionat, de manera que se sumen donant la màxima amplitud de corrent. Si fem això mateix amb una resistència molt petita, es a dir $R \sim 0$, no es dissipa energia i, per tant, tota l'energia que li proporcionem queda retinguda al sistema. Per això mateix, com que els corrents estan en fase se sumen quedant així l'energia emmagatzemada al circuit. De fet, obtenim que al límit:
-\begin{eqnarray}
+\end{equation*}
+El fet que $\Delta\omega$ sigui menor per a resistències petites o, equivalentment, que $f_1$ i $f_2$ siguin properes, també es pot deduir a partir d'una intuïció mes física. Pensem en un circuit LC. Si comencem amb el condensador carregat, aquest provoca un canvi de corrent en descarregar-se que, al seu torn genera un camp magnètic en la bobina la qual es carrega en energia magnètica. Per tant, es crea en aquesta un corrent que s'oposa al canvi, de manera que es torna a carregar el condensador, i així infinitament. Si en comptes d'un circuit LC tinguéssim  un RLC (com tenim realment) el comportament seria el mateix però s'aniria perdent energia (disminuint la intensitat de corrent), ja que es dissiparia a la resistència. En el nostre cas, però, no comencem amb el condensador carregat, sinó que li apliquem un corrent sinusoidal tal que, amb el temps, el circuit s'acobla a aquest i acaba oscil·lant també sinusoidalment. Addicionalment, també es perd energia a la resistència per efecte Joule, però tot i això la intensitat de corrent no disminueix perquè l'energia perduda l'aportem externament mitjançant el corrent sinusoidal amb què forcem el circuit. Si forcem el sistema exactament a la mateixa freqüència de ressonància d'aquests, els corrents que es van intercanviant al condensador i a la bobina queden perfectament sincronitzats amb l'extern proporcionat, de manera que se sumen donant la màxima amplitud de corrent. Si fem això mateix amb una resistència molt petita, es a dir $R \sim 0$, no es dissipa energia i, per tant, tota l'energia que li proporcionem queda retinguda al sistema. Per això mateix, com que els corrents estan en fase se sumen quedant així l'energia emmagatzemada al circuit. De fet, obtenim que al límit quan la resistència esdevé nul·la, se satisfà,
+\begin{equation}
 	\lim_{R \to 0} U = \infty
-\end{eqnarray}
+\end{equation}
 on $U$ és l'energia emmagatzemada al sistema al cap d'un temps infinit. 
 
-Clarament nosaltres no tenim $R \sim 0$, però hem pogut veure la tendència que, en fer $R$ més petit, l'amplada de banda s'estreta, o el que és equivalent, la intensitat es dispara en deixar passar un temps llarg. Això equival a dir que, tal i com hem anat dient, el guany en voltatge té un pic cada cop més estret en baixar la resistència, ja que ens apropem al circuit LC que pot oscil·lar a una única freqüència: la pròpia o la de ressonància.\\
+Clarament nosaltres no tenim $R \sim 0$, però hem pogut veure la tendència que, en fer $R$ més petit, l'amplada de banda s'estreta, o el que és equivalent, la intensitat es dispara en deixar passar un temps llarg. Això equival a dir que el guany en voltatge té un pic cada cop més estret en baixar la resistència, ja que ens apropem al circuit LC que pot oscil·lar a una única freqüència: la pròpia o la de ressonància.
 
 \subsection{Règim transitori}
-Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184$ $\Omega$, $33$ mH i $330$ pF respectivament, podem presentar els resultats i comparar amb allò predit anteriorment a la taula \ref{val teo trans}:
+Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184$ $\Omega$, $33$ mH i $330$ pF respectivament, fem les mesures demanades i obtenim els resultats que es poden veure a la taula \ref{tab:3.6}. Si comparem això amb els valors teòrics de la taula \ref{val teo trans} obtenim els errors de la taula \ref{tab:37}.
 
 \begin{table}[h]
 	\centering
@@ -966,9 +980,10 @@ Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $1
 		\toprule
 		& $\omega$ (\text{rad/s}) & $T$ (\text{s}) & $f$ (\text{Hz})\\ 
 		\midrule
-		$\mathbf{R = 184\Omega}$ & - & (2,060 $\pm$ 0,020)$\cdot 10^{-5}$ & (4,854 $\pm$ 0,047)$\cdot 10^3$\\
+		$\mathbf{R = 184\text{ }\Omega}$ & - & (2,060 $\pm$ 0,020)$\cdot 10^{-5}$ & (4,854 $\pm$ 0,047)$\cdot 10^3$\\
 		\bottomrule
 	\end{tabular}
+	\label{tab:3.6}
 \end{table}
 
 \begin{table}[h]
@@ -980,21 +995,19 @@ Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $1
 		\toprule
 		& $\omega$ (\text{rad/s}) & $T$ (\text{s}) & $f$ (\text{Hz})\\ 
 		\midrule
-		$\mathbf{R = 184\Omega}$ & - & (0,7 $\pm$ 1,5)$\%$  & (0,7 $\pm$ 1,5)$\%$ \\
+		$\mathbf{R = 184\text{ }\Omega}$ & - & (0,7 $\pm$ 1,5)$\%$  & (0,7 $\pm$ 1,5)$\%$ \\
 		\bottomrule
 	\end{tabular}
+	\label{tab:37}
 \end{table}
 
-Observem que en aquestes mesures hem comés molt poc error, fet que concorda amb el que s'ha vist abans. En tenir una resistència petita, el circuit es comporta de manera molt sensible sota un cavi en la freqüència, de manera que hem pogut mesurar amb molta exactitud i precisió el pseudo-període, ja que és aquell pel qual es sistema oscil·la en aquestes condicions.\\
-\textcolor{red}{(Com a valor experimental no posem la pseudo-freqüència $\omega$, perque el que mesurem experimentalment el el pseudo-període, per lo que fem l'anàlisi a partir d'ell)  ESTO VA ASÍ TAL CUAL? O ES ANOTACIÓN TUYA???? Me parece random un paréntesis así}
+Observem que en aquestes mesures hem comés molt poc error, fet que concorda amb el que s'ha vist abans. En tenir una resistència petita, el circuit es comporta de manera molt sensible sota un cavi en la freqüència, de manera que hem pogut mesurar amb molta exactitud i precisió el pseudo-període, ja que és aquell pel qual el sistema oscil·la en aquestes condicions.
 
-\textcolor{red}{HE CORREGIDO HASTA AQUÍ. NO BORRES ESTO ASÍ MAÑANA ERIC SE LO PUEDE MIRAR}
-
-Per últim veurem com afecta la resistència en altre caracteristica del sistema, i es que per a diferent valors d'aquesta el sistema pot oscilar o no. Lo primer es veure quina es la frecuencia critica caracteristica del nostre circuit, de l'ecuació \ref{eq:3.31} tenim que pel nostre sistema 
+Per últim, veurem com afecta la resistència a les oscil·lacions del sistema, ja que, en funció dels valors que pot prendre $R$, les oscil·lacions seran diferents. Comencem buscant quina és la freqüència crítica del nostre circuit. Per fer-ho, usem l'equació \eqref{eq:3.31} tot trobant que
 \begin{eqnarray}
-	R_c = (2,00 \pm 0,30)\cdot10^4 \hspace{0,2cm}\Omega
+	R_c = (2,00 \pm 0,30)\cdot10^4 \hspace{0,2cm}\Omega.
 \end{eqnarray}
-Ara al posar diferents resistències amb la resistència variable, $R<R_c$, $R=R_c$ i $R>R_c$ obtenim els comportaments d'oscil·lació amortida, oscil·lació critica, i un comportament sobreamortit respectivament, que els podem veure directament al oscil·loscopi:
+Ara, en posar diferents resistències (usant la resistència variable), podem obtenir els comportaments d'oscil·lació: amortida, oscil·lació critica, i un comportament sobreamortit ($R<R_c$, $R=R_c$ i $R>R_c$). A la figura \ref{fig:trans} podem veure aquestes tres situacions en la pantalla de l'oscil·loscopi del laboratori.
 
 \begin{figure}[H]
 	\centering
@@ -1018,10 +1031,11 @@ Ara al posar diferents resistències amb la resistència variable, $R<R_c$, $R=R
 		\caption{Resposta per $R>R_c$.}
 		\label{fig trans sobre}
 	\end{subfigure}
-	\label{fig trans}
+	\caption{Els tres casos d'oscil·lacions observats a l'oscil·loscopi.}
+	\label{fig:trans}
 \end{figure}
 
-Veient la figura \ref{fig trans amort} podem entendre molt millor el que dèiem abans de que el sistema perd energia, notem com en cada cicle l'amplitud de la tensió va decreixent exponencialment degut a que l'energia del sistema que es guarda al condensador i la bobina es va dissipant en cada oscil·lació a traves de la resistència. Cuan augmentem el valor de la resistència fins al valor crític notem com el sistema pràcticament no oscil·la, figura \ref{fig trans crit}, i només s'aprecia la tensió aplicada i un soroll de fons, aixó ja que al augmentar fins a aquest valor la resistència el sistema per tanta energia com la que li estem donant de forma instantanea i no pot oscil·lar. Si encara seguim augmentant el valor de la resistència el sistema es comporta com en la figura \ref{fig trans sobre}, que no només no oscil·la sinó que la dissipació d'energia es tal que li costa inclús mantenir la tensió que li subministrem, es dissipa mes energia de la que li proporcionem.
+Veient la figura \ref{fig trans amort} podem entendre molt millor el que dèiem abans de que el sistema perd energia: cada cicle l'amplitud de la tensió va decreixent exponencialment degut a que l'energia del sistema que es guarda al condensador i la bobina es va dissipant en cada oscil·lació a través de la resistència. En augmentar el valor de la resistència fins al valor crític podem veure com el sistema pràcticament no oscil·la (figura \ref{fig trans crit}), i només s'aprecia la tensió aplicada i un soroll de fons. Això és així ja que, en augmentar fins a aquest valor la resistència, el sistema perd tanta energia com la que li estem donant i no pot oscil·lar. Si seguim augmentant el valor de la resistència, el sistema es comporta com en la figura \ref{fig trans sobre}, que no només no oscil·la, sinó que, a més a més, la dissipació d'energia és tal que li costa, fins i tot, mantenir la tensió que li subministrem i s'acaba dissipant més energia de la que li proporcionem.
 
 \subsection{Constant d'esmorteïment del circuit}
 En les condicions del règim transitori, ens proposem ara buscar la constant d'esmorteïment $\lambda$ del sistema. Recordem que aquest valor apareix quan estem en el cas $\Delta < 0$ (resistències petites)\footnote{$\Delta$ ve donat per l'equació \eqref{eq:3.22}.} a partir d'un seguit de mesures de $V_C$ vs. $t$, tal i com s'ha explicat a la introducció teòrica de la pràctica. Un cop haguem trobat el valor experimental el compararem amb el teòric.
@@ -1038,7 +1052,7 @@ Tot i que el valor de $E$ és conegut perquè es correspon amb el voltatge d’e
 \end{equation}
 tot evitant els problemes anteriors. Aquest límit s’ha determinat gràficament a partir de la gràfica $\ref{fig:3.6}$, construïda amb les dades de la taula $\ref{tab:3.7}$.
 
-\begin{table}[H]
+\begin{table}[h]
 	\centering
 	\small
 	\begin{minipage}{0.28\textwidth}
@@ -1063,7 +1077,7 @@ tot evitant els problemes anteriors. Aquest límit s’ha determinat gràficamen
 		\label{tab:3.7}
 	\end{minipage}%
 	\hfill
-	\begin{minipage}{0.68\textwidth}
+	\begin{minipage}{0.58\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{vc_vs_t.png} 
 		\captionof{figure}{Gràfica de $V_C$ en funció del temps $t$.}
@@ -1072,7 +1086,6 @@ tot evitant els problemes anteriors. Aquest límit s’ha determinat gràficamen
 \end{table}
 
 A partir d’aquesta gràfica, estimem el valor d’$E$ com $E = 2{,}1\,V $.
-\textcolor{red}{se pueden hacer más pequeñitos los gráficos o queda demasiado pequeño?}
 
 Per fer l’ajust lineal i extreure $\lambda$, utilitzem només els pics màxims de la senyal, mostrats a la taula $\ref{tab:3.8}$. 
 
@@ -1096,7 +1109,7 @@ Per fer l’ajust lineal i extreure $\lambda$, utilitzem només els pics màxims
 		\label{tab:3.8}
 	\end{minipage}%
 	\hfill
-	\begin{minipage}{0.68\textwidth}
+	\begin{minipage}{0.58\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{lambda.png} 
 		\captionof{figure}{Representació de $\ln|V_C(t_n) - E|$ ($E$ i $V_C$ en volts) en funció del temps $t$. Dades de l'ajust lineal: $y=mx+n$, amb $m=(-250,9\pm7,8)\cdot10^{2}$ s$^{-1}$ i $n=(1,307\pm0,051)$. Coeficient de correlació $R^2=0,997$.}
@@ -1115,15 +1128,17 @@ A partir de l'estudi d'un circuit RLC en sèrie elemental en els règims permane
 
 En primer lloc, destaquem la comprovació de la independència de la freqüència de ressonància $f_0$ amb la resistència $R$, tal i com predia l'equació \eqref{eq:3.19}. En canvi, s'ha vist que, tant les freqüències de tall $f_1$ i $f_2$, com l'amplada de la banda $\Delta\omega$ varien molt significativament segons el valor de resistència amb què es treballi. Concretament, la variació que experimental l'amplada de la banda és directament proporcional a $R$.
 
-Per altra banda, les dades experimentals de les freqüències $f_0$, $f_1$ i $f_2$ són similars als valors esperats calculats a partir d'equacions teòriques amb unes variacions mínimes que, exceptuant un parell de casos que comentarem més endevant, no superen el 4\% d'error. El fet que les dues dades no siguin perfectament coincidents podem atribuir-ho principalment a imprecisions causades per l'instrument emprat (l'oscil·loscopi), amb el qual es va variar la freqüència amb massa brusquetat.
+Per altra banda, les dades experimentals de les freqüències $f_0$, $f_1$ i $f_2$ són similars als valors esperats calculats a partir d'equacions teòriques amb unes variacions mínimes que, exceptuant un parell de casos que comentarem més endevant, no superen el 4\% d'error. El fet que les dues dades no siguin perfectament coincidents podem atribuir-ho principalment a imprecisions causades per l'ús de la instrumentació emprada (l'oscil·loscopi i generador d'ones).
 
-Pels dos casos amb un error més elevat, tal i com s'ha explicat a la discussió, la sensibilitat de $\abs{T_R(\omega_0)}$ ha influït negativament en les mesures que s'han pres. Per la resistència de 2660 $\Omega$ la sensibilitat era mínima, de manera que el rang de freqüències de valors que podríem haver considerat vàlids és molt ampli, ja que la variació de  $\abs{T_R(\omega_0)}$ era quasi inapreciable. Per contra, per una resistència de 274 $\Omega$ la variació d'aquest mateix paràmetre es fa molt notable amb el mínim canvi de freqüència, causant així moltes imprecisions a l'hora de determinar la freqüència de tall exacta. Aquesta sensibilitat variable que acabem de comentar és crucial a l'hora de dissenyar circuits, ja que permet utilitzar la resistència com a paràmetre de control per tal de controlar la resposta del sistema.
+Pels dos casos amb un error més elevat, tal i com s'ha explicat a la discussió, la sensibilitat de $\abs{T_R(\omega_0)}$ ha influït negativament en les mesures que s'han pres. Per la resistència de 2660 $\Omega$ la sensibilitat era mínima, de manera que el rang de freqüències que podríem haver considerat vàlids és molt ampli, ja que la variació de  $\abs{T_R(\omega_0)}$ era quasi inapreciable. Per contra, per una resistència de 274 $\Omega$ la variació d'aquest mateix paràmetre es fa notable amb el mínim canvi de freqüència, causant així moltes imprecisions a l'hora de determinar la freqüència de tall exacta. Aquesta sensibilitat variable que acabem de comentar és crucial a l'hora de dissenyar circuits, ja que permet utilitzar la resistència com a paràmetre de control per tal de controlar la resposta del sistema.
 
-A l'apartat on es treballa amb el règim transitori, hem pogut observar, mitjançant l'oscil·loscopi, els diferents tipus d'oscil·lació que s'obtenen segons el valor de la resistència amb què es treballa, obtenint així una oscil·lació amortida per a $R<R_c$, una de crítica per a $R=R_c$ i un comportament sobreamortit per a $R_>R_c$ \textcolor{red}{Això es pot treure si voleu, crec que és redundant pq ja està a resultat i discussió}. A partir de les gràfiques proporcionades per l'oscil·loscopi \textcolor{red}{No he entès bé l'apartat crec. Si algú pot fer les conclusions d'aquest apartat em fa un favor enooorme}
+A l'apartat on es treballa amb el règim transitori, hem pogut observar, mitjançant l'oscil·loscopi, els diferents tipus d'oscil·lació que s'obtenen segons el valor de la resistència amb què es treballa (una oscil·lació amortida per a $R<R_c$, una de crítica per a $R=R_c$ i un comportament sobreamortit per a $R_>R_c$) i els motius pels quals apareixen.
 
-Finalment, el valor de la constant d'esmorteïment calculada a partir d'un parell de gràfics i regressions considerem que és suficientment pròxima al valor teòric esperat, ja que l'error relatiu és del 14,37\%. Aquest error podria semblar alarmant però cal recordar que els càlculs teòrics es basen en comportaments ideals que són impossibles de reproduir amb exactitud al laboratori. Per posar un exemple, el valor $E$ calculat segons l'equació \eqref{eq348} requereix un temps infinit, fet que resulta inviable, de manera que, en establir un interval de temps finit, s'introdueix una font d'error considerable.
+Finalment,hem pogut calcular el valor de la constant d'esmorteïment $\lambda$ a partir d'un parell de gràfics i regressions. Considerem que el seu valor és suficientment pròxim l'esperat, essent l'error relatiu només del 14,37\%. Aquest error podria semblar alarmant però cal recordar que els càlculs teòrics es basen en comportaments ideals que són impossibles de reproduir amb exactitud al laboratori. Per posar un exemple, el valor $E$ calculat segons l'equació \eqref{eq348} requereix un temps infinit, fet que resulta inviable, de manera que, en establir un interval de temps finit, s'introdueix una font d'error considerable.
 
-
+\newpage
+\null
+\newpage
 \chapter{Inductància mútua i transformadors}
 
 \begin{chapterabstract}
@@ -1159,7 +1174,7 @@ De manera anàloga al que passava amb la primera bobina que induïa un corrent a
 \end{equation}
 Amb totes aquestes equacions mencionades fins ara, es pot demostrar fàcilment l'equació de Neumann (Griffiths, 2017, p. 322 \cite{ref4})
 \begin{equation}
-	M_{ab}=\frac{\mu_0}{4\pi}\oint_a\oint_b\frac{\mathrm{d}\Vec{l}_a\cdot\mathrm{d}\Vec{l}_b}{r} \label{eq:4:6}.
+	M_{12}=\frac{\mu_0}{4\pi}\oint_1\oint_2\frac{\mathrm{d}\Vec{l}_1\cdot\mathrm{d}\Vec{l}_2}{r} \label{eq:4:6}.
 \end{equation}
 Aquesta equació és simètrica respecte $a$ i $b$, és a dir
 \begin{equation}
@@ -1170,7 +1185,7 @@ Ens serà útil recordar que el camp magnètic creat per una bobina de longitud 
 \begin{equation}
 	B = \frac{\mu n I}{l}.
 \end{equation}
-Si substituïm a \ref{eq:4:5}, obtenim
+Si substituïm a la definició de flux magnètic, obtenim
 \begin{equation}
 	\Phi = \frac{\mu n^2 S}{l} I,
 \end{equation}
@@ -1401,7 +1416,7 @@ En aquesta secció\footnote{El càlcul de les incerteses es pot trobar a l'annex
 
 Podem observar, a partir dels valors de $k$, que la configuració òptima és la d. Aquest resultat és coherent amb la teoria, ja que la presència d’un material ferromagnètic d’alta permeabilitat magnètica afavoreix la concentració i la guia de les línies de camp magnètic, reduint les pèrdues de flux i incrementant el coeficient d’acoblament, acostant-lo al cas ideal ($k = 1$). En aquest cas concret, la geometria del nucli és la més indicada per seguir el recorregut natural del camp creat per la bobina primària, de manera que el flux magnètic queda més confinat i canalitzat cap a la bobina secundària.
 
-Cal destacar que la primera configuració proposada per nosaltres també presenta un valor de $k$ molt proper a la idealitat (0,9535 ± 0,00195), tot i ser lleugerament inferior al de la configuració d (0,9562 ± 0,00196). Malgrat això, considerem que aquesta primera configuració hauria de ser la millor des del punt de vista geomètric, ja que la seva forma s’ajusta especialment bé al recorregut natural de les línies del camp magnètic generades per la bobina primària. Per aquest motiu, l’hem escollida com a base pels càlculs posteriors.
+Cal destacar que la primera configuració proposada per nosaltres també presenta un valor de $k$ molt proper a la idealitat (0,9535 ± 0,0020), tot i ser lleugerament inferior al de la configuració d (0,9562 ± 0,0020). Malgrat això, considerem que aquesta primera configuració hauria de ser la millor des del punt de vista geomètric, ja que la seva forma s’ajusta especialment bé al recorregut natural de les línies del camp magnètic generades per la bobina primària. Per aquest motiu, l’hem escollida com a base pels càlculs posteriors.
 
 Per finalitzar l'anàlisi, podem veure la importància d’introduir un element ferromagnètic per minimitzar les pèrdues de flux magnètic. Si ens fixem en la configuració 0, que correspon al cas sense cap element ferromagnètic, la constant d’acoblament és de $k = 0,0419 \pm 0,0002 $, el valor més baix amb diferència respecte a la resta de configuracions. Això indica que una gran part del flux magnètic no arriba a la bobina secundària, evidenciant una desviació notable del comportament ideal i una gran pèrdua de voltatge.
 
@@ -1606,6 +1621,9 @@ En la segona part de la pràctica, hem demostrat la relació entre les reactànc
 
 Finalment, hem comparat el guany en voltatge experimental amb el teòric, per diferents valors de la relació $n_2/n_1$ i per diferents resistències. Per calcular el guany en voltatge teòric, s'ha tingut en compte en quin règim ens trobem ($Z \gg X$, $Z \sim X$ i $Z \ll X$). En cada cas, s’han aplicat les aproximacions teòriques corresponents, i hem observat que, en el règim $Z \ll X$, la dependència del guany respecte el coeficient d’acoblament $k$ és molt més significativa que en la resta.
 
+\newpage
+\null
+\newpage
 
 \begin{thebibliography}{99}
 	\bibitem{ref1}
@@ -1622,6 +1640,8 @@ Finalment, hem comparat el guany en voltatge experimental amb el teòric, per di
 	Griffiths, David J. \textit{Introduction to Electrodynamics}. 4th ed., Cambridge University Press, 2017.
 \end{thebibliography}
 
+\newpage
+\null
 \newpage
 \begin{appendices}
 %SI TOQUEU AIXÒ ELS ANNEXOS PETEN.
@@ -1758,6 +1778,8 @@ Per simplicitat anomenem $\frac{\Delta V_i \Delta l_i}{\Delta r_i} = Y_i$, de fo
 		u_{\frac{V_2}{V_1}}=\sqrt{\left(\frac{\alpha Z\left(Z^2+X^2\alpha^4\left(k^2-1\right)^2\right)-2k^2X^2\alpha^5\left(k^2-1\right)Z}{\left(Z^2+X^2\alpha^4\left(k^2-1\right)^2\right)^{3/2}}u_k\right)^2+\left(\frac{X\alpha^5kZ\left(k^2-1\right)^2}{\left(Z^2+X^2\alpha^4\left(k^2-1\right)^2\right)^{3/2}}u_X\right)^{2}}.
 	\end{equation}
 \end{enumerate}
+\newpage
+\null
 \newpage
 \section{Annex pràctica 1. Representació de camps}
 \subsection{Deducció de l'equació $(1.22)$}
@@ -2123,6 +2145,8 @@ ax.plot([pa],[-np.sqrt(3)/3*pa],'ro', markersize=3)
 plt.show()
 \end{lstlisting}
 
+\newpage
+\null
 \newpage
 \section{Annex pràctica 2. Força entre corrents}
 \label{an:c1}

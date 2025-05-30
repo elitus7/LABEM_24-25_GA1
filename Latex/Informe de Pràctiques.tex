@@ -411,7 +411,7 @@ El sistema que usarem per tal de fer totes les mesures necessàries serà el de 
 		\caption{Esquema de la balança usada en el transcurs de la pràctica 2.}
 		\label{fig:2.1a}
 	\end{subfigure}
-	\hfill
+	\hspace{1em}
 	\begin{subfigure}[b]{0.40\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{screenshot009}
@@ -551,11 +551,10 @@ Contràriament als apartats anteriors, en aquest cas situem els conductors perpe
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.25\linewidth]{screenshot019}
+	\includegraphics[width=0.35\linewidth]{screenshot019}
 	\caption{Diagrama de forces que crea el camp magnètic terrestre a la balança. La força verda $F_h$ és la corresponent a la component horitzontal de $\vec{B}$.}
 	\label{fig2:6}
 \end{figure}
-
 
 A partir de les mesures experimentals recollides a l'annex \ref{an:c1} de l'angle necessari per equilibrar la balança per a diferents valors d'intensitat, trobem que la component horitzontal del camp magnètic de la Terra és
 \begin{equation*}
@@ -799,9 +798,20 @@ Comencem muntant el circuit de la figura \ref{fig:3.2}\footnote{Les figures corr
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.3\linewidth]{screenshot005}
-	\caption{Esquema del circuit usat pel règim permanent.}
-	\label{fig:3.2}
+	\begin{subfigure}{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{screenshot005}
+		\caption{Esquema del circuit usat pel règim permanent.}
+		\label{fig:3.2}
+	\end{subfigure}
+	\hspace{1em}
+	\begin{subfigure}{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{screenshot006}
+		\caption{Esquem del circuit usat pel règim transitori.}
+		\label{fig:3.3}
+	\end{subfigure}
+	\caption{Esquemes dels muntatges dels circuits de la pràctica 3.}
 \end{figure}
 
 Variem la freqüència de la font fins que els dos senyals a l'oscil·loscopi estan en fase (usant el model DUAL del darrer). Aquesta freqüència es correspon amb la freqüència de ressonància. La comparem amb la freqüència de ressonància teòrica (en Hz)
@@ -814,13 +824,6 @@ Mesurem les dues freqüències de tall $f_1$ i $f_2$ (en Hz)\footnote{Recordem q
 
 \subsection{Estudi del règim transitori} \label{sec 3.2.2}
 Muntem el circuit de la figura \ref{fig:3.3}. Usem una bobina de $L = 33$ mH, un condensador de $C = 330$ pF, una font que ens subministri una senyal tipus \eqref{eq:3.20} i una resistència de $R = 180$ $\Omega$.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.3\linewidth]{screenshot006}
-	\caption{Esquem del circuit usat pel règim transitori.}
-	\label{fig:3.3}
-\end{figure}
 
 Fixem la freqüència del generador de forma que a cada període d'aquest, $T_{generador}$, apareguin 10 oscil·lacions de període $T$ ($f = \frac{1}{10T}$), essent aquest període $T$ el corresponent a la freqüència de pseudo-pulsació, calculat usant l'equació \eqref{eq:3.25} i que
 \begin{equation}

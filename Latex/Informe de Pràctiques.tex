@@ -201,7 +201,7 @@ on $N_q$ és el nombre de càrregues imatge i $\theta$ l'angle format pels dos p
 \subsection{Simulacions}
 Els codis de les simulacions es poden trobar a l'annex \ref{an:a4}.
 
-Per tal de simular el condensador planoparal·lel, considerem la distribució representada com la suma de doscentes càrregues puntuals (de valor $-q$ pel fil de l'esquerra i $q$ pel de la dreta) distribuïdes uniformement en les plaques, de manera que una es troba a $x = d/2$, i l'altra a $x = - d/2$. Pel que fa a l'eix de les ordenades, les càrregues estan situades des de $y = -H/2$ fins a $y = H/2$, on $H$ és l'alçada de la placa. Així, per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$ usant el principi de superposició.
+Per tal de simular el condensador planoparal·lel, considerem la distribució representada com la suma de doscentes càrregues puntuals (de valor $-q$ pel fil de l'esquerra i $q$ pel de la dreta) distribuïdes uniformement en les plaques, de manera que una es troba a $x = -d/2$, i l'altra a $x =  d/2$. Pel que fa a l'eix de les ordenades, les càrregues estan situades des de $y = -H/2$ fins a $y = H/2$, on $H$ és l'alçada de la placa. Així, per a cada una de les càrregues, calculem la seva contribució al potencial i al camp elèctric en tots els punts de la malla $(X, Y)$ usant el principi de superposició.
 
 Per la simulació dels dos fils infinits, considerem la seva projecció en el pla X$-$Y com dues càrregues puntuals separades una distància $d+2r$, essent aquest valor la separació entre els centres dels discos dibuixats experimentalment (de radi $r$).
 
@@ -217,9 +217,9 @@ Per simular la tercera distribució de càrrega posem l'origen de coordenades en
 Els resultats experimentals es poden trobar a l'annex \ref{an:a2}.
 
 \subsection{Condensador de plaques planoparal·leles}
-La primera configuració estudiada es correspon amb un condensador planoparal·lel, format per dos plans infinits (en l'eix Z, perpendicular al pla de la imatge) carregats i separats per una distància $d$. La seva projecció en el pla X$-$Y  resulta en dos fils infinits separats també per una distància $d$.
+La primera configuració estudiada es correspon amb un condensador planoparal·lel, format per dos plans infinits (en l'eix Z, perpendicular al pla del paper) carregats i separats per una distància $d$. La seva projecció en el pla X$-$Y  resulta en dos fils infinits separats també per una distància $d$.
 
-Les corbes equipotencials trobades experimentalment són les que es poden observar a la figura \ref{fig:1.2a}. Observem que dins la regió entre plaques, les línies equipotencials es mantenen gairebé paral·leles, indicant un camp elèctric gairebé uniforme i dirigit perpendicularment cap a les plaques. 
+Les corbes equipotencials trobades experimentalment són les que es poden observar a la figura \ref{fig:1.2a}. Observem que dins la regió entre plaques, les línies equipotencials es mantenen gairebé paral·leles, indicant un camp elèctric gairebé uniforme i dirigit perpendicularment cap a les plaques, que es com ha de ser ja que es un conductor.
 
 A les vores de les plaques, es manifesta l’efecte punta (degut a l'acumulació de càrregues a la superfície), on el camp deixa de ser uniforme i es distribueix de manera més complexa, amb línies equipotencials corbades cap a l’exterior. Aquest efecte és més acusat en condensadors de mida finita, ja que en el cas ideal de plaques infinites, el camp fora de la regió entre elles seria nul. Els resultats són, aproximadament els mateixos predits per la simulació de la figura \ref{fig:1.2b}.
 
@@ -263,7 +263,9 @@ Hi ha principalment dos motius pels quals no hem obtingut la càrrega per unitat
 	\label{fig:1.2}
 \end{figure}
 
-Fixem-nos en què, a més a més, en el cas del condensador planoparal·lel, la relació entre $H$ i $d$ satisfà que $d/H \rightarrow 0$ (la separació entre les dues plaques és molt més petita que les dimensions característiques d'aquestes). En el nostre cas, però, això no és així; si ens atenim a les mesures de $H$ i $d$ ràpidament veiem que $H\approx d$ (són del mateix ordre!), de forma que $d/H\neq 0$ i l'anterior condició no se satisfà. Aquest és un motiu més pel qual no s'ha obtingut la càrrega per unitat de longitud real.
+Fixem-nos en què, a més a més, en el cas del condensador planoparal·lel, la relació entre $H$ i $d$ satisfà que $d/H \rightarrow 0$ (la separació entre les dues plaques és molt més petita que les dimensions característiques d'aquestes). En el nostre cas, però, això no és així; si ens atenim a les mesures de $H$ i $d$ ràpidament veiem que $H\approx d$ (són del mateix ordre!), de forma que $d/H\nrightarrow 0$ i l'anterior condició no se satisfà. Aquest és un motiu més pel qual no s'ha obtingut la càrrega per unitat de longitud real.
+
+A mes d'això es te que el dibuix real del condensador no es perfecte i te un cert guix, per lo que  sumat a lo anterior considerem raonable que el condensador real tingui una capacitat major que el ideal.
 \subsection{Fils infinits}
 La segona configuració estudiada és la projecció en el pla X$-$Y (pla de la imatge) de dos fils infinits separats per una distància constant. 
 
@@ -295,7 +297,7 @@ que és l'equació d'una circumferència. Per tant, les corbes equipotencials te
 
 El fet que els nostres resultats es desviïn del predit per la teoria es deu als diferents errors experimentals comesos durant l'evolució de la pràctica. Els principals factors que poden alterar els resultats de l'experiment són: s'assumeix que el paper conductor té una conductivitat $\sigma$ homogènia, però això no necessàriament ha de ser així (pot ser que presenti inhomogeneïtats), els punts que representen la projecció dels dos fils infinits en el pla no són perfectament rodons, ja que han sigut dibuixats a mà (amb les imprecisions que això comporta). Pel que fa a les corbes equipotencials i les línies de camp, aquestes es poden veure afectades per l'efecte punta a les vores dels materials carregats, on s'acumula més densitat de càrrega. 
 
-A tots aquests efectes cal sumar dos fenòmens més: El paper conductor és finit, cosa que afecta a les condicions de contorn del sistema (no podem situar l'origen de potencial a l'infinit) i, a més a més, els dos suposats fils infinits no són fils, són cilindres que no necessàriament tenen el mateix radi. Tot plegat podria explicar les desviacions observades.
+A tots aquests efectes cal sumar dos fenòmens més: El paper conductor és finit, cosa que afecta a les condicions de contorn del sistema (no podem situar l'origen de potencial a l'infinit) i, a més a més, els dos suposats fils infinits no són fils, són cilindres que no necessàriament tenen el mateix radi i no son infinits. Tot plegat podria explicar les desviacions observades.
 
 \subsection{Fil infinit i dos plans}
 
@@ -343,7 +345,7 @@ Hem pogut veure com les línies equipotencials dibuixades es corresponien força
 
 Addicionalment, per a la tercera distribució (dos plans secants i un fil infinit), com que coneixíem la solució que ens dona el mètode de les imatges (motiu pel qual l'hem escollit), hem pogut contrastar les línies equipotencials i de camp trobades experimentalment amb les del mètode mencionat, verificant així la validesa d'aquesta solució.
 
-Tal i com s'ha anat comentant, tant les línies equipotencials com les de camp basades en les mesures del multímetre (resultats experimentals) segueixen la mateixa tendència que les simulacions. Tot i no coincidir-hi exactament a causa dels diferents problemes ja discutits (efecte punta, inhomogeneïtats del paper, haver dibuixat formes irregulars, imprecisions causades pel gruix de la punta del llapis, paper conductor finit, ...), la geometria i el sentit de les línies de camp són coherents.
+Tal i com s'ha anat comentant, tant les línies equipotencials com les de camp basades en les mesures del multímetre (resultats experimentals) segueixen la mateixa tendència que les simulacions. Tot i no coincidir-hi exactament a causa dels diferents problemes ja discutits (efecte punta, inhomogeneïtats del paper, haver dibuixat formes irregulars, imprecisions causades pel gruix de la punta del llapis, paper conductor finit, aproximacions teòriques, ...), la geometria i el sentit de les línies de camp són coherents.
 
 Per altra banda, hem calculat la capacitat per unitat de longitud d'un condensador de plaques planoparal·leles a partir del teorema de Gauss. Com s'ha explicat, el càlcul experimental s'ha realitzat amb un sumatori com a aproximació de la integral de l'equació \ref{eq1.13}. Atès que el resultat obtingut és coherent amb el valor teòric esperat, podem considerar vàlida l'aproximació emprada.
 
@@ -406,7 +408,7 @@ El sistema que usarem per tal de fer totes les mesures necessàries serà el de 
 	\label{fig:2.1}
 \end{figure}
 
-Abans de començar amb l'equilibrat de la balança connectem el transformador a 9 V (al lloc indicat amb 'HEATER 9 V') per tal de fondre el gal·li ($T_{fus} \approx 30$ ºC), que actuarà com a conductor. Tot seguit orientem la balança de forma que els dos fils conductors estiguin en la direcció nord-sud; així evitem els possibles efectes causats pel camp magnètic terrestre. Seguidament connectem la font de corrent continu, tal i com es pot veure a la figura \ref{fig:2.2}, tot assegurant-nos que està en 'OFF' i que els controls d'intensitat i de potencial estan al mínim i al màxim, respectivament. Mesurem la longitud $L$ del fil.
+Abans de començar amb l'equilibrat de la balança connectem el transformador a 9 V (al lloc indicat amb 'HEATER 9 V') per tal de fondre el gal·li ($T_{fus} \approx 30$ ºC), que actuarà com a conductor. Tot seguit orientem la balança de forma que els dos fils conductors estiguin en la direcció nord-sud; així evitem els possibles efectes causats pel camp magnètic terrestre. Seguidament connectem la font de corrent continu, tal i com es pot veure a la figura \ref{fig:2.2}, tot assegurant-nos que està en 'OFF' i que els controls d'intensitat i de potencial estan al mínim i al màxim, respectivament. Mesurem la longitud $L$ del fil superior.
 
 Notem que el fet d'usar gal·li per tal d'unir el circuit es deu als següents motius, fonamentalment. El primer d'ells és que és un element amb propietats conductores que fon a temperatura ambient, de manera que, quan el punxó que connecta el sistema amb el pont de gal·li entra en contacte amb aquest, ho fa recobrint la major quantitat de superfície possible, evitant possibles pèrdues de corrent per errors de contacte. A més a més, l'ús de cables podria desestabilitzar la balança (que és molt sensible), fent que les mesures esdevinguessin menys precises i exactes.
 
@@ -482,7 +484,7 @@ Així, el valor de la permeabilitat magnètica del buit és
 \begin{figure}
 	\centering
 \includegraphics[width=0.8\linewidth]{screenshot020}
-\caption{Força entre els dos fils en funció de la intensitat del corrent al quadrat. Dades de l'ajust lineal: $y=mx+n$, amb $m = (979 \pm 32)\cdot 10^{2}$ A$^2$$\cdot$N$^{-1}$ i $n = (-4,38\pm0,52)\cdot$ N$^{-1}$. Coeficient de correlació $R^2=0,997$. Notem que, en alguns punts, les barres d'error corresponents a l'eix de les $y$ són tan petites que no s'arriben a distingir.}
+\caption{Intensitat del corrent al quadrat en funció de la força entre els dos fils. Dades de l'ajust lineal: $y=mx+n$, amb $m = (979 \pm 32)\cdot 10^{2}$ A$^2$$\cdot$N$^{-1}$ i $n = (-4,38\pm0,52)\cdot$ A$^{2}$. Coeficient de correlació $R^2=0,997$. Notem que, en alguns punts, les barres d'error corresponents a l'eix de les $y$ són tan petites que no s'arriben a distingir.}
 \label{fig:2.3}
 \end{figure}
 
@@ -593,7 +595,7 @@ Més enllà de tot això, també hem mesurat, a partir del mateix muntatge però
 	\label{fig:3.1}
 \end{figure}
 
-Per entendre per què aquest tipus de circuits (veure figura \ref{fig:3.1}) presenten oscil·lacions considerem, inicialment, que no tenim cap resistència i que el condensador es troba totalment carregat\footnote{Podeu trobar una animació d'aquest circuit a \url{https://commons.wikimedia.org/wiki/File:Tuned_circuit_animation_3.gif}.}. En connectar les plaques del condensador a la bobina, comença a circular una intensitat $I$ per aquesta. La variació de $I$ provoca, en virtut de la llei de Lenz
+Per entendre per què aquest tipus de circuits (veure figura \ref{fig:3.1}) presenten oscil·lacions considerem, inicialment, que no tenim cap resistència i que el condensador es troba totalment carregat\footnote{Podeu trobar una animació d'aquest circuit LC a \url{https://commons.wikimedia.org/wiki/File:Tuned_circuit_animation_3.gif}.}. En connectar les plaques del condensador a la bobina, comença a circular una intensitat $I$ per aquesta. La variació de $I$ provoca, en virtut de la llei de Lenz
 \begin{equation}
 	\varepsilon = - \dv{}{t}\int_S \vec{B} \cdot \mathrm{d}\vec{s} \label{eq:3.1},
 \end{equation}
@@ -827,13 +829,12 @@ Canviem la resistència fixa per una de variable, que pot donar resistències de
 
 
 \section{Resultats i discussió}
-\textcolor{red}{tengo que poner las incertidumbres bien a bastantes cosas, ahora no me apetece}\\
 Per tal de poder comparar i entendre si els nostres resultats són correctes, el primer que cal fer és predir, amb els coneixements que tenim, què creiem que passarà. Per a l'estudi del règim permanent tenim un circuit com el de la figura \ref{fig:3.2} amb $R=2660$ o $274$ $\Omega$, $L=22$ mH, $C=15$ nF i una font amb un voltatge d'entrada tipus $V(t) = V_{max}\sin(\omega t)$. La freqüència de ressonància del sistema ve donada per $\omega_0^2 = (LC)^{-1}$ (equació \ref{eq:3.19}), i les freqüències de tall ens les dona el sistema d'equacions definit per les equacions \ref{eq:3.38} i \ref{eq:3.39}. Resolent aquest sistema obtenim:
 
 \begin{eqnarray*}
 	\omega_{1,2} = \frac{1}{2L} \left( \sqrt{4L^2\omega_0^2+R^2} \mp R \right)  
 \end{eqnarray*}
-Això ens permet calcular certes propietats del circuit, com per exemple: \textcolor{red}{revisa les capçaleres de les taules que no sé si t'has colat en algun permanent en lloc de transitori o al revés} $\text{T}_\text{R}(\omega)$:
+Això ens permet calcular certes propietats del circuit, com per exemple: $\text{T}_\text{R}(\omega)$:
 
 \begin{table}[h]
 	\centering
@@ -854,7 +855,7 @@ Posteriorment, per l'estudi del règim transitori, muntarem altre circuit com ja
 \begin{table}[h]
 	\centering
 	\renewcommand{\arraystretch}{1.2}
-	\caption{Valors teòrics del sistema pel règim permanent}
+	\caption{Valors teòrics del sistema pel règim transitori}
 	\label{val teo trans}
 	\begin{tabular}{lccc} 
 		\toprule
@@ -865,8 +866,6 @@ Posteriorment, per l'estudi del règim transitori, muntarem altre circuit com ja
 	\end{tabular}
 \end{table}
 
-
-Els recull de mesures experimentals es troben a l'annex \textcolor{red}{poner anexo}.
 
 \subsection{Règim permanent}
 Una vegada s'han mesurat les freqüències de ressonància i de tall, els valors dels voltatges d'entrada i de la resistència just com s'explica a la secció \ref{expermento permanente} podem obtenir els següents valors experimentals directament de l'oscil·loscopi:
@@ -909,12 +908,12 @@ A la taula \ref{val exp trans} es troben els resultats de l'experiment. Com els 
 
 Amb el procediment experimental seguit hem aconseguit recrear bastant bé tant la freqüència pròpia del sistema com les freqüències de tall amb els dos valors de la resistència. Encara que, en general, els resultats estan aproximadament dins del que esperàvem, notem que tenim dos grans errors: un en $f_1$ per a $R = 2660\Omega$ amb un valor del $(15,7 \pm 2,4) \%$, i l'altre pels valors de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ per a $R = 274\Omega$, amb uns errors del $(12,352941 \pm 0,000089) \%$ i del $(24,8 \pm 1,1) \%$ respectivament. A continuació els comentem un a un.
 
-L'error de $f_1$ per a $R = 2660\Omega$ pot ser causat per la falta de presició en la selecció de freqüències de l'oscil·loscopi, ja que aquest pot donar valors amb molta precisió però nosaltres vam considerar que anar fent salts de 50Hz o de 100Hz era bona idea, ja que freqüències eren de l'ordre de milers d'hertzs. Ho vam considerar així perquè experimentalment tampoc s'aprecia un gran salt en $\abs{T_R(\omega)}$ en moure la freqüència de 100 Hz en 100 Hz (ho podem veure a la figura \ref{fig:3.4}. Això últim concorda amb la teoria, ja que $\abs{T_R(\omega)}$ a freqüències molt baixes o molt altes comparades amb $f_0$, com ho son $f_1$ i $f_2$, $\abs{T_R(\omega)}$, canvia molt lentament. Aquest fet es pot deduir veient la forma de l'equació \ref{eq:3.33} i tenint en compte que $\abs{T_R(\omega)}$ està acotat en $(0,1]$. Així, el canvi en $\abs{T_R(\omega)}$ per a aquests ordres de freqüència no és pràcticament apreciable. Això podria explicar que, en algunes freqüències, tinguem un error relativament alt però que per a aquestes mateixes freqüències l'error en $\abs{T_R(\omega)}$ no sigui molt important. 
+L'error de $f_1$ per a $R = 2660\Omega$ pot ser causat per la falta de presició en la selecció de freqüències de l'oscil·loscopi, ja que aquest pot donar valors amb molta precisió però nosaltres vam considerar que anar fent salts de 50Hz o de 100Hz era bona idea, ja que freqüències eren de l'ordre de milers d'hertzs. Ho vam considerar així perquè experimentalment tampoc s'aprecia un gran salt en $\abs{T_R(\omega)}$ en moure la freqüència de 100 Hz en 100 Hz (ho podem veure a la figura \ref{fig:3.4}. Això últim concorda amb la teoria, ja que $\abs{T_R(\omega)}$ a freqüències molt baixes o molt altes comparades amb $f_0$, com ho son $f_1$ i $f_2$, canvia molt lentament. Aquest fet es pot deduir veient la forma de l'equació \ref{eq:3.33} i tenint en compte que $\abs{T_R(\omega)}$ està acotat en $(0,1]$. Així, el canvi en $\abs{T_R(\omega)}$ per a aquests ordres de freqüència no és pràcticament apreciable. Això podria explicar que, en algunes freqüències, tinguem un error relativament alt però que per a aquestes mateixes freqüències l'error en $\abs{T_R(\omega)}$ no sigui molt important. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{R2660.png}
-	\caption{$\abs{T_R(f)}$ per $R = 274\Omega$ en funció de  la freqüència aplicada $f$ (en gris $f=f_0$, en vermell $f=f_1^{\text{experimental}}$ i en lila $f=f_1^{\text{teòric}}$)}
+	\caption{$\abs{T_R(f)}$ per $R = 2660\Omega$ en funció de  la freqüència aplicada $f$ (en gris $f=f_0$, en vermell $f=f_1^{\text{experimental}}$ i en lila $f=f_1^{\text{teòric}}$)}
 	\label{fig:3.4}
 \end{figure}
 
@@ -932,7 +931,7 @@ El segon error notable és el de $\abs{T_R(\omega_0)}$ i $\abs{T_R(\omega_2)}$ p
 Ara, un cop els errors han estat discutits, podem comparar valors i veure com, tot i canviar la resistència, la freqüència de ressonància, $f_0$, és la mateixa per a les dues resistències, just com prediu la fórmula \ref{eq:3.19}, ja que aquesta, segons la teoria, no depèn de la resistència.  
 Donat que $f_0$ no canvia, $\abs{T_R(\omega_0)}$ tampoc ho fa. De fet, per molt que la freqüència de ressonància canviï (per exemple canviant el condensador o la inductància), si recalculem $\abs{T_R(\omega_0)}$ per a aquesta nova freqüència, se seguiria complint que $\abs{T_R(\omega_0)} = 1$. Això és així per definició, tal i com hem deduït a la introducció de l'equació \ref{eq:3.18}.
 
-Per contra, el que sí que podem notar que canvia en funció de la resistència que posem són les freqüències de tall. Aquestes depenen explícitament de la forma de $\abs{T_R(\omega)}$ i no d'on aquesta sigui màxima (tal i com passava amb $f_0$). Ara, \textcolor{red}{la freq de tall? o què és el que queda fixa??} queda fixada independentment de $R$. Això es pot veure bé les dades presentades. Com hem comentat, mentre que a $R = 274\Omega$, $f_1$ i $f_2$ quedaven molt a prop de $f_0$ per la forma del pic de $\abs{T_R(\omega)}$ (hem apreciat els seus canvis bruscos), en posar $R = 2660\Omega$, tot i que tampoc diríem que $f_1$ queda lluny de $f_0$, $f_2$ està bastant allunyat (de l'ordre del doble de freqüència). De fet, aquesta diferència de comportament no només la podem veure visualment a les figures \ref{fig:3.4} i \ref{fig:3.5}, sinó que també es pot quantificar amb un paràmetre anomenat ample de banda: 
+Per contra, el que sí que podem notar que canvia en funció de la resistència que posem són les freqüències de tall. Aquestes depenen explícitament de la forma de $\abs{T_R(\omega)}$ i no d'on aquesta sigui màxima (tal i com passava amb $f_0$ que quedava fixada independentment de $R$). Això es pot veure bé les dades presentades. Com hem comentat, mentre que a $R = 274\Omega$, $f_1$ i $f_2$ quedaven molt a prop de $f_0$ per la forma del pic de $\abs{T_R(\omega)}$ (hem apreciat els seus canvis bruscos), en posar $R = 2660\Omega$, tot i que tampoc diríem que $f_1$ queda lluny de $f_0$, $f_2$ està bastant allunyat (de l'ordre del doble de freqüència). De fet, aquesta diferència de comportament no només la podem veure visualment a les figures \ref{fig:3.4} i \ref{fig:3.5}, sinó que també es pot quantificar amb un paràmetre anomenat ample de banda: 
 \begin{eqnarray}
 	\Delta\omega \equiv \omega_2 - \omega_1
 \end{eqnarray}
@@ -964,7 +963,6 @@ El fet que $\Delta\omega$ sigui menor per a resistències petites o, equivalentm
 on $U$ és l'energia emmagatzemada al sistema al cap d'un temps infinit. 
 
 Clarament nosaltres no tenim $R \sim 0$, però hem pogut veure la tendència que, en fer $R$ més petit, l'amplada de banda s'estreta, o el que és equivalent, la intensitat es dispara en deixar passar un temps llarg. Això equival a dir que, tal i com hem anat dient, el guany en voltatge té un pic cada cop més estret en baixar la resistència, ja que ens apropem al circuit LC que pot oscil·lar a una única freqüència: la pròpia o la de ressonància.\\
-\textcolor{red}{poner alguna foto de osciloscopio}
 
 \subsection{Règim transitori}
 Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $184$ $\Omega$, $33$ mH i $330$ pF respectivament, podem presentar els resultats i comparar amb allò predit anteriorment a la taula \ref{val teo trans}:
@@ -978,7 +976,7 @@ Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $1
 		\toprule
 		& $\omega$ (\text{rad/s}) & $T$ (\text{s}) & $f$ (\text{Hz})\\ 
 		\midrule
-		$\mathbf{R = 180\Omega}$ & - & (2,060 $\pm$ 0,020)$\cdot 10^{-5}$ & (4,854 $\pm$ 0,047)$\cdot 10^3$\\
+		$\mathbf{R = 184\Omega}$ & - & (2,060 $\pm$ 0,020)$\cdot 10^{-5}$ & (4,854 $\pm$ 0,047)$\cdot 10^3$\\
 		\bottomrule
 	\end{tabular}
 \end{table}
@@ -992,7 +990,7 @@ Una vegada muntat el circuit de la figura \ref{fig:3.3} amb $R$, $L$ i $C$ de $1
 		\toprule
 		& $\omega$ (\text{rad/s}) & $T$ (\text{s}) & $f$ (\text{Hz})\\ 
 		\midrule
-		$\mathbf{R = 180\Omega}$ & - & (0,7 $\pm$ 1,5)$\%$  & (0,7 $\pm$ 1,5)$\%$ \\
+		$\mathbf{R = 184\Omega}$ & - & (0,7 $\pm$ 1,5)$\%$  & (0,7 $\pm$ 1,5)$\%$ \\
 		\bottomrule
 	\end{tabular}
 \end{table}
@@ -1268,7 +1266,7 @@ Pel que fa a la diferència de potencial en la impedància del secundari és:
 	V_2 = I_2 Z \quad \Longrightarrow \quad |V_2| = k \alpha |V_1|
 	\label{eq4:20}
 \end{equation}
-Si comparem aquesta expressió amb l'equació \eqref{eq:4:9}, s'obté que $\alpha = n_2/n_1$.
+
 \subsubsection{Impedància de càrrega molt petita}
 Són aquells casos on $(Z \ll X,\alpha^2X)$. Llavors tindrem
 \begin{equation}
@@ -1374,7 +1372,7 @@ Amb totes les lectures de voltatge, seleccionem aquella configuració que ens d�
 \subsection{Estudi de les intensitats i els voltatges d'entrada i de sortida}
 Per tal de poder comparar el guany de voltatge teòric i experimental donat per
 \begin{equation}
-	T_{e/s}=\frac{V_{sortida}}{V_{entrada}}
+	T_{s/e}=\frac{V_{sortida}}{V_{entrada}}
 	\label{eq4:25}
 \end{equation}
 necessitem trobar la reactància de les bobines amb què treballarem, aquestes són les de 400 i 800 voltes.

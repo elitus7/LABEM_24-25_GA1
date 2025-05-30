@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {3.2.1}Estudi del règim permanent}{23}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Estudi del règim transitori}{23}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Resultats i discussió}{24}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Règim permanent}{25}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Règim permanent}{24}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Règim transitori}{27}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Constant d'esmorteïment del circuit}{28}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}Conclusions}{29}{section.3.4}%

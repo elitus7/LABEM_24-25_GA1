@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  30 MAY 2025 23:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.15)  12 JUN 2025 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1571,7 +1571,7 @@ d.
 Here is how much of TeX's memory you used:
  35063 strings out of 473682
  698118 string characters out of 5719215
- 1697704 words of memory out of 5000000
+ 1697705 words of memory out of 5000000
  57048 multiletter control sequences out of 15000+600000
  578688 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1617,7 +1617,7 @@ blic/amsfonts/cm/cmti10.pfb><C:/Users/ericg/AppData/Local/Programs/MiKTeX/fonts
 eX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ericg/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/ericg/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Informe de Pràctiques.pdf" (57 pages, 11771706 bytes).
+Output written on "Informe de Pràctiques.pdf" (57 pages, 11771696 bytes).
 PDF statistics:
  1578 PDF objects out of 1728 (max. 8388607)
  586 named destinations out of 1000 (max. 500000)

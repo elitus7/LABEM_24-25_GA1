@@ -179,7 +179,7 @@ Si aproximem la integral donada per l'equació \eqref{eq1.13} per un sumatori i 
 \begin{equation}
 	E_i \approx \frac{\Delta V_i}{\Delta r_i} \label{eq1.14},
 \end{equation}
-on $\Delta r_i$ és la distància radial, $\Delta V_i$ és la diferència de potencial de l'element $\Delta l_i$, i el subíndex $i$ fa referència a la \textit{i-èsima} mesura. De tot això tenim:
+on $\Delta r_i$ és la distància radial, $\Delta V_i$ és la diferència de potencial de l'element $\Delta l_i$, i el subíndex $i$ fa referència a la \textit{i-èsima} mesura. De tot això tenim
 \begin{equation}
 	\frac{Q}{Z} \approx \varepsilon \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i}.
 \end{equation}
@@ -187,7 +187,7 @@ Usant que la capacitat d'un condensador de plaques planoparal·leles es correspo
 \begin{equation}
 	C = \frac{Q}{\Delta V},
 \end{equation}
-la capacitat per unitat de longitud sota les aproximacions usades és:
+la capacitat per unitat de longitud sota les aproximacions usades és
 \begin{equation}
 	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} \label{eq1.17},
 \end{equation}
@@ -198,7 +198,7 @@ Més enllà de les distribucions del condensador de plaques planoparal·leles i 
 
 La raó per la qual hem decidit estudiar aquesta configuració és que ens servirà per comprovar si el mètode de les imatges és vàlid en aquest tipus de sistemes per tal de trobar la funció $\phi(\vec{r})$. El potencial generat per aquesta distribució es pot entendre com la superposició dels potencials creats per un conjunt de càrregues individuals distribuïdes adequadament (satisfent les mateixes condicions de contorn). En virtut del teorema d'unicitat, la solució de l'equació de Laplace de les dues distribucions és igual (llevat d'una constant), de forma que podem usar la darrera (més simple) per trobar el potencial de la primera (més complexa). 
 
-A més a més, es pot demostrar fàcilment que en funció de l'angle d'intersecció entre els plans, la quantitat de càrregues imatge necessàries per reproduir el potencial del sistema variarà, satisfent que:
+A més a més, es pot demostrar fàcilment que en funció de l'angle d'intersecció entre els plans, la quantitat de càrregues imatge necessàries per reproduir el potencial del sistema variarà, satisfent que
 \begin{equation}
 	N_q = \frac{360\text{º}}{\theta}-1 \label{eqimatges},
 \end{equation}
@@ -228,11 +228,11 @@ Com ja hem comentat abans, podem utilitzar la llei de Gauss per tal de calcular 
 \begin{equation}
 	\frac{C}{Z} = \frac{Q/Z}{\Delta V} = \frac{\varepsilon}{\Delta V} \sum_i \frac{\Delta V_i \Delta l_i}{\Delta r_i} = (2,06 \pm 0,21)\varepsilon \text{ F/m}.
 \end{equation}
-Podem comparar aquest resultat amb el que s'obtindria si tinguéssim un condensador ideal de plaques planoparal·leles si usem que\footnote{Les mesures per $H$ i $d$ s'han efectuat digitalment amb \textit{ImageJ}.}:
+Podem comparar aquest resultat amb el que s'obtindria si tinguéssim un condensador ideal de plaques planoparal·leles si usem que\footnote{Les mesures per $H$ i $d$ s'han efectuat digitalment amb \textit{ImageJ}.}
 \begin{equation*}
 	H = (7,961\pm0,001) \text{ cm}, \hspace{0.25cm} d = (5,598\pm0,001) \text{ cm}.
 \end{equation*}
-De manera que:
+De manera que
 \begin{equation}
 	\frac{C}{Z} = \frac{A\varepsilon/d}{Z} = \frac{H}{d}\varepsilon = (1,4221 \pm 0,0003)\varepsilon \text{ F/m},
 \end{equation}
@@ -290,7 +290,7 @@ Les corbes equipotencials trobades experimentalment són les que es poden observ
 	\label{fig:1.3}
 \end{figure}
 
-Els resultats teòrics indiquen que, en un sistema de dos fils infinits, les corbes equipotencials venen donades per la següent equació:
+Els resultats teòrics indiquen que, en un sistema de dos fils infinits, les corbes equipotencials venen donades per la següent equació
 \begin{equation}
 	y^2+\left( x+a\frac{1+k^2}{1-k^2}\right)^2 = a^2\left( \frac{2k}{1-k^2}\right)^2  \label{eqsuppon},
 \end{equation}
@@ -366,7 +366,7 @@ on $I_1$ i $I_2$ són les intensitats dels circuits 1 i 2, respectivament, d$\ve
 
 Per tal de simplificar la integral anterior definim el camp d'inducció magnètica (o densitat de flux magnètic) $\vec{B}(\vec{r})$ en un punt arbitrari $\vec{r}$ com (Griffiths, 2017, p. 231, \cite{ref4})
 \begin{equation}
-	\vec{B}(\vec{r}) = \frac{\mu_0}{4\pi} \int_V \vec{J}(\vec{r}_1)\cross\frac{\vec{r}-\vec{r}'}{\abs{\vec{r}-\vec{r}'}^3}\mathrm{d}^3r',
+	\vec{B}(\vec{r}) = \frac{\mu_0}{4\pi} \int_V \vec{J}(\vec{r}')\cross\frac{\vec{r}-\vec{r}'}{\abs{\vec{r}-\vec{r}'}^3}\mathrm{d}^3r',
 \end{equation}
 que és el que es coneix amb el nom de llei de Biot i Savart. 
 Si usem això sobre l'equació \eqref{eq:2.1} podem escriure la força que rep el circuit amb intensitat I degut a la presència del camp d'inducció $\vec{B}$ creat per l'altre circuit segons

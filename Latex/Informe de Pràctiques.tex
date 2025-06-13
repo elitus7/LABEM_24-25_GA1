@@ -599,7 +599,7 @@ Més enllà de tot això, també hem mesurat, a partir del mateix muntatge però
 	\label{fig:3.1}
 \end{figure}
 
-Per entendre per què aquest tipus de circuits (veure figura \ref{fig:3.1}) presenten oscil·lacions considerem, inicialment, que no tenim cap resistència i que el condensador es troba totalment carregat\footnote{Podeu trobar una animació d'aquest circuit LC a \url{https://commons.wikimedia.org/wiki/File:Tuned_circuit_animation_3.gif}.}. En connectar les plaques del condensador a la bobina, comença a circular una intensitat $I$ per aquesta. La variació de $I$ provoca, en virtut de la llei de Lenz
+Per entendre per què aquests tipus de circuits (veure figura \ref{fig:3.1}) presenten oscil·lacions considerem, inicialment, que no tenim cap resistència i que el condensador es troba totalment carregat\footnote{Podeu trobar una animació d'aquest circuit LC a \url{https://commons.wikimedia.org/wiki/File:Tuned_circuit_animation_3.gif}.}. En connectar les plaques del condensador a la bobina, comença a circular una intensitat $I$ per aquesta. La variació de $I$ provoca, en virtut de la llei de Lenz
 \begin{equation}
 	\varepsilon = - \dv{}{t}\int_S \vec{B} \cdot \mathrm{d}\vec{s} \label{eq:3.1},
 \end{equation}
@@ -637,7 +637,7 @@ on hem emprat les expressions
 \end{equation}
 i on $I$ és la intensitat que circula pel circuit i $V_R$, $V_C$ i $V_L$ són els voltatges a la resistència, el condensador i la bobina, respectivament. 
 
-Si derivem respecte del temps l'expressió \eqref{eq:3.4} i reorganitzem obtenim:
+Si derivem respecte del temps l'expressió \eqref{eq:3.4} i reorganitzem obtenim
 \begin{equation}
 	\dv[2]{I}{t} + \frac{R}{L} \dv{I}{t}+\frac{1}{LC} = \frac{1}{L}\dv{V}{t}.\label{eq:3.8}
 \end{equation}
@@ -645,18 +645,18 @@ Podem trobar dues expressions alternatives a aquesta darrera equació. Si ens in
 \begin{equation}
 	I = C \dv{V_C}{t},
 \end{equation}
-de manera que obtenim les següents dues expressions alternatives:
+de manera que obtenim les següents dues expressions alternatives
 \begin{align}
 	\dv[2]{V_R}{t} + \frac{R}{L}\dv{V_R}{t} + \frac{1}{LC}V_R = \frac{R}{L} \dv{V}{t}, \\
 	\dv[2]{V_C}{t} + \frac{R}{L}\dv{V_C}{t} + \frac{1}{LC}V_C=\frac{1}{LC}V. \label{eq:3.11}
 \end{align}
 
 \subsection{Règim permanent}
-En aquest règim assumim que subministrem un senyal sinusoidal al circuit, de manera que:
+En aquest règim assumim que subministrem un senyal sinusoidal al circuit, de manera que
 \begin{equation}
 	V(t) = V_{max} \sin (\omega t). \label{eq:3.12}
 \end{equation} 
-La solució de l'equació \eqref{eq:3.8} és també una ona sinusoidal:
+La solució de l'equació \eqref{eq:3.8} és també una ona sinusoidal
 \begin{equation}
 	I(t) = I_{max}\sin(\omega t + \phi).
 \end{equation}
@@ -1123,7 +1123,7 @@ Per fer l’ajust lineal i extreure $\lambda$, utilitzem només els pics màxims
 
 A partir de l'ajust lineal de la figura $\ref{fig:3.7}$ obtenim un valor experimental de la constant d'esmorteïment de
 \begin{equation*}
-	\lambda = (-250,9\pm 7,8)\cdot 10^{-2} \text{s$^{-1}$},
+	\lambda = (-250,9\pm 7,8)\cdot 10^{2} \text{ s$^{-1}$},
 \end{equation*} 
 que, si el comparem amb el valor teòric, obtenim un error relatiu del $14{,}37\% $, que es pot considerar acceptable tenint en compte les incerteses experimentals i el fet que ni els elements del circuit (condensador i inductor) ni el circuit en si tenen un comportament totalment ideal. 
 
@@ -1136,7 +1136,7 @@ Per altra banda, les dades experimentals de les freqüències $f_0$, $f_1$ i $f_
 
 Pels dos casos amb un error més elevat, tal i com s'ha explicat a la discussió, la sensibilitat de $\abs{T_R(\omega_0)}$ ha influït negativament en les mesures que s'han pres. Per la resistència de 2660 $\Omega$ la sensibilitat era mínima, de manera que el rang de freqüències que podríem haver considerat vàlids és molt ampli, ja que la variació de  $\abs{T_R(\omega_0)}$ era quasi inapreciable. Per contra, per una resistència de 274 $\Omega$ la variació d'aquest mateix paràmetre es fa notable amb el mínim canvi de freqüència, causant així moltes imprecisions a l'hora de determinar la freqüència de tall exacta. Aquesta sensibilitat variable que acabem de comentar és crucial a l'hora de dissenyar circuits, ja que permet utilitzar la resistència com a paràmetre de control per tal de controlar la resposta del sistema.
 
-A l'apartat on es treballa amb el règim transitori, hem pogut observar, mitjançant l'oscil·loscopi, els diferents tipus d'oscil·lació que s'obtenen segons el valor de la resistència amb què es treballa (una oscil·lació amortida per a $R<R_c$, una de crítica per a $R=R_c$ i un comportament sobreamortit per a $R_>R_c$) i els motius pels quals apareixen.
+A l'apartat on es treballa amb el règim transitori, hem pogut observar, mitjançant l'oscil·loscopi, els diferents tipus d'oscil·lació que s'obtenen segons el valor de la resistència amb què es treballa (una oscil·lació amortida per a $R<R_c$, una de crítica per a $R=R_c$ i un comportament sobreamortit per a $R>R_c$) i els motius pels quals apareixen.
 
 Finalment,hem pogut calcular el valor de la constant d'esmorteïment $\lambda$ a partir d'un parell de gràfics i regressions. Considerem que el seu valor és suficientment pròxim l'esperat, essent l'error relatiu només del 14,37\%. Aquest error podria semblar alarmant però cal recordar que els càlculs teòrics es basen en comportaments ideals que són impossibles de reproduir amb exactitud al laboratori. Per posar un exemple, el valor $E$ calculat segons l'equació \eqref{eq348} requereix un temps infinit, fet que resulta inviable, de manera que, en establir un interval de temps finit, s'introdueix una font d'error considerable.
 
